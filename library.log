@@ -1,0 +1,2147 @@
+2025-06-09 11:07:50,805:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 11:07:50,805:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 11:07:50,809:INFO: * Restarting with stat
+2025-06-09 11:07:51,268:WARNING: * Debugger is active!
+2025-06-09 11:07:51,278:INFO: * Debugger PIN: 131-470-779
+2025-06-09 11:08:38,703:INFO:127.0.0.1 - - [09/Jun/2025 11:08:38] "GET /login HTTP/1.1" 200 -
+2025-06-09 11:08:38,745:INFO:127.0.0.1 - - [09/Jun/2025 11:08:38] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-06-09 11:08:38,747:INFO:127.0.0.1 - - [09/Jun/2025 11:08:38] "[33mGET /login.js HTTP/1.1[0m" 404 -
+2025-06-09 11:08:38,805:INFO:127.0.0.1 - - [09/Jun/2025 11:08:38] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-06-09 11:09:24,151:INFO:127.0.0.1 - - [09/Jun/2025 11:09:24] "GET /login HTTP/1.1" 200 -
+2025-06-09 11:09:24,175:INFO:127.0.0.1 - - [09/Jun/2025 11:09:24] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-06-09 11:09:24,181:INFO:127.0.0.1 - - [09/Jun/2025 11:09:24] "[33mGET /login.js HTTP/1.1[0m" 404 -
+ 2025-06-09 11:10:37,512:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 11:10:37,638:INFO: * Restarting with stat
+2025-06-09 11:10:38,482:WARNING: * Debugger is active!
+2025-06-09 11:10:38,491:INFO: * Debugger PIN: 131-470-779
+2025-06-09 11:11:52,653:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 11:11:52,653:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 11:11:52,655:INFO: * Restarting with stat
+2025-06-09 11:11:53,100:WARNING: * Debugger is active!
+2025-06-09 11:11:53,108:INFO: * Debugger PIN: 131-470-779
+2025-06-09 11:12:08,038:INFO:127.0.0.1 - - [09/Jun/2025 11:12:08] "GET /login HTTP/1.1" 200 -
+2025-06-09 11:12:08,055:INFO:127.0.0.1 - - [09/Jun/2025 11:12:08] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-06-09 11:12:08,057:INFO:127.0.0.1 - - [09/Jun/2025 11:12:08] "[33mGET /login.js HTTP/1.1[0m" 404 -
+2025-06-09 11:12:13,816:INFO:127.0.0.1 - - [09/Jun/2025 11:12:13] "GET /login HTTP/1.1" 200 -
+2025-06-09 11:12:13,831:INFO:127.0.0.1 - - [09/Jun/2025 11:12:13] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-06-09 11:12:13,832:INFO:127.0.0.1 - - [09/Jun/2025 11:12:13] "[33mGET /login.js HTTP/1.1[0m" 404 -
+2025-06-09 11:18:24,586:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 11:18:24,586:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 11:18:24,633:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 11:18:25,044:WARNING: * Debugger is active!
+2025-06-09 11:18:25,051:INFO: * Debugger PIN: 773-762-553
+2025-06-09 11:18:30,765:INFO:127.0.0.1 - - [09/Jun/2025 11:18:30] "GET /login HTTP/1.1" 200 -
+2025-06-09 11:18:30,779:INFO:127.0.0.1 - - [09/Jun/2025 11:18:30] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-06-09 11:18:30,781:INFO:127.0.0.1 - - [09/Jun/2025 11:18:30] "[33mGET /login.js HTTP/1.1[0m" 404 -
+2025-06-09 11:18:39,148:INFO:127.0.0.1 - - [09/Jun/2025 11:18:39] "GET /login HTTP/1.1" 200 -
+2025-06-09 11:18:39,161:INFO:127.0.0.1 - - [09/Jun/2025 11:18:39] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-06-09 11:18:39,166:INFO:127.0.0.1 - - [09/Jun/2025 11:18:39] "[33mGET /login.js HTTP/1.1[0m" 404 -
+2025-06-09 11:27:04,172:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 11:27:04,172:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 11:27:04,190:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 11:27:04,591:WARNING: * Debugger is active!
+2025-06-09 11:27:04,602:INFO: * Debugger PIN: 773-762-553
+2025-06-09 11:27:12,327:INFO:127.0.0.1 - - [09/Jun/2025 11:27:12] "GET /login HTTP/1.1" 200 -
+2025-06-09 11:27:12,385:INFO:127.0.0.1 - - [09/Jun/2025 11:27:12] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-06-09 11:27:12,385:INFO:127.0.0.1 - - [09/Jun/2025 11:27:12] "[33mGET /login.js HTTP/1.1[0m" 404 -
+2025-06-09 11:27:13,088:INFO:127.0.0.1 - - [09/Jun/2025 11:27:13] "GET /login HTTP/1.1" 200 -
+2025-06-09 11:27:13,099:INFO:127.0.0.1 - - [09/Jun/2025 11:27:13] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-06-09 11:27:13,100:INFO:127.0.0.1 - - [09/Jun/2025 11:27:13] "[33mGET /login.js HTTP/1.1[0m" 404 -
+2025-06-09 11:27:27,059:INFO:127.0.0.1 - - [09/Jun/2025 11:27:27] "GET /login HTTP/1.1" 200 -
+2025-06-09 11:27:27,092:INFO:127.0.0.1 - - [09/Jun/2025 11:27:27] "[33mGET /style.css HTTP/1.1[0m" 404 -
+2025-06-09 11:27:27,102:INFO:127.0.0.1 - - [09/Jun/2025 11:27:27] "[33mGET /login.js HTTP/1.1[0m" 404 -
+2025-06-09 11:27:46,351:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 11:27:46,351:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 11:27:46,365:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 11:27:46,757:WARNING: * Debugger is active!
+2025-06-09 11:27:46,765:INFO: * Debugger PIN: 773-762-553
+2025-06-09 11:29:01,838:INFO:127.0.0.1 - - [09/Jun/2025 11:29:01] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-06-09 11:31:00,995:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 11:31:00,995:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 11:31:01,013:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 11:31:01,405:WARNING: * Debugger is active!
+2025-06-09 11:31:01,421:INFO: * Debugger PIN: 773-762-553
+2025-06-09 11:31:04,717:INFO:127.0.0.1 - - [09/Jun/2025 11:31:04] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-06-09 11:31:05,239:INFO:127.0.0.1 - - [09/Jun/2025 11:31:05] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-06-09 11:31:05,438:INFO:127.0.0.1 - - [09/Jun/2025 11:31:05] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-06-09 11:31:05,608:INFO:127.0.0.1 - - [09/Jun/2025 11:31:05] "[31m[1mGET / HTTP/1.1[0m" 401 -
+2025-06-09 11:36:30,591:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 11:36:30,597:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 11:36:30,597:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 11:36:31,708:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 11:53:32,341:INFO:Banco de dados inicializado
+2025-06-09 11:53:32,417:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 11:53:32,417:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 11:53:32,438:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 11:53:32,839:INFO:Banco de dados inicializado
+2025-06-09 11:53:32,866:WARNING: * Debugger is active!
+2025-06-09 11:53:32,877:INFO: * Debugger PIN: 773-762-553
+2025-06-09 11:53:36,472:INFO:127.0.0.1 - - [09/Jun/2025 11:53:36] "GET / HTTP/1.1" 200 -
+2025-06-09 11:53:36,529:INFO:127.0.0.1 - - [09/Jun/2025 11:53:36] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 11:53:36,658:INFO:127.0.0.1 - - [09/Jun/2025 11:53:36] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-09 11:53:39,961:INFO:127.0.0.1 - - [09/Jun/2025 11:53:39] "GET /history HTTP/1.1" 200 -
+2025-06-09 11:53:39,997:INFO:127.0.0.1 - - [09/Jun/2025 11:53:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 11:53:40,003:INFO:127.0.0.1 - - [09/Jun/2025 11:53:40] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 11:53:41,647:INFO:127.0.0.1 - - [09/Jun/2025 11:53:41] "GET / HTTP/1.1" 200 -
+2025-06-09 11:53:41,668:INFO:127.0.0.1 - - [09/Jun/2025 11:53:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 11:53:41,671:INFO:127.0.0.1 - - [09/Jun/2025 11:53:41] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 11:53:45,958:INFO:127.0.0.1 - - [09/Jun/2025 11:53:45] "GET /history HTTP/1.1" 200 -
+2025-06-09 11:53:45,981:INFO:127.0.0.1 - - [09/Jun/2025 11:53:45] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 11:53:45,981:INFO:127.0.0.1 - - [09/Jun/2025 11:53:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 11:53:46,868:INFO:127.0.0.1 - - [09/Jun/2025 11:53:46] "GET / HTTP/1.1" 200 -
+2025-06-09 11:53:46,889:INFO:127.0.0.1 - - [09/Jun/2025 11:53:46] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 11:53:46,890:INFO:127.0.0.1 - - [09/Jun/2025 11:53:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 11:54:52,122:INFO:127.0.0.1 - - [09/Jun/2025 11:54:52] "GET /history HTTP/1.1" 200 -
+2025-06-09 11:54:52,144:INFO:127.0.0.1 - - [09/Jun/2025 11:54:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 11:54:52,145:INFO:127.0.0.1 - - [09/Jun/2025 11:54:52] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 11:54:53,531:INFO:127.0.0.1 - - [09/Jun/2025 11:54:53] "GET / HTTP/1.1" 200 -
+2025-06-09 11:54:53,552:INFO:127.0.0.1 - - [09/Jun/2025 11:54:53] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 11:54:53,552:INFO:127.0.0.1 - - [09/Jun/2025 11:54:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 11:59:16,041:INFO:Banco de dados inicializado
+2025-06-09 11:59:16,112:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 11:59:16,113:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 11:59:16,133:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 11:59:16,594:INFO:Banco de dados inicializado
+2025-06-09 11:59:16,633:WARNING: * Debugger is active!
+2025-06-09 11:59:16,643:INFO: * Debugger PIN: 773-762-553
+2025-06-09 11:59:31,959:INFO:127.0.0.1 - - [09/Jun/2025 11:59:31] "GET / HTTP/1.1" 200 -
+2025-06-09 11:59:32,001:INFO:127.0.0.1 - - [09/Jun/2025 11:59:32] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 11:59:32,122:INFO:127.0.0.1 - - [09/Jun/2025 11:59:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 11:59:35,014:INFO:127.0.0.1 - - [09/Jun/2025 11:59:35] "GET /history HTTP/1.1" 200 -
+2025-06-09 11:59:35,047:INFO:127.0.0.1 - - [09/Jun/2025 11:59:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 11:59:35,053:INFO:127.0.0.1 - - [09/Jun/2025 11:59:35] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:00:29,130:INFO:127.0.0.1 - - [09/Jun/2025 12:00:29] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:00:29,154:INFO:127.0.0.1 - - [09/Jun/2025 12:00:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:00:29,160:INFO:127.0.0.1 - - [09/Jun/2025 12:00:29] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:00:30,996:INFO:127.0.0.1 - - [09/Jun/2025 12:00:30] "GET / HTTP/1.1" 200 -
+2025-06-09 12:00:31,017:INFO:127.0.0.1 - - [09/Jun/2025 12:00:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:00:31,018:INFO:127.0.0.1 - - [09/Jun/2025 12:00:31] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:01:07,554:INFO:127.0.0.1 - - [09/Jun/2025 12:01:07] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:01:07,573:INFO:127.0.0.1 - - [09/Jun/2025 12:01:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:01:07,577:INFO:127.0.0.1 - - [09/Jun/2025 12:01:07] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:04:38,602:INFO:127.0.0.1 - - [09/Jun/2025 12:04:38] "GET / HTTP/1.1" 200 -
+2025-06-09 12:04:38,651:INFO:127.0.0.1 - - [09/Jun/2025 12:04:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:04:38,659:INFO:127.0.0.1 - - [09/Jun/2025 12:04:38] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:04:42,015:INFO:127.0.0.1 - - [09/Jun/2025 12:04:42] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:04:42,043:INFO:127.0.0.1 - - [09/Jun/2025 12:04:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:04:42,048:INFO:127.0.0.1 - - [09/Jun/2025 12:04:42] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:04:43,190:INFO:127.0.0.1 - - [09/Jun/2025 12:04:43] "GET / HTTP/1.1" 200 -
+2025-06-09 12:04:43,211:INFO:127.0.0.1 - - [09/Jun/2025 12:04:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:04:43,211:INFO:127.0.0.1 - - [09/Jun/2025 12:04:43] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:05:48,535:INFO:127.0.0.1 - - [09/Jun/2025 12:05:48] "GET / HTTP/1.1" 200 -
+2025-06-09 12:05:48,585:INFO:127.0.0.1 - - [09/Jun/2025 12:05:48] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:05:48,587:INFO:127.0.0.1 - - [09/Jun/2025 12:05:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:05:49,612:INFO:127.0.0.1 - - [09/Jun/2025 12:05:49] "GET / HTTP/1.1" 200 -
+2025-06-09 12:05:49,629:INFO:127.0.0.1 - - [09/Jun/2025 12:05:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:05:49,636:INFO:127.0.0.1 - - [09/Jun/2025 12:05:49] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:05:52,980:INFO:127.0.0.1 - - [09/Jun/2025 12:05:52] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:05:53,000:INFO:127.0.0.1 - - [09/Jun/2025 12:05:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:05:53,013:INFO:127.0.0.1 - - [09/Jun/2025 12:05:53] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:06:14,433:INFO:127.0.0.1 - - [09/Jun/2025 12:06:14] "GET / HTTP/1.1" 200 -
+2025-06-09 12:06:14,458:INFO:127.0.0.1 - - [09/Jun/2025 12:06:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:06:14,468:INFO:127.0.0.1 - - [09/Jun/2025 12:06:14] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:08:27,472:INFO:127.0.0.1 - - [09/Jun/2025 12:08:27] "GET / HTTP/1.1" 200 -
+2025-06-09 12:08:27,501:INFO:127.0.0.1 - - [09/Jun/2025 12:08:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:08:27,505:INFO:127.0.0.1 - - [09/Jun/2025 12:08:27] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:09:13,041:INFO:127.0.0.1 - - [09/Jun/2025 12:09:13] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:09:13,079:INFO:127.0.0.1 - - [09/Jun/2025 12:09:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:09:13,082:INFO:127.0.0.1 - - [09/Jun/2025 12:09:13] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:09:16,255:INFO:127.0.0.1 - - [09/Jun/2025 12:09:16] "GET / HTTP/1.1" 200 -
+2025-06-09 12:09:16,273:INFO:127.0.0.1 - - [09/Jun/2025 12:09:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:09:16,278:INFO:127.0.0.1 - - [09/Jun/2025 12:09:16] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:09:19,669:INFO:127.0.0.1 - - [09/Jun/2025 12:09:19] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:09:19,691:INFO:127.0.0.1 - - [09/Jun/2025 12:09:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:09:19,696:INFO:127.0.0.1 - - [09/Jun/2025 12:09:19] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:09:20,526:INFO:127.0.0.1 - - [09/Jun/2025 12:09:20] "GET / HTTP/1.1" 200 -
+2025-06-09 12:09:20,543:INFO:127.0.0.1 - - [09/Jun/2025 12:09:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:09:20,547:INFO:127.0.0.1 - - [09/Jun/2025 12:09:20] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:10:02,988:INFO:127.0.0.1 - - [09/Jun/2025 12:10:02] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:10:03,011:INFO:127.0.0.1 - - [09/Jun/2025 12:10:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:10:03,016:INFO:127.0.0.1 - - [09/Jun/2025 12:10:03] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:10:04,556:INFO:127.0.0.1 - - [09/Jun/2025 12:10:04] "GET / HTTP/1.1" 200 -
+2025-06-09 12:10:04,583:INFO:127.0.0.1 - - [09/Jun/2025 12:10:04] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:10:04,584:INFO:127.0.0.1 - - [09/Jun/2025 12:10:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:10:57,534:INFO:127.0.0.1 - - [09/Jun/2025 12:10:57] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:10:57,554:INFO:127.0.0.1 - - [09/Jun/2025 12:10:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:10:57,563:INFO:127.0.0.1 - - [09/Jun/2025 12:10:57] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:10:58,737:INFO:127.0.0.1 - - [09/Jun/2025 12:10:58] "GET / HTTP/1.1" 200 -
+2025-06-09 12:10:58,754:INFO:127.0.0.1 - - [09/Jun/2025 12:10:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:10:58,759:INFO:127.0.0.1 - - [09/Jun/2025 12:10:58] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:11:29,092:INFO:127.0.0.1 - - [09/Jun/2025 12:11:29] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:11:29,117:INFO:127.0.0.1 - - [09/Jun/2025 12:11:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:11:29,126:INFO:127.0.0.1 - - [09/Jun/2025 12:11:29] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:11:30,914:INFO:127.0.0.1 - - [09/Jun/2025 12:11:30] "GET / HTTP/1.1" 200 -
+2025-06-09 12:11:30,933:INFO:127.0.0.1 - - [09/Jun/2025 12:11:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:11:30,941:INFO:127.0.0.1 - - [09/Jun/2025 12:11:30] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:11:38,923:INFO:127.0.0.1 - - [09/Jun/2025 12:11:38] "GET / HTTP/1.1" 200 -
+2025-06-09 12:11:38,942:INFO:127.0.0.1 - - [09/Jun/2025 12:11:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:11:38,951:INFO:127.0.0.1 - - [09/Jun/2025 12:11:38] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:12:08,573:INFO:127.0.0.1 - - [09/Jun/2025 12:12:08] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:12:08,595:INFO:127.0.0.1 - - [09/Jun/2025 12:12:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:12:08,600:INFO:127.0.0.1 - - [09/Jun/2025 12:12:08] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:12:11,894:INFO:127.0.0.1 - - [09/Jun/2025 12:12:11] "GET / HTTP/1.1" 200 -
+2025-06-09 12:12:11,922:INFO:127.0.0.1 - - [09/Jun/2025 12:12:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:12:11,927:INFO:127.0.0.1 - - [09/Jun/2025 12:12:11] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:12:13,260:INFO:127.0.0.1 - - [09/Jun/2025 12:12:13] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:12:13,284:INFO:127.0.0.1 - - [09/Jun/2025 12:12:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:12:13,289:INFO:127.0.0.1 - - [09/Jun/2025 12:12:13] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:12:14,419:INFO:127.0.0.1 - - [09/Jun/2025 12:12:14] "GET / HTTP/1.1" 200 -
+2025-06-09 12:12:14,435:INFO:127.0.0.1 - - [09/Jun/2025 12:12:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:12:14,440:INFO:127.0.0.1 - - [09/Jun/2025 12:12:14] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:12:15,246:INFO:127.0.0.1 - - [09/Jun/2025 12:12:15] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:12:15,268:INFO:127.0.0.1 - - [09/Jun/2025 12:12:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:12:15,275:INFO:127.0.0.1 - - [09/Jun/2025 12:12:15] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:12:16,859:INFO:127.0.0.1 - - [09/Jun/2025 12:12:16] "GET / HTTP/1.1" 200 -
+2025-06-09 12:12:16,882:INFO:127.0.0.1 - - [09/Jun/2025 12:12:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:12:16,886:INFO:127.0.0.1 - - [09/Jun/2025 12:12:16] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:16:31,438:INFO:127.0.0.1 - - [09/Jun/2025 12:16:31] "GET / HTTP/1.1" 200 -
+2025-06-09 12:16:31,483:INFO:127.0.0.1 - - [09/Jun/2025 12:16:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:16:31,485:INFO:127.0.0.1 - - [09/Jun/2025 12:16:31] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:16:35,144:INFO:127.0.0.1 - - [09/Jun/2025 12:16:35] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:16:35,167:INFO:127.0.0.1 - - [09/Jun/2025 12:16:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:16:35,168:INFO:127.0.0.1 - - [09/Jun/2025 12:16:35] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:16:49,949:INFO:Banco de dados inicializado
+2025-06-09 12:16:50,005:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 12:16:50,005:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 12:16:50,019:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 12:16:50,410:INFO:Banco de dados inicializado
+2025-06-09 12:16:50,442:WARNING: * Debugger is active!
+2025-06-09 12:16:50,451:INFO: * Debugger PIN: 773-762-553
+2025-06-09 12:17:12,791:INFO:127.0.0.1 - - [09/Jun/2025 12:17:12] "GET / HTTP/1.1" 200 -
+2025-06-09 12:17:12,940:INFO:127.0.0.1 - - [09/Jun/2025 12:17:12] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:17:13,087:INFO:127.0.0.1 - - [09/Jun/2025 12:17:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:17:21,679:INFO:127.0.0.1 - - [09/Jun/2025 12:17:21] "GET / HTTP/1.1" 200 -
+2025-06-09 12:17:21,700:INFO:127.0.0.1 - - [09/Jun/2025 12:17:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:17:21,706:INFO:127.0.0.1 - - [09/Jun/2025 12:17:21] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:24:07,830:INFO:127.0.0.1 - - [09/Jun/2025 12:24:07] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:24:07,854:INFO:127.0.0.1 - - [09/Jun/2025 12:24:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:24:07,858:INFO:127.0.0.1 - - [09/Jun/2025 12:24:07] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:24:10,552:INFO:127.0.0.1 - - [09/Jun/2025 12:24:10] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:24:10,568:INFO:127.0.0.1 - - [09/Jun/2025 12:24:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:24:10,571:INFO:127.0.0.1 - - [09/Jun/2025 12:24:10] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:24:41,665:INFO:127.0.0.1 - - [09/Jun/2025 12:24:41] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:24:41,682:INFO:127.0.0.1 - - [09/Jun/2025 12:24:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:24:41,688:INFO:127.0.0.1 - - [09/Jun/2025 12:24:41] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:25:41,360:INFO:127.0.0.1 - - [09/Jun/2025 12:25:41] "GET /history HTTP/1.1" 200 -
+2025-06-09 12:25:41,377:INFO:127.0.0.1 - - [09/Jun/2025 12:25:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:25:41,384:INFO:127.0.0.1 - - [09/Jun/2025 12:25:41] "[33mGET /static/history.js HTTP/1.1[0m" 404 -
+2025-06-09 12:53:49,367:INFO:Banco de dados inicializado
+2025-06-09 12:53:49,418:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 12:53:49,418:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 12:53:49,432:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 12:53:49,816:INFO:Banco de dados inicializado
+2025-06-09 12:53:49,846:WARNING: * Debugger is active!
+2025-06-09 12:53:49,855:INFO: * Debugger PIN: 773-762-553
+2025-06-09 12:53:55,468:INFO:127.0.0.1 - - [09/Jun/2025 12:53:55] "GET / HTTP/1.1" 200 -
+2025-06-09 12:53:55,518:INFO:127.0.0.1 - - [09/Jun/2025 12:53:55] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 12:53:55,521:INFO:127.0.0.1 - - [09/Jun/2025 12:53:55] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:53:55,644:INFO:127.0.0.1 - - [09/Jun/2025 12:53:55] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-09 12:54:15,782:INFO:127.0.0.1 - - [09/Jun/2025 12:54:15] "GET / HTTP/1.1" 200 -
+2025-06-09 12:54:15,798:INFO:127.0.0.1 - - [09/Jun/2025 12:54:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:54:15,804:INFO:127.0.0.1 - - [09/Jun/2025 12:54:15] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 12:54:15,804:INFO:127.0.0.1 - - [09/Jun/2025 12:54:15] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:55:12,591:INFO:Banco de dados inicializado
+2025-06-09 12:55:12,637:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 12:55:12,637:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 12:55:12,649:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 12:55:13,037:INFO:Banco de dados inicializado
+2025-06-09 12:55:13,066:WARNING: * Debugger is active!
+2025-06-09 12:55:13,073:INFO: * Debugger PIN: 773-762-553
+2025-06-09 12:55:15,309:INFO:127.0.0.1 - - [09/Jun/2025 12:55:15] "GET / HTTP/1.1" 200 -
+2025-06-09 12:55:15,329:INFO:127.0.0.1 - - [09/Jun/2025 12:55:15] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 12:55:15,330:INFO:127.0.0.1 - - [09/Jun/2025 12:55:15] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:55:15,430:INFO:127.0.0.1 - - [09/Jun/2025 12:55:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:55:16,130:INFO:127.0.0.1 - - [09/Jun/2025 12:55:16] "GET / HTTP/1.1" 200 -
+2025-06-09 12:55:16,140:INFO:127.0.0.1 - - [09/Jun/2025 12:55:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:55:16,140:INFO:127.0.0.1 - - [09/Jun/2025 12:55:16] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 12:55:16,142:INFO:127.0.0.1 - - [09/Jun/2025 12:55:16] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:56:32,781:INFO:Banco de dados inicializado
+2025-06-09 12:56:32,843:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 12:56:32,843:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 12:56:32,856:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 12:56:33,263:INFO:Banco de dados inicializado
+2025-06-09 12:56:33,292:WARNING: * Debugger is active!
+2025-06-09 12:56:33,298:INFO: * Debugger PIN: 773-762-553
+2025-06-09 12:56:35,049:INFO:127.0.0.1 - - [09/Jun/2025 12:56:35] "GET / HTTP/1.1" 200 -
+2025-06-09 12:56:35,067:INFO:127.0.0.1 - - [09/Jun/2025 12:56:35] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 12:56:35,068:INFO:127.0.0.1 - - [09/Jun/2025 12:56:35] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:56:35,161:INFO:127.0.0.1 - - [09/Jun/2025 12:56:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:56:45,463:INFO:127.0.0.1 - - [09/Jun/2025 12:56:45] "GET / HTTP/1.1" 200 -
+2025-06-09 12:56:45,480:INFO:127.0.0.1 - - [09/Jun/2025 12:56:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:56:45,485:INFO:127.0.0.1 - - [09/Jun/2025 12:56:45] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 12:56:45,485:INFO:127.0.0.1 - - [09/Jun/2025 12:56:45] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 12:58:01,274:INFO:127.0.0.1 - - [09/Jun/2025 12:58:01] "GET / HTTP/1.1" 200 -
+2025-06-09 12:58:01,287:INFO:127.0.0.1 - - [09/Jun/2025 12:58:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 12:58:01,292:INFO:127.0.0.1 - - [09/Jun/2025 12:58:01] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 12:58:01,292:INFO:127.0.0.1 - - [09/Jun/2025 12:58:01] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 13:09:25,229:INFO:Banco de dados inicializado
+2025-06-09 13:09:25,286:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 13:09:25,286:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 13:09:25,299:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 13:09:25,693:INFO:Banco de dados inicializado
+2025-06-09 13:09:25,716:WARNING: * Debugger is active!
+2025-06-09 13:09:25,725:INFO: * Debugger PIN: 773-762-553
+2025-06-09 13:09:29,266:INFO:127.0.0.1 - - [09/Jun/2025 13:09:29] "GET / HTTP/1.1" 200 -
+2025-06-09 13:09:29,405:INFO:127.0.0.1 - - [09/Jun/2025 13:09:29] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 13:09:29,407:INFO:127.0.0.1 - - [09/Jun/2025 13:09:29] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 13:09:29,552:INFO:127.0.0.1 - - [09/Jun/2025 13:09:29] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-09 13:09:39,309:INFO:127.0.0.1 - - [09/Jun/2025 13:09:39] "GET / HTTP/1.1" 200 -
+2025-06-09 13:09:39,324:INFO:127.0.0.1 - - [09/Jun/2025 13:09:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:09:39,326:INFO:127.0.0.1 - - [09/Jun/2025 13:09:39] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 13:09:39,328:INFO:127.0.0.1 - - [09/Jun/2025 13:09:39] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 13:11:21,707:INFO:127.0.0.1 - - [09/Jun/2025 13:11:21] "GET / HTTP/1.1" 200 -
+2025-06-09 13:11:21,719:INFO:127.0.0.1 - - [09/Jun/2025 13:11:21] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-09 13:11:21,726:INFO:127.0.0.1 - - [09/Jun/2025 13:11:21] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 13:11:21,726:INFO:127.0.0.1 - - [09/Jun/2025 13:11:21] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 13:11:33,763:INFO:127.0.0.1 - - [09/Jun/2025 13:11:33] "GET / HTTP/1.1" 200 -
+2025-06-09 13:11:33,779:INFO:127.0.0.1 - - [09/Jun/2025 13:11:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:11:33,784:INFO:127.0.0.1 - - [09/Jun/2025 13:11:33] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 13:11:33,786:INFO:127.0.0.1 - - [09/Jun/2025 13:11:33] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 13:12:10,204:INFO:Banco de dados inicializado
+2025-06-09 13:12:10,252:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-06-09 13:12:10,252:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 13:12:10,263:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 13:12:10,635:INFO:Banco de dados inicializado
+2025-06-09 13:12:10,659:WARNING: * Debugger is active!
+2025-06-09 13:12:10,666:INFO: * Debugger PIN: 773-762-553
+2025-06-09 13:12:13,332:INFO:127.0.0.1 - - [09/Jun/2025 13:12:13] "GET / HTTP/1.1" 200 -
+2025-06-09 13:12:13,353:INFO:127.0.0.1 - - [09/Jun/2025 13:12:13] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 13:12:13,354:INFO:127.0.0.1 - - [09/Jun/2025 13:12:13] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 13:12:13,457:INFO:127.0.0.1 - - [09/Jun/2025 13:12:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:12:14,182:INFO:127.0.0.1 - - [09/Jun/2025 13:12:14] "GET / HTTP/1.1" 200 -
+2025-06-09 13:12:14,192:INFO:127.0.0.1 - - [09/Jun/2025 13:12:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:12:14,197:INFO:127.0.0.1 - - [09/Jun/2025 13:12:14] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 13:12:14,197:INFO:127.0.0.1 - - [09/Jun/2025 13:12:14] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 13:12:50,221:INFO:127.0.0.1 - - [09/Jun/2025 13:12:50] "GET / HTTP/1.1" 200 -
+2025-06-09 13:12:50,235:INFO:127.0.0.1 - - [09/Jun/2025 13:12:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:12:50,239:INFO:127.0.0.1 - - [09/Jun/2025 13:12:50] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 13:12:50,240:INFO:127.0.0.1 - - [09/Jun/2025 13:12:50] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 13:13:34,319:INFO:127.0.0.1 - - [09/Jun/2025 13:13:34] "GET / HTTP/1.1" 200 -
+2025-06-09 13:13:34,337:INFO:127.0.0.1 - - [09/Jun/2025 13:13:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:13:34,338:INFO:127.0.0.1 - - [09/Jun/2025 13:13:34] "[33mGET /static/notify.js HTTP/1.1[0m" 404 -
+2025-06-09 13:13:34,341:INFO:127.0.0.1 - - [09/Jun/2025 13:13:34] "[33mGET /static/script.js HTTP/1.1[0m" 404 -
+2025-06-09 13:16:49,622:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:16:49,670:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-06-09 13:16:49,670:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 13:16:49,684:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 13:16:50,120:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:16:50,148:WARNING: * Debugger is active!
+2025-06-09 13:16:50,156:INFO: * Debugger PIN: 773-762-553
+2025-06-09 13:16:52,810:INFO:127.0.0.1 - - [09/Jun/2025 13:16:52] "GET / HTTP/1.1" 200 -
+2025-06-09 13:16:53,003:INFO:127.0.0.1 - - [09/Jun/2025 13:16:53] "GET /static/script.js HTTP/1.1" 200 -
+2025-06-09 13:16:53,023:INFO:127.0.0.1 - - [09/Jun/2025 13:16:53] "GET /static/notify.js HTTP/1.1" 200 -
+2025-06-09 13:16:53,040:INFO:127.0.0.1 - - [09/Jun/2025 13:16:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:16:54,157:INFO:127.0.0.1 - - [09/Jun/2025 13:16:54] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:16:55,313:INFO:127.0.0.1 - - [09/Jun/2025 13:16:55] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:16:56,075:INFO:127.0.0.1 - - [09/Jun/2025 13:16:56] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:16:56,694:INFO:127.0.0.1 - - [09/Jun/2025 13:16:56] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:17:11,263:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:11,264:INFO:127.0.0.1 - - [09/Jun/2025 13:17:11] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:23,781:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:23,782:INFO:127.0.0.1 - - [09/Jun/2025 13:17:23] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:32,291:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:32,291:INFO:127.0.0.1 - - [09/Jun/2025 13:17:32] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:36,679:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:36,680:INFO:127.0.0.1 - - [09/Jun/2025 13:17:36] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:37,604:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:37,605:INFO:127.0.0.1 - - [09/Jun/2025 13:17:37] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:37,764:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:37,764:INFO:127.0.0.1 - - [09/Jun/2025 13:17:37] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:38,382:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:38,383:INFO:127.0.0.1 - - [09/Jun/2025 13:17:38] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:38,520:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:38,521:INFO:127.0.0.1 - - [09/Jun/2025 13:17:38] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:38,656:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:38,656:INFO:127.0.0.1 - - [09/Jun/2025 13:17:38] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:38,824:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:38,825:INFO:127.0.0.1 - - [09/Jun/2025 13:17:38] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:38,968:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:38,969:INFO:127.0.0.1 - - [09/Jun/2025 13:17:38] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:39,104:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:39,105:INFO:127.0.0.1 - - [09/Jun/2025 13:17:39] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:39,342:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:39,343:INFO:127.0.0.1 - - [09/Jun/2025 13:17:39] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:39,505:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:39,505:INFO:127.0.0.1 - - [09/Jun/2025 13:17:39] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:39,627:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:39,628:INFO:127.0.0.1 - - [09/Jun/2025 13:17:39] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:39,760:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:39,761:INFO:127.0.0.1 - - [09/Jun/2025 13:17:39] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:39,898:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:39,899:INFO:127.0.0.1 - - [09/Jun/2025 13:17:39] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:40,073:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:40,073:INFO:127.0.0.1 - - [09/Jun/2025 13:17:40] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:51,632:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:51,633:INFO:127.0.0.1 - - [09/Jun/2025 13:17:51] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:56,955:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:56,956:INFO:127.0.0.1 - - [09/Jun/2025 13:17:56] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:58,481:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:58,481:INFO:127.0.0.1 - - [09/Jun/2025 13:17:58] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:58,816:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:58,816:INFO:127.0.0.1 - - [09/Jun/2025 13:17:58] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:59,078:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:59,078:INFO:127.0.0.1 - - [09/Jun/2025 13:17:59] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:17:59,296:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:17:59,296:INFO:127.0.0.1 - - [09/Jun/2025 13:17:59] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:18:00,663:INFO:127.0.0.1 - - [09/Jun/2025 13:18:00] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:18:02,001:INFO:127.0.0.1 - - [09/Jun/2025 13:18:02] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:18:02,650:INFO:127.0.0.1 - - [09/Jun/2025 13:18:02] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:21:48,127:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 13:21:48,128:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 13:21:48,715:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 13:21:52,794:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:21:52,844:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-06-09 13:21:52,844:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 13:21:52,856:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 13:21:53,251:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:21:53,273:WARNING: * Debugger is active!
+2025-06-09 13:21:53,283:INFO: * Debugger PIN: 773-762-553
+2025-06-09 13:21:56,811:INFO:127.0.0.1 - - [09/Jun/2025 13:21:56] "GET / HTTP/1.1" 200 -
+2025-06-09 13:21:57,087:INFO:127.0.0.1 - - [09/Jun/2025 13:21:57] "GET /static/script.js HTTP/1.1" 200 -
+2025-06-09 13:21:57,096:INFO:127.0.0.1 - - [09/Jun/2025 13:21:57] "GET /static/notify.js HTTP/1.1" 200 -
+2025-06-09 13:21:57,106:INFO:127.0.0.1 - - [09/Jun/2025 13:21:57] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-09 13:21:59,899:INFO:127.0.0.1 - - [09/Jun/2025 13:21:59] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:22:00,723:INFO:127.0.0.1 - - [09/Jun/2025 13:22:00] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:22:02,815:INFO:127.0.0.1 - - [09/Jun/2025 13:22:02] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:22:04,497:INFO:127.0.0.1 - - [09/Jun/2025 13:22:04] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:22:05,800:INFO:127.0.0.1 - - [09/Jun/2025 13:22:05] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:22:18,700:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:22:18,700:INFO:127.0.0.1 - - [09/Jun/2025 13:22:18] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:22:21,436:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:22:21,436:INFO:127.0.0.1 - - [09/Jun/2025 13:22:21] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:22:21,775:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:22:21,776:INFO:127.0.0.1 - - [09/Jun/2025 13:22:21] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:22:21,923:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:22:21,924:INFO:127.0.0.1 - - [09/Jun/2025 13:22:21] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:22:22,165:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:22:22,165:INFO:127.0.0.1 - - [09/Jun/2025 13:22:22] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:22:26,641:INFO:127.0.0.1 - - [09/Jun/2025 13:22:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:23:38,981:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:23:38,983:INFO:127.0.0.1 - - [09/Jun/2025 13:23:38] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:24:20,510:INFO:127.0.0.1 - - [09/Jun/2025 13:24:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:24:20,965:INFO:127.0.0.1 - - [09/Jun/2025 13:24:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:24:21,480:INFO:127.0.0.1 - - [09/Jun/2025 13:24:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:24:22,337:INFO:127.0.0.1 - - [09/Jun/2025 13:24:22] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:24:22,892:INFO:127.0.0.1 - - [09/Jun/2025 13:24:22] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:24:24,908:INFO:127.0.0.1 - - [09/Jun/2025 13:24:24] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:24:25,341:INFO:127.0.0.1 - - [09/Jun/2025 13:24:25] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:24:26,601:INFO:127.0.0.1 - - [09/Jun/2025 13:24:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:24:29,929:INFO:127.0.0.1 - - [09/Jun/2025 13:24:29] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:25:04,810:INFO:127.0.0.1 - - [09/Jun/2025 13:25:04] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:25:05,435:INFO:127.0.0.1 - - [09/Jun/2025 13:25:05] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:25:05,947:INFO:127.0.0.1 - - [09/Jun/2025 13:25:05] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:25:06,416:INFO:127.0.0.1 - - [09/Jun/2025 13:25:06] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:25:06,837:INFO:127.0.0.1 - - [09/Jun/2025 13:25:06] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:25:07,154:INFO:127.0.0.1 - - [09/Jun/2025 13:25:07] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:25:07,522:INFO:127.0.0.1 - - [09/Jun/2025 13:25:07] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:25:07,882:INFO:127.0.0.1 - - [09/Jun/2025 13:25:07] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:25:08,201:INFO:127.0.0.1 - - [09/Jun/2025 13:25:08] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:27:01,207:INFO:127.0.0.1 - - [09/Jun/2025 13:27:01] "GET / HTTP/1.1" 200 -
+2025-06-09 13:27:01,235:INFO:127.0.0.1 - - [09/Jun/2025 13:27:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:27:01,237:INFO:127.0.0.1 - - [09/Jun/2025 13:27:01] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 13:27:01,238:INFO:127.0.0.1 - - [09/Jun/2025 13:27:01] "GET /static/script.js HTTP/1.1" 200 -
+2025-06-09 13:27:06,870:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:27:06,871:INFO:127.0.0.1 - - [09/Jun/2025 13:27:06] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:27:10,647:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:27:10,647:INFO:127.0.0.1 - - [09/Jun/2025 13:27:10] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:27:16,463:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:27:16,463:INFO:127.0.0.1 - - [09/Jun/2025 13:27:16] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:27:19,831:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:27:19,831:INFO:127.0.0.1 - - [09/Jun/2025 13:27:19] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:28:30,925:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 13:28:30,925:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 13:28:31,968:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 13:28:32,533:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:28:32,558:WARNING: * Debugger is active!
+2025-06-09 13:28:32,567:INFO: * Debugger PIN: 773-762-553
+2025-06-09 13:28:37,352:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:28:37,400:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-06-09 13:28:37,400:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 13:28:37,413:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 13:28:37,845:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:28:37,870:WARNING: * Debugger is active!
+2025-06-09 13:28:37,877:INFO: * Debugger PIN: 773-762-553
+2025-06-09 13:28:47,031:INFO:127.0.0.1 - - [09/Jun/2025 13:28:47] "GET / HTTP/1.1" 200 -
+2025-06-09 13:28:47,235:INFO:127.0.0.1 - - [09/Jun/2025 13:28:47] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 13:28:47,265:INFO:127.0.0.1 - - [09/Jun/2025 13:28:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:28:47,270:INFO:127.0.0.1 - - [09/Jun/2025 13:28:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-09 13:28:49,180:INFO:Livros listados com sucesso.
+2025-06-09 13:28:49,181:INFO:127.0.0.1 - - [09/Jun/2025 13:28:49] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:28:51,706:INFO:Livros listados com sucesso.
+2025-06-09 13:28:51,708:INFO:127.0.0.1 - - [09/Jun/2025 13:28:51] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:28:52,282:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:28:52,282:INFO:127.0.0.1 - - [09/Jun/2025 13:28:52] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:29:00,250:INFO:Tentativa de adicionar livro: title=aaaaa, isbn=2234567890
+2025-06-09 13:29:00,251:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:29:00,251:INFO:127.0.0.1 - - [09/Jun/2025 13:29:00] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:29:04,143:INFO:Tentativa de adicionar livro: title=aaaaa, isbn=2234567890
+2025-06-09 13:29:04,145:ERROR:Erro ao adicionar livro: table books has no column named category
+2025-06-09 13:29:04,145:INFO:127.0.0.1 - - [09/Jun/2025 13:29:04] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 500 -
+2025-06-09 13:31:49,919:INFO:127.0.0.1 - - [09/Jun/2025 13:31:49] "GET / HTTP/1.1" 200 -
+2025-06-09 13:31:49,963:INFO:127.0.0.1 - - [09/Jun/2025 13:31:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:31:49,966:INFO:127.0.0.1 - - [09/Jun/2025 13:31:49] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 13:31:49,967:INFO:127.0.0.1 - - [09/Jun/2025 13:31:49] "GET /static/script.js HTTP/1.1" 200 -
+2025-06-09 13:31:58,190:INFO:Livros listados com sucesso.
+2025-06-09 13:31:58,191:INFO:127.0.0.1 - - [09/Jun/2025 13:31:58] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:32:59,451:INFO:Livros listados com sucesso.
+2025-06-09 13:32:59,452:INFO:127.0.0.1 - - [09/Jun/2025 13:32:59] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:32:59,941:INFO:Livros listados com sucesso.
+2025-06-09 13:32:59,941:INFO:127.0.0.1 - - [09/Jun/2025 13:32:59] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:33:00,568:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:33:00,569:INFO:127.0.0.1 - - [09/Jun/2025 13:33:00] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:33:01,968:INFO:Livros listados com sucesso.
+2025-06-09 13:33:01,969:INFO:127.0.0.1 - - [09/Jun/2025 13:33:01] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:33:02,297:INFO:Livros listados com sucesso.
+2025-06-09 13:33:02,298:INFO:127.0.0.1 - - [09/Jun/2025 13:33:02] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:33:02,716:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:33:02,716:INFO:127.0.0.1 - - [09/Jun/2025 13:33:02] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:33:03,710:INFO:Livros listados com sucesso.
+2025-06-09 13:33:03,710:INFO:127.0.0.1 - - [09/Jun/2025 13:33:03] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:34:13,055:INFO:Livros listados com sucesso.
+2025-06-09 13:34:13,056:INFO:127.0.0.1 - - [09/Jun/2025 13:34:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:34:14,147:INFO:Livros listados com sucesso.
+2025-06-09 13:34:14,147:INFO:127.0.0.1 - - [09/Jun/2025 13:34:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:34:14,911:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:34:14,911:INFO:127.0.0.1 - - [09/Jun/2025 13:34:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:35:09,398:INFO:Livros listados com sucesso.
+2025-06-09 13:35:09,398:INFO:127.0.0.1 - - [09/Jun/2025 13:35:09] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:35:09,838:INFO:Livros listados com sucesso.
+2025-06-09 13:35:09,839:INFO:127.0.0.1 - - [09/Jun/2025 13:35:09] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:35:10,258:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:35:10,259:INFO:127.0.0.1 - - [09/Jun/2025 13:35:10] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:36:22,322:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 13:36:22,322:INFO: * Detected change in 'C:\\acervoLibrarySystem\\app.py', reloading
+2025-06-09 13:36:22,533:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 13:36:23,244:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:36:23,273:WARNING: * Debugger is active!
+2025-06-09 13:36:23,282:INFO: * Debugger PIN: 773-762-553
+2025-06-09 13:36:47,082:INFO:127.0.0.1 - - [09/Jun/2025 13:36:47] "GET / HTTP/1.1" 200 -
+2025-06-09 13:36:47,360:INFO:127.0.0.1 - - [09/Jun/2025 13:36:47] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-09 13:36:47,362:INFO:127.0.0.1 - - [09/Jun/2025 13:36:47] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 13:36:47,370:INFO:127.0.0.1 - - [09/Jun/2025 13:36:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:36:49,191:INFO:Livros listados com sucesso.
+2025-06-09 13:36:49,191:INFO:127.0.0.1 - - [09/Jun/2025 13:36:49] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:17,866:INFO:Livros listados com sucesso.
+2025-06-09 13:37:17,867:INFO:127.0.0.1 - - [09/Jun/2025 13:37:17] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:18,698:INFO:Livros listados com sucesso.
+2025-06-09 13:37:18,698:INFO:127.0.0.1 - - [09/Jun/2025 13:37:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:19,263:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:37:19,263:INFO:127.0.0.1 - - [09/Jun/2025 13:37:19] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:37:19,817:INFO:Livros listados com sucesso.
+2025-06-09 13:37:19,818:INFO:127.0.0.1 - - [09/Jun/2025 13:37:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:20,192:INFO:Livros listados com sucesso.
+2025-06-09 13:37:20,192:INFO:127.0.0.1 - - [09/Jun/2025 13:37:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:20,460:INFO:Livros listados com sucesso.
+2025-06-09 13:37:20,460:INFO:127.0.0.1 - - [09/Jun/2025 13:37:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:20,766:INFO:Livros listados com sucesso.
+2025-06-09 13:37:20,766:INFO:127.0.0.1 - - [09/Jun/2025 13:37:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:21,004:INFO:Livros listados com sucesso.
+2025-06-09 13:37:21,004:INFO:127.0.0.1 - - [09/Jun/2025 13:37:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:21,656:INFO:Livros listados com sucesso.
+2025-06-09 13:37:21,656:INFO:127.0.0.1 - - [09/Jun/2025 13:37:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:22,106:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:37:22,107:INFO:127.0.0.1 - - [09/Jun/2025 13:37:22] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:37:24,273:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:37:24,273:INFO:127.0.0.1 - - [09/Jun/2025 13:37:24] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:37:25,032:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:37:25,033:INFO:127.0.0.1 - - [09/Jun/2025 13:37:25] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:37:26,178:INFO:Livros listados com sucesso.
+2025-06-09 13:37:26,178:INFO:127.0.0.1 - - [09/Jun/2025 13:37:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:26,859:INFO:Livros listados com sucesso.
+2025-06-09 13:37:26,859:INFO:127.0.0.1 - - [09/Jun/2025 13:37:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:29,212:INFO:Livros listados com sucesso.
+2025-06-09 13:37:29,212:INFO:127.0.0.1 - - [09/Jun/2025 13:37:29] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:29,720:INFO:Livros listados com sucesso.
+2025-06-09 13:37:29,721:INFO:127.0.0.1 - - [09/Jun/2025 13:37:29] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:30,448:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:37:30,449:INFO:127.0.0.1 - - [09/Jun/2025 13:37:30] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:37:44,138:INFO:Livros listados com sucesso.
+2025-06-09 13:37:44,139:INFO:127.0.0.1 - - [09/Jun/2025 13:37:44] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:44,696:INFO:Livros listados com sucesso.
+2025-06-09 13:37:44,696:INFO:127.0.0.1 - - [09/Jun/2025 13:37:44] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:45,410:INFO:Livros listados com sucesso.
+2025-06-09 13:37:45,411:INFO:127.0.0.1 - - [09/Jun/2025 13:37:45] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:37:47,040:INFO:Livros listados com sucesso.
+2025-06-09 13:37:47,040:INFO:127.0.0.1 - - [09/Jun/2025 13:37:47] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:38:30,968:INFO:Livros listados com sucesso.
+2025-06-09 13:38:30,968:INFO:127.0.0.1 - - [09/Jun/2025 13:38:30] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:38:31,312:INFO:Livros listados com sucesso.
+2025-06-09 13:38:31,312:INFO:127.0.0.1 - - [09/Jun/2025 13:38:31] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:38:31,619:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:38:31,620:INFO:127.0.0.1 - - [09/Jun/2025 13:38:31] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:38:31,960:INFO:Livros listados com sucesso.
+2025-06-09 13:38:31,960:INFO:127.0.0.1 - - [09/Jun/2025 13:38:31] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:38:32,208:INFO:Livros listados com sucesso.
+2025-06-09 13:38:32,209:INFO:127.0.0.1 - - [09/Jun/2025 13:38:32] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:38:33,044:INFO:Livros listados com sucesso.
+2025-06-09 13:38:33,045:INFO:127.0.0.1 - - [09/Jun/2025 13:38:33] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:38:33,612:INFO:Livros listados com sucesso.
+2025-06-09 13:38:33,612:INFO:127.0.0.1 - - [09/Jun/2025 13:38:33] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:38:33,905:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:38:33,905:INFO:127.0.0.1 - - [09/Jun/2025 13:38:33] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:38:34,275:INFO:Livros listados com sucesso.
+2025-06-09 13:38:34,275:INFO:127.0.0.1 - - [09/Jun/2025 13:38:34] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:38:34,568:INFO:Livros listados com sucesso.
+2025-06-09 13:38:34,568:INFO:127.0.0.1 - - [09/Jun/2025 13:38:34] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:38:57,161:INFO:127.0.0.1 - - [09/Jun/2025 13:38:57] "GET / HTTP/1.1" 200 -
+2025-06-09 13:38:57,175:INFO:127.0.0.1 - - [09/Jun/2025 13:38:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:38:57,176:INFO:127.0.0.1 - - [09/Jun/2025 13:38:57] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 13:38:57,176:INFO:127.0.0.1 - - [09/Jun/2025 13:38:57] "GET /static/script.js HTTP/1.1" 200 -
+2025-06-09 13:39:02,873:INFO:Tentativa de adicionar livro: title=aaaaa, isbn=2234567890
+2025-06-09 13:39:02,897:INFO:Livro adicionado com sucesso: aaaaa
+2025-06-09 13:39:02,899:INFO:127.0.0.1 - - [09/Jun/2025 13:39:02] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-09 13:39:02,907:INFO:Livros listados com sucesso.
+2025-06-09 13:39:02,908:INFO:127.0.0.1 - - [09/Jun/2025 13:39:02] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:06,122:INFO:Livros listados com sucesso.
+2025-06-09 13:39:06,123:INFO:127.0.0.1 - - [09/Jun/2025 13:39:06] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:09,568:INFO:Livros listados com sucesso.
+2025-06-09 13:39:09,573:INFO:127.0.0.1 - - [09/Jun/2025 13:39:09] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:10,800:INFO:Livros listados com sucesso.
+2025-06-09 13:39:10,801:INFO:127.0.0.1 - - [09/Jun/2025 13:39:10] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:12,523:INFO:Livro 1 emprestado com sucesso.
+2025-06-09 13:39:12,524:INFO:127.0.0.1 - - [09/Jun/2025 13:39:12] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 13:39:12,529:INFO:Livros listados com sucesso.
+2025-06-09 13:39:12,529:INFO:127.0.0.1 - - [09/Jun/2025 13:39:12] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:12,535:INFO:Livros listados com sucesso.
+2025-06-09 13:39:12,535:INFO:127.0.0.1 - - [09/Jun/2025 13:39:12] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:13,216:INFO:Livros listados com sucesso.
+2025-06-09 13:39:13,216:INFO:127.0.0.1 - - [09/Jun/2025 13:39:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:18,050:INFO:Livros listados com sucesso.
+2025-06-09 13:39:18,051:INFO:127.0.0.1 - - [09/Jun/2025 13:39:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:19,841:INFO:Livros listados com sucesso.
+2025-06-09 13:39:19,842:INFO:127.0.0.1 - - [09/Jun/2025 13:39:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:21,434:INFO:Livros listados com sucesso.
+2025-06-09 13:39:21,434:INFO:127.0.0.1 - - [09/Jun/2025 13:39:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:21,844:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:39:21,845:INFO:127.0.0.1 - - [09/Jun/2025 13:39:21] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:39:29,830:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:39:29,831:INFO:127.0.0.1 - - [09/Jun/2025 13:39:29] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:39:30,906:INFO:Livros listados com sucesso.
+2025-06-09 13:39:30,906:INFO:127.0.0.1 - - [09/Jun/2025 13:39:30] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:36,991:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:39:36,992:INFO:127.0.0.1 - - [09/Jun/2025 13:39:36] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:39:37,738:INFO:Livros listados com sucesso.
+2025-06-09 13:39:37,738:INFO:127.0.0.1 - - [09/Jun/2025 13:39:37] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:39:49,057:INFO:Tentativa de adicionar livro: title=bbb, isbn=1234567890
+2025-06-09 13:39:49,073:INFO:Livro adicionado com sucesso: bbb
+2025-06-09 13:39:49,074:INFO:127.0.0.1 - - [09/Jun/2025 13:39:49] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-09 13:39:49,079:INFO:Livros listados com sucesso.
+2025-06-09 13:39:49,080:INFO:127.0.0.1 - - [09/Jun/2025 13:39:49] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:01,784:INFO:Tentativa de adicionar livro: title=cccc, isbn=7894561230
+2025-06-09 13:40:01,803:INFO:Livro adicionado com sucesso: cccc
+2025-06-09 13:40:01,804:INFO:127.0.0.1 - - [09/Jun/2025 13:40:01] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-09 13:40:01,810:INFO:Livros listados com sucesso.
+2025-06-09 13:40:01,810:INFO:127.0.0.1 - - [09/Jun/2025 13:40:01] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:12,092:INFO:Tentativa de adicionar livro: title=ddd, isbn=8976452310
+2025-06-09 13:40:12,108:INFO:Livro adicionado com sucesso: ddd
+2025-06-09 13:40:12,108:INFO:127.0.0.1 - - [09/Jun/2025 13:40:12] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-09 13:40:12,114:INFO:Livros listados com sucesso.
+2025-06-09 13:40:12,115:INFO:127.0.0.1 - - [09/Jun/2025 13:40:12] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:13,743:INFO:Livros listados com sucesso.
+2025-06-09 13:40:13,744:INFO:127.0.0.1 - - [09/Jun/2025 13:40:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:14,581:INFO:Livros listados com sucesso.
+2025-06-09 13:40:14,582:INFO:127.0.0.1 - - [09/Jun/2025 13:40:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:18,689:INFO:Livro 2 emprestado com sucesso.
+2025-06-09 13:40:18,690:INFO:127.0.0.1 - - [09/Jun/2025 13:40:18] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 13:40:18,696:INFO:Livros listados com sucesso.
+2025-06-09 13:40:18,696:INFO:127.0.0.1 - - [09/Jun/2025 13:40:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:18,701:INFO:Livros listados com sucesso.
+2025-06-09 13:40:18,701:INFO:127.0.0.1 - - [09/Jun/2025 13:40:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:19,308:INFO:Livro 3 emprestado com sucesso.
+2025-06-09 13:40:19,309:INFO:127.0.0.1 - - [09/Jun/2025 13:40:19] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 13:40:19,313:INFO:Livros listados com sucesso.
+2025-06-09 13:40:19,313:INFO:127.0.0.1 - - [09/Jun/2025 13:40:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:19,318:INFO:Livros listados com sucesso.
+2025-06-09 13:40:19,318:INFO:127.0.0.1 - - [09/Jun/2025 13:40:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:19,830:INFO:Livro 4 emprestado com sucesso.
+2025-06-09 13:40:19,831:INFO:127.0.0.1 - - [09/Jun/2025 13:40:19] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 13:40:19,836:INFO:Livros listados com sucesso.
+2025-06-09 13:40:19,837:INFO:127.0.0.1 - - [09/Jun/2025 13:40:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:19,841:INFO:Livros listados com sucesso.
+2025-06-09 13:40:19,841:INFO:127.0.0.1 - - [09/Jun/2025 13:40:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:21,360:INFO:Livros listados com sucesso.
+2025-06-09 13:40:21,360:INFO:127.0.0.1 - - [09/Jun/2025 13:40:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:35,673:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:40:35,674:INFO:127.0.0.1 - - [09/Jun/2025 13:40:35] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:40:40,693:INFO:Livros listados com sucesso.
+2025-06-09 13:40:40,694:INFO:127.0.0.1 - - [09/Jun/2025 13:40:40] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:41,652:INFO:Livros listados com sucesso.
+2025-06-09 13:40:41,652:INFO:127.0.0.1 - - [09/Jun/2025 13:40:41] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:42,824:INFO:Livros listados com sucesso.
+2025-06-09 13:40:42,825:INFO:127.0.0.1 - - [09/Jun/2025 13:40:42] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:43,970:INFO:Livros listados com sucesso.
+2025-06-09 13:40:43,971:INFO:127.0.0.1 - - [09/Jun/2025 13:40:43] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:40:44,362:INFO:Livros listados com sucesso.
+2025-06-09 13:40:44,363:INFO:127.0.0.1 - - [09/Jun/2025 13:40:44] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:43:59,244:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:43:59,301:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-06-09 13:43:59,301:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 13:43:59,314:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 13:43:59,717:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 13:43:59,747:WARNING: * Debugger is active!
+2025-06-09 13:43:59,755:INFO: * Debugger PIN: 773-762-553
+2025-06-09 13:44:02,000:INFO:127.0.0.1 - - [09/Jun/2025 13:44:02] "GET / HTTP/1.1" 200 -
+2025-06-09 13:44:02,248:INFO:127.0.0.1 - - [09/Jun/2025 13:44:02] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 13:44:02,256:INFO:127.0.0.1 - - [09/Jun/2025 13:44:02] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-09 13:44:02,261:INFO:127.0.0.1 - - [09/Jun/2025 13:44:02] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-09 13:44:03,796:INFO:Livros listados com sucesso.
+2025-06-09 13:44:03,797:INFO:127.0.0.1 - - [09/Jun/2025 13:44:03] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:04,384:INFO:Livros listados com sucesso.
+2025-06-09 13:44:04,384:INFO:127.0.0.1 - - [09/Jun/2025 13:44:04] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:05,288:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:44:05,289:INFO:127.0.0.1 - - [09/Jun/2025 13:44:05] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:44:06,270:INFO:Livros listados com sucesso.
+2025-06-09 13:44:06,271:INFO:127.0.0.1 - - [09/Jun/2025 13:44:06] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:08,145:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:44:08,145:INFO:127.0.0.1 - - [09/Jun/2025 13:44:08] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:44:10,232:INFO:Livros listados com sucesso.
+2025-06-09 13:44:10,233:INFO:127.0.0.1 - - [09/Jun/2025 13:44:10] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:11,218:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:44:11,218:INFO:127.0.0.1 - - [09/Jun/2025 13:44:11] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:44:12,189:INFO:Livros listados com sucesso.
+2025-06-09 13:44:12,190:INFO:127.0.0.1 - - [09/Jun/2025 13:44:12] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:13,420:INFO:Livro 1 devolvido com sucesso, multa: R$0.00
+2025-06-09 13:44:13,421:INFO:127.0.0.1 - - [09/Jun/2025 13:44:13] "POST /api/return HTTP/1.1" 200 -
+2025-06-09 13:44:13,426:INFO:Livros listados com sucesso.
+2025-06-09 13:44:13,426:INFO:127.0.0.1 - - [09/Jun/2025 13:44:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:13,426:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:44:13,427:INFO:127.0.0.1 - - [09/Jun/2025 13:44:13] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:44:13,432:INFO:Livros listados com sucesso.
+2025-06-09 13:44:13,432:INFO:127.0.0.1 - - [09/Jun/2025 13:44:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:14,043:INFO:Livro 2 devolvido com sucesso, multa: R$0.00
+2025-06-09 13:44:14,044:INFO:127.0.0.1 - - [09/Jun/2025 13:44:14] "POST /api/return HTTP/1.1" 200 -
+2025-06-09 13:44:14,049:INFO:Livros listados com sucesso.
+2025-06-09 13:44:14,049:INFO:127.0.0.1 - - [09/Jun/2025 13:44:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:14,049:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:44:14,050:INFO:127.0.0.1 - - [09/Jun/2025 13:44:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:44:14,054:INFO:Livros listados com sucesso.
+2025-06-09 13:44:14,055:INFO:127.0.0.1 - - [09/Jun/2025 13:44:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:14,698:INFO:Livro 3 devolvido com sucesso, multa: R$0.00
+2025-06-09 13:44:14,699:INFO:127.0.0.1 - - [09/Jun/2025 13:44:14] "POST /api/return HTTP/1.1" 200 -
+2025-06-09 13:44:14,704:INFO:Livros listados com sucesso.
+2025-06-09 13:44:14,704:INFO:127.0.0.1 - - [09/Jun/2025 13:44:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:14,705:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:44:14,705:INFO:127.0.0.1 - - [09/Jun/2025 13:44:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:44:14,709:INFO:Livros listados com sucesso.
+2025-06-09 13:44:14,710:INFO:127.0.0.1 - - [09/Jun/2025 13:44:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:15,311:INFO:Livro 4 devolvido com sucesso, multa: R$0.00
+2025-06-09 13:44:15,312:INFO:127.0.0.1 - - [09/Jun/2025 13:44:15] "POST /api/return HTTP/1.1" 200 -
+2025-06-09 13:44:15,317:INFO:Livros listados com sucesso.
+2025-06-09 13:44:15,317:INFO:127.0.0.1 - - [09/Jun/2025 13:44:15] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:15,317:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:44:15,318:INFO:127.0.0.1 - - [09/Jun/2025 13:44:15] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:44:15,322:INFO:Livros listados com sucesso.
+2025-06-09 13:44:15,323:INFO:127.0.0.1 - - [09/Jun/2025 13:44:15] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:15,956:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:44:15,956:INFO:127.0.0.1 - - [09/Jun/2025 13:44:15] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:44:19,397:INFO:Livros listados com sucesso.
+2025-06-09 13:44:19,398:INFO:127.0.0.1 - - [09/Jun/2025 13:44:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:20,299:INFO:Livros listados com sucesso.
+2025-06-09 13:44:20,299:INFO:127.0.0.1 - - [09/Jun/2025 13:44:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:20,903:INFO:Histï¿½rico listado com sucesso.
+2025-06-09 13:44:20,904:INFO:127.0.0.1 - - [09/Jun/2025 13:44:20] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:44:21,300:INFO:Livros listados com sucesso.
+2025-06-09 13:44:21,301:INFO:127.0.0.1 - - [09/Jun/2025 13:44:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:22,728:INFO:Livros listados com sucesso.
+2025-06-09 13:44:22,728:INFO:127.0.0.1 - - [09/Jun/2025 13:44:22] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:44:28,234:INFO:127.0.0.1 - - [09/Jun/2025 13:44:28] "GET / HTTP/1.1" 200 -
+2025-06-09 13:44:28,247:INFO:127.0.0.1 - - [09/Jun/2025 13:44:28] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 13:44:28,252:INFO:127.0.0.1 - - [09/Jun/2025 13:44:28] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 13:44:28,253:INFO:127.0.0.1 - - [09/Jun/2025 13:44:28] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-09 13:44:28,265:INFO:Livros listados com sucesso.
+2025-06-09 13:44:28,266:INFO:127.0.0.1 - - [09/Jun/2025 13:44:28] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:47:36,864:INFO:Tentativa de adicionar livro: title=eeee, isbn=2356897410
+2025-06-09 13:47:36,889:INFO:Livro adicionado com sucesso: eeee
+2025-06-09 13:47:36,892:INFO:127.0.0.1 - - [09/Jun/2025 13:47:36] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-09 13:47:36,900:INFO:Livros listados com sucesso.
+2025-06-09 13:47:36,900:INFO:127.0.0.1 - - [09/Jun/2025 13:47:36] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:48:47,084:INFO:Livros listados com sucesso.
+2025-06-09 13:48:47,084:INFO:127.0.0.1 - - [09/Jun/2025 13:48:47] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:48:47,467:INFO:Livros listados com sucesso.
+2025-06-09 13:48:47,467:INFO:127.0.0.1 - - [09/Jun/2025 13:48:47] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:48:47,964:INFO:Histórico listado com sucesso.
+2025-06-09 13:48:47,965:INFO:127.0.0.1 - - [09/Jun/2025 13:48:47] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 13:48:49,131:INFO:Livros listados com sucesso.
+2025-06-09 13:48:49,132:INFO:127.0.0.1 - - [09/Jun/2025 13:48:49] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 13:48:49,754:INFO:Livros listados com sucesso.
+2025-06-09 13:48:49,755:INFO:127.0.0.1 - - [09/Jun/2025 13:48:49] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:01:37,342:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 14:01:37,431:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-06-09 14:01:37,431:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 14:01:37,447:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 14:01:37,857:INFO:Banco de dados inicializado com sucesso.
+2025-06-09 14:01:37,879:WARNING: * Debugger is active!
+2025-06-09 14:01:37,890:INFO: * Debugger PIN: 773-762-553
+2025-06-09 14:01:41,452:INFO:127.0.0.1 - - [09/Jun/2025 14:01:41] "GET / HTTP/1.1" 200 -
+2025-06-09 14:01:44,118:INFO:127.0.0.1 - - [09/Jun/2025 14:01:44] "GET / HTTP/1.1" 200 -
+2025-06-09 14:01:44,843:INFO:127.0.0.1 - - [09/Jun/2025 14:01:44] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-09 14:01:44,845:INFO:127.0.0.1 - - [09/Jun/2025 14:01:44] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 14:01:44,849:INFO:127.0.0.1 - - [09/Jun/2025 14:01:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:01:53,595:INFO:Tentativa de adicionar livro: title=ppppp, isbn=8659734210
+2025-06-09 14:01:53,620:INFO:Livro adicionado com sucesso: ppppp
+2025-06-09 14:01:53,621:INFO:127.0.0.1 - - [09/Jun/2025 14:01:53] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-09 14:01:53,630:INFO:Livros listados com sucesso.
+2025-06-09 14:01:53,630:INFO:127.0.0.1 - - [09/Jun/2025 14:01:53] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:06:17,796:ERROR:Erro ao inicializar banco de dados: database is locked
+2025-06-09 14:06:17,856:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-06-09 14:06:17,856:INFO:[33mPress CTRL+C to quit[0m
+2025-06-09 14:06:17,869:INFO: * Restarting with watchdog (windowsapi)
+2025-06-09 14:06:23,802:ERROR:Erro ao inicializar banco de dados: database is locked
+2025-06-09 14:06:23,825:WARNING: * Debugger is active!
+2025-06-09 14:06:23,835:INFO: * Debugger PIN: 773-762-553
+2025-06-09 14:06:29,515:INFO:127.0.0.1 - - [09/Jun/2025 14:06:29] "[33mGET /login HTTP/1.1[0m" 404 -
+2025-06-09 14:06:34,903:INFO:127.0.0.1 - - [09/Jun/2025 14:06:34] "GET / HTTP/1.1" 200 -
+2025-06-09 14:06:35,250:INFO:127.0.0.1 - - [09/Jun/2025 14:06:35] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-09 14:06:35,256:INFO:127.0.0.1 - - [09/Jun/2025 14:06:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:06:35,260:INFO:127.0.0.1 - - [09/Jun/2025 14:06:35] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 14:06:36,584:INFO:Livros listados com sucesso.
+2025-06-09 14:06:36,585:INFO:127.0.0.1 - - [09/Jun/2025 14:06:36] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:06:39,210:INFO:Livros listados com sucesso.
+2025-06-09 14:06:39,210:INFO:127.0.0.1 - - [09/Jun/2025 14:06:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:06:40,506:INFO:Livros listados com sucesso.
+2025-06-09 14:06:40,506:INFO:127.0.0.1 - - [09/Jun/2025 14:06:40] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:06:59,356:INFO:Livros listados com sucesso.
+2025-06-09 14:06:59,358:INFO:127.0.0.1 - - [09/Jun/2025 14:06:59] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:07:00,539:INFO:Livros listados com sucesso.
+2025-06-09 14:07:00,540:INFO:127.0.0.1 - - [09/Jun/2025 14:07:00] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:07:01,181:ERROR:Erro ao emprestar livro: database is locked
+2025-06-09 14:07:01,182:INFO:127.0.0.1 - - [09/Jun/2025 14:07:01] "[35m[1mPOST /api/borrow HTTP/1.1[0m" 500 -
+2025-06-09 14:07:02,628:ERROR:Erro ao emprestar livro: database is locked
+2025-06-09 14:07:02,629:INFO:127.0.0.1 - - [09/Jun/2025 14:07:02] "[35m[1mPOST /api/borrow HTTP/1.1[0m" 500 -
+2025-06-09 14:07:04,327:ERROR:Erro ao emprestar livro: database is locked
+2025-06-09 14:07:04,327:INFO:127.0.0.1 - - [09/Jun/2025 14:07:04] "[35m[1mPOST /api/borrow HTTP/1.1[0m" 500 -
+2025-06-09 14:07:04,355:INFO:127.0.0.1 - - [09/Jun/2025 14:07:04] "GET / HTTP/1.1" 200 -
+2025-06-09 14:07:04,373:INFO:127.0.0.1 - - [09/Jun/2025 14:07:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:07:04,377:INFO:127.0.0.1 - - [09/Jun/2025 14:07:04] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 14:07:04,377:INFO:127.0.0.1 - - [09/Jun/2025 14:07:04] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-09 14:07:05,744:INFO:Livros listados com sucesso.
+2025-06-09 14:07:05,745:INFO:127.0.0.1 - - [09/Jun/2025 14:07:05] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:07:06,945:ERROR:Erro ao emprestar livro: database is locked
+2025-06-09 14:07:06,945:INFO:127.0.0.1 - - [09/Jun/2025 14:07:06] "[35m[1mPOST /api/borrow HTTP/1.1[0m" 500 -
+2025-06-09 14:07:12,293:ERROR:Erro ao emprestar livro: database is locked
+2025-06-09 14:07:12,293:INFO:127.0.0.1 - - [09/Jun/2025 14:07:12] "[35m[1mPOST /api/borrow HTTP/1.1[0m" 500 -
+2025-06-09 14:07:23,494:INFO:127.0.0.1 - - [09/Jun/2025 14:07:23] "GET / HTTP/1.1" 200 -
+2025-06-09 14:07:23,508:INFO:127.0.0.1 - - [09/Jun/2025 14:07:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-09 14:07:23,509:INFO:127.0.0.1 - - [09/Jun/2025 14:07:23] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-09 14:07:23,512:INFO:127.0.0.1 - - [09/Jun/2025 14:07:23] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-09 14:07:23,522:INFO:Livros listados com sucesso.
+2025-06-09 14:07:23,522:INFO:127.0.0.1 - - [09/Jun/2025 14:07:23] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:07:25,208:INFO:Livro 1 emprestado com sucesso.
+2025-06-09 14:07:25,209:INFO:127.0.0.1 - - [09/Jun/2025 14:07:25] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 14:07:25,215:INFO:Livros listados com sucesso.
+2025-06-09 14:07:25,215:INFO:127.0.0.1 - - [09/Jun/2025 14:07:25] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:07:25,222:INFO:Livros listados com sucesso.
+2025-06-09 14:07:25,222:INFO:127.0.0.1 - - [09/Jun/2025 14:07:25] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:11,303:INFO:Livros listados com sucesso.
+2025-06-09 14:19:11,315:INFO:127.0.0.1 - - [09/Jun/2025 14:19:11] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:13,088:INFO:Livro 1 devolvido com sucesso, multa: R$0.00
+2025-06-09 14:19:13,090:INFO:127.0.0.1 - - [09/Jun/2025 14:19:13] "POST /api/return HTTP/1.1" 200 -
+2025-06-09 14:19:13,098:INFO:Livros listados com sucesso.
+2025-06-09 14:19:13,099:INFO:127.0.0.1 - - [09/Jun/2025 14:19:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:13,100:INFO:Histórico listado com sucesso.
+2025-06-09 14:19:13,100:INFO:127.0.0.1 - - [09/Jun/2025 14:19:13] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 14:19:13,105:INFO:Livros listados com sucesso.
+2025-06-09 14:19:13,106:INFO:127.0.0.1 - - [09/Jun/2025 14:19:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:13,719:INFO:Histórico listado com sucesso.
+2025-06-09 14:19:13,720:INFO:127.0.0.1 - - [09/Jun/2025 14:19:13] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 14:19:16,904:INFO:Livros listados com sucesso.
+2025-06-09 14:19:16,904:INFO:127.0.0.1 - - [09/Jun/2025 14:19:16] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:17,765:INFO:Livros listados com sucesso.
+2025-06-09 14:19:17,766:INFO:127.0.0.1 - - [09/Jun/2025 14:19:17] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:18,523:INFO:Livro 1 emprestado com sucesso.
+2025-06-09 14:19:18,524:INFO:127.0.0.1 - - [09/Jun/2025 14:19:18] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 14:19:18,531:INFO:Livros listados com sucesso.
+2025-06-09 14:19:18,532:INFO:127.0.0.1 - - [09/Jun/2025 14:19:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:18,537:INFO:Livros listados com sucesso.
+2025-06-09 14:19:18,537:INFO:127.0.0.1 - - [09/Jun/2025 14:19:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:18,914:INFO:Livro 2 emprestado com sucesso.
+2025-06-09 14:19:18,915:INFO:127.0.0.1 - - [09/Jun/2025 14:19:18] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 14:19:18,921:INFO:Livros listados com sucesso.
+2025-06-09 14:19:18,922:INFO:127.0.0.1 - - [09/Jun/2025 14:19:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:18,926:INFO:Livros listados com sucesso.
+2025-06-09 14:19:18,926:INFO:127.0.0.1 - - [09/Jun/2025 14:19:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:19,065:INFO:Livro 3 emprestado com sucesso.
+2025-06-09 14:19:19,066:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 14:19:19,072:INFO:Livros listados com sucesso.
+2025-06-09 14:19:19,073:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:19,077:INFO:Livros listados com sucesso.
+2025-06-09 14:19:19,078:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:19,200:INFO:Livro 4 emprestado com sucesso.
+2025-06-09 14:19:19,201:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 14:19:19,207:INFO:Livros listados com sucesso.
+2025-06-09 14:19:19,207:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:19,213:INFO:Livros listados com sucesso.
+2025-06-09 14:19:19,214:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:19,339:INFO:Livro 5 emprestado com sucesso.
+2025-06-09 14:19:19,340:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 14:19:19,346:INFO:Livros listados com sucesso.
+2025-06-09 14:19:19,346:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:19,351:INFO:Livros listados com sucesso.
+2025-06-09 14:19:19,351:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:19,481:INFO:Livro 6 emprestado com sucesso.
+2025-06-09 14:19:19,482:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-09 14:19:19,488:INFO:Livros listados com sucesso.
+2025-06-09 14:19:19,488:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:19,493:INFO:Livros listados com sucesso.
+2025-06-09 14:19:19,494:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:19,935:INFO:Histórico listado com sucesso.
+2025-06-09 14:19:19,936:INFO:127.0.0.1 - - [09/Jun/2025 14:19:19] "GET /api/history HTTP/1.1" 200 -
+2025-06-09 14:19:25,054:INFO:Livros listados com sucesso.
+2025-06-09 14:19:25,054:INFO:127.0.0.1 - - [09/Jun/2025 14:19:25] "GET /api/books HTTP/1.1" 200 -
+2025-06-09 14:19:25,448:INFO:Livros listados com sucesso.
+2025-06-09 14:19:25,448:INFO:127.0.0.1 - - [09/Jun/2025 14:19:25] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:51:29,750:INFO:Banco de dados inicializado com sucesso.
+2025-06-10 16:51:29,832:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-06-10 16:51:29,832:INFO:[33mPress CTRL+C to quit[0m
+2025-06-10 16:51:29,852:INFO: * Restarting with watchdog (windowsapi)
+2025-06-10 16:51:30,259:INFO:Banco de dados inicializado com sucesso.
+2025-06-10 16:51:30,286:WARNING: * Debugger is active!
+2025-06-10 16:51:30,296:INFO: * Debugger PIN: 299-253-840
+2025-06-10 16:51:43,169:INFO:127.0.0.1 - - [10/Jun/2025 16:51:43] "GET / HTTP/1.1" 200 -
+2025-06-10 16:51:43,363:INFO:127.0.0.1 - - [10/Jun/2025 16:51:43] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 16:51:43,422:INFO:127.0.0.1 - - [10/Jun/2025 16:51:43] "GET /static/script.js HTTP/1.1" 200 -
+2025-06-10 16:51:43,518:INFO:127.0.0.1 - - [10/Jun/2025 16:51:43] "GET /static/notify.js HTTP/1.1" 200 -
+2025-06-10 16:51:43,858:INFO:127.0.0.1 - - [10/Jun/2025 16:51:43] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 16:51:44,666:INFO:Livros listados com sucesso.
+2025-06-10 16:51:44,666:INFO:127.0.0.1 - - [10/Jun/2025 16:51:44] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:51:44,990:INFO:Histórico listado com sucesso.
+2025-06-10 16:51:44,991:INFO:127.0.0.1 - - [10/Jun/2025 16:51:44] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:51:45,389:INFO:Livros listados com sucesso.
+2025-06-10 16:51:45,390:INFO:127.0.0.1 - - [10/Jun/2025 16:51:45] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:51:45,700:INFO:Histórico listado com sucesso.
+2025-06-10 16:51:45,701:INFO:127.0.0.1 - - [10/Jun/2025 16:51:45] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:51:50,257:INFO:Livros listados com sucesso.
+2025-06-10 16:51:50,258:INFO:127.0.0.1 - - [10/Jun/2025 16:51:50] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:51:50,574:INFO:Histórico listado com sucesso.
+2025-06-10 16:51:50,574:INFO:127.0.0.1 - - [10/Jun/2025 16:51:50] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:05,480:INFO:Tentativa de adicionar livro: title=aaaa, isbn=7418855827
+2025-06-10 16:52:05,489:INFO:Livro adicionado com sucesso: aaaa
+2025-06-10 16:52:05,490:INFO:127.0.0.1 - - [10/Jun/2025 16:52:05] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-10 16:52:05,800:INFO:Livros listados com sucesso.
+2025-06-10 16:52:05,801:INFO:127.0.0.1 - - [10/Jun/2025 16:52:05] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:06,067:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:06,068:INFO:127.0.0.1 - - [10/Jun/2025 16:52:06] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:06,845:INFO:Livros listados com sucesso.
+2025-06-10 16:52:06,846:INFO:127.0.0.1 - - [10/Jun/2025 16:52:06] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:07,165:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:07,166:INFO:127.0.0.1 - - [10/Jun/2025 16:52:07] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:09,154:INFO:Livros listados com sucesso.
+2025-06-10 16:52:09,154:INFO:127.0.0.1 - - [10/Jun/2025 16:52:09] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:09,462:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:09,463:INFO:127.0.0.1 - - [10/Jun/2025 16:52:09] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:11,453:INFO:Livros listados com sucesso.
+2025-06-10 16:52:11,454:INFO:127.0.0.1 - - [10/Jun/2025 16:52:11] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:11,776:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:11,776:INFO:127.0.0.1 - - [10/Jun/2025 16:52:11] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:13,586:INFO:Livro 7 emprestado com sucesso.
+2025-06-10 16:52:13,587:INFO:127.0.0.1 - - [10/Jun/2025 16:52:13] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 16:52:13,903:INFO:Livros listados com sucesso.
+2025-06-10 16:52:13,903:INFO:127.0.0.1 - - [10/Jun/2025 16:52:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:14,168:INFO:Livros listados com sucesso.
+2025-06-10 16:52:14,169:INFO:127.0.0.1 - - [10/Jun/2025 16:52:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:14,212:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:14,213:INFO:127.0.0.1 - - [10/Jun/2025 16:52:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:14,217:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:14,218:INFO:127.0.0.1 - - [10/Jun/2025 16:52:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:14,754:INFO:Livros listados com sucesso.
+2025-06-10 16:52:14,754:INFO:127.0.0.1 - - [10/Jun/2025 16:52:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:15,014:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:15,015:INFO:127.0.0.1 - - [10/Jun/2025 16:52:15] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:16,829:INFO:Livros listados com sucesso.
+2025-06-10 16:52:16,830:INFO:127.0.0.1 - - [10/Jun/2025 16:52:16] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:17,140:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:17,140:INFO:127.0.0.1 - - [10/Jun/2025 16:52:17] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:18,422:INFO:Livros listados com sucesso.
+2025-06-10 16:52:18,422:INFO:127.0.0.1 - - [10/Jun/2025 16:52:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:18,728:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:18,729:INFO:127.0.0.1 - - [10/Jun/2025 16:52:18] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:20,580:INFO:Livros listados com sucesso.
+2025-06-10 16:52:20,581:INFO:127.0.0.1 - - [10/Jun/2025 16:52:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:20,897:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:20,897:INFO:127.0.0.1 - - [10/Jun/2025 16:52:20] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:52:24,412:INFO:127.0.0.1 - - [10/Jun/2025 16:52:24] "[33mGET /history HTTP/1.1[0m" 404 -
+2025-06-10 16:52:26,944:INFO:Livros listados com sucesso.
+2025-06-10 16:52:26,945:INFO:127.0.0.1 - - [10/Jun/2025 16:52:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:52:26,952:INFO:Histórico listado com sucesso.
+2025-06-10 16:52:26,952:INFO:127.0.0.1 - - [10/Jun/2025 16:52:26] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:53:41,795:INFO:127.0.0.1 - - [10/Jun/2025 16:53:41] "GET / HTTP/1.1" 200 -
+2025-06-10 16:53:41,809:INFO:127.0.0.1 - - [10/Jun/2025 16:53:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 16:53:42,053:INFO:127.0.0.1 - - [10/Jun/2025 16:53:42] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 16:53:42,120:INFO:127.0.0.1 - - [10/Jun/2025 16:53:42] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 16:53:42,446:INFO:127.0.0.1 - - [10/Jun/2025 16:53:42] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 16:53:42,448:INFO:Livros listados com sucesso.
+2025-06-10 16:53:42,449:INFO:127.0.0.1 - - [10/Jun/2025 16:53:42] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:53:42,715:INFO:Histórico listado com sucesso.
+2025-06-10 16:53:42,715:INFO:127.0.0.1 - - [10/Jun/2025 16:53:42] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:53:43,059:INFO:Livros listados com sucesso.
+2025-06-10 16:53:43,060:INFO:127.0.0.1 - - [10/Jun/2025 16:53:43] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:53:43,377:INFO:Histórico listado com sucesso.
+2025-06-10 16:53:43,377:INFO:127.0.0.1 - - [10/Jun/2025 16:53:43] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:53:44,819:INFO:Livros listados com sucesso.
+2025-06-10 16:53:44,819:INFO:127.0.0.1 - - [10/Jun/2025 16:53:44] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:53:45,132:INFO:Histórico listado com sucesso.
+2025-06-10 16:53:45,133:INFO:127.0.0.1 - - [10/Jun/2025 16:53:45] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:53:45,789:INFO:Livros listados com sucesso.
+2025-06-10 16:53:45,790:INFO:127.0.0.1 - - [10/Jun/2025 16:53:45] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:53:46,106:INFO:Histórico listado com sucesso.
+2025-06-10 16:53:46,106:INFO:127.0.0.1 - - [10/Jun/2025 16:53:46] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:55:09,044:INFO: * Detected change in 'C:\\acervoLibrarySystem-\\app.py', reloading
+2025-06-10 16:55:09,045:INFO: * Detected change in 'C:\\acervoLibrarySystem-\\app.py', reloading
+2025-06-10 16:55:10,684:INFO: * Restarting with watchdog (windowsapi)
+2025-06-10 16:57:53,421:INFO:Banco de dados inicializado com sucesso.
+2025-06-10 16:57:53,480:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-06-10 16:57:53,480:INFO:[33mPress CTRL+C to quit[0m
+2025-06-10 16:57:53,495:INFO: * Restarting with watchdog (windowsapi)
+2025-06-10 16:57:53,875:INFO:Banco de dados inicializado com sucesso.
+2025-06-10 16:57:53,902:WARNING: * Debugger is active!
+2025-06-10 16:57:53,910:INFO: * Debugger PIN: 299-253-840
+2025-06-10 16:57:57,532:INFO:127.0.0.1 - - [10/Jun/2025 16:57:57] "GET / HTTP/1.1" 200 -
+2025-06-10 16:57:57,665:INFO:127.0.0.1 - - [10/Jun/2025 16:57:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 16:57:57,791:INFO:127.0.0.1 - - [10/Jun/2025 16:57:57] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 16:57:57,854:INFO:127.0.0.1 - - [10/Jun/2025 16:57:57] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 16:57:58,181:INFO:127.0.0.1 - - [10/Jun/2025 16:57:58] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 16:57:58,182:INFO:Livros listados com sucesso.
+2025-06-10 16:57:58,182:INFO:127.0.0.1 - - [10/Jun/2025 16:57:58] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:57:58,444:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:57:58,445:INFO:127.0.0.1 - - [10/Jun/2025 16:57:58] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:57:59,604:INFO:Livros listados com sucesso.
+2025-06-10 16:57:59,605:INFO:127.0.0.1 - - [10/Jun/2025 16:57:59] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:57:59,917:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:57:59,917:INFO:127.0.0.1 - - [10/Jun/2025 16:57:59] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:04,378:INFO:Livros listados com sucesso.
+2025-06-10 16:58:04,379:INFO:127.0.0.1 - - [10/Jun/2025 16:58:04] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:04,700:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:04,701:INFO:127.0.0.1 - - [10/Jun/2025 16:58:04] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:13,803:INFO:Tentativa de adicionar livro: title=asdads, isbn=8526523652655
+2025-06-10 16:58:13,810:INFO:Livro adicionado com sucesso: asdads (ISBN: 8526523652655)
+2025-06-10 16:58:13,812:INFO:127.0.0.1 - - [10/Jun/2025 16:58:13] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-10 16:58:14,127:INFO:Livros listados com sucesso.
+2025-06-10 16:58:14,127:INFO:127.0.0.1 - - [10/Jun/2025 16:58:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:14,389:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:14,390:INFO:127.0.0.1 - - [10/Jun/2025 16:58:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:15,612:INFO:Livros listados com sucesso.
+2025-06-10 16:58:15,612:INFO:127.0.0.1 - - [10/Jun/2025 16:58:15] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:15,920:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:15,920:INFO:127.0.0.1 - - [10/Jun/2025 16:58:15] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:19,471:INFO:Livro 8 emprestado com sucesso.
+2025-06-10 16:58:19,471:INFO:127.0.0.1 - - [10/Jun/2025 16:58:19] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 16:58:19,790:INFO:Livros listados com sucesso.
+2025-06-10 16:58:19,790:INFO:127.0.0.1 - - [10/Jun/2025 16:58:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:20,038:INFO:Livros listados com sucesso.
+2025-06-10 16:58:20,038:INFO:127.0.0.1 - - [10/Jun/2025 16:58:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:20,099:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:20,100:INFO:127.0.0.1 - - [10/Jun/2025 16:58:20] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:20,104:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:20,105:INFO:127.0.0.1 - - [10/Jun/2025 16:58:20] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:21,106:INFO:Livros listados com sucesso.
+2025-06-10 16:58:21,107:INFO:127.0.0.1 - - [10/Jun/2025 16:58:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:21,370:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:21,371:INFO:127.0.0.1 - - [10/Jun/2025 16:58:21] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:32,783:INFO:Livro 5 devolvido com sucesso, multa: R$0.00
+2025-06-10 16:58:32,784:INFO:127.0.0.1 - - [10/Jun/2025 16:58:32] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 16:58:33,097:INFO:Livros listados com sucesso.
+2025-06-10 16:58:33,097:INFO:127.0.0.1 - - [10/Jun/2025 16:58:33] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:33,360:INFO:Livros listados com sucesso.
+2025-06-10 16:58:33,360:INFO:127.0.0.1 - - [10/Jun/2025 16:58:33] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:33,407:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:33,408:INFO:127.0.0.1 - - [10/Jun/2025 16:58:33] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:33,410:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:33,412:INFO:127.0.0.1 - - [10/Jun/2025 16:58:33] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:35,517:INFO:Livro 1 devolvido com sucesso, multa: R$0.00
+2025-06-10 16:58:35,517:INFO:127.0.0.1 - - [10/Jun/2025 16:58:35] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 16:58:35,771:INFO:Livros listados com sucesso.
+2025-06-10 16:58:35,771:INFO:127.0.0.1 - - [10/Jun/2025 16:58:35] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:35,833:INFO:Livros listados com sucesso.
+2025-06-10 16:58:35,834:INFO:127.0.0.1 - - [10/Jun/2025 16:58:35] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:36,081:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:36,082:INFO:127.0.0.1 - - [10/Jun/2025 16:58:36] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:36,085:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:36,085:INFO:127.0.0.1 - - [10/Jun/2025 16:58:36] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:37,568:INFO:Livro 2 devolvido com sucesso, multa: R$0.00
+2025-06-10 16:58:37,569:INFO:127.0.0.1 - - [10/Jun/2025 16:58:37] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 16:58:37,809:INFO:Livros listados com sucesso.
+2025-06-10 16:58:37,810:INFO:127.0.0.1 - - [10/Jun/2025 16:58:37] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:37,877:INFO:Livros listados com sucesso.
+2025-06-10 16:58:37,878:INFO:127.0.0.1 - - [10/Jun/2025 16:58:37] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:38,127:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:38,128:INFO:127.0.0.1 - - [10/Jun/2025 16:58:38] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:38,132:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:38,132:INFO:127.0.0.1 - - [10/Jun/2025 16:58:38] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:39,594:INFO:Livro 3 devolvido com sucesso, multa: R$0.00
+2025-06-10 16:58:39,594:INFO:127.0.0.1 - - [10/Jun/2025 16:58:39] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 16:58:39,851:INFO:Livros listados com sucesso.
+2025-06-10 16:58:39,851:INFO:127.0.0.1 - - [10/Jun/2025 16:58:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:39,914:INFO:Livros listados com sucesso.
+2025-06-10 16:58:39,914:INFO:127.0.0.1 - - [10/Jun/2025 16:58:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:40,167:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:40,168:INFO:127.0.0.1 - - [10/Jun/2025 16:58:40] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:40,172:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:40,172:INFO:127.0.0.1 - - [10/Jun/2025 16:58:40] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:42,634:INFO:Livro 4 devolvido com sucesso, multa: R$0.00
+2025-06-10 16:58:42,634:INFO:127.0.0.1 - - [10/Jun/2025 16:58:42] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 16:58:42,876:INFO:Livros listados com sucesso.
+2025-06-10 16:58:42,876:INFO:127.0.0.1 - - [10/Jun/2025 16:58:42] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:42,942:INFO:Livros listados com sucesso.
+2025-06-10 16:58:42,942:INFO:127.0.0.1 - - [10/Jun/2025 16:58:42] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:43,188:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:43,188:INFO:127.0.0.1 - - [10/Jun/2025 16:58:43] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:43,191:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:43,192:INFO:127.0.0.1 - - [10/Jun/2025 16:58:43] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:45,464:INFO:Livro 6 devolvido com sucesso, multa: R$0.00
+2025-06-10 16:58:45,465:INFO:127.0.0.1 - - [10/Jun/2025 16:58:45] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 16:58:45,717:INFO:Livros listados com sucesso.
+2025-06-10 16:58:45,718:INFO:127.0.0.1 - - [10/Jun/2025 16:58:45] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:45,779:INFO:Livros listados com sucesso.
+2025-06-10 16:58:45,781:INFO:127.0.0.1 - - [10/Jun/2025 16:58:45] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:46,030:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:46,032:INFO:127.0.0.1 - - [10/Jun/2025 16:58:46] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:46,036:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:46,036:INFO:127.0.0.1 - - [10/Jun/2025 16:58:46] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:49,959:INFO:Livro 7 devolvido com sucesso, multa: R$0.00
+2025-06-10 16:58:49,959:INFO:127.0.0.1 - - [10/Jun/2025 16:58:49] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 16:58:50,211:INFO:Livros listados com sucesso.
+2025-06-10 16:58:50,212:INFO:127.0.0.1 - - [10/Jun/2025 16:58:50] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:50,274:INFO:Livros listados com sucesso.
+2025-06-10 16:58:50,275:INFO:127.0.0.1 - - [10/Jun/2025 16:58:50] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:50,521:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:50,522:INFO:127.0.0.1 - - [10/Jun/2025 16:58:50] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:50,525:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:50,526:INFO:127.0.0.1 - - [10/Jun/2025 16:58:50] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:52,821:INFO:Livro 8 devolvido com sucesso, multa: R$0.00
+2025-06-10 16:58:52,822:INFO:127.0.0.1 - - [10/Jun/2025 16:58:52] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 16:58:53,062:INFO:Livros listados com sucesso.
+2025-06-10 16:58:53,062:INFO:127.0.0.1 - - [10/Jun/2025 16:58:53] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:53,138:INFO:Livros listados com sucesso.
+2025-06-10 16:58:53,138:INFO:127.0.0.1 - - [10/Jun/2025 16:58:53] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:58:53,371:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:53,373:INFO:127.0.0.1 - - [10/Jun/2025 16:58:53] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:53,376:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:53,376:INFO:127.0.0.1 - - [10/Jun/2025 16:58:53] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:58:54,690:INFO:127.0.0.1 - - [10/Jun/2025 16:58:54] "GET /history HTTP/1.1" 200 -
+2025-06-10 16:58:54,707:INFO:127.0.0.1 - - [10/Jun/2025 16:58:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 16:58:54,952:INFO:127.0.0.1 - - [10/Jun/2025 16:58:54] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 16:58:55,014:INFO:127.0.0.1 - - [10/Jun/2025 16:58:55] "GET /static/history.js HTTP/1.1" 200 -
+2025-06-10 16:58:55,341:INFO:127.0.0.1 - - [10/Jun/2025 16:58:55] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 16:58:55,342:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:58:55,342:INFO:127.0.0.1 - - [10/Jun/2025 16:58:55] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:07,692:INFO:Livros listados com sucesso.
+2025-06-10 16:59:07,692:INFO:127.0.0.1 - - [10/Jun/2025 16:59:07] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:08,006:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:08,006:INFO:127.0.0.1 - - [10/Jun/2025 16:59:08] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:09,875:INFO:Livros listados com sucesso.
+2025-06-10 16:59:09,875:INFO:127.0.0.1 - - [10/Jun/2025 16:59:09] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:10,186:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:10,187:INFO:127.0.0.1 - - [10/Jun/2025 16:59:10] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:13,566:INFO:Livro 1 emprestado com sucesso.
+2025-06-10 16:59:13,566:INFO:127.0.0.1 - - [10/Jun/2025 16:59:13] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 16:59:13,881:INFO:Livros listados com sucesso.
+2025-06-10 16:59:13,881:INFO:127.0.0.1 - - [10/Jun/2025 16:59:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:14,144:INFO:Livros listados com sucesso.
+2025-06-10 16:59:14,144:INFO:127.0.0.1 - - [10/Jun/2025 16:59:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:14,192:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:14,193:INFO:127.0.0.1 - - [10/Jun/2025 16:59:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:14,196:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:14,197:INFO:127.0.0.1 - - [10/Jun/2025 16:59:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:15,150:INFO:Livros listados com sucesso.
+2025-06-10 16:59:15,150:INFO:127.0.0.1 - - [10/Jun/2025 16:59:15] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:15,399:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:15,400:INFO:127.0.0.1 - - [10/Jun/2025 16:59:15] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:19,298:INFO:Livro 1 devolvido com sucesso, multa: R$0.00
+2025-06-10 16:59:19,298:INFO:127.0.0.1 - - [10/Jun/2025 16:59:19] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 16:59:19,614:INFO:Livros listados com sucesso.
+2025-06-10 16:59:19,616:INFO:127.0.0.1 - - [10/Jun/2025 16:59:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:19,879:INFO:Livros listados com sucesso.
+2025-06-10 16:59:19,879:INFO:127.0.0.1 - - [10/Jun/2025 16:59:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:19,927:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:19,927:INFO:127.0.0.1 - - [10/Jun/2025 16:59:19] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:19,930:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:19,931:INFO:127.0.0.1 - - [10/Jun/2025 16:59:19] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:21,990:INFO:Livros listados com sucesso.
+2025-06-10 16:59:21,990:INFO:127.0.0.1 - - [10/Jun/2025 16:59:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:22,252:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:22,252:INFO:127.0.0.1 - - [10/Jun/2025 16:59:22] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:24,344:INFO:Livro 2 emprestado com sucesso.
+2025-06-10 16:59:24,344:INFO:127.0.0.1 - - [10/Jun/2025 16:59:24] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 16:59:24,651:INFO:Livros listados com sucesso.
+2025-06-10 16:59:24,652:INFO:127.0.0.1 - - [10/Jun/2025 16:59:24] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:24,913:INFO:Livros listados com sucesso.
+2025-06-10 16:59:24,913:INFO:127.0.0.1 - - [10/Jun/2025 16:59:24] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:24,961:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:24,962:INFO:127.0.0.1 - - [10/Jun/2025 16:59:24] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:24,966:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:24,966:INFO:127.0.0.1 - - [10/Jun/2025 16:59:24] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:27,513:INFO:Livro 1 emprestado com sucesso.
+2025-06-10 16:59:27,514:INFO:127.0.0.1 - - [10/Jun/2025 16:59:27] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 16:59:27,752:INFO:Livros listados com sucesso.
+2025-06-10 16:59:27,752:INFO:127.0.0.1 - - [10/Jun/2025 16:59:27] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:27,830:INFO:Livros listados com sucesso.
+2025-06-10 16:59:27,830:INFO:127.0.0.1 - - [10/Jun/2025 16:59:27] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:28,064:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:28,064:INFO:127.0.0.1 - - [10/Jun/2025 16:59:28] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:28,068:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:28,069:INFO:127.0.0.1 - - [10/Jun/2025 16:59:28] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:31,918:INFO:127.0.0.1 - - [10/Jun/2025 16:59:31] "GET /history HTTP/1.1" 200 -
+2025-06-10 16:59:31,942:INFO:127.0.0.1 - - [10/Jun/2025 16:59:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 16:59:32,183:INFO:127.0.0.1 - - [10/Jun/2025 16:59:32] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 16:59:32,245:INFO:127.0.0.1 - - [10/Jun/2025 16:59:32] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 16:59:32,570:INFO:127.0.0.1 - - [10/Jun/2025 16:59:32] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 16:59:32,571:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:32,574:INFO:127.0.0.1 - - [10/Jun/2025 16:59:32] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:39,340:INFO:127.0.0.1 - - [10/Jun/2025 16:59:39] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 16:59:51,180:INFO:Livros listados com sucesso.
+2025-06-10 16:59:51,181:INFO:127.0.0.1 - - [10/Jun/2025 16:59:51] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:51,486:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:51,487:INFO:127.0.0.1 - - [10/Jun/2025 16:59:51] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 16:59:53,364:INFO:Livros listados com sucesso.
+2025-06-10 16:59:53,364:INFO:127.0.0.1 - - [10/Jun/2025 16:59:53] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 16:59:53,672:INFO:Histórico completo listado com sucesso.
+2025-06-10 16:59:53,673:INFO:127.0.0.1 - - [10/Jun/2025 16:59:53] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:23,169:INFO:Livros listados com sucesso.
+2025-06-10 17:01:23,169:INFO:127.0.0.1 - - [10/Jun/2025 17:01:23] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:23,432:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:23,433:INFO:127.0.0.1 - - [10/Jun/2025 17:01:23] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:25,777:INFO:Livro 1 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:01:25,777:INFO:127.0.0.1 - - [10/Jun/2025 17:01:25] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:01:26,087:INFO:Livros listados com sucesso.
+2025-06-10 17:01:26,088:INFO:127.0.0.1 - - [10/Jun/2025 17:01:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:26,350:INFO:Livros listados com sucesso.
+2025-06-10 17:01:26,350:INFO:127.0.0.1 - - [10/Jun/2025 17:01:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:26,397:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:26,399:INFO:127.0.0.1 - - [10/Jun/2025 17:01:26] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:26,401:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:26,402:INFO:127.0.0.1 - - [10/Jun/2025 17:01:26] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:29,212:INFO:Livro 2 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:01:29,212:INFO:127.0.0.1 - - [10/Jun/2025 17:01:29] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:01:29,469:INFO:Livros listados com sucesso.
+2025-06-10 17:01:29,469:INFO:127.0.0.1 - - [10/Jun/2025 17:01:29] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:29,531:INFO:Livros listados com sucesso.
+2025-06-10 17:01:29,531:INFO:127.0.0.1 - - [10/Jun/2025 17:01:29] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:29,782:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:29,782:INFO:127.0.0.1 - - [10/Jun/2025 17:01:29] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:29,785:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:29,785:INFO:127.0.0.1 - - [10/Jun/2025 17:01:29] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:30,398:INFO:Livros listados com sucesso.
+2025-06-10 17:01:30,398:INFO:127.0.0.1 - - [10/Jun/2025 17:01:30] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:30,662:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:30,663:INFO:127.0.0.1 - - [10/Jun/2025 17:01:30] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:39,298:INFO:Livro 2 emprestado com sucesso.
+2025-06-10 17:01:39,299:INFO:127.0.0.1 - - [10/Jun/2025 17:01:39] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:01:39,611:INFO:Livros listados com sucesso.
+2025-06-10 17:01:39,611:INFO:127.0.0.1 - - [10/Jun/2025 17:01:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:39,874:INFO:Livros listados com sucesso.
+2025-06-10 17:01:39,874:INFO:127.0.0.1 - - [10/Jun/2025 17:01:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:39,921:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:39,921:INFO:127.0.0.1 - - [10/Jun/2025 17:01:39] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:39,925:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:39,925:INFO:127.0.0.1 - - [10/Jun/2025 17:01:39] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:45,717:INFO:Livro 1 emprestado com sucesso.
+2025-06-10 17:01:45,717:INFO:127.0.0.1 - - [10/Jun/2025 17:01:45] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:01:45,974:INFO:Livros listados com sucesso.
+2025-06-10 17:01:45,974:INFO:127.0.0.1 - - [10/Jun/2025 17:01:45] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:46,036:INFO:Livros listados com sucesso.
+2025-06-10 17:01:46,036:INFO:127.0.0.1 - - [10/Jun/2025 17:01:46] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:46,285:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:46,286:INFO:127.0.0.1 - - [10/Jun/2025 17:01:46] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:46,289:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:46,289:INFO:127.0.0.1 - - [10/Jun/2025 17:01:46] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:47,040:INFO:Livros listados com sucesso.
+2025-06-10 17:01:47,041:INFO:127.0.0.1 - - [10/Jun/2025 17:01:47] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:47,287:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:47,288:INFO:127.0.0.1 - - [10/Jun/2025 17:01:47] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:51,076:INFO:Livro 1 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:01:51,076:INFO:127.0.0.1 - - [10/Jun/2025 17:01:51] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:01:51,396:INFO:Livros listados com sucesso.
+2025-06-10 17:01:51,396:INFO:127.0.0.1 - - [10/Jun/2025 17:01:51] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:51,644:INFO:Livros listados com sucesso.
+2025-06-10 17:01:51,644:INFO:127.0.0.1 - - [10/Jun/2025 17:01:51] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:51,706:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:51,706:INFO:127.0.0.1 - - [10/Jun/2025 17:01:51] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:51,710:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:51,710:INFO:127.0.0.1 - - [10/Jun/2025 17:01:51] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:53,696:INFO:Livro 2 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:01:53,698:INFO:127.0.0.1 - - [10/Jun/2025 17:01:53] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:01:53,953:INFO:Livros listados com sucesso.
+2025-06-10 17:01:53,954:INFO:127.0.0.1 - - [10/Jun/2025 17:01:53] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:54,015:INFO:Livros listados com sucesso.
+2025-06-10 17:01:54,016:INFO:127.0.0.1 - - [10/Jun/2025 17:01:54] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:01:54,265:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:54,265:INFO:127.0.0.1 - - [10/Jun/2025 17:01:54] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:54,268:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:54,268:INFO:127.0.0.1 - - [10/Jun/2025 17:01:54] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:01:56,505:INFO:127.0.0.1 - - [10/Jun/2025 17:01:56] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:01:56,527:INFO:127.0.0.1 - - [10/Jun/2025 17:01:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:01:56,772:INFO:127.0.0.1 - - [10/Jun/2025 17:01:56] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:01:56,833:INFO:127.0.0.1 - - [10/Jun/2025 17:01:56] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:01:57,156:INFO:127.0.0.1 - - [10/Jun/2025 17:01:57] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:01:57,157:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:01:57,157:INFO:127.0.0.1 - - [10/Jun/2025 17:01:57] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:14,735:INFO:127.0.0.1 - - [10/Jun/2025 17:02:14] "GET / HTTP/1.1" 200 -
+2025-06-10 17:02:15,044:INFO:127.0.0.1 - - [10/Jun/2025 17:02:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:02:15,044:INFO:127.0.0.1 - - [10/Jun/2025 17:02:15] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:02:15,075:INFO:127.0.0.1 - - [10/Jun/2025 17:02:15] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:02:15,307:INFO:127.0.0.1 - - [10/Jun/2025 17:02:15] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:02:16,065:INFO:Livros listados com sucesso.
+2025-06-10 17:02:16,065:INFO:127.0.0.1 - - [10/Jun/2025 17:02:16] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:16,381:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:16,382:INFO:127.0.0.1 - - [10/Jun/2025 17:02:16] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:18,896:INFO:Livro 1 emprestado com sucesso.
+2025-06-10 17:02:18,896:INFO:127.0.0.1 - - [10/Jun/2025 17:02:18] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:02:19,218:INFO:Livros listados com sucesso.
+2025-06-10 17:02:19,218:INFO:127.0.0.1 - - [10/Jun/2025 17:02:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:19,466:INFO:Livros listados com sucesso.
+2025-06-10 17:02:19,466:INFO:127.0.0.1 - - [10/Jun/2025 17:02:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:19,528:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:19,528:INFO:127.0.0.1 - - [10/Jun/2025 17:02:19] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:19,532:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:19,532:INFO:127.0.0.1 - - [10/Jun/2025 17:02:19] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:21,285:INFO:Livro 2 emprestado com sucesso.
+2025-06-10 17:02:21,286:INFO:127.0.0.1 - - [10/Jun/2025 17:02:21] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:02:21,528:INFO:Livros listados com sucesso.
+2025-06-10 17:02:21,529:INFO:127.0.0.1 - - [10/Jun/2025 17:02:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:21,604:INFO:Livros listados com sucesso.
+2025-06-10 17:02:21,605:INFO:127.0.0.1 - - [10/Jun/2025 17:02:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:21,838:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:21,839:INFO:127.0.0.1 - - [10/Jun/2025 17:02:21] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:21,843:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:21,844:INFO:127.0.0.1 - - [10/Jun/2025 17:02:21] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:23,534:INFO:Livro 3 emprestado com sucesso.
+2025-06-10 17:02:23,534:INFO:127.0.0.1 - - [10/Jun/2025 17:02:23] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:02:23,789:INFO:Livros listados com sucesso.
+2025-06-10 17:02:23,789:INFO:127.0.0.1 - - [10/Jun/2025 17:02:23] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:23,849:INFO:Livros listados com sucesso.
+2025-06-10 17:02:23,849:INFO:127.0.0.1 - - [10/Jun/2025 17:02:23] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:24,097:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:24,098:INFO:127.0.0.1 - - [10/Jun/2025 17:02:24] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:24,102:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:24,102:INFO:127.0.0.1 - - [10/Jun/2025 17:02:24] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:26,976:INFO:Livros listados com sucesso.
+2025-06-10 17:02:26,976:INFO:127.0.0.1 - - [10/Jun/2025 17:02:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:27,239:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:27,239:INFO:127.0.0.1 - - [10/Jun/2025 17:02:27] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:29,986:INFO:Livro 1 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:02:29,987:INFO:127.0.0.1 - - [10/Jun/2025 17:02:29] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:02:30,297:INFO:Livros listados com sucesso.
+2025-06-10 17:02:30,298:INFO:127.0.0.1 - - [10/Jun/2025 17:02:30] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:30,559:INFO:Livros listados com sucesso.
+2025-06-10 17:02:30,559:INFO:127.0.0.1 - - [10/Jun/2025 17:02:30] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:30,608:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:30,608:INFO:127.0.0.1 - - [10/Jun/2025 17:02:30] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:30,611:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:30,612:INFO:127.0.0.1 - - [10/Jun/2025 17:02:30] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:32,384:INFO:Livro 3 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:02:32,384:INFO:127.0.0.1 - - [10/Jun/2025 17:02:32] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:02:32,642:INFO:Livros listados com sucesso.
+2025-06-10 17:02:32,642:INFO:127.0.0.1 - - [10/Jun/2025 17:02:32] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:32,704:INFO:Livros listados com sucesso.
+2025-06-10 17:02:32,705:INFO:127.0.0.1 - - [10/Jun/2025 17:02:32] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:02:32,954:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:32,956:INFO:127.0.0.1 - - [10/Jun/2025 17:02:32] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:32,959:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:32,959:INFO:127.0.0.1 - - [10/Jun/2025 17:02:32] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:02:34,502:INFO:127.0.0.1 - - [10/Jun/2025 17:02:34] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:02:34,517:INFO:127.0.0.1 - - [10/Jun/2025 17:02:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:02:34,749:INFO:127.0.0.1 - - [10/Jun/2025 17:02:34] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:02:34,826:INFO:127.0.0.1 - - [10/Jun/2025 17:02:34] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:02:35,152:INFO:127.0.0.1 - - [10/Jun/2025 17:02:35] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:02:35,152:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:02:35,154:INFO:127.0.0.1 - - [10/Jun/2025 17:02:35] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:04:14,419:INFO:127.0.0.1 - - [10/Jun/2025 17:04:14] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:04:14,446:INFO:127.0.0.1 - - [10/Jun/2025 17:04:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:04:14,681:INFO:127.0.0.1 - - [10/Jun/2025 17:04:14] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:04:14,757:INFO:127.0.0.1 - - [10/Jun/2025 17:04:14] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:04:15,080:INFO:127.0.0.1 - - [10/Jun/2025 17:04:15] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:04:15,081:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:04:15,081:INFO:127.0.0.1 - - [10/Jun/2025 17:04:15] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:05:10,569:INFO:127.0.0.1 - - [10/Jun/2025 17:05:10] "GET / HTTP/1.1" 200 -
+2025-06-10 17:05:10,888:INFO:127.0.0.1 - - [10/Jun/2025 17:05:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:05:10,889:INFO:127.0.0.1 - - [10/Jun/2025 17:05:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:05:10,889:INFO:127.0.0.1 - - [10/Jun/2025 17:05:10] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:05:11,147:INFO:127.0.0.1 - - [10/Jun/2025 17:05:11] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:05:12,440:INFO:Livros listados com sucesso.
+2025-06-10 17:05:12,440:INFO:127.0.0.1 - - [10/Jun/2025 17:05:12] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:05:12,758:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:05:12,759:INFO:127.0.0.1 - - [10/Jun/2025 17:05:12] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:05:13,864:INFO:Livros listados com sucesso.
+2025-06-10 17:05:13,864:INFO:127.0.0.1 - - [10/Jun/2025 17:05:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:05:14,178:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:05:14,179:INFO:127.0.0.1 - - [10/Jun/2025 17:05:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:05:16,606:INFO:Livro 2 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:05:16,606:INFO:127.0.0.1 - - [10/Jun/2025 17:05:16] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:05:16,915:INFO:Livros listados com sucesso.
+2025-06-10 17:05:16,915:INFO:127.0.0.1 - - [10/Jun/2025 17:05:16] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:05:17,173:INFO:Livros listados com sucesso.
+2025-06-10 17:05:17,173:INFO:127.0.0.1 - - [10/Jun/2025 17:05:17] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:05:17,222:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:05:17,222:INFO:127.0.0.1 - - [10/Jun/2025 17:05:17] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:05:17,226:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:05:17,226:INFO:127.0.0.1 - - [10/Jun/2025 17:05:17] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:05:19,265:INFO:Livros listados com sucesso.
+2025-06-10 17:05:19,265:INFO:127.0.0.1 - - [10/Jun/2025 17:05:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:05:19,512:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:05:19,513:INFO:127.0.0.1 - - [10/Jun/2025 17:05:19] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:05:25,703:INFO:Livro 1 excluído com sucesso.
+2025-06-10 17:05:25,704:INFO:127.0.0.1 - - [10/Jun/2025 17:05:25] "POST /api/delete_book HTTP/1.1" 200 -
+2025-06-10 17:05:26,020:INFO:Livros listados com sucesso.
+2025-06-10 17:05:26,020:INFO:127.0.0.1 - - [10/Jun/2025 17:05:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:05:26,283:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:05:26,284:INFO:127.0.0.1 - - [10/Jun/2025 17:05:26] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:05:48,836:INFO:Livros listados com sucesso.
+2025-06-10 17:05:48,837:INFO:127.0.0.1 - - [10/Jun/2025 17:05:48] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:05:49,153:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:05:49,154:INFO:127.0.0.1 - - [10/Jun/2025 17:05:49] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:06:01,437:INFO:Livro 8 excluído com sucesso.
+2025-06-10 17:06:01,438:INFO:127.0.0.1 - - [10/Jun/2025 17:06:01] "POST /api/delete_book HTTP/1.1" 200 -
+2025-06-10 17:06:01,746:INFO:Livros listados com sucesso.
+2025-06-10 17:06:01,746:INFO:127.0.0.1 - - [10/Jun/2025 17:06:01] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:06:02,009:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:06:02,010:INFO:127.0.0.1 - - [10/Jun/2025 17:06:02] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:07:55,877:INFO: * Detected change in 'C:\\acervoLibrarySystem-\\app.py', reloading
+2025-06-10 17:07:55,878:INFO: * Detected change in 'C:\\acervoLibrarySystem-\\app.py', reloading
+2025-06-10 17:07:56,823:INFO: * Restarting with watchdog (windowsapi)
+2025-06-10 17:07:57,573:INFO:Banco de dados inicializado com sucesso.
+2025-06-10 17:07:57,607:WARNING: * Debugger is active!
+2025-06-10 17:07:57,615:INFO: * Debugger PIN: 299-253-840
+2025-06-10 17:08:23,225:INFO:127.0.0.1 - - [10/Jun/2025 17:08:23] "GET / HTTP/1.1" 200 -
+2025-06-10 17:08:23,390:INFO:127.0.0.1 - - [10/Jun/2025 17:08:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:08:23,478:INFO:127.0.0.1 - - [10/Jun/2025 17:08:23] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:08:23,560:INFO:127.0.0.1 - - [10/Jun/2025 17:08:23] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:08:23,898:INFO:127.0.0.1 - - [10/Jun/2025 17:08:23] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:08:23,899:INFO:Livros listados com sucesso.
+2025-06-10 17:08:23,900:INFO:127.0.0.1 - - [10/Jun/2025 17:08:23] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:08:24,147:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:08:24,148:INFO:127.0.0.1 - - [10/Jun/2025 17:08:24] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:08:26,778:INFO:Livros listados com sucesso.
+2025-06-10 17:08:26,780:INFO:127.0.0.1 - - [10/Jun/2025 17:08:26] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:08:27,092:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:08:27,093:INFO:127.0.0.1 - - [10/Jun/2025 17:08:27] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:08:27,355:INFO:Livros listados com sucesso.
+2025-06-10 17:08:27,355:INFO:127.0.0.1 - - [10/Jun/2025 17:08:27] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:08:27,495:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:08:27,495:INFO:127.0.0.1 - - [10/Jun/2025 17:08:27] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:08:29,746:INFO:127.0.0.1 - - [10/Jun/2025 17:08:29] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:08:30,050:INFO:127.0.0.1 - - [10/Jun/2025 17:08:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:08:30,067:INFO:127.0.0.1 - - [10/Jun/2025 17:08:30] "GET /static/history.js HTTP/1.1" 200 -
+2025-06-10 17:08:30,068:INFO:127.0.0.1 - - [10/Jun/2025 17:08:30] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:08:30,392:INFO:127.0.0.1 - - [10/Jun/2025 17:08:30] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:08:30,393:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:08:30,394:INFO:127.0.0.1 - - [10/Jun/2025 17:08:30] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:10:23,845:INFO:127.0.0.1 - - [10/Jun/2025 17:10:23] "GET / HTTP/1.1" 200 -
+2025-06-10 17:10:23,859:INFO:127.0.0.1 - - [10/Jun/2025 17:10:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:10:24,093:INFO:127.0.0.1 - - [10/Jun/2025 17:10:24] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:10:24,172:INFO:127.0.0.1 - - [10/Jun/2025 17:10:24] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:10:24,495:INFO:127.0.0.1 - - [10/Jun/2025 17:10:24] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:10:24,753:INFO:Livros listados com sucesso.
+2025-06-10 17:10:24,753:INFO:127.0.0.1 - - [10/Jun/2025 17:10:24] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:10:25,036:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:10:25,037:INFO:127.0.0.1 - - [10/Jun/2025 17:10:25] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:10:36,438:INFO:Tentativa de adicionar livro: title=fy7u8uiuihew, isbn=8520963741855
+2025-06-10 17:10:36,446:INFO:Livro adicionado com sucesso: fy7u8uiuihew (ISBN: 8520963741855)
+2025-06-10 17:10:36,447:INFO:127.0.0.1 - - [10/Jun/2025 17:10:36] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-10 17:10:36,757:INFO:Livros listados com sucesso.
+2025-06-10 17:10:36,757:INFO:127.0.0.1 - - [10/Jun/2025 17:10:36] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:10:37,021:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:10:37,022:INFO:127.0.0.1 - - [10/Jun/2025 17:10:37] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:10:39,482:INFO:Livros listados com sucesso.
+2025-06-10 17:10:39,483:INFO:127.0.0.1 - - [10/Jun/2025 17:10:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:10:39,798:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:10:39,799:INFO:127.0.0.1 - - [10/Jun/2025 17:10:39] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:10:46,746:INFO:Livro 5 emprestado com sucesso.
+2025-06-10 17:10:46,746:INFO:127.0.0.1 - - [10/Jun/2025 17:10:46] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:10:47,059:INFO:Livros listados com sucesso.
+2025-06-10 17:10:47,059:INFO:127.0.0.1 - - [10/Jun/2025 17:10:47] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:10:47,324:INFO:Livros listados com sucesso.
+2025-06-10 17:10:47,324:INFO:127.0.0.1 - - [10/Jun/2025 17:10:47] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:10:47,372:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:10:47,372:INFO:127.0.0.1 - - [10/Jun/2025 17:10:47] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:10:47,375:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:10:47,376:INFO:127.0.0.1 - - [10/Jun/2025 17:10:47] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:10:47,990:INFO:Livros listados com sucesso.
+2025-06-10 17:10:47,990:INFO:127.0.0.1 - - [10/Jun/2025 17:10:47] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:10:48,254:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:10:48,255:INFO:127.0.0.1 - - [10/Jun/2025 17:10:48] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:11:29,708:INFO:Livros listados com sucesso.
+2025-06-10 17:11:29,708:INFO:127.0.0.1 - - [10/Jun/2025 17:11:29] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:11:30,020:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:11:30,020:INFO:127.0.0.1 - - [10/Jun/2025 17:11:30] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:11:31,654:INFO:Livros listados com sucesso.
+2025-06-10 17:11:31,655:INFO:127.0.0.1 - - [10/Jun/2025 17:11:31] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:11:31,968:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:11:31,969:INFO:127.0.0.1 - - [10/Jun/2025 17:11:31] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:12:03,960:INFO:Livro 5 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:12:03,960:INFO:127.0.0.1 - - [10/Jun/2025 17:12:03] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:12:04,273:INFO:Livros listados com sucesso.
+2025-06-10 17:12:04,275:INFO:127.0.0.1 - - [10/Jun/2025 17:12:04] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:12:04,536:INFO:Livros listados com sucesso.
+2025-06-10 17:12:04,537:INFO:127.0.0.1 - - [10/Jun/2025 17:12:04] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:12:04,582:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:12:04,582:INFO:127.0.0.1 - - [10/Jun/2025 17:12:04] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:12:04,586:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:12:04,586:INFO:127.0.0.1 - - [10/Jun/2025 17:12:04] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:12:06,533:INFO:127.0.0.1 - - [10/Jun/2025 17:12:06] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:12:06,550:INFO:127.0.0.1 - - [10/Jun/2025 17:12:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:12:06,782:INFO:127.0.0.1 - - [10/Jun/2025 17:12:06] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:12:06,859:INFO:127.0.0.1 - - [10/Jun/2025 17:12:06] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:12:07,180:INFO:127.0.0.1 - - [10/Jun/2025 17:12:07] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:12:07,181:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:12:07,181:INFO:127.0.0.1 - - [10/Jun/2025 17:12:07] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:12:56,724:INFO: * Detected change in 'C:\\acervoLibrarySystem-\\app.py', reloading
+2025-06-10 17:12:56,724:INFO: * Detected change in 'C:\\acervoLibrarySystem-\\app.py', reloading
+2025-06-10 17:12:57,121:INFO: * Restarting with watchdog (windowsapi)
+2025-06-10 17:12:57,716:INFO:Banco de dados inicializado com sucesso.
+2025-06-10 17:12:57,750:WARNING: * Debugger is active!
+2025-06-10 17:12:57,759:INFO: * Debugger PIN: 299-253-840
+2025-06-10 17:13:07,225:INFO:127.0.0.1 - - [10/Jun/2025 17:13:07] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:13:07,341:INFO:127.0.0.1 - - [10/Jun/2025 17:13:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:13:07,483:INFO:127.0.0.1 - - [10/Jun/2025 17:13:07] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:13:07,545:INFO:127.0.0.1 - - [10/Jun/2025 17:13:07] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:13:07,869:INFO:127.0.0.1 - - [10/Jun/2025 17:13:07] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:13:07,870:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:13:07,871:INFO:127.0.0.1 - - [10/Jun/2025 17:13:07] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:13:16,802:INFO:127.0.0.1 - - [10/Jun/2025 17:13:16] "GET / HTTP/1.1" 200 -
+2025-06-10 17:13:17,112:INFO:127.0.0.1 - - [10/Jun/2025 17:13:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:13:17,128:INFO:127.0.0.1 - - [10/Jun/2025 17:13:17] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:13:17,129:INFO:127.0.0.1 - - [10/Jun/2025 17:13:17] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:13:17,452:INFO:127.0.0.1 - - [10/Jun/2025 17:13:17] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:13:17,974:INFO:Livros listados com sucesso.
+2025-06-10 17:13:17,975:INFO:127.0.0.1 - - [10/Jun/2025 17:13:17] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:13:18,286:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:13:18,287:INFO:127.0.0.1 - - [10/Jun/2025 17:13:18] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:13:20,575:INFO:Livros listados com sucesso.
+2025-06-10 17:13:20,577:INFO:127.0.0.1 - - [10/Jun/2025 17:13:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:13:20,884:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:13:20,885:INFO:127.0.0.1 - - [10/Jun/2025 17:13:20] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:13:21,741:INFO:Livros listados com sucesso.
+2025-06-10 17:13:21,742:INFO:127.0.0.1 - - [10/Jun/2025 17:13:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:13:22,057:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:13:22,058:INFO:127.0.0.1 - - [10/Jun/2025 17:13:22] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:13:42,936:INFO:Livro 9 excluído com sucesso.
+2025-06-10 17:13:42,937:INFO:127.0.0.1 - - [10/Jun/2025 17:13:42] "POST /api/delete_book HTTP/1.1" 200 -
+2025-06-10 17:13:43,254:INFO:Livros listados com sucesso.
+2025-06-10 17:13:43,255:INFO:127.0.0.1 - - [10/Jun/2025 17:13:43] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:13:43,517:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:13:43,517:INFO:127.0.0.1 - - [10/Jun/2025 17:13:43] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:13:47,335:INFO:Livros listados com sucesso.
+2025-06-10 17:13:47,336:INFO:127.0.0.1 - - [10/Jun/2025 17:13:47] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:13:47,643:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:13:47,644:INFO:127.0.0.1 - - [10/Jun/2025 17:13:47] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:13:49,800:INFO:Livros listados com sucesso.
+2025-06-10 17:13:49,801:INFO:127.0.0.1 - - [10/Jun/2025 17:13:49] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:13:50,110:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:13:50,111:INFO:127.0.0.1 - - [10/Jun/2025 17:13:50] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:14:34,106:INFO:127.0.0.1 - - [10/Jun/2025 17:14:34] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:14:34,411:INFO:127.0.0.1 - - [10/Jun/2025 17:14:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:14:34,442:INFO:127.0.0.1 - - [10/Jun/2025 17:14:34] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:14:34,442:INFO:127.0.0.1 - - [10/Jun/2025 17:14:34] "GET /static/history.js HTTP/1.1" 200 -
+2025-06-10 17:14:34,763:INFO:127.0.0.1 - - [10/Jun/2025 17:14:34] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:14:34,765:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:14:34,765:INFO:127.0.0.1 - - [10/Jun/2025 17:14:34] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:15:05,444:INFO:127.0.0.1 - - [10/Jun/2025 17:15:05] "GET / HTTP/1.1" 200 -
+2025-06-10 17:15:05,787:INFO:127.0.0.1 - - [10/Jun/2025 17:15:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:15:05,787:INFO:127.0.0.1 - - [10/Jun/2025 17:15:05] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:15:05,792:INFO:127.0.0.1 - - [10/Jun/2025 17:15:05] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:15:06,047:INFO:127.0.0.1 - - [10/Jun/2025 17:15:06] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:15:06,917:INFO:Livros listados com sucesso.
+2025-06-10 17:15:06,918:INFO:127.0.0.1 - - [10/Jun/2025 17:15:06] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:15:07,227:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:15:07,228:INFO:127.0.0.1 - - [10/Jun/2025 17:15:07] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:15:09,444:INFO:Livro 2 emprestado com sucesso.
+2025-06-10 17:15:09,445:INFO:127.0.0.1 - - [10/Jun/2025 17:15:09] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:15:09,751:INFO:Livros listados com sucesso.
+2025-06-10 17:15:09,751:INFO:127.0.0.1 - - [10/Jun/2025 17:15:09] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:15:10,005:INFO:Livros listados com sucesso.
+2025-06-10 17:15:10,005:INFO:127.0.0.1 - - [10/Jun/2025 17:15:10] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:15:10,062:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:15:10,063:INFO:127.0.0.1 - - [10/Jun/2025 17:15:10] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:15:10,068:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:15:10,069:INFO:127.0.0.1 - - [10/Jun/2025 17:15:10] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:15:12,473:INFO:Livro 4 emprestado com sucesso.
+2025-06-10 17:15:12,474:INFO:127.0.0.1 - - [10/Jun/2025 17:15:12] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:15:12,730:INFO:Livros listados com sucesso.
+2025-06-10 17:15:12,730:INFO:127.0.0.1 - - [10/Jun/2025 17:15:12] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:15:12,794:INFO:Livros listados com sucesso.
+2025-06-10 17:15:12,795:INFO:127.0.0.1 - - [10/Jun/2025 17:15:12] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:15:13,043:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:15:13,044:INFO:127.0.0.1 - - [10/Jun/2025 17:15:13] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:15:13,049:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:15:13,050:INFO:127.0.0.1 - - [10/Jun/2025 17:15:13] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:15:16,054:INFO:127.0.0.1 - - [10/Jun/2025 17:15:16] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:15:16,080:INFO:127.0.0.1 - - [10/Jun/2025 17:15:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:15:16,314:INFO:127.0.0.1 - - [10/Jun/2025 17:15:16] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:15:16,391:INFO:127.0.0.1 - - [10/Jun/2025 17:15:16] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:15:16,717:INFO:127.0.0.1 - - [10/Jun/2025 17:15:16] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:15:16,717:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:15:16,719:INFO:127.0.0.1 - - [10/Jun/2025 17:15:16] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:15:27,364:INFO:127.0.0.1 - - [10/Jun/2025 17:15:27] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:15:27,677:INFO:127.0.0.1 - - [10/Jun/2025 17:15:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:15:27,677:INFO:127.0.0.1 - - [10/Jun/2025 17:15:27] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:15:27,692:INFO:127.0.0.1 - - [10/Jun/2025 17:15:27] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:15:27,942:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:15:27,943:INFO:127.0.0.1 - - [10/Jun/2025 17:15:27] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:15:28,019:INFO:127.0.0.1 - - [10/Jun/2025 17:15:28] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:15:43,633:INFO:127.0.0.1 - - [10/Jun/2025 17:15:43] "GET / HTTP/1.1" 200 -
+2025-06-10 17:15:43,950:INFO:127.0.0.1 - - [10/Jun/2025 17:15:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:15:43,951:INFO:127.0.0.1 - - [10/Jun/2025 17:15:43] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:15:43,959:INFO:127.0.0.1 - - [10/Jun/2025 17:15:43] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:15:44,209:INFO:127.0.0.1 - - [10/Jun/2025 17:15:44] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:16:35,170:INFO:Livros listados com sucesso.
+2025-06-10 17:16:35,170:INFO:127.0.0.1 - - [10/Jun/2025 17:16:35] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:16:35,485:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:16:35,485:INFO:127.0.0.1 - - [10/Jun/2025 17:16:35] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:20:01,661:INFO:127.0.0.1 - - [10/Jun/2025 17:20:01] "GET / HTTP/1.1" 200 -
+2025-06-10 17:20:01,680:INFO:127.0.0.1 - - [10/Jun/2025 17:20:01] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 17:20:01,918:INFO:127.0.0.1 - - [10/Jun/2025 17:20:01] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:20:01,995:INFO:127.0.0.1 - - [10/Jun/2025 17:20:01] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:20:02,305:INFO:127.0.0.1 - - [10/Jun/2025 17:20:02] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:20:02,306:INFO:Livros listados com sucesso.
+2025-06-10 17:20:02,306:INFO:127.0.0.1 - - [10/Jun/2025 17:20:02] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:20:02,571:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:20:02,571:INFO:127.0.0.1 - - [10/Jun/2025 17:20:02] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:20:05,133:INFO:Livros listados com sucesso.
+2025-06-10 17:20:05,134:INFO:127.0.0.1 - - [10/Jun/2025 17:20:05] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:20:05,454:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:20:05,455:INFO:127.0.0.1 - - [10/Jun/2025 17:20:05] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:20:08,126:INFO:Livros listados com sucesso.
+2025-06-10 17:20:08,126:INFO:127.0.0.1 - - [10/Jun/2025 17:20:08] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:20:08,432:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:20:08,433:INFO:127.0.0.1 - - [10/Jun/2025 17:20:08] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:13,676:INFO:127.0.0.1 - - [10/Jun/2025 17:21:13] "GET / HTTP/1.1" 200 -
+2025-06-10 17:21:13,687:INFO:127.0.0.1 - - [10/Jun/2025 17:21:13] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 17:21:13,939:INFO:127.0.0.1 - - [10/Jun/2025 17:21:13] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:21:13,999:INFO:127.0.0.1 - - [10/Jun/2025 17:21:13] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:21:14,323:INFO:127.0.0.1 - - [10/Jun/2025 17:21:14] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:21:14,324:INFO:Livros listados com sucesso.
+2025-06-10 17:21:14,324:INFO:127.0.0.1 - - [10/Jun/2025 17:21:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:21:14,571:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:14,572:INFO:127.0.0.1 - - [10/Jun/2025 17:21:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:14,798:INFO:Livros listados com sucesso.
+2025-06-10 17:21:14,799:INFO:127.0.0.1 - - [10/Jun/2025 17:21:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:21:15,111:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:15,111:INFO:127.0.0.1 - - [10/Jun/2025 17:21:15] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:15,615:INFO:Livros listados com sucesso.
+2025-06-10 17:21:15,616:INFO:127.0.0.1 - - [10/Jun/2025 17:21:15] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:21:15,934:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:15,935:INFO:127.0.0.1 - - [10/Jun/2025 17:21:15] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:17,239:INFO:Livros listados com sucesso.
+2025-06-10 17:21:17,240:INFO:127.0.0.1 - - [10/Jun/2025 17:21:17] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:21:17,547:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:17,548:INFO:127.0.0.1 - - [10/Jun/2025 17:21:17] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:19,326:INFO:Livros listados com sucesso.
+2025-06-10 17:21:19,326:INFO:127.0.0.1 - - [10/Jun/2025 17:21:19] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:21:19,640:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:19,640:INFO:127.0.0.1 - - [10/Jun/2025 17:21:19] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:22,942:INFO:127.0.0.1 - - [10/Jun/2025 17:21:22] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:21:23,246:INFO:127.0.0.1 - - [10/Jun/2025 17:21:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:21:23,276:INFO:127.0.0.1 - - [10/Jun/2025 17:21:23] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:21:23,277:INFO:127.0.0.1 - - [10/Jun/2025 17:21:23] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:21:23,601:INFO:127.0.0.1 - - [10/Jun/2025 17:21:23] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:21:23,602:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:23,603:INFO:127.0.0.1 - - [10/Jun/2025 17:21:23] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:27,505:INFO:127.0.0.1 - - [10/Jun/2025 17:21:27] "GET / HTTP/1.1" 200 -
+2025-06-10 17:21:27,820:INFO:127.0.0.1 - - [10/Jun/2025 17:21:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:21:27,820:INFO:127.0.0.1 - - [10/Jun/2025 17:21:27] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:21:27,824:INFO:127.0.0.1 - - [10/Jun/2025 17:21:27] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:21:28,082:INFO:127.0.0.1 - - [10/Jun/2025 17:21:28] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:21:39,552:INFO:Livros listados com sucesso.
+2025-06-10 17:21:39,552:INFO:127.0.0.1 - - [10/Jun/2025 17:21:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:21:39,868:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:39,869:INFO:127.0.0.1 - - [10/Jun/2025 17:21:39] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:40,670:INFO:Livros listados com sucesso.
+2025-06-10 17:21:40,671:INFO:127.0.0.1 - - [10/Jun/2025 17:21:40] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:21:40,982:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:40,983:INFO:127.0.0.1 - - [10/Jun/2025 17:21:40] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:50,437:INFO:Tentativa de adicionar livro: title=fefee, isbn=7412582652
+2025-06-10 17:21:50,449:INFO:Livro adicionado com sucesso: fefee (ISBN: 7412582652)
+2025-06-10 17:21:50,449:INFO:127.0.0.1 - - [10/Jun/2025 17:21:50] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-10 17:21:50,768:INFO:Livros listados com sucesso.
+2025-06-10 17:21:50,769:INFO:127.0.0.1 - - [10/Jun/2025 17:21:50] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:21:51,011:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:51,012:INFO:127.0.0.1 - - [10/Jun/2025 17:21:51] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:21:52,944:INFO:Livros listados com sucesso.
+2025-06-10 17:21:52,945:INFO:127.0.0.1 - - [10/Jun/2025 17:21:52] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:21:53,264:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:21:53,265:INFO:127.0.0.1 - - [10/Jun/2025 17:21:53] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:22:14,031:INFO:Livro 10 emprestado com sucesso.
+2025-06-10 17:22:14,032:INFO:127.0.0.1 - - [10/Jun/2025 17:22:14] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:22:14,347:INFO:Livros listados com sucesso.
+2025-06-10 17:22:14,348:INFO:127.0.0.1 - - [10/Jun/2025 17:22:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:22:14,593:INFO:Livros listados com sucesso.
+2025-06-10 17:22:14,593:INFO:127.0.0.1 - - [10/Jun/2025 17:22:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:22:14,655:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:22:14,656:INFO:127.0.0.1 - - [10/Jun/2025 17:22:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:22:14,661:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:22:14,661:INFO:127.0.0.1 - - [10/Jun/2025 17:22:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:22:16,230:INFO:Livros listados com sucesso.
+2025-06-10 17:22:16,230:INFO:127.0.0.1 - - [10/Jun/2025 17:22:16] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:22:16,495:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:22:16,496:INFO:127.0.0.1 - - [10/Jun/2025 17:22:16] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:23:04,377:INFO:127.0.0.1 - - [10/Jun/2025 17:23:04] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:23:04,684:INFO:127.0.0.1 - - [10/Jun/2025 17:23:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:23:04,701:INFO:127.0.0.1 - - [10/Jun/2025 17:23:04] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:23:04,701:INFO:127.0.0.1 - - [10/Jun/2025 17:23:04] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:23:05,025:INFO:127.0.0.1 - - [10/Jun/2025 17:23:05] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:23:05,028:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:23:05,028:INFO:127.0.0.1 - - [10/Jun/2025 17:23:05] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:23:47,062:INFO:127.0.0.1 - - [10/Jun/2025 17:23:47] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:23:47,379:INFO:127.0.0.1 - - [10/Jun/2025 17:23:47] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 17:23:47,381:INFO:127.0.0.1 - - [10/Jun/2025 17:23:47] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:23:47,383:INFO:127.0.0.1 - - [10/Jun/2025 17:23:47] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:23:47,643:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:23:47,644:INFO:127.0.0.1 - - [10/Jun/2025 17:23:47] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:23:47,705:INFO:127.0.0.1 - - [10/Jun/2025 17:23:47] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:23:48,873:INFO:127.0.0.1 - - [10/Jun/2025 17:23:48] "GET / HTTP/1.1" 200 -
+2025-06-10 17:23:49,195:INFO:127.0.0.1 - - [10/Jun/2025 17:23:49] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:23:49,196:INFO:127.0.0.1 - - [10/Jun/2025 17:23:49] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:23:49,196:INFO:127.0.0.1 - - [10/Jun/2025 17:23:49] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:23:49,440:INFO:127.0.0.1 - - [10/Jun/2025 17:23:49] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:23:49,990:INFO:Livros listados com sucesso.
+2025-06-10 17:23:49,991:INFO:127.0.0.1 - - [10/Jun/2025 17:23:49] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:23:50,312:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:23:50,313:INFO:127.0.0.1 - - [10/Jun/2025 17:23:50] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:23:50,687:INFO:Livros listados com sucesso.
+2025-06-10 17:23:50,688:INFO:127.0.0.1 - - [10/Jun/2025 17:23:50] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:23:50,995:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:23:50,996:INFO:127.0.0.1 - - [10/Jun/2025 17:23:50] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:23:52,680:INFO:Livros listados com sucesso.
+2025-06-10 17:23:52,680:INFO:127.0.0.1 - - [10/Jun/2025 17:23:52] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:23:52,992:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:23:52,993:INFO:127.0.0.1 - - [10/Jun/2025 17:23:52] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:23:53,987:INFO:Livros listados com sucesso.
+2025-06-10 17:23:53,988:INFO:127.0.0.1 - - [10/Jun/2025 17:23:53] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:23:54,295:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:23:54,297:INFO:127.0.0.1 - - [10/Jun/2025 17:23:54] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:23:56,695:INFO:Livros listados com sucesso.
+2025-06-10 17:23:56,695:INFO:127.0.0.1 - - [10/Jun/2025 17:23:56] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:23:57,002:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:23:57,003:INFO:127.0.0.1 - - [10/Jun/2025 17:23:57] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:23:58,790:INFO:Livros listados com sucesso.
+2025-06-10 17:23:58,790:INFO:127.0.0.1 - - [10/Jun/2025 17:23:58] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:23:59,109:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:23:59,110:INFO:127.0.0.1 - - [10/Jun/2025 17:23:59] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:24:01,421:INFO:Livros listados com sucesso.
+2025-06-10 17:24:01,421:INFO:127.0.0.1 - - [10/Jun/2025 17:24:01] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:24:01,734:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:24:01,734:INFO:127.0.0.1 - - [10/Jun/2025 17:24:01] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:24:39,122:INFO:Livros listados com sucesso.
+2025-06-10 17:24:39,123:INFO:127.0.0.1 - - [10/Jun/2025 17:24:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:24:39,435:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:24:39,437:INFO:127.0.0.1 - - [10/Jun/2025 17:24:39] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:24:39,699:INFO:Livros listados com sucesso.
+2025-06-10 17:24:39,699:INFO:127.0.0.1 - - [10/Jun/2025 17:24:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:24:39,900:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:24:39,901:INFO:127.0.0.1 - - [10/Jun/2025 17:24:39] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:24:41,953:INFO:127.0.0.1 - - [10/Jun/2025 17:24:41] "GET / HTTP/1.1" 200 -
+2025-06-10 17:24:42,267:INFO:127.0.0.1 - - [10/Jun/2025 17:24:42] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 17:24:42,267:INFO:127.0.0.1 - - [10/Jun/2025 17:24:42] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:24:42,274:INFO:127.0.0.1 - - [10/Jun/2025 17:24:42] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:24:42,530:INFO:Livros listados com sucesso.
+2025-06-10 17:24:42,530:INFO:127.0.0.1 - - [10/Jun/2025 17:24:42] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:24:42,607:INFO:127.0.0.1 - - [10/Jun/2025 17:24:42] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:24:42,608:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:24:42,610:INFO:127.0.0.1 - - [10/Jun/2025 17:24:42] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:25:11,189:INFO:127.0.0.1 - - [10/Jun/2025 17:25:11] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:25:11,502:INFO:127.0.0.1 - - [10/Jun/2025 17:25:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:25:11,502:INFO:127.0.0.1 - - [10/Jun/2025 17:25:11] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:25:11,516:INFO:127.0.0.1 - - [10/Jun/2025 17:25:11] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:25:11,761:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:25:11,762:INFO:127.0.0.1 - - [10/Jun/2025 17:25:11] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:25:11,838:INFO:127.0.0.1 - - [10/Jun/2025 17:25:11] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:27:30,931:INFO:127.0.0.1 - - [10/Jun/2025 17:27:30] "GET / HTTP/1.1" 200 -
+2025-06-10 17:27:30,950:INFO:127.0.0.1 - - [10/Jun/2025 17:27:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:27:31,193:INFO:127.0.0.1 - - [10/Jun/2025 17:27:31] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:27:31,254:INFO:127.0.0.1 - - [10/Jun/2025 17:27:31] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:27:31,577:INFO:127.0.0.1 - - [10/Jun/2025 17:27:31] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:27:35,115:INFO:127.0.0.1 - - [10/Jun/2025 17:27:35] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:27:35,381:INFO:127.0.0.1 - - [10/Jun/2025 17:27:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:27:35,462:INFO:127.0.0.1 - - [10/Jun/2025 17:27:35] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:27:35,462:INFO:127.0.0.1 - - [10/Jun/2025 17:27:35] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:27:35,797:INFO:127.0.0.1 - - [10/Jun/2025 17:27:35] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:27:35,798:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:27:35,799:INFO:127.0.0.1 - - [10/Jun/2025 17:27:35] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:27:44,277:INFO:127.0.0.1 - - [10/Jun/2025 17:27:44] "GET / HTTP/1.1" 200 -
+2025-06-10 17:27:44,589:INFO:127.0.0.1 - - [10/Jun/2025 17:27:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:27:44,590:INFO:127.0.0.1 - - [10/Jun/2025 17:27:44] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:27:44,604:INFO:127.0.0.1 - - [10/Jun/2025 17:27:44] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:27:44,852:INFO:127.0.0.1 - - [10/Jun/2025 17:27:44] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:27:45,714:INFO:Livros listados com sucesso.
+2025-06-10 17:27:45,714:INFO:127.0.0.1 - - [10/Jun/2025 17:27:45] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:27:46,035:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:27:46,036:INFO:127.0.0.1 - - [10/Jun/2025 17:27:46] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:27:56,075:INFO:Livros listados com sucesso.
+2025-06-10 17:27:56,075:INFO:127.0.0.1 - - [10/Jun/2025 17:27:56] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:27:56,391:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:27:56,392:INFO:127.0.0.1 - - [10/Jun/2025 17:27:56] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:27:56,876:INFO:Livros listados com sucesso.
+2025-06-10 17:27:56,876:INFO:127.0.0.1 - - [10/Jun/2025 17:27:56] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:27:57,199:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:27:57,200:INFO:127.0.0.1 - - [10/Jun/2025 17:27:57] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:27:59,744:INFO:Livros listados com sucesso.
+2025-06-10 17:27:59,744:INFO:127.0.0.1 - - [10/Jun/2025 17:27:59] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:28:00,064:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:28:00,065:INFO:127.0.0.1 - - [10/Jun/2025 17:28:00] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:28:53,228:INFO:Livros listados com sucesso.
+2025-06-10 17:28:53,229:INFO:127.0.0.1 - - [10/Jun/2025 17:28:53] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:28:53,543:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:28:53,543:INFO:127.0.0.1 - - [10/Jun/2025 17:28:53] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:31:59,714:INFO:127.0.0.1 - - [10/Jun/2025 17:31:59] "GET / HTTP/1.1" 200 -
+2025-06-10 17:31:59,725:INFO:127.0.0.1 - - [10/Jun/2025 17:31:59] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 17:31:59,978:INFO:127.0.0.1 - - [10/Jun/2025 17:31:59] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:32:00,039:INFO:127.0.0.1 - - [10/Jun/2025 17:32:00] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:32:00,349:INFO:127.0.0.1 - - [10/Jun/2025 17:32:00] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:32:00,349:INFO:Livros listados com sucesso.
+2025-06-10 17:32:00,350:INFO:127.0.0.1 - - [10/Jun/2025 17:32:00] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:32:00,615:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:32:00,616:INFO:127.0.0.1 - - [10/Jun/2025 17:32:00] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:32:03,755:INFO:Livros listados com sucesso.
+2025-06-10 17:32:03,756:INFO:127.0.0.1 - - [10/Jun/2025 17:32:03] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:32:04,063:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:32:04,064:INFO:127.0.0.1 - - [10/Jun/2025 17:32:04] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:32:05,330:INFO:Livros listados com sucesso.
+2025-06-10 17:32:05,332:INFO:127.0.0.1 - - [10/Jun/2025 17:32:05] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:32:05,650:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:32:05,650:INFO:127.0.0.1 - - [10/Jun/2025 17:32:05] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:32:07,838:INFO:Livros listados com sucesso.
+2025-06-10 17:32:07,839:INFO:127.0.0.1 - - [10/Jun/2025 17:32:07] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:32:08,152:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:32:08,153:INFO:127.0.0.1 - - [10/Jun/2025 17:32:08] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:32:08,485:INFO:Livros listados com sucesso.
+2025-06-10 17:32:08,485:INFO:127.0.0.1 - - [10/Jun/2025 17:32:08] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:32:08,803:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:32:08,803:INFO:127.0.0.1 - - [10/Jun/2025 17:32:08] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:32:40,372:INFO:Livros listados com sucesso.
+2025-06-10 17:32:40,373:INFO:127.0.0.1 - - [10/Jun/2025 17:32:40] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:32:40,695:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:32:40,696:INFO:127.0.0.1 - - [10/Jun/2025 17:32:40] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:32:41,014:INFO:Livros listados com sucesso.
+2025-06-10 17:32:41,014:INFO:127.0.0.1 - - [10/Jun/2025 17:32:41] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:32:41,328:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:32:41,331:INFO:127.0.0.1 - - [10/Jun/2025 17:32:41] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:32:42,167:INFO:Livros listados com sucesso.
+2025-06-10 17:32:42,167:INFO:127.0.0.1 - - [10/Jun/2025 17:32:42] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:32:42,475:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:32:42,476:INFO:127.0.0.1 - - [10/Jun/2025 17:32:42] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:32:43,383:INFO:Livros listados com sucesso.
+2025-06-10 17:32:43,383:INFO:127.0.0.1 - - [10/Jun/2025 17:32:43] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:32:43,702:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:32:43,703:INFO:127.0.0.1 - - [10/Jun/2025 17:32:43] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:34:19,188:INFO:127.0.0.1 - - [10/Jun/2025 17:34:19] "GET / HTTP/1.1" 200 -
+2025-06-10 17:34:19,203:INFO:127.0.0.1 - - [10/Jun/2025 17:34:19] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 17:34:19,449:INFO:127.0.0.1 - - [10/Jun/2025 17:34:19] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:34:19,511:INFO:127.0.0.1 - - [10/Jun/2025 17:34:19] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:34:19,822:INFO:127.0.0.1 - - [10/Jun/2025 17:34:19] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:34:20,284:INFO:Livros listados com sucesso.
+2025-06-10 17:34:20,284:INFO:127.0.0.1 - - [10/Jun/2025 17:34:20] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:34:20,600:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:34:20,600:INFO:127.0.0.1 - - [10/Jun/2025 17:34:20] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:34:21,133:INFO:Livros listados com sucesso.
+2025-06-10 17:34:21,134:INFO:127.0.0.1 - - [10/Jun/2025 17:34:21] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:34:21,452:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:34:21,452:INFO:127.0.0.1 - - [10/Jun/2025 17:34:21] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:34:28,529:INFO:Livros listados com sucesso.
+2025-06-10 17:34:28,529:INFO:127.0.0.1 - - [10/Jun/2025 17:34:28] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:34:28,839:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:34:28,839:INFO:127.0.0.1 - - [10/Jun/2025 17:34:28] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:34:30,819:INFO:Livros listados com sucesso.
+2025-06-10 17:34:30,820:INFO:127.0.0.1 - - [10/Jun/2025 17:34:30] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:34:31,135:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:34:31,135:INFO:127.0.0.1 - - [10/Jun/2025 17:34:31] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:34:33,878:INFO:Livro 3 emprestado com sucesso.
+2025-06-10 17:34:33,879:INFO:127.0.0.1 - - [10/Jun/2025 17:34:33] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:34:34,188:INFO:Livros listados com sucesso.
+2025-06-10 17:34:34,188:INFO:127.0.0.1 - - [10/Jun/2025 17:34:34] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:34:34,451:INFO:Livros listados com sucesso.
+2025-06-10 17:34:34,451:INFO:127.0.0.1 - - [10/Jun/2025 17:34:34] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:34:34,498:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:34:34,498:INFO:127.0.0.1 - - [10/Jun/2025 17:34:34] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:34:34,501:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:34:34,502:INFO:127.0.0.1 - - [10/Jun/2025 17:34:34] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:34:35,073:INFO:Livros listados com sucesso.
+2025-06-10 17:34:35,073:INFO:127.0.0.1 - - [10/Jun/2025 17:34:35] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:34:35,334:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:34:35,335:INFO:127.0.0.1 - - [10/Jun/2025 17:34:35] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:34:39,909:INFO:Livros listados com sucesso.
+2025-06-10 17:34:39,910:INFO:127.0.0.1 - - [10/Jun/2025 17:34:39] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:34:40,220:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:34:40,221:INFO:127.0.0.1 - - [10/Jun/2025 17:34:40] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:36:57,937:INFO:Livros listados com sucesso.
+2025-06-10 17:36:57,938:INFO:127.0.0.1 - - [10/Jun/2025 17:36:57] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:36:58,201:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:36:58,201:INFO:127.0.0.1 - - [10/Jun/2025 17:36:58] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:36:58,408:INFO:Livros listados com sucesso.
+2025-06-10 17:36:58,408:INFO:127.0.0.1 - - [10/Jun/2025 17:36:58] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:36:58,724:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:36:58,725:INFO:127.0.0.1 - - [10/Jun/2025 17:36:58] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:00,084:INFO:Livros listados com sucesso.
+2025-06-10 17:37:00,085:INFO:127.0.0.1 - - [10/Jun/2025 17:37:00] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:00,394:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:00,395:INFO:127.0.0.1 - - [10/Jun/2025 17:37:00] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:02,160:INFO:127.0.0.1 - - [10/Jun/2025 17:37:02] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:37:02,473:INFO:127.0.0.1 - - [10/Jun/2025 17:37:02] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 17:37:02,488:INFO:127.0.0.1 - - [10/Jun/2025 17:37:02] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:02,488:INFO:127.0.0.1 - - [10/Jun/2025 17:37:02] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:02,814:INFO:127.0.0.1 - - [10/Jun/2025 17:37:02] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:37:02,815:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:02,816:INFO:127.0.0.1 - - [10/Jun/2025 17:37:02] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:21,412:INFO:127.0.0.1 - - [10/Jun/2025 17:37:21] "GET / HTTP/1.1" 200 -
+2025-06-10 17:37:21,730:INFO:127.0.0.1 - - [10/Jun/2025 17:37:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:37:21,730:INFO:127.0.0.1 - - [10/Jun/2025 17:37:21] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:21,735:INFO:127.0.0.1 - - [10/Jun/2025 17:37:21] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:21,991:INFO:127.0.0.1 - - [10/Jun/2025 17:37:21] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:37:23,254:INFO:Livros listados com sucesso.
+2025-06-10 17:37:23,255:INFO:127.0.0.1 - - [10/Jun/2025 17:37:23] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:23,561:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:23,562:INFO:127.0.0.1 - - [10/Jun/2025 17:37:23] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:25,361:INFO:Livros listados com sucesso.
+2025-06-10 17:37:25,362:INFO:127.0.0.1 - - [10/Jun/2025 17:37:25] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:25,680:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:25,681:INFO:127.0.0.1 - - [10/Jun/2025 17:37:25] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:29,337:INFO:Livro 2 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:37:29,339:INFO:127.0.0.1 - - [10/Jun/2025 17:37:29] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:37:29,649:INFO:Livros listados com sucesso.
+2025-06-10 17:37:29,650:INFO:127.0.0.1 - - [10/Jun/2025 17:37:29] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:29,912:INFO:Livros listados com sucesso.
+2025-06-10 17:37:29,912:INFO:127.0.0.1 - - [10/Jun/2025 17:37:29] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:29,957:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:29,959:INFO:127.0.0.1 - - [10/Jun/2025 17:37:29] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:29,961:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:29,962:INFO:127.0.0.1 - - [10/Jun/2025 17:37:29] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:32,685:INFO:Livro 3 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:37:32,685:INFO:127.0.0.1 - - [10/Jun/2025 17:37:32] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:37:32,941:INFO:Livros listados com sucesso.
+2025-06-10 17:37:32,941:INFO:127.0.0.1 - - [10/Jun/2025 17:37:32] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:33,003:INFO:Livros listados com sucesso.
+2025-06-10 17:37:33,003:INFO:127.0.0.1 - - [10/Jun/2025 17:37:33] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:33,249:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:33,249:INFO:127.0.0.1 - - [10/Jun/2025 17:37:33] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:33,253:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:33,253:INFO:127.0.0.1 - - [10/Jun/2025 17:37:33] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:35,938:INFO:Livros listados com sucesso.
+2025-06-10 17:37:35,938:INFO:127.0.0.1 - - [10/Jun/2025 17:37:35] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:36,201:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:36,202:INFO:127.0.0.1 - - [10/Jun/2025 17:37:36] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:36,247:INFO:Livros listados com sucesso.
+2025-06-10 17:37:36,248:INFO:127.0.0.1 - - [10/Jun/2025 17:37:36] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:36,356:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:36,357:INFO:127.0.0.1 - - [10/Jun/2025 17:37:36] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:51,857:INFO:127.0.0.1 - - [10/Jun/2025 17:37:51] "GET / HTTP/1.1" 200 -
+2025-06-10 17:37:52,166:INFO:127.0.0.1 - - [10/Jun/2025 17:37:52] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 17:37:52,182:INFO:127.0.0.1 - - [10/Jun/2025 17:37:52] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:52,182:INFO:127.0.0.1 - - [10/Jun/2025 17:37:52] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:52,507:INFO:127.0.0.1 - - [10/Jun/2025 17:37:52] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:37:54,945:INFO:127.0.0.1 - - [10/Jun/2025 17:37:54] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:37:55,267:INFO:127.0.0.1 - - [10/Jun/2025 17:37:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:37:55,267:INFO:127.0.0.1 - - [10/Jun/2025 17:37:55] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:55,267:INFO:127.0.0.1 - - [10/Jun/2025 17:37:55] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:55,513:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:55,514:INFO:127.0.0.1 - - [10/Jun/2025 17:37:55] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:37:55,590:INFO:127.0.0.1 - - [10/Jun/2025 17:37:55] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:37:58,447:INFO:127.0.0.1 - - [10/Jun/2025 17:37:58] "GET / HTTP/1.1" 200 -
+2025-06-10 17:37:58,770:INFO:127.0.0.1 - - [10/Jun/2025 17:37:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:37:58,771:INFO:127.0.0.1 - - [10/Jun/2025 17:37:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:58,771:INFO:127.0.0.1 - - [10/Jun/2025 17:37:58] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:37:59,016:INFO:127.0.0.1 - - [10/Jun/2025 17:37:59] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:37:59,257:INFO:Livros listados com sucesso.
+2025-06-10 17:37:59,257:INFO:127.0.0.1 - - [10/Jun/2025 17:37:59] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:37:59,577:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:37:59,577:INFO:127.0.0.1 - - [10/Jun/2025 17:37:59] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:38:03,187:INFO:Livros listados com sucesso.
+2025-06-10 17:38:03,188:INFO:127.0.0.1 - - [10/Jun/2025 17:38:03] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:38:03,499:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:38:03,500:INFO:127.0.0.1 - - [10/Jun/2025 17:38:03] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:38:16,499:INFO:Tentativa de adicionar livro: title=cronicas, isbn=7876836336333
+2025-06-10 17:38:16,508:INFO:Livro adicionado com sucesso: cronicas (ISBN: 7876836336333)
+2025-06-10 17:38:16,508:INFO:127.0.0.1 - - [10/Jun/2025 17:38:16] "[35m[1mPOST /api/add_book HTTP/1.1[0m" 201 -
+2025-06-10 17:38:16,817:INFO:Livros listados com sucesso.
+2025-06-10 17:38:16,819:INFO:127.0.0.1 - - [10/Jun/2025 17:38:16] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:38:17,084:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:38:17,085:INFO:127.0.0.1 - - [10/Jun/2025 17:38:17] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:38:17,688:INFO:Livros listados com sucesso.
+2025-06-10 17:38:17,688:INFO:127.0.0.1 - - [10/Jun/2025 17:38:17] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:38:17,997:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:38:17,997:INFO:127.0.0.1 - - [10/Jun/2025 17:38:17] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:38:19,631:INFO:127.0.0.1 - - [10/Jun/2025 17:38:19] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:38:19,940:INFO:127.0.0.1 - - [10/Jun/2025 17:38:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:38:19,954:INFO:127.0.0.1 - - [10/Jun/2025 17:38:19] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:38:19,954:INFO:127.0.0.1 - - [10/Jun/2025 17:38:19] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:38:20,281:INFO:127.0.0.1 - - [10/Jun/2025 17:38:20] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:38:20,282:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:38:20,283:INFO:127.0.0.1 - - [10/Jun/2025 17:38:20] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:38:26,502:INFO:127.0.0.1 - - [10/Jun/2025 17:38:26] "GET / HTTP/1.1" 200 -
+2025-06-10 17:38:26,824:INFO:127.0.0.1 - - [10/Jun/2025 17:38:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:38:26,824:INFO:127.0.0.1 - - [10/Jun/2025 17:38:26] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:38:26,825:INFO:127.0.0.1 - - [10/Jun/2025 17:38:26] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:38:27,068:INFO:127.0.0.1 - - [10/Jun/2025 17:38:27] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:38:53,352:INFO:127.0.0.1 - - [10/Jun/2025 17:38:53] "GET / HTTP/1.1" 200 -
+2025-06-10 17:38:53,669:INFO:127.0.0.1 - - [10/Jun/2025 17:38:53] "GET /static/style.css HTTP/1.1" 200 -
+2025-06-10 17:38:53,672:INFO:127.0.0.1 - - [10/Jun/2025 17:38:53] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:38:53,674:INFO:127.0.0.1 - - [10/Jun/2025 17:38:53] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:38:53,994:INFO:127.0.0.1 - - [10/Jun/2025 17:38:53] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:38:56,099:INFO:Livros listados com sucesso.
+2025-06-10 17:38:56,099:INFO:127.0.0.1 - - [10/Jun/2025 17:38:56] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:38:56,412:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:38:56,413:INFO:127.0.0.1 - - [10/Jun/2025 17:38:56] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:38:57,569:INFO:Livros listados com sucesso.
+2025-06-10 17:38:57,570:INFO:127.0.0.1 - - [10/Jun/2025 17:38:57] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:38:57,881:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:38:57,881:INFO:127.0.0.1 - - [10/Jun/2025 17:38:57] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:02,181:INFO:Livros listados com sucesso.
+2025-06-10 17:39:02,181:INFO:127.0.0.1 - - [10/Jun/2025 17:39:02] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:02,494:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:02,495:INFO:127.0.0.1 - - [10/Jun/2025 17:39:02] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:02,841:INFO:Livros listados com sucesso.
+2025-06-10 17:39:02,841:INFO:127.0.0.1 - - [10/Jun/2025 17:39:02] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:03,160:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:03,161:INFO:127.0.0.1 - - [10/Jun/2025 17:39:03] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:12,608:INFO:Livro 2 emprestado com sucesso.
+2025-06-10 17:39:12,608:INFO:127.0.0.1 - - [10/Jun/2025 17:39:12] "POST /api/borrow HTTP/1.1" 200 -
+2025-06-10 17:39:12,922:INFO:Livros listados com sucesso.
+2025-06-10 17:39:12,922:INFO:127.0.0.1 - - [10/Jun/2025 17:39:12] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:13,185:INFO:Livros listados com sucesso.
+2025-06-10 17:39:13,186:INFO:127.0.0.1 - - [10/Jun/2025 17:39:13] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:13,233:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:13,234:INFO:127.0.0.1 - - [10/Jun/2025 17:39:13] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:13,237:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:13,238:INFO:127.0.0.1 - - [10/Jun/2025 17:39:13] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:14,020:INFO:Livros listados com sucesso.
+2025-06-10 17:39:14,020:INFO:127.0.0.1 - - [10/Jun/2025 17:39:14] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:14,285:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:14,286:INFO:127.0.0.1 - - [10/Jun/2025 17:39:14] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:16,312:INFO:Livro 2 devolvido com sucesso, multa: R$0.00
+2025-06-10 17:39:16,312:INFO:127.0.0.1 - - [10/Jun/2025 17:39:16] "POST /api/return HTTP/1.1" 200 -
+2025-06-10 17:39:16,626:INFO:Livros listados com sucesso.
+2025-06-10 17:39:16,626:INFO:127.0.0.1 - - [10/Jun/2025 17:39:16] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:16,889:INFO:Livros listados com sucesso.
+2025-06-10 17:39:16,889:INFO:127.0.0.1 - - [10/Jun/2025 17:39:16] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:16,937:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:16,938:INFO:127.0.0.1 - - [10/Jun/2025 17:39:16] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:16,942:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:16,942:INFO:127.0.0.1 - - [10/Jun/2025 17:39:16] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:19,291:INFO:127.0.0.1 - - [10/Jun/2025 17:39:19] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:39:19,308:INFO:127.0.0.1 - - [10/Jun/2025 17:39:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:39:19,553:INFO:127.0.0.1 - - [10/Jun/2025 17:39:19] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:39:19,616:INFO:127.0.0.1 - - [10/Jun/2025 17:39:19] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:39:19,930:INFO:127.0.0.1 - - [10/Jun/2025 17:39:19] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:39:19,930:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:19,931:INFO:127.0.0.1 - - [10/Jun/2025 17:39:19] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:46,562:INFO:127.0.0.1 - - [10/Jun/2025 17:39:46] "GET / HTTP/1.1" 200 -
+2025-06-10 17:39:46,870:INFO:127.0.0.1 - - [10/Jun/2025 17:39:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:39:46,870:INFO:127.0.0.1 - - [10/Jun/2025 17:39:46] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:39:46,886:INFO:127.0.0.1 - - [10/Jun/2025 17:39:46] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:39:47,134:INFO:127.0.0.1 - - [10/Jun/2025 17:39:47] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:39:49,491:INFO:Livros listados com sucesso.
+2025-06-10 17:39:49,492:INFO:127.0.0.1 - - [10/Jun/2025 17:39:49] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:49,802:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:49,802:INFO:127.0.0.1 - - [10/Jun/2025 17:39:49] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:50,668:INFO:Livros listados com sucesso.
+2025-06-10 17:39:50,668:INFO:127.0.0.1 - - [10/Jun/2025 17:39:50] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:50,980:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:50,980:INFO:127.0.0.1 - - [10/Jun/2025 17:39:50] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:52,436:INFO:Livros listados com sucesso.
+2025-06-10 17:39:52,437:INFO:127.0.0.1 - - [10/Jun/2025 17:39:52] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:52,750:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:52,751:INFO:127.0.0.1 - - [10/Jun/2025 17:39:52] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:54,046:INFO:127.0.0.1 - - [10/Jun/2025 17:39:54] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:39:54,360:INFO:127.0.0.1 - - [10/Jun/2025 17:39:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:39:54,361:INFO:127.0.0.1 - - [10/Jun/2025 17:39:54] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:39:54,376:INFO:127.0.0.1 - - [10/Jun/2025 17:39:54] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:39:54,625:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:54,625:INFO:127.0.0.1 - - [10/Jun/2025 17:39:54] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:39:54,700:INFO:127.0.0.1 - - [10/Jun/2025 17:39:54] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:39:56,819:INFO:127.0.0.1 - - [10/Jun/2025 17:39:56] "GET / HTTP/1.1" 200 -
+2025-06-10 17:39:57,131:INFO:127.0.0.1 - - [10/Jun/2025 17:39:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:39:57,131:INFO:127.0.0.1 - - [10/Jun/2025 17:39:57] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:39:57,146:INFO:127.0.0.1 - - [10/Jun/2025 17:39:57] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:39:57,392:INFO:127.0.0.1 - - [10/Jun/2025 17:39:57] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:39:57,942:INFO:Livros listados com sucesso.
+2025-06-10 17:39:57,942:INFO:127.0.0.1 - - [10/Jun/2025 17:39:57] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:39:58,249:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:39:58,250:INFO:127.0.0.1 - - [10/Jun/2025 17:39:58] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:43:03,681:INFO:Banco de dados inicializado com sucesso.
+2025-06-10 17:43:03,734:INFO:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.0.106:5000
+2025-06-10 17:43:03,734:INFO:[33mPress CTRL+C to quit[0m
+2025-06-10 17:43:03,748:INFO: * Restarting with watchdog (windowsapi)
+2025-06-10 17:43:04,115:INFO:Banco de dados inicializado com sucesso.
+2025-06-10 17:43:04,140:WARNING: * Debugger is active!
+2025-06-10 17:43:04,148:INFO: * Debugger PIN: 299-253-840
+2025-06-10 17:43:06,233:INFO:127.0.0.1 - - [10/Jun/2025 17:43:06] "GET / HTTP/1.1" 200 -
+2025-06-10 17:43:06,343:INFO:127.0.0.1 - - [10/Jun/2025 17:43:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:43:06,491:INFO:127.0.0.1 - - [10/Jun/2025 17:43:06] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:43:06,554:INFO:127.0.0.1 - - [10/Jun/2025 17:43:06] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:43:06,878:INFO:127.0.0.1 - - [10/Jun/2025 17:43:06] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:43:06,879:INFO:Livros listados com sucesso.
+2025-06-10 17:43:06,879:INFO:127.0.0.1 - - [10/Jun/2025 17:43:06] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:43:07,128:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:43:07,129:INFO:127.0.0.1 - - [10/Jun/2025 17:43:07] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:43:08,644:INFO:127.0.0.1 - - [10/Jun/2025 17:43:08] "GET / HTTP/1.1" 200 -
+2025-06-10 17:43:08,953:INFO:127.0.0.1 - - [10/Jun/2025 17:43:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:43:08,970:INFO:127.0.0.1 - - [10/Jun/2025 17:43:08] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:43:08,970:INFO:127.0.0.1 - - [10/Jun/2025 17:43:08] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:43:09,294:INFO:127.0.0.1 - - [10/Jun/2025 17:43:09] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:43:09,294:INFO:Livros listados com sucesso.
+2025-06-10 17:43:09,295:INFO:127.0.0.1 - - [10/Jun/2025 17:43:09] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:43:09,559:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:43:09,559:INFO:127.0.0.1 - - [10/Jun/2025 17:43:09] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:45:10,338:INFO:127.0.0.1 - - [10/Jun/2025 17:45:10] "GET / HTTP/1.1" 200 -
+2025-06-10 17:45:10,353:INFO:127.0.0.1 - - [10/Jun/2025 17:45:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:45:10,601:INFO:127.0.0.1 - - [10/Jun/2025 17:45:10] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:45:10,663:INFO:127.0.0.1 - - [10/Jun/2025 17:45:10] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+2025-06-10 17:45:10,991:INFO:127.0.0.1 - - [10/Jun/2025 17:45:10] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:45:10,992:INFO:Livros listados com sucesso.
+2025-06-10 17:45:10,993:INFO:127.0.0.1 - - [10/Jun/2025 17:45:10] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:45:11,239:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:45:11,239:INFO:127.0.0.1 - - [10/Jun/2025 17:45:11] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:45:11,534:INFO:Livros listados com sucesso.
+2025-06-10 17:45:11,535:INFO:127.0.0.1 - - [10/Jun/2025 17:45:11] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:45:11,844:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:45:11,844:INFO:127.0.0.1 - - [10/Jun/2025 17:45:11] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:45:18,343:INFO:Livros listados com sucesso.
+2025-06-10 17:45:18,343:INFO:127.0.0.1 - - [10/Jun/2025 17:45:18] "GET /api/books HTTP/1.1" 200 -
+2025-06-10 17:45:18,661:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:45:18,662:INFO:127.0.0.1 - - [10/Jun/2025 17:45:18] "GET /api/history HTTP/1.1" 200 -
+2025-06-10 17:45:21,028:INFO:127.0.0.1 - - [10/Jun/2025 17:45:21] "GET /history HTTP/1.1" 200 -
+2025-06-10 17:45:21,335:INFO:127.0.0.1 - - [10/Jun/2025 17:45:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-06-10 17:45:21,368:INFO:127.0.0.1 - - [10/Jun/2025 17:45:21] "[36mGET /static/notify.js HTTP/1.1[0m" 304 -
+2025-06-10 17:45:21,368:INFO:127.0.0.1 - - [10/Jun/2025 17:45:21] "[36mGET /static/history.js HTTP/1.1[0m" 304 -
+2025-06-10 17:45:21,695:INFO:127.0.0.1 - - [10/Jun/2025 17:45:21] "[33mGET /cdn-cgi/challenge-platform/scripts/jsd/main.js HTTP/1.1[0m" 404 -
+2025-06-10 17:45:21,695:INFO:Histórico completo listado com sucesso.
+2025-06-10 17:45:21,696:INFO:127.0.0.1 - - [10/Jun/2025 17:45:21] "GET /api/history HTTP/1.1" 200 -

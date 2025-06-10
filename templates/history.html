@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico Completo</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="/static/notify.js"></script>
+    <script src="/static/history.js"></script>
+</head>
+<body class="history-page">
+    <div class="container">
+        <h1>Histórico Completo</h1>
+        <a href="#" onclick="goBackToSystem()" class="back-link">Voltar ao Sistema</a>
+
+        <div class="history-grid">
+            <div class="history-column">
+                <h2>Livros Adicionados</h2>
+                <input type="text" id="search-added" class="section-search" placeholder="Pesquisar livros adicionados...">
+                <div class="book-grid-header">
+                    <span>Título</span>
+                    <span>Autor</span>
+                    <span>ISBN</span>
+                </div>
+                <div id="added-books" class="book-grid"></div>
+            </div>
+
+            <div class="history-column">
+                <h2>Livros Emprestados</h2>
+                <input type="text" id="search-borrowed" class="section-search" placeholder="Pesquisar livros emprestados...">
+                <div class="book-grid-header">
+                    <span>Título</span>
+                    <span>Autor</span>
+                    <span>ISBN</span>
+                    <span>Data de Empréstimo</span>
+                </div>
+                <div id="borrowed-books" class="book-grid"></div>
+            </div>
+
+            <div class="history-column">
+                <h2>Livros Devolvidos</h2>
+                <input type="text" id="search-returned" class="section-search" placeholder="Pesquisar livros devolvidos...">
+                <div class="book-grid-header">
+                    <span>Título</span>
+                    <span>Autor</span>
+                    <span>ISBN</span>
+                    <span>Data de Devolução</span>
+                    <span>Multa</span>
+                </div>
+                <div id="returned-books" class="book-grid"></div>
+            </div>
+        </div>
+
+        <div id="notification-container"></div>
+    </div>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94dad6462974f231',t:'MTc0OTU3OTE0Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

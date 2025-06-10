@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Biblioteca</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sistema de Biblioteca</h1>
+        <div class="tabs">
+            <button class="tab-link active" data-tab="add-book">Adicionar Livro</button>
+            <button class="tab-link" data-tab="available-books">Livros Disponíveis</button>
+            <button class="tab-link" data-tab="borrowed-books">Livros Emprestados</button>
+            <button class="tab-link" data-tab="history">Histórico</button>
+        </div>
+
+        <div id="add-book" class="tab-content active">
+            <div class="form-card">
+                <h2>Adicionar Novo Livro</h2>
+                <form id="add-book-form">
+                    <div class="form-group">
+                        <label for="add-title">Título</label>
+                        <input type="text" id="add-title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add-author">Autor</label>
+                        <input type="text" id="add-author" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="add-isbn">ISBN</label>
+                        <input type="text" id="add-isbn" required>
+                    </div>
+                    <button type="submit">Adicionar Livro</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="available-books" class="tab-content">
+            <div class="section-header">
+                <h2>Livros Disponíveis</h2>
+                <input type="text" id="search-books" class="section-search" placeholder="Pesquisar livros...">
+            </div>
+            <div class="book-grid-header">
+                <span>Título</span>
+                <span>Autor</span>
+                <span>ISBN</span>
+                <span>Status</span>
+                <span>Ações</span>
+            </div>
+            <div id="book-grid" class="book-grid"></div>
+        </div>
+
+        <div id="borrowed-books" class="tab-content">
+            <div class="section-header">
+                <h2>Livros Emprestados</h2>
+                <input type="text" id="search-borrowed" class="section-search" placeholder="Pesquisar livros emprestados...">
+            </div>
+            <div class="book-grid-header">
+                <span>Título</span>
+                <span>Autor</span>
+                <span>ISBN</span>
+                <span>Informações de Empréstimo</span>
+                <span>Ações</span>
+            </div>
+            <div id="borrowed-grid" class="book-grid"></div>
+        </div>
+
+        <div id="history" class="tab-content">
+            <a href="/history" class="back-link">Ver Histórico Completo</a>
+        </div>
+
+        <!-- Modal para detalhes do livro -->
+        <div id="book-details-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-details-modal" class="close-btn">×</span>
+                <h2>Detalhes do Livro</h2>
+                <p id="details-title"></p>
+                <p id="details-author"></p>
+                <p id="details-isbn"></p>
+                <p id="details-status"></p>
+            </div>
+        </div>
+
+        <!-- Modal para devolução (existente, para multas) -->
+        <div id="return-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-return-modal" class="close-btn">×</span>
+                <h2>Devolução Realizada</h2>
+                <p id="modal-book-title"></p>
+                <p id="modal-return-date"></p>
+                <p id="modal-fine"></p>
+            </div>
+        </div>
+
+        <!-- Modal para empréstimo -->
+        <div id="borrow-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-borrow-modal" class="close-btn">×</span>
+                <h2>Emprestar Livro</h2>
+                <p id="borrow-title"></p>
+                <p id="borrow-author"></p>
+                <p id="borrow-isbn"></p>
+                <div class="form-group">
+                    <label for="borrow-student-name">Nome do Aluno</label>
+                    <input type="text" id="borrow-student-name" required>
+                </div>
+                <button id="confirm-borrow-btn" class="borrow-btn">Emprestar</button>
+            </div>
+        </div>
+
+        <!-- Modal para confirmar devolução -->
+        <div id="return-confirm-modal" class="modal">
+            <div class="modal-content">
+                <span id="close-return-confirm-modal" class="close-btn">×</span>
+                <h2>Confirmar Devolução</h2>
+                <p id="return-title"></p>
+                <p id="return-author"></p>
+                <p id="return-isbn"></p>
+                <p id="return-student-name"></p>
+                <p id="return-borrow-date"></p>
+                <p id="return-expected-date"></p>
+                <p id="return-fine"></p>
+                <button id="confirm-return-btn" class="return-btn">Confirmar Devolução</button>
+            </div>
+        </div>
+
+        <div id="notification-container"></div>
+    </div>
+
+    <script src="/static/notify.js"></script>
+    <script src="/static/script.js"></script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94dad69b2c8bf231',t:'MTc0OTU3OTE2MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
