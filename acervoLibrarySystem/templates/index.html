@@ -95,34 +95,48 @@
         </div>
 
         <!-- Modal para empréstimo -->
-        <div id="borrow-modal" class="modal">
+        <div id="borrow-modal" class="modal" aria-hidden="true">
             <div class="modal-content">
-                <span id="close-borrow-modal" class="close-btn">×</span>
-                <h2>Emprestar Livro</h2>
-                <p id="borrow-title"></p>
-                <p id="borrow-author"></p>
-                <p id="borrow-isbn"></p>
-                <div class="form-group">
-                    <label for="borrow-student-name">Nome do Aluno</label>
-                    <input type="text" id="borrow-student-name" required>
+                <header class="modal-header">
+                    <h2>Emprestar Livro</h2>
+                    <button id="close-borrow-modal" class="close-btn" aria-label="Fechar">×</button>
+                </header>
+                <div class="modal-body">
+                    <p id="borrow-title" class="muted"></p>
+                    <p id="borrow-author" class="muted"></p>
+                    <p id="borrow-isbn" class="muted"></p>
+                    <div class="form-group">
+                        <label for="borrow-student-name">Nome do Aluno</label>
+                        <input type="text" id="borrow-student-name" required placeholder="Nome completo do aluno">
+                    </div>
                 </div>
-                <button id="confirm-borrow-btn" class="borrow-btn">Emprestar</button>
+                <footer class="modal-footer">
+                    <button id="cancel-borrow-btn" class="btn secondary">Cancelar</button>
+                    <button id="confirm-borrow-btn" class="btn primary" data-action="confirm-borrow">Emprestar</button>
+                </footer>
             </div>
         </div>
 
         <!-- Modal para confirmar devolução -->
-        <div id="return-confirm-modal" class="modal">
+        <div id="return-confirm-modal" class="modal" aria-hidden="true">
             <div class="modal-content">
-                <span id="close-return-confirm-modal" class="close-btn">×</span>
-                <h2>Confirmar Devolução</h2>
-                <p id="return-title"></p>
-                <p id="return-author"></p>
-                <p id="return-isbn"></p>
-                <p id="return-student-name"></p>
-                <p id="return-borrow-date"></p>
-                <p id="return-expected-date"></p>
-                <p id="return-fine"></p>
-                <button id="confirm-return-btn" class="return-btn">Confirmar Devolução</button>
+                <header class="modal-header">
+                    <h2>Confirmar Devolução</h2>
+                    <button id="close-return-confirm-modal" class="close-btn" aria-label="Fechar">×</button>
+                </header>
+                <div class="modal-body">
+                    <p id="return-title" class="muted"></p>
+                    <p id="return-author" class="muted"></p>
+                    <p id="return-isbn" class="muted"></p>
+                    <p id="return-student-name" class="muted"></p>
+                    <p id="return-borrow-date" class="muted"></p>
+                    <p id="return-expected-date" class="muted"></p>
+                    <p id="return-fine" class="muted"></p>
+                </div>
+                <footer class="modal-footer">
+                    <button id="cancel-return-btn" class="btn secondary">Cancelar</button>
+                    <button id="confirm-return-btn" class="btn primary">Confirmar Devolução</button>
+                </footer>
             </div>
         </div>
 

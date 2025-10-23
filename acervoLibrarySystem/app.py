@@ -51,6 +51,7 @@ def init_db():
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     bookId INTEGER NOT NULL,
                     userId INTEGER NOT NULL,
+                    student_name TEXT,
                     borrowDate TEXT NOT NULL,
                     returnDate TEXT,
                     fine REAL,
@@ -60,6 +61,15 @@ def init_db():
             ''')
             cursor.execute('INSERT OR IGNORE INTO users (id, email) VALUES (?, ?)', 
                            (1, 'generic@example.com'))
+            # Se a coluna student_name não existir (banco antigo), adiciona-la
+            cursor.execute("PRAGMA table_info(borrowhistory)")
+            cols = [row['name'] for row in cursor.fetchall()]
+            if 'student_name' not in cols:
+                try:
+                    cursor.execute('ALTER TABLE borrowhistory ADD COLUMN student_name TEXT')
+                    logging.info('Coluna student_name adicionada à tabela borrowhistory.')
+                except sqlite3.Error as e:
+                    logging.error(f'Erro ao adicionar coluna student_name: {str(e)}')
             conn.commit()
             logging.info('Banco de dados inicializado com sucesso.')
     except sqlite3.Error as e:
@@ -142,6 +152,7 @@ def borrow_book():
             logging.error('Dados JSON inválidos recebidos.')
             return jsonify({'error': 'Dados inválidos ou ausentes'}), 400
         book_id = data.get('book_id')
+        student_name = (data.get('student_name') or '').strip()
         if not book_id:
             logging.error('ID do livro ausente.')
             return jsonify({'error': 'ID do livro é obrigatório'}), 400
@@ -154,9 +165,9 @@ def borrow_book():
                 return jsonify({'error': 'Livro não disponível ou não encontrado'}), 400
             cursor.execute('UPDATE books SET available = ? WHERE id = ?', (False, book_id))
             cursor.execute('''
-                INSERT INTO borrowhistory (bookId, userId, borrowDate)
-                VALUES (?, ?, ?)
-            ''', (book_id, 1, datetime.now().isoformat()))
+                INSERT INTO borrowhistory (bookId, userId, student_name, borrowDate)
+                VALUES (?, ?, ?, ?)
+            ''', (book_id, 1, student_name, datetime.now().isoformat()))
             conn.commit()
             logging.info(f'Livro {book_id} emprestado com sucesso.')
             return jsonify({'message': 'Livro emprestado com sucesso'}), 200
@@ -259,7 +270,7 @@ def get_history():
             # Livros emprestados (borrowhistory com returnDate NULL)
             cursor.execute('''
                 SELECT bh.id, bh.bookId, bh.borrowDate, bh.returnDate, bh.fine,
-                       b.title, b.author, b.isbn
+                       bh.student_name, b.title, b.author, b.isbn
                 FROM borrowhistory bh
                 LEFT JOIN books b ON bh.bookId = b.id
                 WHERE bh.returnDate IS NULL
@@ -272,12 +283,13 @@ def get_history():
                 'isbn': row['isbn'] or 'N/A',
                 'borrow_date': row['borrowDate'],
                 'return_date': row['returnDate'],
-                'fine': row['fine'] if row['fine'] is not None else 0.0
+                'fine': row['fine'] if row['fine'] is not None else 0.0,
+                'student_name': row['student_name'] or ''
             } for row in cursor.fetchall()]
             # Livros devolvidos (borrowhistory com returnDate não NULL)
             cursor.execute('''
                 SELECT bh.id, bh.bookId, bh.borrowDate, bh.returnDate, bh.fine,
-                       b.title, b.author, b.isbn
+                       bh.student_name, b.title, b.author, b.isbn
                 FROM borrowhistory bh
                 LEFT JOIN books b ON bh.bookId = b.id
                 WHERE bh.returnDate IS NOT NULL
@@ -290,7 +302,8 @@ def get_history():
                 'isbn': row['isbn'] or 'N/A',
                 'borrow_date': row['borrowDate'],
                 'return_date': row['returnDate'],
-                'fine': row['fine'] if row['fine'] is not None else 0.0
+                'fine': row['fine'] if row['fine'] is not None else 0.0,
+                'student_name': row['student_name'] or ''
             } for row in cursor.fetchall()]
             logging.info('Histórico completo listado com sucesso.')
             return jsonify({

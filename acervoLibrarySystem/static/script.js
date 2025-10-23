@@ -108,9 +108,12 @@ function renderBooks(gridId, filter) {
             let borrowDate = 'Não registrado';
             let returnDate = 'Não registrado';
             let fine = 0.0;
+                let borrowerName = '';
 
             if (history && history.borrow_date) {
                 borrowDate = new Date(history.borrow_date).toLocaleDateString('pt-BR');
+                    // tentar obter nome do aluno a partir de possíveis campos retornados pela API
+                    borrowerName = history.student_name || history.student || history.borrower_name || history.borrower || history.name || '';
                 if (!history.return_date) {
                     const borrowDateObj = new Date(history.borrow_date);
                     const expectedReturnDate = new Date(borrowDateObj.setDate(borrowDateObj.getDate() + 10));
@@ -121,17 +124,21 @@ function renderBooks(gridId, filter) {
                 }
             }
 
-            bookItem.innerHTML = `
-                <span class="book-title" onclick="showBookDetails(${book.id})">${book.title}</span>
-                <span>${book.author}</span>
-                <span>${book.isbn}</span>
-                <span class="borrow-info">
-                    <div>Empréstimo: ${borrowDate}</div>
-                    <div>Devolução Prevista: ${returnDate}</div>
-                    <div>Multa: <span class="fine-amount">R$${formatFine(fine)}</span></div>
-                </span>
-                <button class="return-btn" onclick="returnBook(event, ${book.id}, '${safeTitle}')">Devolver</button>
-            `;
+                // montar bloco de informações incluindo nome do aluno quando disponível
+                const borrowerHtml = borrowerName ? `<div>Aluno: <strong>${borrowerName}</strong></div>` : '';
+
+                bookItem.innerHTML = `
+                    <span class="book-title" onclick="showBookDetails(${book.id})">${book.title}</span>
+                    <span>${book.author}</span>
+                    <span>${book.isbn}</span>
+                    <span class="borrow-info">
+                        ${borrowerHtml}
+                        <div>Empréstimo: ${borrowDate}</div>
+                        <div>Devolução Prevista: ${returnDate}</div>
+                        <div>Multa: <span class="fine-amount">R$${formatFine(fine)}</span></div>
+                    </span>
+                    <button class="return-btn" onclick="returnBook(event, ${book.id}, '${safeTitle}')">Devolver</button>
+                `;
         }
 
         bookGrid.appendChild(bookItem);
@@ -152,7 +159,7 @@ function showBookDetails(bookId) {
     document.getElementById('details-author').textContent = `Autor: ${book.author}`;
     document.getElementById('details-isbn').textContent = `ISBN: ${book.isbn}`;
     document.getElementById('details-status').textContent = `Status: ${book.available ? 'Disponível' : 'Emprestado'}`;
-    document.getElementById('book-details-modal').style.display = 'flex';
+    document.getElementById('book-details-modal').setAttribute('aria-hidden', 'false');
 }
 
 function borrowBook(event, bookId, bookTitle) {
@@ -166,22 +173,40 @@ function borrowBook(event, bookId, bookTitle) {
     document.getElementById('borrow-title').textContent = `Título: ${book.title}`;
     document.getElementById('borrow-author').textContent = `Autor: ${book.author}`;
     document.getElementById('borrow-isbn').textContent = `ISBN: ${book.isbn}`;
-    document.getElementById('borrow-modal').style.display = 'flex';
 
+    const modal = document.getElementById('borrow-modal');
+    modal.setAttribute('aria-hidden', 'false');
     document.getElementById('confirm-borrow-btn').dataset.bookId = bookId;
     document.getElementById('confirm-borrow-btn').dataset.bookTitle = bookTitle;
+
+    // foco no input de nome do aluno e limpar valor anterior
+    const studentInput = document.getElementById('borrow-student-name');
+    if (studentInput) {
+        studentInput.value = '';
+        setTimeout(() => studentInput.focus(), 100);
+    }
 }
 
 function confirmBorrow(event) {
     event.preventDefault();
     const bookId = parseInt(document.getElementById('confirm-borrow-btn').dataset.bookId);
     const bookTitle = document.getElementById('confirm-borrow-btn').dataset.bookTitle;
+    const studentName = document.getElementById('borrow-student-name')?.value.trim() || '';
+
+    if (!studentName) {
+        showNotification('Por favor, informe o nome do aluno.', 'error');
+        return;
+    }
 
     console.log(`Iniciando empréstimo do livro ID: ${bookId}, Título: ${bookTitle}`);
+    const confirmBtn = document.getElementById('confirm-borrow-btn');
+    confirmBtn.disabled = true;
+    confirmBtn.textContent = 'Emprestando...';
+
     fetch('/api/borrow', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ book_id: bookId })
+        body: JSON.stringify({ book_id: bookId, student_name: studentName })
     })
         .then(response => {
             console.log(`Resposta do /api/borrow: Status ${response.status}`);
@@ -191,13 +216,20 @@ function confirmBorrow(event) {
         .then(data => {
             console.log('Empréstimo bem-sucedido:', data);
             showNotification(`Livro "${bookTitle}" emprestado com sucesso!`, 'success');
-            document.getElementById('borrow-modal').style.display = 'none';
+            const modal = document.getElementById('borrow-modal');
+            modal.setAttribute('aria-hidden', 'true');
+            // limpar campo e reativar botão
+            document.getElementById('borrow-student-name').value = '';
+            confirmBtn.disabled = false;
+            confirmBtn.textContent = 'Emprestar';
             loadBooks('book-grid', 'available');
             loadBooks('borrowed-grid', 'borrowed');
         })
         .catch(error => {
             console.error('Erro ao emprestar livro:', error);
             showNotification('Erro ao emprestar livro.', 'error');
+            confirmBtn.disabled = false;
+            confirmBtn.textContent = 'Emprestar';
         });
 }
 
@@ -223,14 +255,46 @@ function returnBook(event, bookId, bookTitle) {
     document.getElementById('return-title').textContent = `Título: ${book.title}`;
     document.getElementById('return-author').textContent = `Autor: ${book.author}`;
     document.getElementById('return-isbn').textContent = `ISBN: ${book.isbn}`;
+    // preencher nome do aluno, se disponível
+    const borrowerName = history.student_name || history.student || history.borrower_name || history.borrower || history.name || '';
+    document.getElementById('return-student-name').textContent = borrowerName ? `Aluno: ${borrowerName}` : '';
     document.getElementById('return-borrow-date').textContent = `Data de Empréstimo: ${borrowDate.toLocaleDateString('pt-BR')}`;
     document.getElementById('return-expected-date').textContent = `Data Esperada de Devolução: ${expectedReturnDate.toLocaleDateString('pt-BR')}`;
     document.getElementById('return-fine').textContent = `Multa: R$${formatFine(fine)}`;
-    document.getElementById('return-confirm-modal').style.display = 'flex';
+    const confirmModal = document.getElementById('return-confirm-modal');
+    confirmModal.setAttribute('aria-hidden', 'false');
 
     document.getElementById('confirm-return-btn').dataset.bookId = bookId;
     document.getElementById('confirm-return-btn').dataset.bookTitle = bookTitle;
 }
+
+// handlers para fechar/cancelar modais e ESC
+document.addEventListener('DOMContentLoaded', () => {
+    // borrow modal handlers
+    const borrowModal = document.getElementById('borrow-modal');
+    document.getElementById('close-borrow-modal')?.addEventListener('click', () => borrowModal.setAttribute('aria-hidden', 'true'));
+    document.getElementById('cancel-borrow-btn')?.addEventListener('click', () => borrowModal.setAttribute('aria-hidden', 'true'));
+
+    // return confirm modal handlers
+    const returnModal = document.getElementById('return-confirm-modal');
+    document.getElementById('close-return-confirm-modal')?.addEventListener('click', () => returnModal.setAttribute('aria-hidden', 'true'));
+    document.getElementById('cancel-return-btn')?.addEventListener('click', () => returnModal.setAttribute('aria-hidden', 'true'));
+
+    // fechar com ESC
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            borrowModal?.setAttribute('aria-hidden', 'true');
+            returnModal?.setAttribute('aria-hidden', 'true');
+        }
+    });
+
+    // fechar ao clicar fora do conteúdo
+    [borrowModal, returnModal].forEach(modal => {
+        modal?.addEventListener('click', (e) => {
+            if (e.target === modal) modal.setAttribute('aria-hidden', 'true');
+        });
+    });
+});
 
 function confirmReturn(event) {
     event.preventDefault();
@@ -251,12 +315,12 @@ function confirmReturn(event) {
         .then(data => {
             console.log('Devolução bem-sucedida:', data);
             showNotification(`Livro "${bookTitle}" devolvido com sucesso!`, 'success');
-            document.getElementById('return-confirm-modal').style.display = 'none';
+            document.getElementById('return-confirm-modal').setAttribute('aria-hidden', 'true');
             if (data.fine > 0) {
                 document.getElementById('modal-book-title').textContent = `Livro: ${bookTitle}`;
                 document.getElementById('modal-return-date').textContent = `Data de Devolução: ${new Date(data.return_date).toLocaleDateString('pt-BR')}`;
                 document.getElementById('modal-fine').textContent = `Multa: R$${formatFine(data.fine)}`;
-                document.getElementById('return-modal').style.display = 'flex';
+                document.getElementById('return-modal').setAttribute('aria-hidden', 'false');
             }
             loadBooks('book-grid', 'available');
             loadBooks('borrowed-grid', 'borrowed');
@@ -421,21 +485,21 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     document.getElementById('close-return-modal')?.addEventListener('click', () => {
-        document.getElementById('return-modal').style.display = 'none';
+            document.getElementById('return-modal').setAttribute('aria-hidden', 'true');
     });
 
     document.getElementById('close-details-modal')?.addEventListener('click', () => {
-        document.getElementById('book-details-modal').style.display = 'none';
+    document.getElementById('book-details-modal').setAttribute('aria-hidden', 'true');
     });
 
     document.getElementById('close-borrow-modal')?.addEventListener('click', () => {
-        document.getElementById('borrow-modal').style.display = 'none';
+    document.getElementById('borrow-modal').setAttribute('aria-hidden', 'true');
     });
 
     document.getElementById('confirm-borrow-btn')?.addEventListener('click', confirmBorrow);
 
     document.getElementById('close-return-confirm-modal')?.addEventListener('click', () => {
-        document.getElementById('return-confirm-modal').style.display = 'none';
+    document.getElementById('return-confirm-modal').setAttribute('aria-hidden', 'true');
     });
 
     document.getElementById('confirm-return-btn')?.addEventListener('click', confirmReturn);
