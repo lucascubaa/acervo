@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
@@ -6,7 +6,7 @@
     <title>Sistema de Biblioteca</title>
     <link rel="stylesheet" href="/static/style.css?v=38">
     <link rel="stylesheet" href="/styles/style.css">
- 
+    <link rel="stylesheet" href="/styles/layout-fix.css">
 </head>
 <body>
     <div class="bg-circle"></div>
@@ -27,32 +27,18 @@
         </div>
 
         <div id="add-book" class="tab-content active">
-            <div class="add-book-grid">
-                <!-- Coluna Esquerda: Formulário de Adicionar Livro -->
-                <div class="form-card add-book-form-card">
-                    <h2 class="add-book-title">📚 Adicionar Novo Livro</h2>
-                    <form id="add-book-form">
-                        <div class="form-group add-book-form-group">
-                            <label for="add-title" class="add-book-label">Título do Livro:</label>
-                            <input type="text" id="add-title" required placeholder="Digite o título completo" class="add-book-input">
-                        </div>
-                        <div class="form-group add-book-form-group">
-                            <label for="add-author" class="add-book-label">Autor:</label>
-                            <input type="text" id="add-author" required placeholder="Nome do autor" class="add-book-input">
-                        </div>
-                        <div class="form-group add-book-form-group">
-                            <label for="add-category" class="add-book-label">Categoria:</label>
-                            <input type="text" id="add-category" placeholder="Ex: Ficção, Romance, etc." class="add-book-input">
-                        </div>
-                        <div class="form-group add-book-form-group">
-                            <label for="add-isbn" class="add-book-label">ISBN:</label>
-                            <input type="text" id="add-isbn" required placeholder="Código ISBN (10 ou 13 dígitos)" class="add-book-input">
-                        </div>
-                        <button type="submit" class="add-book-submit-btn">Adicionar Livro</button>
-                    </form>
-
-                    <!-- Botão Editar Livro -->
-                    <div class="edit-book-btn-wrapper">
+            <div class="books-tab-wrapper">
+                   <div class="add-book-grid">
+                <!-- Coluna Esquerda: Botões de Ação -->
+                <div class="form-card action-card">
+                    <h2 class="action-title">📚 Gerenciar Livros</h2>
+                    <p class="action-description">Use os botões abaixo para adicionar novos livros ou editar livros existentes no sistema.</p>
+                    
+                    <!-- Botões de Ação -->
+                    <div class="action-buttons-wrapper">
+                        <button id="open-add-book-modal" type="button" class="add-book-modal-btn">
+                            📚 Adicionar Novo Livro
+                        </button>
                         <button id="open-edit-book-modal" type="button" class="edit-book-modal-btn">
                             ✏️ Editar Livro
                         </button>
@@ -83,12 +69,13 @@
                         </div>
                     </div>
                 </div>
+                </div>
+                
+                <!-- Botão de Logout (fixo no canto inferior direito) -->
+                <a href="/logout" class="btn-logout-bottom" title="Sair do sistema">
+                    🚪 Sair
+                </a>
             </div>
-            
-            <!-- Botão de Logout (fixo no canto inferior direito) -->
-            <a href="/logout" class="btn-logout-bottom" title="Sair do sistema">
-                🚪 Sair
-            </a>
         </div>
 
         <!-- Nova aba: Gerenciar Alunos -->
@@ -115,10 +102,10 @@
                 </div>
                 
                 <div class="book-grid-header">
-                    <span>👤 Nome</span>
-                    <span>🎓 Turma</span>
-                    <span>📅 Data de Cadastro</span>
-                    <span>⚙️ Ações</span>
+                    <span>Nome</span>
+                    <span>Turma</span>
+                    <span>Data de Cadastro</span>
+                    <span>Ações</span>
                 </div>
                 <div id="students-grid" class="book-grid">
                     <div class="loader">Carregando alunos...</div>
@@ -137,7 +124,7 @@
                     </div>
                 </div>
                 <div class="book-grid-header">
-                    <span>Título</span>
+                    <span>Titulo</span>
                     <span>Autor</span>
                     <span>Categoria</span>
                     <span>ISBN</span>
@@ -159,19 +146,20 @@
                     </div>
                 </div>
                 <div class="book-grid-header">
-                    <span>Título</span>
+                    <span>Titulo</span>
                     <span>Autor</span>
                     <span>Categoria</span>
                     <span>ISBN</span>
-                    <span>Informações de Empréstimo</span>
+                    <span>Informações de Emprestimo</span>
                 </div>
                 <div id="borrowed-grid" class="book-grid"></div>
             </div>
         </div>
 
         <div id="history" class="tab-content">
-            <!-- Layout de 2 colunas: Filtros à esquerda, Lista à direita -->
-            <div class="history-main-grid">
+            <div class="books-tab-wrapper">
+                <!-- Layout de 2 colunas: Filtros à esquerda, Lista à direita -->
+                <div class="history-main-grid">
                 <!-- Coluna de Filtros e Controles -->
                 <aside class="history-sidebar">
                     <!-- Botão para abrir Estatísticas -->
@@ -191,10 +179,10 @@
                         </button>
                         
                         <div class="filters-content" id="filters-content">
-                            <!-- Pesquisa rápida -->
+                            <!-- Pesquisa rÃ¡pida -->
                             <div class="filter-group compact search-filter">
                                 <label for="search-history">Pesquisar</label>
-                                <input type="text" id="search-history" placeholder="Título, autor ou ISBN..." aria-label="Pesquisar histórico">
+                                <input type="text" id="search-history" placeholder="Titulo, autor ou ISBN..." aria-label="Pesquisar histórico">
                             </div>
 
                             <!-- Grade de filtros compacta -->
@@ -241,7 +229,7 @@
                         </div>
                     </div>
 
-                    <!-- Card de Exportação -->
+                    <!-- Card de ExportaÃ§Ã£o -->
                     <div class="history-export-card">
                         <h3 style="margin: 0 0 0.8rem 0; font-size: 0.95rem; color: #1a365d; display: flex; align-items: center; gap: 0.5rem;">
                             <span>💾</span> Exportar
@@ -258,13 +246,13 @@
 
                         <div class="export-buttons">
                             <button id="export-to-docs" class="btn-export btn-export-docs" title="Exportar para docs">
-                                � Exportar CSV
+                             Exportar CSV
                             </button>
                         </div>
                     </div>
                 </aside>
 
-                <!-- Coluna Principal: Lista de Histórico -->
+                <!-- Coluna Principal: Lista de HistÃ³rico -->
                 <main class="history-main-content">
                     <div class="history-header">
                         <div class="history-title-section">
@@ -284,8 +272,9 @@
             <div id="stats-modal" class="modal" aria-hidden="true">
                 <div class="modal-content stats-modal-content" role="dialog" aria-modal="true" aria-labelledby="stats-modal-title">
                     <header class="modal-header stats-modal-header">
-                        <h2 id="stats-modal-title" style="display: flex; align-items: center; gap: 0.5rem; margin: 0;">
-                            📊 Estatísticas do Sistema
+                        <h2 id="stats-modal-title">
+                            <span class="stats-title-icon">📊</span>
+                            <span class="stats-title-text">Estatísticas do Sistema</span>
                         </h2>
                         <button class="modal-close stats-modal-close" id="stats-modal-close" aria-label="Fechar">×</button>
                     </header>
@@ -293,57 +282,168 @@
                         <!-- Grid de Cards de Estatísticas -->
                         <div class="stats-modal-grid">
                             <div class="stat-card-modal stat-card-added">
-                                <div class="stat-card-header">
+                                <div class="stat-card-icon-wrapper">
                                     <div class="stat-icon-modal">📚</div>
-                                    <div class="stat-label-modal">Livros Adicionados</div>
                                 </div>
-                                <div class="stat-value-modal" id="stat-added">0</div>
-                                <div class="stat-description">Total de livros no sistema</div>
+                                <div class="stat-card-content">
+                                    <div class="stat-label-modal">Livros Adicionados</div>
+                                    <div class="stat-value-modal" id="stat-added">0</div>
+                                    <div class="stat-description">Total de livros cadastrados</div>
+                                </div>
                             </div>
                             
                             <div class="stat-card-modal stat-card-borrowed">
-                                <div class="stat-card-header">
+                                <div class="stat-card-icon-wrapper">
                                     <div class="stat-icon-modal">📖</div>
-                                    <div class="stat-label-modal">Emprestados</div>
                                 </div>
-                                <div class="stat-value-modal" id="stat-borrowed">0</div>
-                                <div class="stat-description">Livros atualmente emprestados</div>
+                                <div class="stat-card-content">
+                                    <div class="stat-label-modal">Emprestados</div>
+                                    <div class="stat-value-modal" id="stat-borrowed">0</div>
+                                    <div class="stat-description">Livros em empréstimo</div>
+                                </div>
                             </div>
                             
                             <div class="stat-card-modal stat-card-returned">
-                                <div class="stat-card-header">
+                                <div class="stat-card-icon-wrapper">
                                     <div class="stat-icon-modal">✅</div>
-                                    <div class="stat-label-modal">Devolvidos</div>
                                 </div>
-                                <div class="stat-value-modal" id="stat-returned">0</div>
-                                <div class="stat-description">Total de devoluções registradas</div>
+                                <div class="stat-card-content">
+                                    <div class="stat-label-modal">Devolvidos</div>
+                                    <div class="stat-value-modal" id="stat-returned">0</div>
+                                    <div class="stat-description">Total de devoluções</div>
+                                </div>
                             </div>
                         </div>
 
-                        <!-- Informações Adicionais -->
+                        <!-- Visão Geral -->
                         <div class="stats-info-section">
-                            <h3 style="margin: 0 0 1rem 0; font-size: 1rem; color: #1a365d; display: flex; align-items: center; gap: 0.5rem;">
-                                📈 Visão Geral
+                            <h3 style="margin: 0 0 1.25rem 0; font-size: 1.1rem; color: #1a202c; display: flex; align-items: center; gap: 0.5rem; font-weight: 700;">
+                                <span style="font-size: 1.3rem;">📈</span>
+                                <span>Visão Geral</span>
                             </h3>
                             <div class="stats-summary-grid">
                                 <div class="summary-item">
-                                    <span class="summary-label">Taxa de Empréstimo</span>
-                                    <span class="summary-value" id="loan-rate">0%</span>
+                                    <div class="summary-icon">📊</div>
+                                    <div class="summary-content">
+                                        <span class="summary-label">Taxa de Empréstimo</span>
+                                        <span class="summary-value" id="loan-rate">0%</span>
+                                    </div>
                                 </div>
                                 <div class="summary-item">
-                                    <span class="summary-label">Taxa de Devolução</span>
-                                    <span class="summary-value" id="return-rate">0%</span>
+                                    <div class="summary-icon">🔄</div>
+                                    <div class="summary-content">
+                                        <span class="summary-label">Taxa de Devolução</span>
+                                        <span class="summary-value" id="return-rate">0%</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Rodapé do Modal -->
                         <div class="stats-modal-footer">
-                            <p style="margin: 0; text-align: center; color: #718096; font-size: 0.85rem;">
-                                💡 Dados atualizados em tempo real
+                            <p style="margin: 0; text-align: center; color: #64748b; font-size: 0.875rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                                <span style="font-size: 1.1rem;">💡</span>
+                                <span style="font-weight: 500;">Dados atualizados em tempo real</span>
                             </p>
                         </div>
                     </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+
+        <!-- Modal de Adicionar Livro -->
+        <div id="add-book-modal" class="modal" aria-hidden="true">
+            <div class="modal-content add-book-modal-content" role="dialog" aria-modal="true" aria-labelledby="add-book-modal-title">
+                <header class="modal-header">
+                    <h2 id="add-book-modal-title" style="display: flex; align-items: center; gap: 0.5rem; margin: 0;">
+                        📚 Adicionar Novo Livro
+                    </h2>
+                    <button class="modal-close" id="add-book-modal-close" aria-label="Fechar">×</button>
+                </header>
+                <div class="modal-body">
+                    <form id="modal-add-book-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="modal-add-title" class="form-label">
+                                    <span class="label-icon">📖</span>
+                                    Titulo do Livro
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="modal-add-title" 
+                                    name="title" 
+                                    required 
+                                    placeholder="Digite o titulo completo" 
+                                    class="form-input"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="modal-add-author" class="form-label">
+                                    <span class="label-icon">✏️</span>
+                                    Autor
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="modal-add-author" 
+                                    name="author" 
+                                    required 
+                                    placeholder="Nome do autor" 
+                                    class="form-input"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="modal-add-category" class="form-label">
+                                    <span class="label-icon">🏷️</span>
+                                    Categoria
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="modal-add-category" 
+                                    name="category" 
+                                    placeholder="Ex: Ficção, Romance, etc." 
+                                    class="form-input"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="modal-add-isbn" class="form-label">
+                                    <span class="label-icon">🔢</span>
+                                    ISBN
+                                </label>
+                                <input 
+                                    type="text" 
+                                    id="modal-add-isbn" 
+                                    name="isbn" 
+                                    required 
+                                    placeholder="Código ISBN (10 ou 13 dígitos)" 
+                                    class="form-input"
+                                    pattern="[0-9X-]{10,17}"
+                                >
+                                <small class="form-hint">
+                                    Formato: 978-85-123-4567-8 ou 85-123-4567-X
+                                </small>
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="button" id="cancel-add-book" class="btn btn-secondary">
+                                ❌ Cancelar
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                ✅ Adicionar Livro
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
@@ -361,7 +461,7 @@
             </div>
         </div>
 
-        <!-- Modal para devolução (existente, para multas) -->
+        <!-- Modal para devoluÃ§Ã£o (existente, para multas) -->
         <div id="return-modal" class="modal">
             <div class="modal-content">
                 <span id="close-return-modal" class="close-btn">×</span>
@@ -372,7 +472,7 @@
             </div>
         </div>
 
-        <!-- Modal para empréstimo -->
+        <!-- Modal para emprÃ©stimo -->
         <div id="borrow-modal" class="modal" aria-hidden="true">
             <div class="modal-content">
                 <header class="modal-header">
@@ -400,7 +500,7 @@
             </div>
         </div>
 
-        <!-- Modal para confirmar devolução -->
+        <!-- Modal para confirmar devoluÃ§Ã£o -->
         <div id="return-confirm-modal" class="modal" aria-hidden="true">
             <div class="modal-content">
                 <header class="modal-header">
@@ -426,7 +526,7 @@
         <div id="notification-container"></div>
     </div>
 
-    <!-- Modal para edição de livro -->
+    <!-- Modal para ediÃ§Ã£o de livro -->
     <div id="edit-book-modal" class="modal" aria-hidden="true">
         <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="edit-book-modal-title" style="max-width: 600px; width: 90%;">
             <header class="modal-header" style="background: linear-gradient(135deg, #4299e1, #3182ce); color: white; padding: 1.2rem 1.5rem; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; align-items: center; margin: -1.5rem -1.5rem 0 -1.5rem;">
@@ -440,14 +540,14 @@
                 <!-- Buscar livro -->
                 <div class="form-group" style="margin-bottom: 1rem;">
                     <label for="search-book-edit" style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; display: block;">🔍 Buscar Livro:</label>
-                    <input type="text" id="search-book-edit" placeholder="Digite título, autor ou ISBN..." style="width: 100%; padding: 0.7rem; border: 2px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
+                    <input type="text" id="search-book-edit" placeholder="Digite titulo, autor ou ISBN..." style="width: 100%; padding: 0.7rem; border: 2px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
                     <p style="margin: 0.4rem 0 0 0; font-size: 0.8rem; color: #718096;">Digite para buscar o livro que deseja editar</p>
                 </div>
 
                 <!-- Lista de resultados da busca -->
                 <div id="search-results-edit" style="max-height: 200px; overflow-y: auto; margin-bottom: 1rem; border: 1px solid #e2e8f0; border-radius: 6px; display: none;"></div>
 
-                <!-- Formulário de edição (inicialmente oculto) -->
+                <!-- FormulÃ¡rio de ediÃ§Ã£o (inicialmente oculto) -->
                 <div id="edit-form-container" style="display: none;">
                     <div style="padding: 1rem; background: #f7fafc; border-radius: 6px; margin-bottom: 1rem;">
                         <h3 style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: #2d3748;">Editando: <span id="editing-book-title" style="color: #4299e1; font-weight: 700;"></span></h3>
@@ -456,8 +556,8 @@
 
                     <form id="edit-book-form">
                         <div class="form-group" style="margin-bottom: 0.8rem;">
-                            <label for="edit-title" style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; display: block;">Título:</label>
-                            <input type="text" id="edit-title" required placeholder="Título do livro" style="width: 100%; padding: 0.6rem; border: 1.5px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
+                            <label for="edit-title" style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; display: block;">Titulo:</label>
+                            <input type="text" id="edit-title" required placeholder="Titulo do livro" style="width: 100%; padding: 0.6rem; border: 1.5px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
                         </div>
 
                         <div class="form-group" style="margin-bottom: 0.8rem;">
@@ -485,7 +585,7 @@
         </div>
     </div>
 
-    <!-- Modal para exclusão de livro -->
+    <!-- Modal para exclusÃ£o de livro -->
     <div id="delete-modal" class="modal" aria-hidden="true">
         <div class="modal-content" style="max-width: 500px; width: 90%;">
             <header class="modal-header" style="background: linear-gradient(135deg, #f56565, #e53e3e); color: white; padding: 1.2rem 1.5rem; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; align-items: center; margin: -1.5rem -1.5rem 0 -1.5rem;">
@@ -511,7 +611,7 @@
         <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="add-student-modal-title" style="max-width: 550px; width: 90%;">
             <header class="modal-header" style="background: linear-gradient(135deg, #4299e1, #3182ce); color: white; padding: 1.2rem 1.5rem; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; align-items: center; margin: -1.5rem -1.5rem 0 -1.5rem;">
                 <h2 id="add-student-modal-title" style="margin: 0; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
-                    <span style="font-size: 1.5rem;">➕</span>
+                    <span style="font-size: 1.5rem;">•</span>
                     <span>Adicionar Aluno</span>
                 </h2>
                 <button id="close-add-student-modal" class="close-btn" aria-label="Fechar" style="background: rgba(255, 255, 255, 0.2); color: white; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; line-height: 1;">×</button>
@@ -593,7 +693,9 @@
 
     <script src="/static/notify.js?v=10"></script>
     <script src="/static/script.js?v=36"></script>
+    <script src="/static/add-book-modal.js?v=1"></script>
     <script src="/static/edit-book.js?v=11"></script>
     <script src="/static/history.js?v=19"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'94dad69b2c8bf231',t:'MTc0OTU3OTE2MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
-</html>  
+    <script src="/static/modal-simple.js?v=1"></script>
+</body>
+</html>

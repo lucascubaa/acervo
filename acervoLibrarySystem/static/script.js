@@ -157,7 +157,7 @@ function renderBooks(gridId, filter) {
                     <span class="borrow-info">
                         ${borrowerHtml}
                         <div>Empréstimo: ${borrowDate}</div>
-                        <div>Devolução Prevista: ${returnDate}</div>
+                        <div>Devolução : ${returnDate}</div>
                         <div>Multa: <span class="fine-amount">R$${formatFine(fine)}</span></div>
                     </span>
                     <button class="return-btn" onclick="returnBook(event, ${book.id}, '${safeTitle}')">Devolver</button>
