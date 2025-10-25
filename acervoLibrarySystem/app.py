@@ -371,6 +371,15 @@ def serve_docs(filename):
         logging.error(f'Erro ao servir arquivo docs/{filename}: {str(e)}')
         return jsonify({'error': 'Arquivo não encontrado'}), 404
 
+@app.route('/styles/<path:filename>')
+def serve_styles(filename):
+    """Serve arquivos CSS da pasta styles"""
+    try:
+        return send_from_directory('styles', filename)
+    except Exception as e:
+        logging.error(f'Erro ao servir arquivo styles/{filename}: {str(e)}')
+        return jsonify({'error': 'Arquivo não encontrado'}), 404
+
 @app.route('/api/books', methods=['GET'])
 def get_books():
     try:

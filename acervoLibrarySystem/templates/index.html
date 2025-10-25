@@ -4,115 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Biblioteca</title>
-    <link rel="stylesheet" href="/static/style.css?v=31">
-    <style>
-        body {
-            background: linear-gradient(135deg, #38a169 0%, #2f855a 50%, #276749 100%) !important;
-            min-height: 100vh;
-            position: relative;
-            overflow-x: hidden;
-        }
-        
-        /* Padrão de livros decorativos */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-image: 
-                repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.03) 35px, rgba(255,255,255,0.03) 70px),
-                repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(255,255,255,0.03) 35px, rgba(255,255,255,0.03) 70px);
-            pointer-events: none;
-            z-index: 0;
-        }
-        
-        /* Efeito de ondas */
-        body::after {
-            content: '';
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 40%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,138.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
-            background-size: cover;
-            pointer-events: none;
-            z-index: 0;
-        }
-        
-        /* Círculos decorativos flutuantes */
-        @keyframes floatBook {
-            0%, 100% {
-                transform: translateY(0) translateX(0) rotate(var(--rotation, 0deg));
-                opacity: 0.3;
-            }
-            33% {
-                transform: translateY(-20px) translateX(10px) rotate(calc(var(--rotation, 0deg) + 5deg));
-                opacity: 0.5;
-            }
-            66% {
-                transform: translateY(-10px) translateX(-10px) rotate(calc(var(--rotation, 0deg) - 5deg));
-                opacity: 0.4;
-            }
-        }
-        
-        .bg-circle {
-            position: fixed;
-            background: rgba(0, 0, 0, 0.15);
-            border-radius: 4px;
-            pointer-events: none;
-            z-index: 0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            animation: floatBook 15s ease-in-out infinite;
-        }
-        
-        .bg-circle::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 5%;
-            width: 90%;
-            height: 100%;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 2px;
-        }
-        
-        .bg-circle:nth-child(1) {
-            width: 120px;
-            height: 160px;
-            top: 10%;
-            left: 8%;
-            --rotation: -15deg;
-            animation-duration: 20s;
-        }
-        
-        .bg-circle:nth-child(2) {
-            width: 100px;
-            height: 140px;
-            top: 50%;
-            right: 10%;
-            --rotation: 12deg;
-            animation-duration: 16s;
-            animation-delay: -6s;
-        }
-        
-        .bg-circle:nth-child(3) {
-            width: 110px;
-            height: 150px;
-            bottom: 15%;
-            left: 15%;
-            --rotation: -8deg;
-            animation-duration: 18s;
-            animation-delay: -12s;
-        }
-        
-        .container {
-            position: relative;
-            z-index: 1;
-        }
-    </style>
+    <link rel="stylesheet" href="/static/style.css?v=38">
+    <link rel="stylesheet" href="/styles/style.css">
+ 
 </head>
 <body>
     <div class="bg-circle"></div>
@@ -133,59 +27,59 @@
         </div>
 
         <div id="add-book" class="tab-content active">
-            <div style="display: grid; grid-template-columns: 380px 1fr; gap: 1.5rem; align-items: start; max-height: calc(100vh - 180px);">
+            <div class="add-book-grid">
                 <!-- Coluna Esquerda: Formulário de Adicionar Livro -->
-                <div class="form-card" style="padding: 1rem;">
-                    <h2 style="margin-bottom: 0.8rem; color: #2c5282; font-size: 1.2rem;">📚 Adicionar Novo Livro</h2>
+                <div class="form-card add-book-form-card">
+                    <h2 class="add-book-title">📚 Adicionar Novo Livro</h2>
                     <form id="add-book-form">
-                        <div class="form-group" style="margin-bottom: 0.6rem;">
-                            <label for="add-title" style="font-size: 0.85rem; margin-bottom: 0.25rem; display: block;">Título do Livro:</label>
-                            <input type="text" id="add-title" required placeholder="Digite o título completo" style="font-size: 0.9rem; padding: 0.5rem;">
+                        <div class="form-group add-book-form-group">
+                            <label for="add-title" class="add-book-label">Título do Livro:</label>
+                            <input type="text" id="add-title" required placeholder="Digite o título completo" class="add-book-input">
                         </div>
-                        <div class="form-group" style="margin-bottom: 0.6rem;">
-                            <label for="add-author" style="font-size: 0.85rem; margin-bottom: 0.25rem; display: block;">Autor:</label>
-                            <input type="text" id="add-author" required placeholder="Nome do autor" style="font-size: 0.9rem; padding: 0.5rem;">
+                        <div class="form-group add-book-form-group">
+                            <label for="add-author" class="add-book-label">Autor:</label>
+                            <input type="text" id="add-author" required placeholder="Nome do autor" class="add-book-input">
                         </div>
-                        <div class="form-group" style="margin-bottom: 0.6rem;">
-                            <label for="add-category" style="font-size: 0.85rem; margin-bottom: 0.25rem; display: block;">Categoria:</label>
-                            <input type="text" id="add-category" placeholder="Ex: Ficção, Romance, etc." style="font-size: 0.9rem; padding: 0.5rem;">
+                        <div class="form-group add-book-form-group">
+                            <label for="add-category" class="add-book-label">Categoria:</label>
+                            <input type="text" id="add-category" placeholder="Ex: Ficção, Romance, etc." class="add-book-input">
                         </div>
-                        <div class="form-group" style="margin-bottom: 0.6rem;">
-                            <label for="add-isbn" style="font-size: 0.85rem; margin-bottom: 0.25rem; display: block;">ISBN:</label>
-                            <input type="text" id="add-isbn" required placeholder="Código ISBN (10 ou 13 dígitos)" style="font-size: 0.9rem; padding: 0.5rem;">
+                        <div class="form-group add-book-form-group">
+                            <label for="add-isbn" class="add-book-label">ISBN:</label>
+                            <input type="text" id="add-isbn" required placeholder="Código ISBN (10 ou 13 dígitos)" class="add-book-input">
                         </div>
-                        <button type="submit" style="margin-top: 0.4rem; width: 100%; padding: 0.65rem; font-size: 0.9rem;">Adicionar Livro</button>
+                        <button type="submit" class="add-book-submit-btn">Adicionar Livro</button>
                     </form>
 
                     <!-- Botão Editar Livro -->
-                    <div style="margin-top: 0.8rem;">
-                        <button id="open-edit-book-modal" type="button" style="width: 100%; padding: 0.6rem; background: linear-gradient(135deg, #4299e1, #3182ce); color: white; border: none; border-radius: 6px; font-weight: 600; font-size: 0.85rem; cursor: pointer; transition: all 0.2s ease;">
+                    <div class="edit-book-btn-wrapper">
+                        <button id="open-edit-book-modal" type="button" class="edit-book-modal-btn">
                             ✏️ Editar Livro
                         </button>
                     </div>
                 </div>
 
                 <!-- Coluna Direita: Estatísticas -->
-                <div class="form-card" style="padding: 1.2rem;">
-                    <h2 style="margin-bottom: 1rem; color: #2c5282; font-size: 1.3rem;">📊 Estatísticas do Sistema</h2>
+                <div class="form-card stats-card">
+                    <h2 class="stats-title">📊 Estatísticas do Sistema</h2>
                     
                     <!-- Cards de estatísticas -->
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1rem;">
-                        <div style="padding: 1.2rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 8px; color: white; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);">
-                            <div style="font-size: 0.8rem; font-weight: 600; opacity: 0.9; margin-bottom: 0.4rem;">📚 Total de Livros</div>
-                            <div style="font-size: 2.2rem; font-weight: 700;" id="total-books-count">0</div>
+                    <div class="stats-grid">
+                        <div class="stat-card stat-card-total">
+                            <div class="stat-label">📚 Total de Livros</div>
+                            <div class="stat-value" id="total-books-count">0</div>
                         </div>
-                        <div style="padding: 1.2rem; background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); border-radius: 8px; color: white; box-shadow: 0 4px 12px rgba(72, 187, 120, 0.3);">
-                            <div style="font-size: 0.8rem; font-weight: 600; opacity: 0.9; margin-bottom: 0.4rem;">✓ Disponíveis</div>
-                            <div style="font-size: 2.2rem; font-weight: 700;" id="available-books-count">0</div>
+                        <div class="stat-card stat-card-available">
+                            <div class="stat-label">✓ Disponíveis</div>
+                            <div class="stat-value" id="available-books-count">0</div>
                         </div>
-                        <div style="padding: 1.2rem; background: linear-gradient(135deg, #f6ad55 0%, #ed8936 100%); border-radius: 8px; color: white; box-shadow: 0 4px 12px rgba(246, 173, 85, 0.3);">
-                            <div style="font-size: 0.8rem; font-weight: 600; opacity: 0.9; margin-bottom: 0.4rem;">⏰ Emprestados</div>
-                            <div style="font-size: 2.2rem; font-weight: 700;" id="borrowed-books-count">0</div>
+                        <div class="stat-card stat-card-borrowed">
+                            <div class="stat-label">⏰ Emprestados</div>
+                            <div class="stat-value" id="borrowed-books-count">0</div>
                         </div>
-                        <div style="padding: 1.2rem; background: linear-gradient(135deg, #4299e1 0%, #3182ce 100%); border-radius: 8px; color: white; box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);">
-                            <div style="font-size: 0.8rem; font-weight: 600; opacity: 0.9; margin-bottom: 0.4rem;">👥 Alunos</div>
-                            <div style="font-size: 2.2rem; font-weight: 700;" id="total-students-count">0</div>
+                        <div class="stat-card stat-card-students">
+                            <div class="stat-label">👥 Alunos</div>
+                            <div class="stat-value" id="total-students-count">0</div>
                         </div>
                     </div>
                 </div>
@@ -199,46 +93,48 @@
 
         <!-- Nova aba: Gerenciar Alunos -->
         <div id="manage-students" class="tab-content">
-            <div style="display: grid; grid-template-columns: 340px 1fr; gap: 1.5rem; align-items: start; max-height: calc(100vh - 180px);">
-                <!-- Coluna Esquerda: Formulário de Adicionar -->
-                <div class="form-card" style="padding: 1.5rem;">
-                    <h3 style="margin-bottom: 1.25rem; color: #2c5282; font-size: 1.2rem;">➕ Adicionar Aluno:</h3>
-                    
-                    <button id="open-add-student-modal-btn" style="width: 100%; padding: 0.85rem; font-size: 1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: all 0.3s ease; box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);">
-                        ➕ Novo Aluno
-                    </button>
-                </div>
+            <div class="manage-students-container">
+                <!-- Seção de Adicionar Aluno -->
+                <div class="manage-students-header">
+                    <div class="form-card add-student-card">
+                        <h3 class="add-student-title">➕ Adicionar Aluno:</h3>
+                        
+                        <button id="open-add-student-modal-btn" class="add-student-btn">
+                            ➕ Novo Aluno
+                        </button>
+                    </div>
 
-                <!-- Coluna Direita: Lista de Alunos -->
-                <div class="form-card" style="padding: 1.5rem; max-height: calc(100vh - 180px); overflow: hidden; display: flex; flex-direction: column;">
-                    <!-- Cabeçalho centralizado -->
-                    <div style="text-align: center; margin-bottom: 0.75rem; padding-bottom: 0.5rem; border-bottom: 2px solid #e2e8f0;">
-                        <h3 style="margin: 0; color: #2c5282; font-size: 1.1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <!-- Título e contador -->
+                    <div class="students-list-title-wrapper">
+                        <h3 class="students-list-title">
                             📋 Lista de Alunos:
                             <span id="students-count-badge" class="count-badge" title="Total de alunos cadastrados">0</span>
                         </h3>
                     </div>
+                </div>
 
+                <!-- Lista de Alunos (ocupa espaço restante) -->
+                <div class="form-card students-list-card">
                     <!-- Filtros -->
-                    <div style="display: flex; justify-content: center; align-items: center; margin-bottom: 0.75rem; gap: 0.75rem;">
-                        <select id="filter-turma" style="padding: 0.6rem; border: 1px solid #cbd5e0; border-radius: 6px; font-size: 0.9rem; min-width: 140px; background: white; cursor: pointer;">
+                    <div class="students-filters">
+                        <select id="filter-turma">
                             <option value="">Todas as Turmas</option>
                             <option value="Turma 1">📚 Turma 1</option>
                             <option value="Turma 2">📚 Turma 2</option>
                             <option value="Turma 3">📚 Turma 3</option>
                         </select>
-                        <div class="autocomplete-wrapper" style="max-width: 350px; min-width: 280px;">
-                            <input type="text" id="search-students" class="section-search" placeholder="Buscar aluno..." autocomplete="off" style="margin-bottom: 0;">
-                            <div id="students-search-dropdown" class="autocomplete-list" style="display:none;"></div>
+                        <div class="autocomplete-wrapper students-search-wrapper">
+                            <input type="text" id="search-students" class="section-search" placeholder="Buscar aluno..." autocomplete="off">
+                            <div id="students-search-dropdown" class="autocomplete-list"></div>
                         </div>
                     </div>
                     
-                    <div class="students-grid-header" style="padding: 0.75rem; font-size: 0.85rem;">
+                    <div class="students-grid-header students-grid-header-custom">
                         <span>👤 Nome</span>
                         <span>📅 Data de Cadastro</span>
                         <span>⚙️ Ações</span>
                     </div>
-                    <div id="students-grid" class="students-grid" style="max-height: calc(100vh - 400px); overflow-y: auto;">
+                    <div id="students-grid" class="students-grid students-grid-custom">
                         <div class="loader">Carregando alunos...</div>
                     </div>
                 </div>
@@ -246,42 +142,46 @@
         </div>
 
         <div id="available-books" class="tab-content">
-            <div class="section-header">
-                <div class="section-title">
-                    <h2>Livros Disponíveis: <span id="available-count-badge" class="count-badge-inline" title="Número de livros disponíveis">0</span></h2>
+            <div class="books-tab-wrapper">
+                <div class="section-header">
+                    <div class="section-title">
+                        <h2>Livros Disponíveis: <span id="available-count-badge" class="count-badge-inline" title="Número de livros disponíveis">0</span></h2>
+                    </div>
+                    <div class="controls-right">
+                        <input type="text" id="search-books" class="section-search" placeholder="Pesquisar livros...">
+                    </div>
                 </div>
-                <div class="controls-right">
-                    <input type="text" id="search-books" class="section-search" placeholder="Pesquisar livros...">
+                <div class="book-grid-header">
+                    <span>Título</span>
+                    <span>Autor</span>
+                    <span>Categoria</span>
+                    <span>ISBN</span>
+                    <span>Status</span>
+                    <span>Ações</span>
                 </div>
+                <div id="book-grid" class="book-grid"></div>
             </div>
-            <div class="book-grid-header">
-                <span>Título</span>
-                <span>Autor</span>
-                <span>Categoria</span>
-                <span>ISBN</span>
-                <span>Status</span>
-                <span>Ações</span>
-            </div>
-            <div id="book-grid" class="book-grid"></div>
         </div>
 
         <div id="borrowed-books" class="tab-content">
-            <div class="section-header">
-                <div class="section-title">
-                    <h2>Livros Emprestados: <span id="borrowed-count-badge" class="count-badge-inline" title="Número de livros emprestados">0</span></h2>
+            <div class="books-tab-wrapper">
+                <div class="section-header">
+                    <div class="section-title">
+                        <h2>Livros Emprestados: <span id="borrowed-count-badge" class="count-badge-inline" title="Número de livros emprestados">0</span></h2>
+                    </div>
+                    <div class="controls-right">
+                        <input type="text" id="search-borrowed" class="section-search" placeholder="Pesquisar livros emprestados...">
+                    </div>
                 </div>
-                <div class="controls-right">
-                    <input type="text" id="search-borrowed" class="section-search" placeholder="Pesquisar livros emprestados...">
+                <div class="book-grid-header">
+                    <span>Título</span>
+                    <span>Autor</span>
+                    <span>Categoria</span>
+                    <span>ISBN</span>
+                    <span>Informações de Empréstimo</span>
                 </div>
+                <div id="borrowed-grid" class="book-grid"></div>
             </div>
-            <div class="book-grid-header">
-                <span>Título</span>
-                <span>Autor</span>
-                <span>Categoria</span>
-                <span>ISBN</span>
-                <span>Informações de Empréstimo</span>
-            </div>
-            <div id="borrowed-grid" class="book-grid"></div>
         </div>
 
         <div id="history" class="tab-content">
