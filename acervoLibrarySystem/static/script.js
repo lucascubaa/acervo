@@ -784,34 +784,20 @@ function renderStudentsGrid() {
 
     filteredStudents.forEach(student => {
         const studentItem = document.createElement('div');
-        studentItem.classList.add('student-item');
+        studentItem.classList.add('book-item'); // Usar mesma classe dos livros
         
         const createdDate = student.created_at ? new Date(student.created_at).toLocaleDateString('pt-BR') : 'N/A';
-        const turmaDisplay = student.turma ? `<span style="font-size: 0.85rem; color: #667eea; font-weight: 600;">📚 ${student.turma}</span>` : '<span style="font-size: 0.85rem; color: #a0aec0;">Sem turma</span>';
+        const turmaDisplay = student.turma || 'Sem turma';
         
         studentItem.innerHTML = `
-            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
-                <span class="student-name">${student.name}</span>
-                ${turmaDisplay}
-            </div>
-            <span>${createdDate}</span>
-            <div class="student-actions">
-                <button class="edit-student-btn" data-student-id="${student.id}" data-student-name="${student.name}">Editar</button>
-                <button class="delete-student-btn" data-student-id="${student.id}" data-student-name="${student.name}">Excluir</button>
+            <span class="book-field-value" title="${student.name}">${student.name}</span>
+            <span class="book-field-value">${turmaDisplay}</span>
+            <span class="book-field-value">${createdDate}</span>
+            <div class="book-actions">
+                <button class="borrow-btn" onclick="editStudentFromGrid(${student.id}, '${student.name.replace(/'/g, "\\'")}', '${student.turma || ''}')">Editar</button>
+                <button class="remove-btn" onclick="deleteStudentFromGrid(${student.id}, '${student.name.replace(/'/g, "\\'")}')">Excluir</button>
             </div>
         `;
-        
-        // Adicionar event listeners aos botões
-        const editBtn = studentItem.querySelector('.edit-student-btn');
-        const deleteBtn = studentItem.querySelector('.delete-student-btn');
-        
-        editBtn.addEventListener('click', () => {
-            editStudentFromGrid(student.id, student.name);
-        });
-        
-        deleteBtn.addEventListener('click', () => {
-            deleteStudentFromGrid(student.id, student.name);
-        });
         
         grid.appendChild(studentItem);
     });
@@ -1512,6 +1498,25 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Botão para abrir modal de adicionar aluno
     document.getElementById('open-add-student-modal-btn')?.addEventListener('click', openAddStudentModal);
+    
+    // Configurar event listeners para filtros de alunos
+    const searchStudents = document.getElementById('search-students');
+    const filterTurma = document.getElementById('filter-turma');
+    
+    if (searchStudents) {
+        searchStudents.addEventListener('input', () => {
+            clearTimeout(window.searchTimeout);
+            window.searchTimeout = setTimeout(() => {
+                renderStudentsGrid();
+            }, 300);
+        });
+    }
+    
+    if (filterTurma) {
+        filterTurma.addEventListener('change', () => {
+            renderStudentsGrid();
+        });
+    }
 
     document.getElementById('close-return-modal')?.addEventListener('click', () => {
             document.getElementById('return-modal').setAttribute('aria-hidden', 'true');

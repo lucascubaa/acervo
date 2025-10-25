@@ -93,50 +93,35 @@
 
         <!-- Nova aba: Gerenciar Alunos -->
         <div id="manage-students" class="tab-content">
-            <div class="manage-students-container">
-                <!-- Seção de Adicionar Aluno -->
-                <div class="manage-students-header">
-                    <div class="form-card add-student-card">
-                        <h3 class="add-student-title">➕ Adicionar Aluno:</h3>
-                        
-                        <button id="open-add-student-modal-btn" class="add-student-btn">
-                            ➕ Novo Aluno
-                        </button>
+            <div class="books-tab-wrapper">
+                <div class="section-header">
+                    <div class="section-title">
+                        <h2>Gerenciar Alunos: <span id="students-count-badge" class="count-badge-inline" title="Total de alunos cadastrados">0</span></h2>
                     </div>
-
-                    <!-- Título e contador -->
-                    <div class="students-list-title-wrapper">
-                        <h3 class="students-list-title">
-                            📋 Lista de Alunos:
-                            <span id="students-count-badge" class="count-badge" title="Total de alunos cadastrados">0</span>
-                        </h3>
+                    <div class="controls-right">
+                        <button id="open-add-student-modal-btn" class="add-student-btn">➕ Novo Aluno</button>
+                        <input type="text" id="search-students" class="section-search" placeholder="Buscar aluno...">
                     </div>
                 </div>
-
-                <!-- Lista de Alunos (ocupa espaço restante) -->
-                <div class="form-card students-list-card">
-                    <!-- Filtros -->
-                    <div class="students-filters">
-                        <select id="filter-turma">
-                            <option value="">Todas as Turmas</option>
-                            <option value="Turma 1">📚 Turma 1</option>
-                            <option value="Turma 2">📚 Turma 2</option>
-                            <option value="Turma 3">📚 Turma 3</option>
-                        </select>
-                        <div class="autocomplete-wrapper students-search-wrapper">
-                            <input type="text" id="search-students" class="section-search" placeholder="Buscar aluno..." autocomplete="off">
-                            <div id="students-search-dropdown" class="autocomplete-list"></div>
-                        </div>
-                    </div>
-                    
-                    <div class="students-grid-header students-grid-header-custom">
-                        <span>👤 Nome</span>
-                        <span>📅 Data de Cadastro</span>
-                        <span>⚙️ Ações</span>
-                    </div>
-                    <div id="students-grid" class="students-grid students-grid-custom">
-                        <div class="loader">Carregando alunos...</div>
-                    </div>
+                
+                <!-- Filtros -->
+                <div class="students-filters" style="padding: 1rem; background: #f8fafc; border-bottom: 1px solid #e2e8f0;">
+                    <select id="filter-turma" style="padding: 0.5rem; border: 1px solid #e2e8f0; border-radius: 6px;">
+                        <option value="">Todas as Turmas</option>
+                        <option value="Turma 1">📚 Turma 1</option>
+                        <option value="Turma 2">📚 Turma 2</option>
+                        <option value="Turma 3">📚 Turma 3</option>
+                    </select>
+                </div>
+                
+                <div class="book-grid-header">
+                    <span>👤 Nome</span>
+                    <span>🎓 Turma</span>
+                    <span>📅 Data de Cadastro</span>
+                    <span>⚙️ Ações</span>
+                </div>
+                <div id="students-grid" class="book-grid">
+                    <div class="loader">Carregando alunos...</div>
                 </div>
             </div>
         </div>
