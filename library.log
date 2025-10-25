@@ -744,3 +744,649 @@
 2025-10-25 19:14:52,376:INFO:127.0.0.1 - - [25/Oct/2025 19:14:52] "GET /api/history HTTP/1.1" 200 -
 2025-10-25 19:14:53,119:INFO:127.0.0.1 - - [25/Oct/2025 19:14:53] "GET /api/students HTTP/1.1" 200 -
 2025-10-25 19:14:53,999:INFO:127.0.0.1 - - [25/Oct/2025 19:14:53] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:15:42,246:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET / HTTP/1.1" 200 -
+2025-10-25 19:15:42,270:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:15:42,274:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:15:42,276:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:42,278:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:15:42,280:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:42,285:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:42,289:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:42,293:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:42,298:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:42,321:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:42,323:INFO:Livros listados com sucesso.
+2025-10-25 19:15:42,324:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:15:42,329:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:15:42,330:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:15:42,335:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:42,344:INFO:Livros listados com sucesso.
+2025-10-25 19:15:42,345:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:15:42,346:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:15:42,347:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:15:42,347:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:42,357:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:42,364:INFO:127.0.0.1 - - [25/Oct/2025 19:15:42] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:45,804:INFO:Logout: admin
+2025-10-25 19:15:45,805:INFO:127.0.0.1 - - [25/Oct/2025 19:15:45] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-10-25 19:15:45,818:INFO:127.0.0.1 - - [25/Oct/2025 19:15:45] "GET /login HTTP/1.1" 200 -
+2025-10-25 19:15:45,851:INFO:127.0.0.1 - - [25/Oct/2025 19:15:45] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:15:45,858:INFO:127.0.0.1 - - [25/Oct/2025 19:15:45] "[36mGET /styles/login.css HTTP/1.1[0m" 304 -
+2025-10-25 19:15:49,356:INFO:Login bem-sucedido: admin
+2025-10-25 19:15:49,359:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-25 19:15:49,368:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "GET / HTTP/1.1" 200 -
+2025-10-25 19:15:49,404:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:15:49,414:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:15:49,417:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:15:49,421:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:49,425:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:49,425:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:49,432:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:49,435:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:49,438:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:15:49,459:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:49,485:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:49,486:INFO:Livros listados com sucesso.
+2025-10-25 19:15:49,486:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:15:49,494:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:15:49,496:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:15:49,501:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:49,516:INFO:Livros listados com sucesso.
+2025-10-25 19:15:49,518:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:15:49,518:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:49,519:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:15:49,520:INFO:127.0.0.1 - - [25/Oct/2025 19:15:49] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:15:50,436:INFO:127.0.0.1 - - [25/Oct/2025 19:15:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:15:50,761:INFO:Livros listados com sucesso.
+2025-10-25 19:15:50,762:INFO:127.0.0.1 - - [25/Oct/2025 19:15:50] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:15:50,779:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:15:50,780:INFO:127.0.0.1 - - [25/Oct/2025 19:15:50] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:15:51,121:INFO:Livros listados com sucesso.
+2025-10-25 19:15:51,124:INFO:127.0.0.1 - - [25/Oct/2025 19:15:51] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:15:51,139:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:15:51,140:INFO:127.0.0.1 - - [25/Oct/2025 19:15:51] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:15:59,803:INFO:127.0.0.1 - - [25/Oct/2025 19:15:59] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:16:00,715:INFO:Livros listados com sucesso.
+2025-10-25 19:16:00,715:INFO:127.0.0.1 - - [25/Oct/2025 19:16:00] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:16:00,728:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:16:00,729:INFO:127.0.0.1 - - [25/Oct/2025 19:16:00] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:16:01,110:INFO:Livros listados com sucesso.
+2025-10-25 19:16:01,112:INFO:127.0.0.1 - - [25/Oct/2025 19:16:01] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:16:01,121:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:16:01,121:INFO:127.0.0.1 - - [25/Oct/2025 19:16:01] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:16:35,371:INFO:127.0.0.1 - - [25/Oct/2025 19:16:35] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:16:36,176:INFO:127.0.0.1 - - [25/Oct/2025 19:16:36] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:16:37,831:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "GET / HTTP/1.1" 200 -
+2025-10-25 19:16:37,852:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:16:37,861:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:16:37,864:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:16:37,872:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:16:37,875:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:16:37,881:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:16:37,882:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:16:37,891:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:16:37,893:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:16:37,968:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:16:37,968:INFO:Livros listados com sucesso.
+2025-10-25 19:16:37,969:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:16:37,971:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:16:37,972:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:16:37,987:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:16:37,987:INFO:Livros listados com sucesso.
+2025-10-25 19:16:37,987:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:16:37,991:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:16:37,994:INFO:127.0.0.1 - - [25/Oct/2025 19:16:37] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:16:38,003:INFO:127.0.0.1 - - [25/Oct/2025 19:16:38] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:16:38,014:INFO:127.0.0.1 - - [25/Oct/2025 19:16:38] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:16:38,022:INFO:127.0.0.1 - - [25/Oct/2025 19:16:38] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:16:38,820:INFO:127.0.0.1 - - [25/Oct/2025 19:16:38] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:16:40,754:INFO:127.0.0.1 - - [25/Oct/2025 19:16:40] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:16:43,205:INFO:Livros listados com sucesso.
+2025-10-25 19:16:43,206:INFO:127.0.0.1 - - [25/Oct/2025 19:16:43] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:16:43,217:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:16:43,218:INFO:127.0.0.1 - - [25/Oct/2025 19:16:43] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:16:44,078:INFO:127.0.0.1 - - [25/Oct/2025 19:16:44] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:18:09,507:INFO:127.0.0.1 - - [25/Oct/2025 19:18:09] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:18:10,622:INFO:127.0.0.1 - - [25/Oct/2025 19:18:10] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:18:13,965:INFO:Livros listados com sucesso.
+2025-10-25 19:18:13,966:INFO:127.0.0.1 - - [25/Oct/2025 19:18:13] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:18:13,986:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:18:13,987:INFO:127.0.0.1 - - [25/Oct/2025 19:18:13] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:18:16,677:INFO:Livros listados com sucesso.
+2025-10-25 19:18:16,677:INFO:127.0.0.1 - - [25/Oct/2025 19:18:16] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:18:16,687:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:18:16,687:INFO:127.0.0.1 - - [25/Oct/2025 19:18:16] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:18:27,418:INFO:127.0.0.1 - - [25/Oct/2025 19:18:27] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:18:27,889:INFO:Livros listados com sucesso.
+2025-10-25 19:18:27,890:INFO:127.0.0.1 - - [25/Oct/2025 19:18:27] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:18:27,911:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:18:27,912:INFO:127.0.0.1 - - [25/Oct/2025 19:18:27] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:18:31,492:INFO:127.0.0.1 - - [25/Oct/2025 19:18:31] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:18:31,961:INFO:Livros listados com sucesso.
+2025-10-25 19:18:31,962:INFO:127.0.0.1 - - [25/Oct/2025 19:18:31] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:18:31,976:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:18:31,977:INFO:127.0.0.1 - - [25/Oct/2025 19:18:31] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:18:32,428:INFO:Livros listados com sucesso.
+2025-10-25 19:18:32,430:INFO:127.0.0.1 - - [25/Oct/2025 19:18:32] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:18:32,440:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:18:32,440:INFO:127.0.0.1 - - [25/Oct/2025 19:18:32] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:19:21,803:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "GET / HTTP/1.1" 200 -
+2025-10-25 19:19:21,830:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:19:21,836:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:19:21,842:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:19:21,845:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:19:21,850:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:19:21,862:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:19:21,867:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:19:21,868:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:19:21,874:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:19:21,894:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:19:21,894:INFO:Livros listados com sucesso.
+2025-10-25 19:19:21,896:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:19:21,908:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:19:21,909:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:19:21,910:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:19:21,911:INFO:Livros listados com sucesso.
+2025-10-25 19:19:21,911:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:19:21,923:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:19:21,925:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:19:21,927:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:19:21,936:INFO:127.0.0.1 - - [25/Oct/2025 19:19:21] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:19:32,556:INFO:Livros listados com sucesso.
+2025-10-25 19:19:32,558:INFO:127.0.0.1 - - [25/Oct/2025 19:19:32] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:19:32,575:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:19:32,577:INFO:127.0.0.1 - - [25/Oct/2025 19:19:32] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:19:33,428:INFO:Livros listados com sucesso.
+2025-10-25 19:19:33,429:INFO:127.0.0.1 - - [25/Oct/2025 19:19:33] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:19:33,440:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:19:33,441:INFO:127.0.0.1 - - [25/Oct/2025 19:19:33] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:19:33,858:INFO:Livros listados com sucesso.
+2025-10-25 19:19:33,859:INFO:127.0.0.1 - - [25/Oct/2025 19:19:33] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:19:33,870:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:19:33,870:INFO:127.0.0.1 - - [25/Oct/2025 19:19:33] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:19:39,474:INFO:127.0.0.1 - - [25/Oct/2025 19:19:39] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:19:40,252:INFO:127.0.0.1 - - [25/Oct/2025 19:19:40] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:19:44,638:INFO:Livros listados com sucesso.
+2025-10-25 19:19:44,639:INFO:127.0.0.1 - - [25/Oct/2025 19:19:44] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:19:44,647:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:19:44,648:INFO:127.0.0.1 - - [25/Oct/2025 19:19:44] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:19:46,088:INFO:127.0.0.1 - - [25/Oct/2025 19:19:46] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:19:47,220:INFO:Livros listados com sucesso.
+2025-10-25 19:19:47,221:INFO:127.0.0.1 - - [25/Oct/2025 19:19:47] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:19:47,234:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:19:47,236:INFO:127.0.0.1 - - [25/Oct/2025 19:19:47] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:19:48,183:INFO:127.0.0.1 - - [25/Oct/2025 19:19:48] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:19:50,362:INFO:Requisição de exclusão recebida: {'id': 2}
+2025-10-25 19:19:50,362:INFO:ID do aluno a ser excluído: 2
+2025-10-25 19:19:50,363:INFO:Aluno encontrado: eduardo zielinski
+2025-10-25 19:19:50,363:INFO:Livros emprestados ativos: 2
+2025-10-25 19:19:50,363:INFO:Query result: <sqlite3.Row object at 0x00000240DD2FB340>
+2025-10-25 19:19:50,363:WARNING:Tentativa de excluir aluno com 2 empréstimos ativos
+2025-10-25 19:19:50,364:INFO:127.0.0.1 - - [25/Oct/2025 19:19:50] "[31m[1mPOST /api/delete_student HTTP/1.1[0m" 400 -
+2025-10-25 19:19:53,204:INFO:Requisição de exclusão recebida: {'id': 2}
+2025-10-25 19:19:53,205:INFO:ID do aluno a ser excluído: 2
+2025-10-25 19:19:53,206:INFO:Aluno encontrado: eduardo zielinski
+2025-10-25 19:19:53,206:INFO:Livros emprestados ativos: 2
+2025-10-25 19:19:53,207:INFO:Query result: <sqlite3.Row object at 0x00000240DD26A950>
+2025-10-25 19:19:53,207:WARNING:Tentativa de excluir aluno com 2 empréstimos ativos
+2025-10-25 19:19:53,207:INFO:127.0.0.1 - - [25/Oct/2025 19:19:53] "[31m[1mPOST /api/delete_student HTTP/1.1[0m" 400 -
+2025-10-25 19:20:08,387:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET / HTTP/1.1" 200 -
+2025-10-25 19:20:08,412:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:20:08,415:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:20:08,420:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:20:08,420:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:20:08,420:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:20:08,429:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:20:08,435:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:20:08,436:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:20:08,442:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:20:08,461:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:20:08,462:INFO:Livros listados com sucesso.
+2025-10-25 19:20:08,463:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:20:08,467:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:20:08,469:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:20:08,472:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:20:08,479:INFO:Livros listados com sucesso.
+2025-10-25 19:20:08,480:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:20:08,484:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:20:08,485:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:20:08,486:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:20:08,495:INFO:127.0.0.1 - - [25/Oct/2025 19:20:08] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:22:07,498:INFO:Livros listados com sucesso.
+2025-10-25 19:22:07,498:INFO:127.0.0.1 - - [25/Oct/2025 19:22:07] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:22:07,513:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:22:07,514:INFO:127.0.0.1 - - [25/Oct/2025 19:22:07] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:22:09,895:INFO:Livros listados com sucesso.
+2025-10-25 19:22:09,896:INFO:127.0.0.1 - - [25/Oct/2025 19:22:09] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:22:09,912:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:22:09,913:INFO:127.0.0.1 - - [25/Oct/2025 19:22:09] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:22:10,581:INFO:127.0.0.1 - - [25/Oct/2025 19:22:10] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:22:13,551:INFO:127.0.0.1 - - [25/Oct/2025 19:22:13] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:22:14,360:INFO:127.0.0.1 - - [25/Oct/2025 19:22:14] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:22:18,297:INFO:Livros listados com sucesso.
+2025-10-25 19:22:18,298:INFO:127.0.0.1 - - [25/Oct/2025 19:22:18] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:22:18,311:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:22:18,313:INFO:127.0.0.1 - - [25/Oct/2025 19:22:18] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:22:18,872:INFO:127.0.0.1 - - [25/Oct/2025 19:22:18] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:22:22,866:INFO:Livros listados com sucesso.
+2025-10-25 19:22:22,870:INFO:127.0.0.1 - - [25/Oct/2025 19:22:22] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:22:22,892:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:22:22,893:INFO:127.0.0.1 - - [25/Oct/2025 19:22:22] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:22:26,372:INFO:Livros listados com sucesso.
+2025-10-25 19:22:26,373:INFO:127.0.0.1 - - [25/Oct/2025 19:22:26] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:22:26,389:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:22:26,390:INFO:127.0.0.1 - - [25/Oct/2025 19:22:26] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:22:49,952:INFO:Livros listados com sucesso.
+2025-10-25 19:22:49,953:INFO:127.0.0.1 - - [25/Oct/2025 19:22:49] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:22:49,965:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:22:49,966:INFO:127.0.0.1 - - [25/Oct/2025 19:22:49] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:22:50,724:INFO:Livros listados com sucesso.
+2025-10-25 19:22:50,725:INFO:127.0.0.1 - - [25/Oct/2025 19:22:50] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:22:50,741:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:22:50,742:INFO:127.0.0.1 - - [25/Oct/2025 19:22:50] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:22:51,079:INFO:127.0.0.1 - - [25/Oct/2025 19:22:51] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:23:42,474:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET / HTTP/1.1" 200 -
+2025-10-25 19:23:42,497:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:23:42,504:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:23:42,511:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:23:42,511:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:23:42,514:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:23:42,519:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:23:42,524:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:23:42,532:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:23:42,533:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:23:42,618:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:23:42,619:INFO:Livros listados com sucesso.
+2025-10-25 19:23:42,619:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:23:42,620:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:23:42,620:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:23:42,628:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:23:42,628:INFO:Livros listados com sucesso.
+2025-10-25 19:23:42,629:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:23:42,637:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:23:42,638:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:23:42,638:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:23:42,648:INFO:127.0.0.1 - - [25/Oct/2025 19:23:42] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:24:05,282:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "GET / HTTP/1.1" 200 -
+2025-10-25 19:24:05,301:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:24:05,310:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:24:05,311:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:24:05,312:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:24:05,313:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:24:05,317:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:24:05,321:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:24:05,326:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:24:05,328:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:24:05,369:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:24:05,369:INFO:Livros listados com sucesso.
+2025-10-25 19:24:05,369:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:24:05,370:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:24:05,371:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:24:05,382:INFO:Livros listados com sucesso.
+2025-10-25 19:24:05,382:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:24:05,383:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:24:05,384:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:24:05,387:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:24:05,392:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:24:05,398:INFO:127.0.0.1 - - [25/Oct/2025 19:24:05] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:25:52,253:INFO:Livros listados com sucesso.
+2025-10-25 19:25:52,254:INFO:127.0.0.1 - - [25/Oct/2025 19:25:52] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:25:52,260:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:25:52,260:INFO:127.0.0.1 - - [25/Oct/2025 19:25:52] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:25:55,542:INFO:Livros listados com sucesso.
+2025-10-25 19:25:55,543:INFO:127.0.0.1 - - [25/Oct/2025 19:25:55] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:25:55,557:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:25:55,557:INFO:127.0.0.1 - - [25/Oct/2025 19:25:55] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:25:56,534:INFO:127.0.0.1 - - [25/Oct/2025 19:25:56] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:25:58,227:INFO:127.0.0.1 - - [25/Oct/2025 19:25:58] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:25:58,941:INFO:127.0.0.1 - - [25/Oct/2025 19:25:58] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:29:20,256:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET / HTTP/1.1" 200 -
+2025-10-25 19:29:20,283:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:29:20,302:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:29:20,302:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:29:20,302:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:20,302:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:20,302:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:20,304:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:20,323:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:20,323:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:20,348:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:29:20,356:INFO:Livros listados com sucesso.
+2025-10-25 19:29:20,358:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:29:20,363:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:29:20,363:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:29:20,364:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:29:20,378:INFO:Livros listados com sucesso.
+2025-10-25 19:29:20,379:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:29:20,379:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:29:20,380:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:29:20,380:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:29:20,392:INFO:127.0.0.1 - - [25/Oct/2025 19:29:20] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:29:50,079:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET / HTTP/1.1" 200 -
+2025-10-25 19:29:50,102:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:29:50,109:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:29:50,110:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:50,112:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:29:50,115:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:50,117:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:50,125:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:50,128:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:50,130:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:29:50,216:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:29:50,216:INFO:Livros listados com sucesso.
+2025-10-25 19:29:50,217:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:29:50,218:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:29:50,219:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:29:50,226:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:29:50,237:INFO:Livros listados com sucesso.
+2025-10-25 19:29:50,239:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:29:50,241:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:29:50,247:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:29:50,248:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:29:50,248:INFO:127.0.0.1 - - [25/Oct/2025 19:29:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:30:10,620:INFO:127.0.0.1 - - [25/Oct/2025 19:30:10] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:30:10,624:INFO:127.0.0.1 - - [25/Oct/2025 19:30:10] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:30:10,629:INFO:127.0.0.1 - - [25/Oct/2025 19:30:10] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:30:10,641:INFO:127.0.0.1 - - [25/Oct/2025 19:30:10] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-25 19:31:12,579:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET / HTTP/1.1" 200 -
+2025-10-25 19:31:12,622:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:31:12,628:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET /styles/layout-fix.css HTTP/1.1" 200 -
+2025-10-25 19:31:12,630:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:31:12,631:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:12,636:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:12,636:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:12,642:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:12,656:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-25 19:31:12,658:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:12,658:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:12,794:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:31:12,796:INFO:Livros listados com sucesso.
+2025-10-25 19:31:12,797:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:31:12,802:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:31:12,803:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:31:12,810:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:31:12,812:INFO:Livros listados com sucesso.
+2025-10-25 19:31:12,816:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:31:12,820:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:31:12,823:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:31:12,824:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:31:12,831:INFO:127.0.0.1 - - [25/Oct/2025 19:31:12] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:31:51,381:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET / HTTP/1.1" 200 -
+2025-10-25 19:31:51,406:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:31:51,417:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:31:51,417:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET /styles/layout-fix.css HTTP/1.1" 200 -
+2025-10-25 19:31:51,419:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:51,419:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:51,423:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:51,428:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:51,433:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:51,439:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:31:51,468:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:31:51,475:INFO:Livros listados com sucesso.
+2025-10-25 19:31:51,476:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:31:51,483:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:31:51,484:INFO:Livros listados com sucesso.
+2025-10-25 19:31:51,484:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:31:51,486:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:31:51,486:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:31:51,498:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:31:51,499:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:31:51,500:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:31:51,511:INFO:127.0.0.1 - - [25/Oct/2025 19:31:51] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:31:58,595:INFO:127.0.0.1 - - [25/Oct/2025 19:31:58] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:31:58,599:INFO:127.0.0.1 - - [25/Oct/2025 19:31:58] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:31:58,599:INFO:127.0.0.1 - - [25/Oct/2025 19:31:58] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:31:58,618:INFO:127.0.0.1 - - [25/Oct/2025 19:31:58] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-25 19:33:07,932:INFO:127.0.0.1 - - [25/Oct/2025 19:33:07] "GET / HTTP/1.1" 200 -
+2025-10-25 19:33:07,966:INFO:127.0.0.1 - - [25/Oct/2025 19:33:07] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-25 19:33:07,970:INFO:127.0.0.1 - - [25/Oct/2025 19:33:07] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:33:07,979:INFO:127.0.0.1 - - [25/Oct/2025 19:33:07] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:33:07,984:INFO:127.0.0.1 - - [25/Oct/2025 19:33:07] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:33:07,989:INFO:127.0.0.1 - - [25/Oct/2025 19:33:07] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:07,994:INFO:127.0.0.1 - - [25/Oct/2025 19:33:07] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:07,995:INFO:127.0.0.1 - - [25/Oct/2025 19:33:07] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:07,997:INFO:127.0.0.1 - - [25/Oct/2025 19:33:07] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:08,006:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:08,008:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:08,194:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:33:08,194:INFO:Livros listados com sucesso.
+2025-10-25 19:33:08,196:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:33:08,197:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:33:08,198:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:33:08,225:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:33:08,235:INFO:Livros listados com sucesso.
+2025-10-25 19:33:08,236:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:33:08,241:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:33:08,244:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:33:08,245:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:33:08,260:INFO:127.0.0.1 - - [25/Oct/2025 19:33:08] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:33:33,155:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET / HTTP/1.1" 200 -
+2025-10-25 19:33:33,189:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:33:33,207:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:33:33,210:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:33:33,212:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:33,220:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:33,250:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:33,255:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:33,258:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:33,261:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:33:33,468:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:33:33,468:INFO:Livros listados com sucesso.
+2025-10-25 19:33:33,471:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:33:33,507:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:33:33,508:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:33:33,509:INFO:Livros listados com sucesso.
+2025-10-25 19:33:33,510:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:33:33,510:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:33:33,521:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:33:33,523:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:33:33,555:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:33:33,566:INFO:127.0.0.1 - - [25/Oct/2025 19:33:33] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:22,821:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "GET / HTTP/1.1" 200 -
+2025-10-25 19:35:22,851:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:35:22,854:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:35:22,858:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:35:22,861:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:22,862:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:22,866:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:22,871:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:22,878:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:22,882:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:22,968:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:22,970:INFO:Livros listados com sucesso.
+2025-10-25 19:35:22,970:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:35:22,982:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:35:22,985:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:22,987:INFO:Livros listados com sucesso.
+2025-10-25 19:35:22,988:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:35:22,989:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:35:22,998:INFO:127.0.0.1 - - [25/Oct/2025 19:35:22] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:23,003:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:35:23,005:INFO:127.0.0.1 - - [25/Oct/2025 19:35:23] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:35:23,019:INFO:127.0.0.1 - - [25/Oct/2025 19:35:23] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:36,051:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET / HTTP/1.1" 200 -
+2025-10-25 19:35:36,069:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:35:36,081:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:35:36,082:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:35:36,084:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:36,084:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:36,089:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:36,093:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:36,097:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:36,099:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:36,119:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:36,123:INFO:Livros listados com sucesso.
+2025-10-25 19:35:36,123:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:35:36,126:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:35:36,131:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:35:36,139:INFO:Livros listados com sucesso.
+2025-10-25 19:35:36,141:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:35:36,142:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:36,143:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:35:36,144:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:35:36,154:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:36,163:INFO:127.0.0.1 - - [25/Oct/2025 19:35:36] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:50,613:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET / HTTP/1.1" 200 -
+2025-10-25 19:35:50,639:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:35:50,650:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:35:50,652:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:35:50,654:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:50,657:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:50,660:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:50,662:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:50,668:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:50,670:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:35:50,739:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:50,742:INFO:Livros listados com sucesso.
+2025-10-25 19:35:50,743:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:35:50,750:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:50,752:INFO:Livros listados com sucesso.
+2025-10-25 19:35:50,753:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:35:50,753:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:35:50,754:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:35:50,763:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:35:50,765:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:35:50,766:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:35:50,772:INFO:127.0.0.1 - - [25/Oct/2025 19:35:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:36:26,949:INFO:127.0.0.1 - - [25/Oct/2025 19:36:26] "GET / HTTP/1.1" 200 -
+2025-10-25 19:36:26,978:INFO:127.0.0.1 - - [25/Oct/2025 19:36:26] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:36:26,983:INFO:127.0.0.1 - - [25/Oct/2025 19:36:26] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:36:26,985:INFO:127.0.0.1 - - [25/Oct/2025 19:36:26] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:36:26,986:INFO:127.0.0.1 - - [25/Oct/2025 19:36:26] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:36:26,989:INFO:127.0.0.1 - - [25/Oct/2025 19:36:26] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:36:26,994:INFO:127.0.0.1 - - [25/Oct/2025 19:36:26] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:36:26,997:INFO:127.0.0.1 - - [25/Oct/2025 19:36:26] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:36:26,999:INFO:127.0.0.1 - - [25/Oct/2025 19:36:26] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:36:27,007:INFO:127.0.0.1 - - [25/Oct/2025 19:36:27] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:36:27,068:INFO:127.0.0.1 - - [25/Oct/2025 19:36:27] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:36:27,068:INFO:Livros listados com sucesso.
+2025-10-25 19:36:27,069:INFO:127.0.0.1 - - [25/Oct/2025 19:36:27] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:27,070:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:36:27,072:INFO:127.0.0.1 - - [25/Oct/2025 19:36:27] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:36:27,083:INFO:127.0.0.1 - - [25/Oct/2025 19:36:27] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:36:27,084:INFO:Livros listados com sucesso.
+2025-10-25 19:36:27,084:INFO:127.0.0.1 - - [25/Oct/2025 19:36:27] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:27,085:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:36:27,086:INFO:127.0.0.1 - - [25/Oct/2025 19:36:27] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:36:27,096:INFO:127.0.0.1 - - [25/Oct/2025 19:36:27] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:36:27,104:INFO:127.0.0.1 - - [25/Oct/2025 19:36:27] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:36:37,145:INFO:Livros listados com sucesso.
+2025-10-25 19:36:37,146:INFO:127.0.0.1 - - [25/Oct/2025 19:36:37] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:37,157:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:36:37,158:INFO:127.0.0.1 - - [25/Oct/2025 19:36:37] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:36:37,455:INFO:Livros listados com sucesso.
+2025-10-25 19:36:37,456:INFO:127.0.0.1 - - [25/Oct/2025 19:36:37] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:37,468:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:36:37,469:INFO:127.0.0.1 - - [25/Oct/2025 19:36:37] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:36:38,490:INFO:127.0.0.1 - - [25/Oct/2025 19:36:38] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:36:39,548:INFO:Livros listados com sucesso.
+2025-10-25 19:36:39,549:INFO:127.0.0.1 - - [25/Oct/2025 19:36:39] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:39,557:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:36:39,558:INFO:127.0.0.1 - - [25/Oct/2025 19:36:39] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:36:41,861:INFO:Livros listados com sucesso.
+2025-10-25 19:36:41,862:INFO:127.0.0.1 - - [25/Oct/2025 19:36:41] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:41,871:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:36:41,872:INFO:127.0.0.1 - - [25/Oct/2025 19:36:41] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:36:43,719:INFO:127.0.0.1 - - [25/Oct/2025 19:36:43] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:36:44,747:INFO:127.0.0.1 - - [25/Oct/2025 19:36:44] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:36:47,232:INFO:127.0.0.1 - - [25/Oct/2025 19:36:47] "GET /api/turmas HTTP/1.1" 200 -
+2025-10-25 19:36:51,087:INFO:Livros listados com sucesso.
+2025-10-25 19:36:51,087:INFO:127.0.0.1 - - [25/Oct/2025 19:36:51] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:54,162:INFO:Livros listados com sucesso.
+2025-10-25 19:36:54,163:INFO:127.0.0.1 - - [25/Oct/2025 19:36:54] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:55,861:INFO:Livros listados com sucesso.
+2025-10-25 19:36:55,861:INFO:127.0.0.1 - - [25/Oct/2025 19:36:55] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:55,870:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:36:55,872:INFO:127.0.0.1 - - [25/Oct/2025 19:36:55] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:36:58,628:INFO:Livros listados com sucesso.
+2025-10-25 19:36:58,629:INFO:127.0.0.1 - - [25/Oct/2025 19:36:58] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:36:58,641:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:36:58,643:INFO:127.0.0.1 - - [25/Oct/2025 19:36:58] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:36:59,548:INFO:127.0.0.1 - - [25/Oct/2025 19:36:59] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:37:00,797:INFO:Livros listados com sucesso.
+2025-10-25 19:37:00,798:INFO:127.0.0.1 - - [25/Oct/2025 19:37:00] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:37:00,807:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:37:00,808:INFO:127.0.0.1 - - [25/Oct/2025 19:37:00] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:37:01,393:INFO:Livros listados com sucesso.
+2025-10-25 19:37:01,394:INFO:127.0.0.1 - - [25/Oct/2025 19:37:01] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:37:01,401:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:37:01,401:INFO:127.0.0.1 - - [25/Oct/2025 19:37:01] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:37:13,115:INFO:127.0.0.1 - - [25/Oct/2025 19:37:13] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:37:13,117:INFO:127.0.0.1 - - [25/Oct/2025 19:37:13] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:37:13,121:INFO:127.0.0.1 - - [25/Oct/2025 19:37:13] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:37:13,134:INFO:127.0.0.1 - - [25/Oct/2025 19:37:13] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-25 19:37:50,718:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET / HTTP/1.1" 200 -
+2025-10-25 19:37:50,747:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:37:50,756:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:37:50,757:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:37:50,758:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:37:50,761:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:37:50,766:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:37:50,772:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:37:50,777:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:37:50,779:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:37:50,812:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:37:50,813:INFO:Livros listados com sucesso.
+2025-10-25 19:37:50,817:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:37:50,818:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:37:50,820:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:37:50,829:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:37:50,834:INFO:Livros listados com sucesso.
+2025-10-25 19:37:50,835:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:37:50,839:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:37:50,841:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:37:50,852:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:37:50,860:INFO:127.0.0.1 - - [25/Oct/2025 19:37:50] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:38:01,242:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET / HTTP/1.1" 200 -
+2025-10-25 19:38:01,270:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:38:01,281:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:38:01,282:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:01,282:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:01,288:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:01,292:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:38:01,294:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:01,302:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:01,303:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:01,344:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:38:01,346:INFO:Livros listados com sucesso.
+2025-10-25 19:38:01,347:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:38:01,349:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:38:01,350:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:38:01,362:INFO:Livros listados com sucesso.
+2025-10-25 19:38:01,363:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:38:01,364:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:38:01,367:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:38:01,369:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:38:01,379:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:38:01,389:INFO:127.0.0.1 - - [25/Oct/2025 19:38:01] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:38:13,703:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET / HTTP/1.1" 200 -
+2025-10-25 19:38:13,724:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:38:13,736:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:13,737:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET /styles/style.css HTTP/1.1" 200 -
+2025-10-25 19:38:13,737:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:13,737:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:38:13,740:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:13,747:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:13,754:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:13,755:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 19:38:13,843:INFO:Livros listados com sucesso.
+2025-10-25 19:38:13,844:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:38:13,845:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:38:13,845:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:38:13,849:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:38:13,852:INFO:Livros listados com sucesso.
+2025-10-25 19:38:13,853:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:38:13,858:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:38:13,861:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 19:38:13,862:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:38:13,871:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:38:13,879:INFO:127.0.0.1 - - [25/Oct/2025 19:38:13] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 19:38:22,685:INFO:127.0.0.1 - - [25/Oct/2025 19:38:22] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 19:38:22,687:INFO:127.0.0.1 - - [25/Oct/2025 19:38:22] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 19:38:22,687:INFO:127.0.0.1 - - [25/Oct/2025 19:38:22] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 19:38:22,703:INFO:127.0.0.1 - - [25/Oct/2025 19:38:22] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-25 19:41:01,562:INFO:127.0.0.1 - - [25/Oct/2025 19:41:01] "[33mGET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1[0m" 404 -
+2025-10-25 19:42:49,581:INFO:Livros listados com sucesso.
+2025-10-25 19:42:49,582:INFO:127.0.0.1 - - [25/Oct/2025 19:42:49] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 19:42:49,591:INFO:Histórico completo listado com sucesso.
+2025-10-25 19:42:49,592:INFO:127.0.0.1 - - [25/Oct/2025 19:42:49] "GET /api/history HTTP/1.1" 200 -
