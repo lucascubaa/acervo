@@ -177,12 +177,14 @@ def get_student_active_loans(student_name):
             cursor = conn.cursor()
             cursor.execute('''
                 SELECT COUNT(*) as count 
-                FROM "histórico de empréstimo" 
-                WHERE student_name = ? AND returnDate IS NULL
+                FROM historico 
+                WHERE aluno_id = (SELECT id FROM alunos WHERE nome = ?) 
+                AND data_devolucao IS NULL
             ''', (student_name,))
             result = cursor.fetchone()
             return result['count'] if result else 0
-    except:
+    except Exception as e:
+        logging.error(f'Erro ao contar empréstimos ativos: {e}')
         return 0
 
 def init_db():
@@ -1013,7 +1015,7 @@ def return_book():
             return jsonify({'error': 'ID do livro é obrigatório'}), 400
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT * FROM "histórico de empréstimo" WHERE bookId = ? AND returnDate IS NULL', (book_id,))
+            cursor.execute('SELECT * FROM historico WHERE livro_id = ? AND data_devolucao IS NULL ORDER BY id DESC LIMIT 1', (book_id,))
             history = cursor.fetchone()
             if not history:
                 logging.error(f'Empréstimo não encontrado para livro {book_id}.')
