@@ -124,15 +124,10 @@ document.addEventListener('DOMContentLoaded', function() {
             showNotification('📚 Livro adicionado com sucesso!', 'success');
             closeAddBookModalHandler();
             
-            // Atualizar estatísticas se estiver na primeira aba
-            if (document.querySelector('#add-book.active')) {
-                loadStats();
-            }
-            
-            // Atualizar lista de livros se estiver na aba de livros disponíveis
-            if (document.querySelector('#available-books.active')) {
-                loadBooks('book-grid', 'available');
-            }
+            // Recarregar a página para atualizar todas as estatísticas e listas
+            setTimeout(() => {
+                window.location.reload();
+            }, 1000);
         })
         .catch(error => {
             console.error('Erro ao adicionar livro:', error);
