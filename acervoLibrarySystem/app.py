@@ -29,6 +29,65 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
+def init_database():
+    """Inicializa o banco de dados criando todas as tabelas necessárias"""
+    conn = sqlite3.connect('library.db')
+    cursor = conn.cursor()
+    
+    # Criar tabela de livros
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS livros (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            titulo TEXT NOT NULL,
+            autor TEXT NOT NULL,
+            isbn TEXT UNIQUE NOT NULL,
+            quantidade INTEGER NOT NULL,
+            disponivel INTEGER NOT NULL
+        )
+    ''')
+    
+    # Criar tabela de alunos
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS alunos (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            nome TEXT NOT NULL,
+            email TEXT,
+            telefone TEXT,
+            matricula TEXT
+        )
+    ''')
+    
+    # Criar tabela de histórico
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS historico (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            livro_id INTEGER NOT NULL,
+            aluno_id INTEGER NOT NULL,
+            data_emprestimo TEXT NOT NULL,
+            data_devolucao_esperada TEXT NOT NULL,
+            data_devolucao TEXT,
+            multa REAL DEFAULT 0,
+            FOREIGN KEY (livro_id) REFERENCES livros (id),
+            FOREIGN KEY (aluno_id) REFERENCES alunos (id)
+        )
+    ''')
+    
+    # Criar tabela de admins
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS admins (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            username TEXT UNIQUE NOT NULL,
+            password_hash TEXT NOT NULL
+        )
+    ''')
+    
+    conn.commit()
+    conn.close()
+    logging.info('Banco de dados inicializado com sucesso')
+
+# Inicializar banco de dados ao iniciar o app
+init_database()
+
 # Decorator para proteger rotas
 def login_required(f):
     @wraps(f)
