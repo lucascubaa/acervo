@@ -12,6 +12,10 @@ from functools import wraps
 # Carregar variáveis de ambiente
 load_dotenv()
 
+# Obter diretório base do app
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DOCS_DIR = os.path.join(BASE_DIR, 'docs')
+
 # Configurar o app
 app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
@@ -366,7 +370,7 @@ def index():
 def serve_docs(filename):
     """Serve arquivos exportados da pasta docs"""
     try:
-        return send_from_directory('docs', filename, as_attachment=True)
+        return send_from_directory(DOCS_DIR, filename, as_attachment=True)
     except Exception as e:
         logging.error(f'Erro ao servir arquivo docs/{filename}: {str(e)}')
         return jsonify({'error': 'Arquivo não encontrado'}), 404
@@ -1016,10 +1020,10 @@ def export_history_to_docs():
                 items = [i for i in items if in_range(i.get('date', '') or i.get('borrowDate', '') or i.get('returnDate', ''))]
 
             # prepare CSV
-            if not os.path.exists('docs'):
-                os.makedirs('docs')
+            if not os.path.exists(DOCS_DIR):
+                os.makedirs(DOCS_DIR)
             filename = f"historico_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
-            filepath = os.path.join('docs', filename)
+            filepath = os.path.join(DOCS_DIR, filename)
             with open(filepath, 'w', encoding='utf-8-sig', newline='') as f:
                 headers = ['Tipo','Título','Autor','ISBN','Categoria','Data','Aluno','Multa']
                 f.write(','.join(headers) + '\n')
