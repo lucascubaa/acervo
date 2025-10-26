@@ -32,9 +32,8 @@ instance/
 .env
 .env.local
 
-# Database
-library.db
-*.db
+# Database (se quiser manter local)
+# library.db
 
 # IDEs
 .vscode/

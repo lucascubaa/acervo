@@ -2,7 +2,11 @@
 // MODAL DE ADICIONAR LIVRO
 // ========================================
 
+console.log('✅ add-book-modal.js CARREGADO');
+
 document.addEventListener('DOMContentLoaded', function() {
+    console.log('🔧 Inicializando modal de adicionar livro...');
+    
     const addBookModalBtn = document.getElementById('open-add-book-modal');
     const addBookModal = document.getElementById('add-book-modal');
     const closeAddBookModal = document.getElementById('add-book-modal-close');
@@ -99,11 +103,25 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function submitAddBookForm(bookData) {
+        console.log('📚 submitAddBookForm CHAMADO - Início');
+        
         // Desabilitar botão de envio
         const submitBtn = addBookForm.querySelector('button[type="submit"]');
         const originalText = submitBtn.innerHTML;
+        
+        // Prevenir múltiplas submissões
+        if (submitBtn.disabled) {
+            console.warn('⚠️ Botão já está desabilitado - ignorando submissão duplicada');
+            return;
+        }
+        
         submitBtn.disabled = true;
         submitBtn.innerHTML = '⏳ Adicionando...';
+        
+        // FECHAR MODAL IMEDIATAMENTE
+        closeAddBookModalHandler();
+
+        console.log('📤 Enviando requisição para /api/add_book:', bookData);
 
         fetch('/api/add_book', {
             method: 'POST',
@@ -113,33 +131,37 @@ document.addEventListener('DOMContentLoaded', function() {
             body: JSON.stringify(bookData)
         })
         .then(response => {
+            console.log('📥 Resposta recebida:', response.status, response.statusText);
+            
+            // Verificar se a resposta é OK antes de processar
             if (!response.ok) {
                 return response.json().then(err => {
-                    throw new Error(err.error || `HTTP ${response.status}`);
+                    console.error('❌ Erro na resposta:', err);
+                    throw new Error(err.error || `Erro HTTP ${response.status}`);
                 });
             }
             return response.json();
         })
         .then(data => {
-            showNotification('📚 Livro adicionado com sucesso!', 'success');
-            closeAddBookModalHandler();
+            console.log('✅ Sucesso! Data:', data);
             
-            // Atualizar estatísticas se estiver na primeira aba
-            if (document.querySelector('#add-book.active')) {
-                loadStats();
-            }
+            // Sucesso! Mostrar notificação verde
+            showNotification('Livro adicionado com sucesso!', 'success');
             
-            // Atualizar lista de livros se estiver na aba de livros disponíveis
-            if (document.querySelector('#available-books.active')) {
-                loadBooks('book-grid', 'available');
-            }
+            // Recarregar a página APENAS em caso de sucesso
+            setTimeout(() => {
+                console.log('🔄 Recarregando página...');
+                window.location.reload();
+            }, 1200);
         })
         .catch(error => {
-            console.error('Erro ao adicionar livro:', error);
-            showNotification(`Erro ao adicionar livro: ${error.message}`, 'error');
-        })
-        .finally(() => {
-            // Reabilitar botão
+            console.error('❌ Erro capturado:', error);
+            
+            // Erro! Mostrar notificação vermelha
+            const errorMessage = error.message || 'Erro desconhecido';
+            showNotification(errorMessage, 'error');
+            
+            // Reabilitar botão em caso de erro
             submitBtn.disabled = false;
             submitBtn.innerHTML = originalText;
         });

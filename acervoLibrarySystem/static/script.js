@@ -1484,11 +1484,13 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    document.getElementById('add-book-form')?.addEventListener('submit', (e) => {
-        e.preventDefault();
-        console.log('Formulário de adicionar livro submetido.');
-        addBook();
-    });
+    // REMOVIDO: Listener duplicado que causava duas requisições
+    // O formulário modal-add-book-form já tem listener em add-book-modal.js
+    // document.getElementById('add-book-form')?.addEventListener('submit', (e) => {
+    //     e.preventDefault();
+    //     console.log('Formulário de adicionar livro submetido.');
+    //     addBook();
+    // });
 
     // Remover o antigo handler do formulário se existir
     const oldForm = document.getElementById('add-student-form');

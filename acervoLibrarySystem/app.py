@@ -336,7 +336,7 @@ def index():
             cursor.execute('SELECT COUNT(*) as borrowed FROM livros WHERE available = 0')
             borrowed_books = cursor.fetchone()['borrowed']
             
-            cursor.execute('SELECT COUNT(*) as total FROM estudantes')
+            cursor.execute('SELECT COUNT(*) as total FROM alunos')
             total_students = cursor.fetchone()['total']
             
             # Buscar turmas
@@ -400,6 +400,9 @@ def get_books():
 def add_book():
     """Adiciona novo livro com validações robustas no backend"""
     try:
+        logging.info('=' * 60)
+        logging.info('NOVA REQUISIÇÃO /api/add_book recebida')
+        
         data = request.get_json(silent=True)
         if not data:
             logging.error('Dados JSON inválidos recebidos.')
@@ -411,7 +414,7 @@ def add_book():
         isbn = sanitize_input(data.get('isbn'))
         category = sanitize_input(data.get('category'))
         
-        logging.info(f'Tentativa de adicionar livro: title={title}, isbn={isbn}')
+        logging.info(f'Dados recebidos: title={title}, author={author}, isbn={isbn}, category={category}')
         
         # Validações usando helpers
         if not all([title, author, isbn]):
@@ -431,25 +434,41 @@ def add_book():
         
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT id FROM livros WHERE isbn = ?', (isbn,))
-            if cursor.fetchone():
-                logging.error(f'ISBN duplicado: {isbn}')
-                return jsonify({'error': 'ISBN já cadastrado'}), 400
+            
+            # Verificar se ISBN já existe
+            logging.info(f'Verificando se ISBN {isbn} já existe...')
+            cursor.execute('SELECT id, title FROM livros WHERE isbn = ?', (isbn,))
+            existing = cursor.fetchone()
+            if existing:
+                logging.warning(f'ISBN JÁ EXISTE: {isbn} - Livro: {existing["title"]}')
+                return jsonify({'error': f'ISBN já cadastrado no livro "{existing["title"]}"'}), 400
+            
+            logging.info('ISBN não existe, prosseguindo com INSERT...')
+            
+            # Inserir livro - sempre usar a estrutura existente (inglês)
             cursor.execute('''
                 INSERT INTO livros (title, author, isbn, category, available)
                 VALUES (?, ?, ?, ?, ?)
             ''', (title, author, isbn, category, True))
+            
             conn.commit()
-            logging.info(f'Livro adicionado com sucesso: {title} (ISBN: {isbn})')
+            logging.info(f'✅ LIVRO ADICIONADO COM SUCESSO: {title} (ISBN: {isbn})')
+            logging.info('=' * 60)
             return jsonify({'message': 'Livro adicionado com sucesso'}), 201
     except sqlite3.IntegrityError as e:
-        logging.error(f'Erro de integridade ao adicionar livro: {str(e)}')
-        return jsonify({'error': 'ISBN já cadastrado'}), 400
+        error_msg = str(e)
+        logging.error(f'❌ ERRO DE INTEGRIDADE: {error_msg}')
+        if 'UNIQUE constraint failed' in error_msg and 'isbn' in error_msg.lower():
+            return jsonify({'error': 'ISBN já está cadastrado em outro livro'}), 400
+        return jsonify({'error': 'Erro de integridade no banco de dados'}), 400
+    except sqlite3.OperationalError as e:
+        logging.error(f'❌ ERRO OPERACIONAL: {str(e)}')
+        return jsonify({'error': f'Erro nas colunas do banco: {str(e)}'}), 500
     except sqlite3.Error as e:
-        logging.error(f'Erro de banco de dados ao adicionar livro: {str(e)}')
+        logging.error(f'❌ ERRO DE BANCO: {str(e)}')
         return jsonify({'error': 'Erro ao adicionar livro'}), 500
     except Exception as e:
-        logging.error(f'Erro inesperado ao adicionar livro: {str(e)}')
+        logging.error(f'❌ ERRO INESPERADO: {str(e)}')
         return jsonify({'error': f'Erro ao adicionar livro: {str(e)}'}), 500
 
 
@@ -572,7 +591,7 @@ def get_students():
     try:
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT id, name, turma, created_at FROM estudantes ORDER BY name')
+            cursor.execute('SELECT id, name, turma, created_at FROM alunos ORDER BY name')
             students = [dict(s) for s in cursor.fetchall()]
             return jsonify(students), 200
     except sqlite3.Error as e:
@@ -614,11 +633,11 @@ def add_student():
         with get_db_connection() as conn:
             cursor = conn.cursor()
             # Verificar duplicidade (case-insensitive)
-            cursor.execute('SELECT id FROM estudantes WHERE LOWER(name) = LOWER(?)', (name,))
+            cursor.execute('SELECT id FROM alunos WHERE LOWER(name) = LOWER(?)', (name,))
             if cursor.fetchone():
                 logging.info(f'Tentativa de adicionar aluno duplicado: {name}')
                 return jsonify({'error': 'Aluno com este nome já existe'}), 400
-            cursor.execute('INSERT INTO estudantes (name, turma, created_at) VALUES (?, ?, ?)', 
+            cursor.execute('INSERT INTO alunos (name, turma, created_at) VALUES (?, ?, ?)', 
                          (name, turma, datetime.now().isoformat()))
             conn.commit()
             student_id = cursor.lastrowid
@@ -657,16 +676,16 @@ def update_student():
             cursor = conn.cursor()
             
             # Verificar se o aluno existe
-            cursor.execute('SELECT id FROM estudantes WHERE id = ?', (student_id,))
+            cursor.execute('SELECT id FROM alunos WHERE id = ?', (student_id,))
             if not cursor.fetchone():
                 return jsonify({'error': 'Aluno não encontrado'}), 404
             
             # Verificar duplicidade de nome (case-insensitive), excluindo o próprio aluno
-            cursor.execute('SELECT id FROM estudantes WHERE LOWER(name) = LOWER(?) AND id != ?', (name, student_id))
+            cursor.execute('SELECT id FROM alunos WHERE LOWER(name) = LOWER(?) AND id != ?', (name, student_id))
             if cursor.fetchone():
                 return jsonify({'error': 'Já existe outro aluno com este nome'}), 400
             
-            cursor.execute('UPDATE estudantes SET name = ?, turma = ? WHERE id = ?', (name, turma, student_id))
+            cursor.execute('UPDATE alunos SET name = ?, turma = ? WHERE id = ?', (name, turma, student_id))
             conn.commit()
             
             logging.info(f'Aluno atualizado: id={student_id}, nome={name}, turma={turma}')
@@ -701,7 +720,7 @@ def delete_student():
             cursor = conn.cursor()
             
             # Verificar se o aluno existe
-            cursor.execute('SELECT name FROM estudantes WHERE id = ?', (student_id,))
+            cursor.execute('SELECT name FROM alunos WHERE id = ?', (student_id,))
             student = cursor.fetchone()
             if not student:
                 logging.warning(f'Aluno com ID {student_id} não encontrado')
@@ -727,7 +746,7 @@ def delete_student():
                 return jsonify({'error': error_msg}), 400
             
             # Excluir o aluno
-            cursor.execute('DELETE FROM estudantes WHERE id = ?', (student_id,))
+            cursor.execute('DELETE FROM alunos WHERE id = ?', (student_id,))
             conn.commit()
             
             logging.info(f'Aluno excluído com sucesso: {student_name} (id={student_id})')
@@ -768,7 +787,7 @@ def borrow_book():
         # Verificar se aluno existe
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT id FROM estudantes WHERE LOWER(name) = LOWER(?)', (student_name,))
+            cursor.execute('SELECT id FROM alunos WHERE LOWER(name) = LOWER(?)', (student_name,))
             if not cursor.fetchone():
                 return jsonify({'error': 'Aluno não cadastrado no sistema'}), 400
             

@@ -1,11 +1,15 @@
-// Modal de Adicionar Livro - Versão Simplificada
-console.log('=== CARREGANDO MODAL DE ADICIONAR LIVRO ===');
+// Modal de Adicionar Livro - DESABILITADO
+// Este arquivo foi substituído por add-book-modal.js
+// Mantido apenas para compatibilidade, mas não executa nada
 
-// Aguardar o DOM carregar
+console.log('modal-simple.js DESABILITADO - usando add-book-modal.js');
+
+// Código antigo comentado para evitar conflitos
+/*
 document.addEventListener('DOMContentLoaded', function() {
-    // Aguardar um pouco mais para garantir que tudo carregou
     setTimeout(initializeModal, 1000);
 });
+*/
 
 function initializeModal() {
     console.log('Inicializando modal...');
@@ -115,7 +119,7 @@ function initializeModal() {
 
             // Validação
             if (!bookData.title || !bookData.author || !bookData.isbn) {
-                alert('Por favor, preencha todos os campos obrigatórios!');
+                showNotification('Por favor, preencha todos os campos obrigatórios!', 'error');
                 return;
             }
 
@@ -143,20 +147,19 @@ function initializeModal() {
             })
             .then(data => {
                 console.log('Livro adicionado com sucesso:', data);
-                alert('📚 Livro adicionado com sucesso!');
+                // Usar notificação em vez de alert
+                showNotification('Livro adicionado com sucesso!', 'success');
                 closeModal();
                 
-                // Atualizar listas (se as funções existirem)
-                if (typeof loadStats === 'function') {
-                    loadStats();
-                }
-                if (typeof loadBooks === 'function') {
-                    loadBooks('book-grid', 'available');
-                }
+                // Recarregar página
+                setTimeout(() => {
+                    window.location.reload();
+                }, 1200);
             })
             .catch(error => {
                 console.error('Erro ao adicionar livro:', error);
-                alert('Erro ao adicionar livro: ' + error.message);
+                // Usar notificação em vez de alert
+                showNotification('Erro: ' + error.message, 'error');
             })
             .finally(() => {
                 submitBtn.disabled = false;
