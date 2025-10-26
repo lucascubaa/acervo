@@ -146,10 +146,13 @@ function initializeModal() {
                 alert('📚 Livro adicionado com sucesso!');
                 closeModal();
                 
-                // Recarregar a página para atualizar tudo
-                setTimeout(() => {
-                    window.location.reload();
-                }, 500);
+                // Atualizar listas (se as funções existirem)
+                if (typeof loadStats === 'function') {
+                    loadStats();
+                }
+                if (typeof loadBooks === 'function') {
+                    loadBooks('book-grid', 'available');
+                }
             })
             .catch(error => {
                 console.error('Erro ao adicionar livro:', error);

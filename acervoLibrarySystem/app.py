@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template, send_from_directory,
 from flask_cors import CORS
 import logging
 import sqlite3
-from datetime import datetime, timedelta
+from datetime import datetime
 import os
 import re
 from dotenv import load_dotenv
@@ -28,86 +28,6 @@ def get_db_connection():
     conn = sqlite3.connect('library.db')
     conn.row_factory = sqlite3.Row
     return conn
-
-def init_database():
-    """Inicializa o banco de dados criando todas as tabelas necessárias"""
-    try:
-        # Verificar se o arquivo existe e tem permissões corretas
-        db_path = 'library.db'
-        if os.path.exists(db_path):
-            # Tentar definir permissões de leitura e escrita
-            try:
-                os.chmod(db_path, 0o666)
-            except Exception as e:
-                logging.warning(f'Não foi possível alterar permissões do banco: {e}')
-        
-        conn = sqlite3.connect(db_path)
-        cursor = conn.cursor()
-        
-        # Criar tabela de livros
-        cursor.execute('''
-            CREATE TABLE IF NOT EXISTS livros (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                titulo TEXT NOT NULL,
-                autor TEXT NOT NULL,
-                isbn TEXT UNIQUE NOT NULL,
-                quantidade INTEGER NOT NULL,
-                disponivel INTEGER NOT NULL
-            )
-        ''')
-        
-        # Criar tabela de alunos
-        cursor.execute('''
-            CREATE TABLE IF NOT EXISTS alunos (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                nome TEXT NOT NULL,
-                email TEXT,
-                telefone TEXT,
-                matricula TEXT
-            )
-        ''')
-        
-        # Criar tabela de histórico
-        cursor.execute('''
-            CREATE TABLE IF NOT EXISTS historico (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                livro_id INTEGER NOT NULL,
-                aluno_id INTEGER NOT NULL,
-                data_emprestimo TEXT NOT NULL,
-                data_devolucao_esperada TEXT NOT NULL,
-                data_devolucao TEXT,
-                multa REAL DEFAULT 0,
-                FOREIGN KEY (livro_id) REFERENCES livros (id),
-                FOREIGN KEY (aluno_id) REFERENCES alunos (id)
-            )
-        ''')
-        
-        # Criar tabela de admins
-        cursor.execute('''
-            CREATE TABLE IF NOT EXISTS admins (
-                id INTEGER PRIMARY KEY AUTOINCREMENT,
-                username TEXT UNIQUE NOT NULL,
-                password_hash TEXT NOT NULL
-            )
-        ''')
-        
-        conn.commit()
-        conn.close()
-        
-        # Tentar definir permissões após criar o arquivo
-        try:
-            os.chmod(db_path, 0o666)
-        except Exception as e:
-            logging.warning(f'Não foi possível alterar permissões do banco após criação: {e}')
-        
-        logging.info('Banco de dados inicializado com sucesso')
-        
-    except Exception as e:
-        logging.error(f'Erro ao inicializar banco de dados: {str(e)}')
-        raise
-
-# Inicializar banco de dados ao iniciar o app
-init_database()
 
 # Decorator para proteger rotas
 def login_required(f):
@@ -163,9 +83,9 @@ def check_book_availability(book_id):
     try:
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT disponivel FROM livros WHERE id = ?', (book_id,))
+            cursor.execute('SELECT available FROM livros WHERE id = ?', (book_id,))
             result = cursor.fetchone()
-            return result['disponivel'] if result else False
+            return result['available'] if result else False
     except:
         return False
 
@@ -177,14 +97,12 @@ def get_student_active_loans(student_name):
             cursor = conn.cursor()
             cursor.execute('''
                 SELECT COUNT(*) as count 
-                FROM historico 
-                WHERE aluno_id = (SELECT id FROM alunos WHERE nome = ?) 
-                AND data_devolucao IS NULL
+                FROM "histórico de empréstimo" 
+                WHERE student_name = ? AND returnDate IS NULL
             ''', (student_name,))
             result = cursor.fetchone()
             return result['count'] if result else 0
-    except Exception as e:
-        logging.error(f'Erro ao contar empréstimos ativos: {e}')
+    except:
         return 0
 
 def init_db():
@@ -392,119 +310,6 @@ def login():
     
     return render_template('login.html')
 
-# Rota de Registro
-@app.route('/register', methods=['GET', 'POST'])
-def register():
-    if request.method == 'POST':
-        data = request.get_json() if request.is_json else request.form
-        username = data.get('username')
-        password = data.get('password')
-        confirm_password = data.get('confirm_password')
-        
-        # Validações
-        if not username or not password or not confirm_password:
-            error = 'Todos os campos são obrigatórios'
-            if request.is_json:
-                return jsonify({'success': False, 'message': error}), 400
-            return render_template('register.html', error=error)
-        
-        if password != confirm_password:
-            error = 'As senhas não coincidem'
-            if request.is_json:
-                return jsonify({'success': False, 'message': error}), 400
-            return render_template('register.html', error=error)
-        
-        if len(password) < 6:
-            error = 'A senha deve ter pelo menos 6 caracteres'
-            if request.is_json:
-                return jsonify({'success': False, 'message': error}), 400
-            return render_template('register.html', error=error)
-        
-        try:
-            with get_db_connection() as conn:
-                cursor = conn.cursor()
-                
-                # Verificar se o usuário já existe
-                cursor.execute('SELECT id FROM admins WHERE username = ?', (username,))
-                if cursor.fetchone():
-                    error = 'Nome de usuário já existe'
-                    if request.is_json:
-                        return jsonify({'success': False, 'message': error}), 400
-                    return render_template('register.html', error=error)
-                
-                # Criar novo usuário
-                password_hash = generate_password_hash(password)
-                cursor.execute('INSERT INTO admins (username, password_hash) VALUES (?, ?)', 
-                             (username, password_hash))
-                conn.commit()
-                
-                logging.info(f'Novo usuário registrado: {username}')
-                
-                if request.is_json:
-                    return jsonify({'success': True, 'message': 'Usuário criado com sucesso! Faça login.'}), 201
-                return redirect(url_for('login'))
-                
-        except Exception as e:
-            logging.error(f'Erro no registro: {str(e)}')
-            error = 'Erro ao criar usuário'
-            if request.is_json:
-                return jsonify({'success': False, 'message': error}), 500
-            return render_template('register.html', error=error)
-    
-    # Se já estiver logado, redireciona para index
-    if 'user_id' in session:
-        return redirect(url_for('index'))
-    
-    return render_template('register.html')
-
-# Rota de Visualização de Dados (Admin)
-@app.route('/admin/view-data')
-@login_required
-def admin_view_data():
-    """Visualizar todos os dados do banco de dados"""
-    try:
-        with get_db_connection() as conn:
-            cursor = conn.cursor()
-            
-            # Buscar todos os usuários admin
-            cursor.execute('SELECT id, username FROM admins ORDER BY id')
-            admins = [dict(row) for row in cursor.fetchall()]
-            
-            # Buscar todos os livros
-            cursor.execute('SELECT * FROM livros ORDER BY id')
-            livros = [dict(row) for row in cursor.fetchall()]
-            
-            # Buscar todos os alunos
-            cursor.execute('SELECT * FROM alunos ORDER BY id')
-            alunos = [dict(row) for row in cursor.fetchall()]
-            
-            # Buscar todo o histórico
-            cursor.execute('''
-                SELECT h.*, l.titulo as livro_titulo, a.nome as aluno_nome
-                FROM historico h
-                LEFT JOIN livros l ON h.livro_id = l.id
-                LEFT JOIN alunos a ON h.aluno_id = a.id
-                ORDER BY h.id DESC
-            ''')
-            historico = [dict(row) for row in cursor.fetchall()]
-            
-            data = {
-                'admins': admins,
-                'livros': livros,
-                'alunos': alunos,
-                'historico': historico,
-                'total_admins': len(admins),
-                'total_livros': len(livros),
-                'total_alunos': len(alunos),
-                'total_historico': len(historico)
-            }
-            
-            return render_template('admin_view_data.html', data=data)
-            
-    except Exception as e:
-        logging.error(f'Erro ao buscar dados: {str(e)}')
-        return jsonify({'error': str(e)}), 500
-
 # Rota de Logout
 @app.route('/logout')
 def logout():
@@ -525,13 +330,13 @@ def index():
             cursor.execute('SELECT COUNT(*) as total FROM livros')
             total_books = cursor.fetchone()['total']
             
-            cursor.execute('SELECT COUNT(*) as available FROM livros WHERE disponivel > 0')
+            cursor.execute('SELECT COUNT(*) as available FROM livros WHERE available = 1')
             available_books = cursor.fetchone()['available']
             
-            cursor.execute('SELECT COUNT(*) as borrowed FROM livros WHERE disponivel = 0')
+            cursor.execute('SELECT COUNT(*) as borrowed FROM livros WHERE available = 0')
             borrowed_books = cursor.fetchone()['borrowed']
             
-            cursor.execute('SELECT COUNT(*) as total FROM alunos')
+            cursor.execute('SELECT COUNT(*) as total FROM estudantes')
             total_students = cursor.fetchone()['total']
             
             # Buscar turmas
@@ -604,9 +409,9 @@ def add_book():
         title = sanitize_input(data.get('title'))
         author = sanitize_input(data.get('author'))
         isbn = sanitize_input(data.get('isbn'))
-        quantity = data.get('quantity', 1)
+        category = sanitize_input(data.get('category'))
         
-        logging.info(f'Tentativa de adicionar livro: title={title}, isbn={isbn}, quantity={quantity}')
+        logging.info(f'Tentativa de adicionar livro: title={title}, isbn={isbn}')
         
         # Validações usando helpers
         if not all([title, author, isbn]):
@@ -624,26 +429,16 @@ def add_book():
             logging.error(f'ISBN inválido: {isbn}')
             return jsonify({'error': 'ISBN inválido. Use 10 ou 13 dígitos.'}), 400
         
-        # Validar quantidade
-        try:
-            quantity = int(quantity)
-            if quantity < 1:
-                return jsonify({'error': 'Quantidade deve ser pelo menos 1'}), 400
-        except (ValueError, TypeError):
-            return jsonify({'error': 'Quantidade inválida'}), 400
-        
         with get_db_connection() as conn:
             cursor = conn.cursor()
             cursor.execute('SELECT id FROM livros WHERE isbn = ?', (isbn,))
             if cursor.fetchone():
                 logging.error(f'ISBN duplicado: {isbn}')
                 return jsonify({'error': 'ISBN já cadastrado'}), 400
-            
-            # Inserir com os nomes corretos das colunas
             cursor.execute('''
-                INSERT INTO livros (titulo, autor, isbn, quantidade, disponivel)
+                INSERT INTO livros (title, author, isbn, category, available)
                 VALUES (?, ?, ?, ?, ?)
-            ''', (title, author, isbn, quantity, quantity))
+            ''', (title, author, isbn, category, True))
             conn.commit()
             logging.info(f'Livro adicionado com sucesso: {title} (ISBN: {isbn})')
             return jsonify({'message': 'Livro adicionado com sucesso'}), 201
@@ -982,16 +777,12 @@ def borrow_book():
             if active_loans >= 3:
                 return jsonify({'error': f'Aluno já possui {active_loans} livros emprestados (limite: 3)'}), 400
             
-            # Atualizar disponibilidade do livro (diminuir quantidade disponível)
-            cursor.execute('UPDATE livros SET disponivel = disponivel - 1 WHERE id = ? AND disponivel > 0', (book_id,))
-            if cursor.rowcount == 0:
-                return jsonify({'error': 'Livro não disponível'}), 400
-            
+            # Registrar empréstimo
+            cursor.execute('UPDATE livros SET available = ? WHERE id = ?', (False, book_id))
             cursor.execute('''
-                INSERT INTO historico (livro_id, aluno_id, data_emprestimo, data_devolucao_esperada)
-                VALUES (?, (SELECT id FROM alunos WHERE nome = ?), ?, ?)
-            ''', (book_id, student_name, datetime.now().date().isoformat(), 
-                  (datetime.now().date() + timedelta(days=14)).isoformat()))
+                INSERT INTO "histórico de empréstimo" (bookId, userId, student_name, borrowDate)
+                VALUES (?, ?, ?, ?)
+            ''', (book_id, 1, student_name, datetime.now().isoformat()))
             conn.commit()
             logging.info(f'Livro {book_id} emprestado com sucesso.')
             return jsonify({'message': 'Livro emprestado com sucesso'}), 200
@@ -1015,25 +806,20 @@ def return_book():
             return jsonify({'error': 'ID do livro é obrigatório'}), 400
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT * FROM historico WHERE livro_id = ? AND data_devolucao IS NULL ORDER BY id DESC LIMIT 1', (book_id,))
+            cursor.execute('SELECT * FROM "histórico de empréstimo" WHERE bookId = ? AND returnDate IS NULL', (book_id,))
             history = cursor.fetchone()
             if not history:
                 logging.error(f'Empréstimo não encontrado para livro {book_id}.')
                 return jsonify({'error': 'Empréstimo não encontrado'}), 400
-            
-            # Calcular multa
-            borrow_date = datetime.fromisoformat(history['data_emprestimo'])
-            expected_return = datetime.fromisoformat(history['data_devolucao_esperada'])
+            borrow_date = datetime.fromisoformat(history['borrowDate'])
             return_date = datetime.now()
-            days_late = max(0, (return_date.date() - expected_return.date()).days)
-            fine = days_late * 1.0  # R$1.00 por dia de atraso
-            
-            # Atualizar histórico e aumentar disponibilidade
+            days = (return_date - borrow_date).days
+            fine = max(0, (days - 10) * 0.25)  # Multa de R$0.25 por dia após 10 dias
             cursor.execute('''
-                UPDATE historico SET data_devolucao = ?, multa = ?
+                UPDATE "histórico de empréstimo" SET returnDate = ?, fine = ?
                 WHERE id = ?
-            ''', (return_date.date().isoformat(), fine, history['id']))
-            cursor.execute('UPDATE livros SET disponivel = disponivel + 1 WHERE id = ?', (book_id,))
+            ''', (return_date.isoformat(), fine, history['id']))
+            cursor.execute('UPDATE livros SET available = ? WHERE id = ?', (True, book_id))
             conn.commit()
             logging.info(f'Livro {book_id} devolvido com sucesso, multa: R${fine:.2f}')
             return jsonify({
@@ -1061,10 +847,10 @@ def delete_book():
             return jsonify({'error': 'ID do livro é obrigatório'}), 400
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT * FROM livros WHERE id = ?', (book_id,))
+            cursor.execute('SELECT * FROM livros WHERE id = ? AND available = ?', (book_id, True))
             book = cursor.fetchone()
             if not book:
-                logging.error(f'Livro {book_id} não encontrado.')
+                logging.error(f'Livro {book_id} não disponível ou não encontrado.')
                 return jsonify({'error': 'Livro não disponível ou não encontrado'}), 400
             cursor.execute('DELETE FROM livros WHERE id = ?', (book_id,))
             conn.commit()
