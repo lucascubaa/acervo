@@ -90,8 +90,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
+            // Validação de comprimento mínimo do título
+            if (bookData.title.length < 2) {
+                showNotification('O título deve ter pelo menos 2 caracteres.', 'error');
+                return;
+            }
+
             // Validação de ISBN básica
             const isbnClean = bookData.isbn.replace(/[-\s]/g, '');
+            if (isbnClean.length < 10) {
+                showNotification('O ISBN deve ter pelo menos 10 dígitos.', 'error');
+                return;
+            }
             if (!/^[0-9X]{10}$|^[0-9]{13}$/.test(isbnClean)) {
                 showNotification('ISBN deve ter 10 ou 13 dígitos (pode conter X no final para ISBN-10).', 'error');
                 return;

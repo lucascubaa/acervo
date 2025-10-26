@@ -271,6 +271,8 @@ a.back-link:active {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .history-page .history-item {
@@ -304,7 +306,8 @@ a.back-link:active {
 
 .remove-btn {
     width: auto;
-    padding: 0.5rem 1rem;
+    min-width: 70px;
+    padding: 0.5rem 0.8rem;
     background: #f56565;
     color: #ffffff;
     border: none;
@@ -313,7 +316,8 @@ a.back-link:active {
     font-weight: 600;
     font-size: 0.85rem;
     transition: background 0.3s;
-    margin-left: 0.5rem;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .remove-btn:hover {
@@ -622,10 +626,11 @@ button:disabled {
 }
 
 #notification-container {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1100;
+    position: fixed !important;
+    top: 1rem !important;
+    right: 1rem !important;
+    z-index: 999999 !important;
+    pointer-events: none;
 }
 
 .notification {
@@ -634,8 +639,9 @@ button:disabled {
     border-radius: 6px;
     color: #ffffff;
     font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
     animation: slideIn 0.5s, fadeOut 0.5s 2.5s forwards;
+    pointer-events: auto;
 }
 
 .notification.success {
@@ -828,7 +834,8 @@ a.back-link:hover {
 
 .remove-btn {
     width: auto;
-    padding: 0.5rem 1rem;
+    min-width: 70px;
+    padding: 0.5rem 0.8rem;
     background: #f56565;
     color: #ffffff;
     border: none;
@@ -837,7 +844,8 @@ a.back-link:hover {
     font-weight: 600;
     font-size: 0.85rem;
     transition: background 0.3s;
-    margin-left: 0.5rem;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .remove-btn:hover {
@@ -948,10 +956,12 @@ button:disabled {
 .borrow-btn,
 .return-btn {
     width: auto;
-    padding: 0.5rem 1rem;
+    min-width: 85px;
+    padding: 0.5rem 0.8rem;
     background: #48bb78;
     font-size: 0.85rem;
-    margin-left: 0.5rem;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .borrow-btn:hover,
@@ -2832,6 +2842,19 @@ button:disabled {
     transform: translateY(0);
 }
 
+#delete-modal-book {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+    margin-top: 0.5rem !important;
+}
+
+#return-student-name {
+    color: #1a202c !important;
+    font-weight: 700 !important;
+    font-size: 1rem !important;
+}
+
 /* Estilo para resultados de busca */
 #search-results-edit {
     background: white;
@@ -3099,6 +3122,11 @@ button:disabled {
     padding: 1.2rem;
     border-radius: 8px;
     color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .stat-card-total {
@@ -3112,8 +3140,8 @@ button:disabled {
 }
 
 .stat-card-borrowed {
-    background: linear-gradient(135deg, #ffd89b 0%, #ffb347 100%);
-    box-shadow: 0 4px 12px rgba(255, 179, 71, 0.4);
+    background: linear-gradient(135deg, #fff5e6 0%, #ffe2e2 100%);
+    box-shadow: 0 4px 12px rgb(255, 255, 255);
 }
 
 .stat-card-students {
@@ -3127,11 +3155,13 @@ button:disabled {
     opacity: 1;
     margin-bottom: 0.4rem;
     color: #1a202c;
+    text-align: center;
 }
 
 .stat-value {
     font-size: 2.2rem;
     font-weight: 700;
+    text-align: center;
 }
 
 /* ===== ESTILOS PARA ABA GERENCIAR ALUNOS ===== */

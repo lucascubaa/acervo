@@ -279,11 +279,11 @@ function returnBook(event, bookId, bookTitle) {
     document.getElementById('return-title').textContent = `Título: ${book.title}`;
     document.getElementById('return-author').textContent = `Autor: ${book.author}`;
     document.getElementById('return-isbn').textContent = `ISBN: ${book.isbn}`;
-    // preencher nome do aluno, se disponível, destacado em verde
+    // preencher nome do aluno, se disponível, destacado em preto forte
     const borrowerName = history.student_name || history.student || history.borrower_name || history.borrower || history.name || '';
     const studentElement = document.getElementById('return-student-name');
     if (borrowerName) {
-        studentElement.innerHTML = `Aluno: <span style="color: #38a169; font-weight: 700;">${borrowerName}</span>`;
+        studentElement.innerHTML = `Aluno: <span style="color: #1a202c; font-weight: 700;">${borrowerName}</span>`;
     } else {
         studentElement.textContent = '';
     }
