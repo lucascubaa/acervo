@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, render_template, send_from_directory, session, redirect, url_for
+from flask import Flask, request, jsonify, render_template, send_from_directory, session, redirect, url_for, send_file
 from flask_cors import CORS
 import logging
 import sqlite3
@@ -8,6 +8,9 @@ import re
 from dotenv import load_dotenv
 from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
+from io import BytesIO
+from docx import Document
+from docx.enum.text import WD_ALIGN_PARAGRAPH
 
 # Carregar variáveis de ambiente
 load_dotenv()
@@ -1019,38 +1022,76 @@ def export_history_to_docs():
             if from_date or to_date:
                 items = [i for i in items if in_range(i.get('date', '') or i.get('borrowDate', '') or i.get('returnDate', ''))]
 
-            # prepare CSV
-            if not os.path.exists(DOCS_DIR):
-                os.makedirs(DOCS_DIR)
-            filename = f"historico_export_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
-            filepath = os.path.join(DOCS_DIR, filename)
-            with open(filepath, 'w', encoding='utf-8-sig', newline='') as f:
-                headers = ['Tipo','Título','Autor','ISBN','Categoria','Data','Aluno','Multa']
-                f.write(','.join(headers) + '\n')
-                for it in items:
-                    tipo_label = {
-                        'borrowed': 'Emprestado',
-                        'returned': 'Devolvido'
-                    }.get(it.get('_type', ''), '')
-                    
-                    d = it.get('date', '') or it.get('borrowDate', '') or it.get('returnDate', '')
-                    
-                    rowvals = [
-                        tipo_label,
-                        it.get('title', ''),
-                        it.get('author', ''),
-                        it.get('isbn', ''),
-                        it.get('category', ''),
-                        d,
-                        it.get('student_name', ''),
-                        str(it.get('fine') or '')
-                    ]
-                    # escape quotes
-                    rowvals_esc = ['"' + str(v).replace('"','""') + '"' for v in rowvals]
-                    f.write(','.join(rowvals_esc) + '\n')
-
-            logging.info(f'Histórico exportado para docs: {filepath}')
-            return jsonify({'path': f'/docs/{filename}', 'filename': filename}), 200
+            # Criar documento Word em memória
+            doc = Document()
+            
+            # Adicionar título
+            heading = doc.add_heading('Historico de Biblioteca', 0)
+            heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            
+            # Adicionar data de geração
+            date_para = doc.add_paragraph(f'Gerado em: {datetime.now().strftime("%d/%m/%Y %H:%M:%S")}')
+            date_para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+            
+            # Espaço
+            doc.add_paragraph()
+            
+            # Criar tabela simples
+            table = doc.add_table(rows=1, cols=8)
+            table.style = 'Light Grid'
+            
+            # Cabeçalhos
+            hdr_cells = table.rows[0].cells
+            headers = ['Tipo', 'Titulo', 'Autor', 'ISBN', 'Categoria', 'Data', 'Aluno', 'Multa']
+            for i, header in enumerate(headers):
+                hdr_cells[i].text = header
+                for paragraph in hdr_cells[i].paragraphs:
+                    for run in paragraph.runs:
+                        run.font.bold = True
+            
+            # Adicionar dados
+            for it in items:
+                row_cells = table.add_row().cells
+                
+                tipo_label = 'Emprestado' if it.get('_type') == 'borrowed' else 'Devolvido'
+                
+                d = it.get('date', '') or it.get('borrowDate', '') or it.get('returnDate', '')
+                if d:
+                    try:
+                        dt = datetime.fromisoformat(d)
+                        d = dt.strftime('%d/%m/%Y %H:%M')
+                    except:
+                        pass
+                
+                row_data = [
+                    tipo_label,
+                    str(it.get('title', '')),
+                    str(it.get('author', '')),
+                    str(it.get('isbn', '')),
+                    str(it.get('category', '')),
+                    str(d),
+                    str(it.get('student_name', '')),
+                    f"R$ {it.get('fine', 0)}"
+                ]
+                
+                for i, value in enumerate(row_data):
+                    row_cells[i].text = value
+            
+            # Salvar em memória
+            file_stream = BytesIO()
+            doc.save(file_stream)
+            file_stream.seek(0)
+            
+            filename = f"historico_biblioteca_{datetime.now().strftime('%Y%m%d_%H%M%S')}.docx"
+            
+            logging.info(f'Histórico exportado para Word: {filename}')
+            
+            return send_file(
+                file_stream,
+                mimetype='application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+                as_attachment=True,
+                download_name=filename
+            )
     except Exception as e:
         logging.error(f'Erro ao exportar histórico para docs: {str(e)}')
         return jsonify({'error': 'Erro ao exportar histórico'}), 500

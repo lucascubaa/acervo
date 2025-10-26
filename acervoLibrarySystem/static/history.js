@@ -478,28 +478,36 @@ document.addEventListener('DOMContentLoaded', () => {
         })
             .then(r => { 
                 if (!r.ok) throw new Error('Falha ao exportar'); 
-                return r.json(); 
+                return r.blob(); 
             })
-            .then(res => {
-                const path = res.path;
-                const n = new Notify();
-                n.show(`Arquivo ${res.filename} gerado com sucesso!`, 'success');
+            .then(blob => {
+                // Criar URL temporária para o blob
+                const url = window.URL.createObjectURL(blob);
+                const filename = `historico_biblioteca_${new Date().toISOString().slice(0,19).replace(/:/g,'-')}.docx`;
                 
                 // Fazer download automático
                 const link = document.createElement('a');
-                link.href = path;
-                link.download = res.filename;
+                link.href = url;
+                link.download = filename;
+                document.body.appendChild(link);
                 link.click();
+                document.body.removeChild(link);
                 
-                console.log('Arquivo exportado para:', path);
+                // Limpar URL temporária
+                window.URL.revokeObjectURL(url);
+                
+                const n = new Notify();
+                n.show(`Arquivo ${filename} baixado com sucesso!`, 'success');
+                
+                console.log('Arquivo Word exportado:', filename);
             })
             .catch(err => { 
-                console.error('Erro ao exportar para docs:', err); 
-                new Notify().show('Erro ao exportar para docs: ' + err.message, 'error'); 
+                console.error('Erro ao exportar para Word:', err); 
+                new Notify().show('Erro ao exportar para Word: ' + err.message, 'error'); 
             })
             .finally(() => { 
                 exportToDocsBtn.disabled = false; 
-                exportToDocsBtn.textContent = '📝 Exportar Docs'; 
+                exportToDocsBtn.textContent = '� Exportar Word'; 
             });
     });
 
