@@ -31,59 +31,80 @@ def get_db_connection():
 
 def init_database():
     """Inicializa o banco de dados criando todas as tabelas necessárias"""
-    conn = sqlite3.connect('library.db')
-    cursor = conn.cursor()
-    
-    # Criar tabela de livros
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS livros (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            titulo TEXT NOT NULL,
-            autor TEXT NOT NULL,
-            isbn TEXT UNIQUE NOT NULL,
-            quantidade INTEGER NOT NULL,
-            disponivel INTEGER NOT NULL
-        )
-    ''')
-    
-    # Criar tabela de alunos
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS alunos (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            nome TEXT NOT NULL,
-            email TEXT,
-            telefone TEXT,
-            matricula TEXT
-        )
-    ''')
-    
-    # Criar tabela de histórico
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS historico (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            livro_id INTEGER NOT NULL,
-            aluno_id INTEGER NOT NULL,
-            data_emprestimo TEXT NOT NULL,
-            data_devolucao_esperada TEXT NOT NULL,
-            data_devolucao TEXT,
-            multa REAL DEFAULT 0,
-            FOREIGN KEY (livro_id) REFERENCES livros (id),
-            FOREIGN KEY (aluno_id) REFERENCES alunos (id)
-        )
-    ''')
-    
-    # Criar tabela de admins
-    cursor.execute('''
-        CREATE TABLE IF NOT EXISTS admins (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            username TEXT UNIQUE NOT NULL,
-            password_hash TEXT NOT NULL
-        )
-    ''')
-    
-    conn.commit()
-    conn.close()
-    logging.info('Banco de dados inicializado com sucesso')
+    try:
+        # Verificar se o arquivo existe e tem permissões corretas
+        db_path = 'library.db'
+        if os.path.exists(db_path):
+            # Tentar definir permissões de leitura e escrita
+            try:
+                os.chmod(db_path, 0o666)
+            except Exception as e:
+                logging.warning(f'Não foi possível alterar permissões do banco: {e}')
+        
+        conn = sqlite3.connect(db_path)
+        cursor = conn.cursor()
+        
+        # Criar tabela de livros
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS livros (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                titulo TEXT NOT NULL,
+                autor TEXT NOT NULL,
+                isbn TEXT UNIQUE NOT NULL,
+                quantidade INTEGER NOT NULL,
+                disponivel INTEGER NOT NULL
+            )
+        ''')
+        
+        # Criar tabela de alunos
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS alunos (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                nome TEXT NOT NULL,
+                email TEXT,
+                telefone TEXT,
+                matricula TEXT
+            )
+        ''')
+        
+        # Criar tabela de histórico
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS historico (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                livro_id INTEGER NOT NULL,
+                aluno_id INTEGER NOT NULL,
+                data_emprestimo TEXT NOT NULL,
+                data_devolucao_esperada TEXT NOT NULL,
+                data_devolucao TEXT,
+                multa REAL DEFAULT 0,
+                FOREIGN KEY (livro_id) REFERENCES livros (id),
+                FOREIGN KEY (aluno_id) REFERENCES alunos (id)
+            )
+        ''')
+        
+        # Criar tabela de admins
+        cursor.execute('''
+            CREATE TABLE IF NOT EXISTS admins (
+                id INTEGER PRIMARY KEY AUTOINCREMENT,
+                username TEXT UNIQUE NOT NULL,
+                password_hash TEXT NOT NULL
+            )
+        ''')
+        
+        conn.commit()
+        conn.close()
+        
+        # Tentar definir permissões após criar o arquivo
+        try:
+            os.chmod(db_path, 0o666)
+        except Exception as e:
+            logging.warning(f'Não foi possível alterar permissões do banco após criação: {e}')
+        
+        logging.info('Banco de dados inicializado com sucesso')
+        
+    except Exception as e:
+        logging.error(f'Erro ao inicializar banco de dados: {str(e)}')
+        raise
 
 # Inicializar banco de dados ao iniciar o app
 init_database()
@@ -581,9 +602,9 @@ def add_book():
         title = sanitize_input(data.get('title'))
         author = sanitize_input(data.get('author'))
         isbn = sanitize_input(data.get('isbn'))
-        category = sanitize_input(data.get('category'))
+        quantity = data.get('quantity', 1)
         
-        logging.info(f'Tentativa de adicionar livro: title={title}, isbn={isbn}')
+        logging.info(f'Tentativa de adicionar livro: title={title}, isbn={isbn}, quantity={quantity}')
         
         # Validações usando helpers
         if not all([title, author, isbn]):
@@ -601,16 +622,26 @@ def add_book():
             logging.error(f'ISBN inválido: {isbn}')
             return jsonify({'error': 'ISBN inválido. Use 10 ou 13 dígitos.'}), 400
         
+        # Validar quantidade
+        try:
+            quantity = int(quantity)
+            if quantity < 1:
+                return jsonify({'error': 'Quantidade deve ser pelo menos 1'}), 400
+        except (ValueError, TypeError):
+            return jsonify({'error': 'Quantidade inválida'}), 400
+        
         with get_db_connection() as conn:
             cursor = conn.cursor()
             cursor.execute('SELECT id FROM livros WHERE isbn = ?', (isbn,))
             if cursor.fetchone():
                 logging.error(f'ISBN duplicado: {isbn}')
                 return jsonify({'error': 'ISBN já cadastrado'}), 400
+            
+            # Inserir com os nomes corretos das colunas
             cursor.execute('''
-                INSERT INTO livros (title, author, isbn, category, available)
+                INSERT INTO livros (titulo, autor, isbn, quantidade, disponivel)
                 VALUES (?, ?, ?, ?, ?)
-            ''', (title, author, isbn, category, True))
+            ''', (title, author, isbn, quantity, quantity))
             conn.commit()
             logging.info(f'Livro adicionado com sucesso: {title} (ISBN: {isbn})')
             return jsonify({'message': 'Livro adicionado com sucesso'}), 201
