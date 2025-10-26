@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template, send_from_directory,
 from flask_cors import CORS
 import logging
 import sqlite3
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
 import re
 from dotenv import load_dotenv
@@ -163,9 +163,9 @@ def check_book_availability(book_id):
     try:
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT available FROM livros WHERE id = ?', (book_id,))
+            cursor.execute('SELECT disponivel FROM livros WHERE id = ?', (book_id,))
             result = cursor.fetchone()
-            return result['available'] if result else False
+            return result['disponivel'] if result else False
     except:
         return False
 
@@ -523,13 +523,13 @@ def index():
             cursor.execute('SELECT COUNT(*) as total FROM livros')
             total_books = cursor.fetchone()['total']
             
-            cursor.execute('SELECT COUNT(*) as available FROM livros WHERE available = 1')
+            cursor.execute('SELECT COUNT(*) as available FROM livros WHERE disponivel > 0')
             available_books = cursor.fetchone()['available']
             
-            cursor.execute('SELECT COUNT(*) as borrowed FROM livros WHERE available = 0')
+            cursor.execute('SELECT COUNT(*) as borrowed FROM livros WHERE disponivel = 0')
             borrowed_books = cursor.fetchone()['borrowed']
             
-            cursor.execute('SELECT COUNT(*) as total FROM estudantes')
+            cursor.execute('SELECT COUNT(*) as total FROM alunos')
             total_students = cursor.fetchone()['total']
             
             # Buscar turmas
@@ -980,12 +980,16 @@ def borrow_book():
             if active_loans >= 3:
                 return jsonify({'error': f'Aluno já possui {active_loans} livros emprestados (limite: 3)'}), 400
             
-            # Registrar empréstimo
-            cursor.execute('UPDATE livros SET available = ? WHERE id = ?', (False, book_id))
+            # Atualizar disponibilidade do livro (diminuir quantidade disponível)
+            cursor.execute('UPDATE livros SET disponivel = disponivel - 1 WHERE id = ? AND disponivel > 0', (book_id,))
+            if cursor.rowcount == 0:
+                return jsonify({'error': 'Livro não disponível'}), 400
+            
             cursor.execute('''
-                INSERT INTO "histórico de empréstimo" (bookId, userId, student_name, borrowDate)
-                VALUES (?, ?, ?, ?)
-            ''', (book_id, 1, student_name, datetime.now().isoformat()))
+                INSERT INTO historico (livro_id, aluno_id, data_emprestimo, data_devolucao_esperada)
+                VALUES (?, (SELECT id FROM alunos WHERE nome = ?), ?, ?)
+            ''', (book_id, student_name, datetime.now().date().isoformat(), 
+                  (datetime.now().date() + timedelta(days=14)).isoformat()))
             conn.commit()
             logging.info(f'Livro {book_id} emprestado com sucesso.')
             return jsonify({'message': 'Livro emprestado com sucesso'}), 200
@@ -1014,15 +1018,20 @@ def return_book():
             if not history:
                 logging.error(f'Empréstimo não encontrado para livro {book_id}.')
                 return jsonify({'error': 'Empréstimo não encontrado'}), 400
-            borrow_date = datetime.fromisoformat(history['borrowDate'])
+            
+            # Calcular multa
+            borrow_date = datetime.fromisoformat(history['data_emprestimo'])
+            expected_return = datetime.fromisoformat(history['data_devolucao_esperada'])
             return_date = datetime.now()
-            days = (return_date - borrow_date).days
-            fine = max(0, (days - 10) * 0.25)  # Multa de R$0.25 por dia após 10 dias
+            days_late = max(0, (return_date.date() - expected_return.date()).days)
+            fine = days_late * 1.0  # R$1.00 por dia de atraso
+            
+            # Atualizar histórico e aumentar disponibilidade
             cursor.execute('''
-                UPDATE "histórico de empréstimo" SET returnDate = ?, fine = ?
+                UPDATE historico SET data_devolucao = ?, multa = ?
                 WHERE id = ?
-            ''', (return_date.isoformat(), fine, history['id']))
-            cursor.execute('UPDATE livros SET available = ? WHERE id = ?', (True, book_id))
+            ''', (return_date.date().isoformat(), fine, history['id']))
+            cursor.execute('UPDATE livros SET disponivel = disponivel + 1 WHERE id = ?', (book_id,))
             conn.commit()
             logging.info(f'Livro {book_id} devolvido com sucesso, multa: R${fine:.2f}')
             return jsonify({
@@ -1050,10 +1059,10 @@ def delete_book():
             return jsonify({'error': 'ID do livro é obrigatório'}), 400
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute('SELECT * FROM livros WHERE id = ? AND available = ?', (book_id, True))
+            cursor.execute('SELECT * FROM livros WHERE id = ?', (book_id,))
             book = cursor.fetchone()
             if not book:
-                logging.error(f'Livro {book_id} não disponível ou não encontrado.')
+                logging.error(f'Livro {book_id} não encontrado.')
                 return jsonify({'error': 'Livro não disponível ou não encontrado'}), 400
             cursor.execute('DELETE FROM livros WHERE id = ?', (book_id,))
             conn.commit()
