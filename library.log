@@ -1980,3 +1980,109 @@
 2025-10-25 20:33:36,254:INFO:127.0.0.1 - - [25/Oct/2025 20:33:36] "GET /api/books HTTP/1.1" 200 -
 2025-10-25 20:33:36,263:INFO:Histórico completo listado com sucesso.
 2025-10-25 20:33:36,264:INFO:127.0.0.1 - - [25/Oct/2025 20:33:36] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 20:36:20,807:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "GET / HTTP/1.1" 200 -
+2025-10-25 20:36:20,831:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 20:36:20,836:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 20:36:20,838:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 20:36:20,841:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:20,846:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:20,847:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:20,854:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:20,855:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:20,855:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:20,905:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:36:20,906:INFO:Livros listados com sucesso.
+2025-10-25 20:36:20,907:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 20:36:20,911:INFO:Histórico completo listado com sucesso.
+2025-10-25 20:36:20,912:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 20:36:20,915:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:36:20,919:INFO:Livros listados com sucesso.
+2025-10-25 20:36:20,919:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 20:36:20,924:INFO:Histórico completo listado com sucesso.
+2025-10-25 20:36:20,926:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 20:36:20,929:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:36:20,937:INFO:127.0.0.1 - - [25/Oct/2025 20:36:20] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:36:23,408:INFO:127.0.0.1 - - [25/Oct/2025 20:36:23] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:36:24,436:INFO:Logout: admin
+2025-10-25 20:36:24,442:INFO:127.0.0.1 - - [25/Oct/2025 20:36:24] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-10-25 20:36:24,460:INFO:127.0.0.1 - - [25/Oct/2025 20:36:24] "GET /login HTTP/1.1" 200 -
+2025-10-25 20:36:24,486:INFO:127.0.0.1 - - [25/Oct/2025 20:36:24] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 20:36:24,497:INFO:127.0.0.1 - - [25/Oct/2025 20:36:24] "[36mGET /styles/login.css HTTP/1.1[0m" 304 -
+2025-10-25 20:36:26,660:INFO:Login bem-sucedido: admin
+2025-10-25 20:36:26,662:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-10-25 20:36:26,669:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "GET / HTTP/1.1" 200 -
+2025-10-25 20:36:26,698:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 20:36:26,707:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 20:36:26,707:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:26,708:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:26,709:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:26,710:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:26,715:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 20:36:26,720:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:26,722:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 20:36:26,790:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:36:26,801:INFO:Livros listados com sucesso.
+2025-10-25 20:36:26,803:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 20:36:26,809:INFO:Histórico completo listado com sucesso.
+2025-10-25 20:36:26,812:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 20:36:26,816:INFO:Livros listados com sucesso.
+2025-10-25 20:36:26,817:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 20:36:26,823:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:36:26,833:INFO:Histórico completo listado com sucesso.
+2025-10-25 20:36:26,834:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 20:36:26,838:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:36:26,853:INFO:127.0.0.1 - - [25/Oct/2025 20:36:26] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:57:15,495:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "GET / HTTP/1.1" 200 -
+2025-10-25 20:57:15,523:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "[33mGET /static/style.css?v=38 HTTP/1.1[0m" 404 -
+2025-10-25 20:57:15,530:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "[36mGET /styles/style.css HTTP/1.1[0m" 304 -
+2025-10-25 20:57:15,532:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "[36mGET /styles/layout-fix.css HTTP/1.1[0m" 304 -
+2025-10-25 20:57:15,534:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "[36mGET /static/notify.js?v=10 HTTP/1.1[0m" 304 -
+2025-10-25 20:57:15,540:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "[36mGET /static/script.js?v=36 HTTP/1.1[0m" 304 -
+2025-10-25 20:57:15,542:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "[36mGET /static/add-book-modal.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 20:57:15,544:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "[36mGET /static/edit-book.js?v=11 HTTP/1.1[0m" 304 -
+2025-10-25 20:57:15,546:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "[36mGET /static/history.js?v=19 HTTP/1.1[0m" 304 -
+2025-10-25 20:57:15,547:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "[36mGET /static/modal-simple.js?v=1 HTTP/1.1[0m" 304 -
+2025-10-25 20:57:15,590:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:57:15,591:INFO:Livros listados com sucesso.
+2025-10-25 20:57:15,592:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 20:57:15,598:INFO:Histórico completo listado com sucesso.
+2025-10-25 20:57:15,600:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 20:57:15,603:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:57:15,607:INFO:Livros listados com sucesso.
+2025-10-25 20:57:15,609:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "GET /api/books HTTP/1.1" 200 -
+2025-10-25 20:57:15,616:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:57:15,624:INFO:Histórico completo listado com sucesso.
+2025-10-25 20:57:15,626:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "GET /api/history HTTP/1.1" 200 -
+2025-10-25 20:57:15,627:INFO:127.0.0.1 - - [25/Oct/2025 20:57:15] "GET /api/students HTTP/1.1" 200 -
+2025-10-25 20:57:17,955:INFO:127.0.0.1 - - [25/Oct/2025 20:57:17] "[32mGET /login HTTP/1.1[0m" 302 -
+2025-10-25 21:36:02,456:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\__init__.py', reloading
+2025-10-25 21:36:02,460:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\aliases.py', reloading
+2025-10-25 21:36:02,461:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\utf_8.py', reloading
+2025-10-25 21:36:02,461:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\encodings\\cp1252.py', reloading
+2025-10-25 21:36:02,577:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\json\\__init__.py', reloading
+2025-10-25 21:36:02,579:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\json\\decoder.py', reloading
+2025-10-25 21:36:02,580:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\re\\__init__.py', reloading
+2025-10-25 21:36:02,581:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\enum.py', reloading
+2025-10-25 21:36:02,582:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\types.py', reloading
+2025-10-25 21:36:02,583:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\operator.py', reloading
+2025-10-25 21:36:02,584:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\functools.py', reloading
+2025-10-25 21:36:02,586:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\collections\\__init__.py', reloading
+2025-10-25 21:36:02,587:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\keyword.py', reloading
+2025-10-25 21:36:02,588:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\reprlib.py', reloading
+2025-10-25 21:36:02,591:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\re\\_compiler.py', reloading
+2025-10-25 21:36:02,592:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\re\\_parser.py', reloading
+2025-10-25 21:36:02,593:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\re\\_constants.py', reloading
+2025-10-25 21:36:02,594:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\re\\_casefix.py', reloading
+2025-10-25 21:36:02,595:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\copyreg.py', reloading
+2025-10-25 21:36:02,596:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\json\\scanner.py', reloading
+2025-10-25 21:36:02,597:INFO: * Detected change in 'C:\\Program Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\json\\encoder.py', reloading
+2025-10-25 21:36:03,036:INFO: * Restarting with watchdog (windowsapi)
+2025-10-25 21:36:03,912:INFO:Banco de dados inicializado com sucesso.
+2025-10-25 21:36:03,963:WARNING: * Debugger is active!
+2025-10-25 21:36:03,972:INFO: * Debugger PIN: 773-762-553
+2025-10-25 21:39:16,069:INFO: * Detected change in 'C:\\acervoLibrarySystem-\\acervoLibrarySystem\\app.py', reloading
+2025-10-25 21:39:16,070:INFO: * Detected change in 'C:\\acervoLibrarySystem-\\acervoLibrarySystem\\app.py', reloading
+2025-10-25 21:39:16,328:INFO: * Restarting with watchdog (windowsapi)
+2025-10-25 21:39:17,211:INFO:Banco de dados inicializado com sucesso.
+2025-10-25 21:39:17,250:WARNING: * Debugger is active!
+2025-10-25 21:39:17,260:INFO: * Debugger PIN: 773-762-553

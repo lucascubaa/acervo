@@ -310,6 +310,71 @@ def login():
     
     return render_template('login.html')
 
+# Rota de Registro
+@app.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        data = request.get_json() if request.is_json else request.form
+        username = data.get('username')
+        password = data.get('password')
+        confirm_password = data.get('confirm_password')
+        
+        # Validações
+        if not username or not password or not confirm_password:
+            error = 'Todos os campos são obrigatórios'
+            if request.is_json:
+                return jsonify({'success': False, 'message': error}), 400
+            return render_template('register.html', error=error)
+        
+        if password != confirm_password:
+            error = 'As senhas não coincidem'
+            if request.is_json:
+                return jsonify({'success': False, 'message': error}), 400
+            return render_template('register.html', error=error)
+        
+        if len(password) < 6:
+            error = 'A senha deve ter pelo menos 6 caracteres'
+            if request.is_json:
+                return jsonify({'success': False, 'message': error}), 400
+            return render_template('register.html', error=error)
+        
+        try:
+            with get_db_connection() as conn:
+                cursor = conn.cursor()
+                
+                # Verificar se o usuário já existe
+                cursor.execute('SELECT id FROM admins WHERE username = ?', (username,))
+                if cursor.fetchone():
+                    error = 'Nome de usuário já existe'
+                    if request.is_json:
+                        return jsonify({'success': False, 'message': error}), 400
+                    return render_template('register.html', error=error)
+                
+                # Criar novo usuário
+                password_hash = generate_password_hash(password)
+                cursor.execute('INSERT INTO admins (username, password_hash) VALUES (?, ?)', 
+                             (username, password_hash))
+                conn.commit()
+                
+                logging.info(f'Novo usuário registrado: {username}')
+                
+                if request.is_json:
+                    return jsonify({'success': True, 'message': 'Usuário criado com sucesso! Faça login.'}), 201
+                return redirect(url_for('login'))
+                
+        except Exception as e:
+            logging.error(f'Erro no registro: {str(e)}')
+            error = 'Erro ao criar usuário'
+            if request.is_json:
+                return jsonify({'success': False, 'message': error}), 500
+            return render_template('register.html', error=error)
+    
+    # Se já estiver logado, redireciona para index
+    if 'user_id' in session:
+        return redirect(url_for('index'))
+    
+    return render_template('register.html')
+
 # Rota de Logout
 @app.route('/logout')
 def logout():

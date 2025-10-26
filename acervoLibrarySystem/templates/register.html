@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Sistema de Biblioteca</title>
+    <title>Registrar - Sistema de Biblioteca</title>
     <link rel="stylesheet" href="/static/style.css?v=38">
     <link rel="stylesheet" href="/styles/login.css">
 </head>
@@ -17,8 +17,8 @@
         <div class="login-card">
             <div class="login-header">
                 <div class="login-logo">📚</div>
-                <h1 class="login-title">Sistema de Biblioteca</h1>
-                <p class="login-subtitle">Faça login para continuar</p>
+                <h1 class="login-title">Criar Conta</h1>
+                <p class="login-subtitle">Registre-se no sistema</p>
             </div>
             
             {% if error %}
@@ -27,7 +27,7 @@
             </div>
             {% endif %}
             
-            <form class="login-form" method="POST" action="/login">
+            <form class="login-form" method="POST" action="/register">
                 <div class="form-group">
                     <label for="username">Usuário</label>
                     <input type="text" id="username" name="username" required autofocus>
@@ -35,14 +35,19 @@
                 
                 <div class="form-group">
                     <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" required minlength="6">
                 </div>
                 
-                <button type="submit" class="btn-login">Entrar</button>
+                <div class="form-group">
+                    <label for="confirm_password">Confirmar Senha</label>
+                    <input type="password" id="confirm_password" name="confirm_password" required minlength="6">
+                </div>
+                
+                <button type="submit" class="btn-login">Criar Conta</button>
             </form>
             
             <div class="login-footer">
-                <p>Não tem uma conta? <a href="/register" style="color: #6366f1; text-decoration: none; font-weight: 600;">Registrar-se</a></p>
+                <p>Já tem uma conta? <a href="/login" style="color: #6366f1; text-decoration: none; font-weight: 600;">Fazer Login</a></p>
                 <p style="margin-top: 1rem;">© 2025 Sistema de Biblioteca</p>
             </div>
         </div>
