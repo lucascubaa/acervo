@@ -375,6 +375,54 @@ def register():
     
     return render_template('register.html')
 
+# Rota de Visualização de Dados (Admin)
+@app.route('/admin/view-data')
+@login_required
+def admin_view_data():
+    """Visualizar todos os dados do banco de dados"""
+    try:
+        with get_db_connection() as conn:
+            cursor = conn.cursor()
+            
+            # Buscar todos os usuários admin
+            cursor.execute('SELECT id, username FROM admins ORDER BY id')
+            admins = [dict(row) for row in cursor.fetchall()]
+            
+            # Buscar todos os livros
+            cursor.execute('SELECT * FROM livros ORDER BY id')
+            livros = [dict(row) for row in cursor.fetchall()]
+            
+            # Buscar todos os alunos
+            cursor.execute('SELECT * FROM alunos ORDER BY id')
+            alunos = [dict(row) for row in cursor.fetchall()]
+            
+            # Buscar todo o histórico
+            cursor.execute('''
+                SELECT h.*, l.titulo as livro_titulo, a.nome as aluno_nome
+                FROM historico h
+                LEFT JOIN livros l ON h.livro_id = l.id
+                LEFT JOIN alunos a ON h.aluno_id = a.id
+                ORDER BY h.id DESC
+            ''')
+            historico = [dict(row) for row in cursor.fetchall()]
+            
+            data = {
+                'admins': admins,
+                'livros': livros,
+                'alunos': alunos,
+                'historico': historico,
+                'total_admins': len(admins),
+                'total_livros': len(livros),
+                'total_alunos': len(alunos),
+                'total_historico': len(historico)
+            }
+            
+            return render_template('admin_view_data.html', data=data)
+            
+    except Exception as e:
+        logging.error(f'Erro ao buscar dados: {str(e)}')
+        return jsonify({'error': str(e)}), 500
+
 # Rota de Logout
 @app.route('/logout')
 def logout():
