@@ -1747,9 +1747,9 @@ button:disabled {
 }
 
 .stat-label {
-    font-size: 0.75rem;
-    color: #718096;
-    font-weight: 600;
+    font-size: 0.85rem;
+    color: #2d3748;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
@@ -3112,8 +3112,8 @@ button:disabled {
 }
 
 .stat-card-borrowed {
-    background: linear-gradient(135deg, #ffffff 0%, #e6e3e0 100%);
-    box-shadow: 0 4px 12px rgba(246, 173, 85, 0.3);
+    background: linear-gradient(135deg, #ffd89b 0%, #ffb347 100%);
+    box-shadow: 0 4px 12px rgba(255, 179, 71, 0.4);
 }
 
 .stat-card-students {
@@ -3122,10 +3122,11 @@ button:disabled {
 }
 
 .stat-label {
-    font-size: 0.8rem;
-    font-weight: 600;
-    opacity: 0.9;
+    font-size: 0.85rem;
+    font-weight: 700;
+    opacity: 1;
     margin-bottom: 0.4rem;
+    color: #1a202c;
 }
 
 .stat-value {
