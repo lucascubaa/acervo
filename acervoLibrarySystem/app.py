@@ -12,19 +12,17 @@ from io import BytesIO
 from docx import Document
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 
-# Carregar variáveis de ambiente
 load_dotenv()
 
-# Obter diretório base do app
+
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DOCS_DIR = os.path.join(BASE_DIR, 'docs')
 
-# Configurar o app
+
 app = Flask(__name__, static_folder='static', template_folder='templates')
 CORS(app)
 app.secret_key = os.getenv('FLASK_SECRET_KEY', 'supersecretkey')
 
-# Configuração de logging
 logging.basicConfig(
     filename='library.log',
     level=logging.INFO,
@@ -36,7 +34,6 @@ def get_db_connection():
     conn.row_factory = sqlite3.Row
     return conn
 
-# Decorator para proteger rotas
 def login_required(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
@@ -45,8 +42,6 @@ def login_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
-
-# ==================== FUNÇÕES HELPER (LÓGICA PYTHON) ====================
 
 def validate_isbn(isbn):
     """Valida formato de ISBN"""
