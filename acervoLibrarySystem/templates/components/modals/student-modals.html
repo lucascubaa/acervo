@@ -1,0 +1,118 @@
+<!-- Modal: Adicionar Aluno -->
+<div id="add-student-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="add-student-modal-title"
+        style="max-width: 550px; width: 90%;">
+        <header class="modal-header"
+            style="background: linear-gradient(135deg, #4299e1, #3182ce); color: white; padding: 1.2rem 1.5rem; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; align-items: center; margin: -1.5rem -1.5rem 0 -1.5rem;">
+            <h2 id="add-student-modal-title"
+                style="margin: 0; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.5rem;">👤</span>
+                <span>Adicionar Aluno</span>
+            </h2>
+            <button id="close-add-student-modal" class="close-btn" aria-label="Fechar"
+                style="background: rgba(255, 255, 255, 0.2); color: white; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; line-height: 1;">×</button>
+        </header>
+        <div class="modal-body" style="padding: 1.5rem;">
+            <form id="add-student-modal-form">
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label for="add-student-modal-name"
+                        style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; display: block;">Nome
+                        Completo:</label>
+                    <input type="text" id="add-student-modal-name" required placeholder="Digite o nome completo"
+                        style="width: 100%; padding: 0.7rem; border: 2px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
+                </div>
+                <div class="form-group" style="margin-bottom: 0.5rem;">
+                    <label for="add-student-modal-turma"
+                        style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; display: block;">Turma:</label>
+                    <select id="add-student-modal-turma" required
+                        style="width: 100%; padding: 0.7rem; border: 2px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem; cursor: pointer; background: white;">
+                        <option value="">Carregando turmas...</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <footer class="modal-footer"
+            style="background: #f7fafc; padding: 1rem 1.5rem; border-radius: 0 0 12px 12px; margin: 0 -1.5rem -1.5rem -1.5rem; display: flex; justify-content: flex-end; gap: 0.75rem;">
+            <button id="cancel-add-student-btn" class="btn secondary"
+                style="padding: 0.65rem 1.25rem; font-size: 0.9rem; background: #e2e8f0; color: #2d3748; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;">Cancelar</button>
+            <button id="confirm-add-student-btn" class="btn primary"
+                style="padding: 0.65rem 1.25rem; font-size: 0.9rem; background: #4299e1; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;">Adicionar
+                Aluno</button>
+        </footer>
+    </div>
+</div>
+
+<!-- Modal: Editar Aluno -->
+<div id="edit-student-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="edit-student-modal-title"
+        style="max-width: 550px; width: 90%;">
+        <header class="modal-header"
+            style="background: linear-gradient(135deg, #4299e1, #3182ce); color: white; padding: 1.2rem 1.5rem; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; align-items: center; margin: -1.5rem -1.5rem 0 -1.5rem;">
+            <h2 id="edit-student-modal-title"
+                style="margin: 0; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.5rem;">✏️</span>
+                <span>Editar Aluno</span>
+            </h2>
+            <button id="close-edit-student-modal" class="close-btn" aria-label="Fechar"
+                style="background: rgba(255, 255, 255, 0.2); color: white; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; line-height: 1;">×</button>
+        </header>
+        <div class="modal-body" style="padding: 1.5rem;">
+            <form id="edit-student-form">
+                <div class="form-group" style="margin-bottom: 1rem;">
+                    <label for="edit-student-name"
+                        style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; display: block;">Nome
+                        Completo:</label>
+                    <input type="text" id="edit-student-name" required placeholder="Digite o nome completo"
+                        style="width: 100%; padding: 0.7rem; border: 2px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
+                </div>
+                <div class="form-group" style="margin-bottom: 0.5rem;">
+                    <label for="edit-student-turma"
+                        style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; display: block;">Turma:</label>
+                    <select id="edit-student-turma" required
+                        style="width: 100%; padding: 0.7rem; border: 2px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem; cursor: pointer; background: white;">
+                        <option value="">Carregando turmas...</option>
+                    </select>
+                </div>
+                <input type="hidden" id="edit-student-id">
+            </form>
+        </div>
+        <footer class="modal-footer"
+            style="background: #f7fafc; padding: 1rem 1.5rem; border-radius: 0 0 12px 12px; margin: 0 -1.5rem -1.5rem -1.5rem; display: flex; justify-content: flex-end; gap: 0.75rem;">
+            <button id="cancel-edit-student-btn" class="btn secondary"
+                style="padding: 0.65rem 1.25rem; font-size: 0.9rem; background: #e2e8f0; color: #2d3748; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;">Cancelar</button>
+            <button id="confirm-edit-student-btn" class="btn primary"
+                style="padding: 0.65rem 1.25rem; font-size: 0.9rem; background: #4299e1; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: 600; transition: all 0.2s;">Salvar
+                Alterações</button>
+        </footer>
+    </div>
+</div>
+
+<!-- Modal: Excluir Aluno -->
+<div id="delete-student-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" style="max-width: 500px; width: 90%;">
+        <header class="modal-header"
+            style="background: linear-gradient(135deg, #f56565, #e53e3e); color: white; padding: 1.2rem 1.5rem; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; align-items: center; margin: -1.5rem -1.5rem 0 -1.5rem;">
+            <h2
+                style="margin: 0; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.5rem;">🗑️</span>
+                <span>Excluir Aluno</span>
+            </h2>
+            <button id="close-delete-student-modal" class="close-btn" aria-label="Fechar"
+                style="background: rgba(255, 255, 255, 0.2); color: white; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; line-height: 1;">×</button>
+        </header>
+        <div class="modal-body" style="padding: 1.5rem;">
+            <p id="delete-student-modal-text" style="margin: 0 0 0.8rem 0; font-size: 0.95rem; color: #2d3748;">Tem
+                certeza que deseja excluir este aluno? Esta ação não pode ser desfeita.</p>
+            <p id="delete-student-modal-name" class="muted"
+                style="font-weight: 600; color: #e53e3e; margin-top: 1rem;"></p>
+            <input type="hidden" id="delete-student-id">
+        </div>
+        <footer class="modal-footer"
+            style="padding: 1rem 1.5rem; background: #f7fafc; border-radius: 0 0 12px 12px; margin: 0 -1.5rem -1.5rem -1.5rem; display: flex; gap: 0.8rem; justify-content: flex-end;">
+            <button id="cancel-delete-student-btn" class="btn secondary"
+                style="padding: 0.7rem 1.5rem; background: #e2e8f0; color: #4a5568; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Cancelar</button>
+            <button id="confirm-delete-student-btn" class="btn primary"
+                style="padding: 0.7rem 1.5rem; background: linear-gradient(135deg, #f56565, #e53e3e); color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Excluir</button>
+        </footer>
+    </div>
+</div>

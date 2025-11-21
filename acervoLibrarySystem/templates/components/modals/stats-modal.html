@@ -1,0 +1,80 @@
+<div id="stats-modal" class="modal" aria-hidden="true">
+    <div class="modal-content stats-modal-content" role="dialog" aria-modal="true"
+        aria-labelledby="stats-modal-title">
+        <header class="modal-header stats-modal-header">
+            <h2 id="stats-modal-title">
+                <span class="stats-title-icon">📊</span>
+                <span class="stats-title-text">Estatísticas do Sistema</span>
+            </h2>
+            <button class="modal-close stats-modal-close" id="stats-modal-close"
+                aria-label="Fechar">×</button>
+        </header>
+        <div class="modal-body stats-modal-body">
+            <div class="stats-modal-grid">
+                <div class="stat-card-modal stat-card-added">
+                    <div class="stat-card-icon-wrapper">
+                        <div class="stat-icon-modal">📚</div>
+                    </div>
+                    <div class="stat-card-content">
+                        <div class="stat-label-modal">Livros Adicionados</div>
+                        <div class="stat-value-modal" id="stat-added">0</div>
+                        <div class="stat-description">Total de livros cadastrados</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-modal stat-card-borrowed">
+                    <div class="stat-card-icon-wrapper">
+                        <div class="stat-icon-modal">📖</div>
+                    </div>
+                    <div class="stat-card-content">
+                        <div class="stat-label-modal">Emprestados</div>
+                        <div class="stat-value-modal" id="stat-borrowed">0</div>
+                        <div class="stat-description">Livros em empréstimo</div>
+                    </div>
+                </div>
+
+                <div class="stat-card-modal stat-card-returned">
+                    <div class="stat-card-icon-wrapper">
+                        <div class="stat-icon-modal">✅</div>
+                    </div>
+                    <div class="stat-card-content">
+                        <div class="stat-label-modal">Devolvidos</div>
+                        <div class="stat-value-modal" id="stat-returned">0</div>
+                        <div class="stat-description">Total de devoluções</div>
+                    </div>
+                </div>
+            </div>
+            <div class="stats-info-section">
+                <h3
+                    style="margin: 0 0 1.25rem 0; font-size: 1.1rem; color: #1a202c; display: flex; align-items: center; gap: 0.5rem; font-weight: 700;">
+                    <span style="font-size: 1.3rem;">📈</span>
+                    <span>Visão Geral</span>
+                </h3>
+                <div class="stats-summary-grid">
+                    <div class="summary-item">
+                        <div class="summary-icon">📊</div>
+                        <div class="summary-content">
+                            <span class="summary-label">Taxa de Empréstimo</span>
+                            <span class="summary-value" id="loan-rate">0%</span>
+                        </div>
+                    </div>
+                    <div class="summary-item">
+                        <div class="summary-icon">🔄</div>
+                        <div class="summary-content">
+                            <span class="summary-label">Taxa de Devolução</span>
+                            <span class="summary-value" id="return-rate">0%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-modal-footer">
+                <p
+                    style="margin: 0; text-align: center; color: #64748b; font-size: 0.875rem; display: flex; align-items: center; justify-content: center; gap: 0.5rem;">
+                    <span style="font-size: 1.1rem;">💡</span>
+                    <span style="font-weight: 500;">Dados atualizados em tempo real</span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>

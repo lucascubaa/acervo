@@ -1,0 +1,47 @@
+<div id="add-book" class="tab-content active">
+    <div class="books-tab-wrapper">
+        <div class="add-book-grid">
+            <div class="form-card action-card">
+                <h2 class="action-title">📚 Gerenciar Livros</h2>
+                <p class="action-description">Use os botões abaixo para adicionar novos livros ou editar livros
+                    existentes no sistema.</p>
+
+                <div class="action-buttons-wrapper">
+                    <button id="open-add-book-modal" type="button" class="add-book-modal-btn">
+                        📚 Adicionar Novo Livro
+                    </button>
+                    <button id="open-edit-book-modal" type="button" class="edit-book-modal-btn">
+                        ✏️ Editar Livro
+                    </button>
+                </div>
+            </div>
+
+            <div class="form-card stats-card">
+                <h2 class="stats-title">📊 Estatísticas do Sistema</h2>
+
+                <div class="stats-grid">
+                    <div class="stat-card stat-card-total">
+                        <div class="stat-label"><strong>📚 TOTAL DE LIVROS</strong></div>
+                        <div class="stat-value" id="total-books-count">0</div>
+                    </div>
+                    <div class="stat-card stat-card-available">
+                        <div class="stat-label"><strong>✓ DISPONÍVEIS</strong></div>
+                        <div class="stat-value" id="available-books-count">0</div>
+                    </div>
+                    <div class="stat-card stat-card-borrowed">
+                        <div class="stat-label"><strong>⏰ EMPRESTADOS</strong></div>
+                        <div class="stat-value" id="borrowed-books-count">0</div>
+                    </div>
+                    <div class="stat-card stat-card-students">
+                        <div class="stat-label"><strong>👥 ALUNOS</strong></div>
+                        <div class="stat-value" id="total-students-count">0</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="/logout" class="btn-logout-bottom" title="Sair do sistema">
+            🚪 Sair
+        </a>
+    </div>
+</div>

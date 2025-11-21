@@ -1,0 +1,255 @@
+<!-- Modal: Adicionar Livro -->
+<div id="add-book-modal" class="modal" aria-hidden="true">
+    <div class="modal-content add-book-modal-content" role="dialog" aria-modal="true"
+        aria-labelledby="add-book-modal-title">
+        <header class="modal-header">
+            <h2 id="add-book-modal-title" style="display: flex; align-items: center; gap: 0.5rem; margin: 0;">
+                📚 Adicionar Novo Livro
+            </h2>
+            <button class="modal-close" id="add-book-modal-close" aria-label="Fechar">×</button>
+        </header>
+        <div class="modal-body">
+            <form id="modal-add-book-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-add-title" class="form-label">
+                            <span class="label-icon">📖</span>
+                            Titulo do Livro
+                        </label>
+                        <input type="text" id="modal-add-title" name="title" required
+                            placeholder="Digite o titulo completo" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-add-author" class="form-label">
+                            <span class="label-icon">✏️</span>
+                            Autor
+                        </label>
+                        <input type="text" id="modal-add-author" name="author" required
+                            placeholder="Nome do autor" class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-add-category" class="form-label">
+                            <span class="label-icon">🏷️</span>
+                            Categoria
+                        </label>
+                        <input type="text" id="modal-add-category" name="category"
+                            placeholder="Ex: Ficção, Romance, etc." class="form-input">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="modal-add-isbn" class="form-label">
+                            <span class="label-icon">🔢</span>
+                            ISBN
+                        </label>
+                        <input type="text" id="modal-add-isbn" name="isbn" required
+                            placeholder="Código ISBN (10 ou 13 dígitos)" class="form-input"
+                            pattern="[0-9X-]{10,17}">
+                        <small class="form-hint">
+                            Formato: 978-85-123-4567-8 ou 85-123-4567-X
+                        </small>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" id="cancel-add-book" class="btn btn-secondary">
+                        ❌ Cancelar
+                    </button>
+                    <button type="submit" class="btn btn-primary">
+                        ✅ Adicionar Livro
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Modal: Detalhes do Livro -->
+<div id="book-details-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-details-modal" class="close-btn">×</span>
+        <h2>Detalhes do Livro</h2>
+        <p id="details-title"></p>
+        <p id="details-author"></p>
+        <p id="details-category"></p>
+        <p id="details-isbn"></p>
+        <p id="details-status"></p>
+    </div>
+</div>
+
+<!-- Modal: Emprestar Livro -->
+<div id="borrow-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+        <header class="modal-header">
+            <h2>Emprestar Livro</h2>
+            <button id="close-borrow-modal" class="close-btn" aria-label="Fechar">×</button>
+        </header>
+        <div class="modal-body">
+            <p id="borrow-title" class="muted"></p>
+            <p id="borrow-author" class="muted"></p>
+            <p id="borrow-isbn" class="muted"></p>
+            <div class="form-group">
+                <label for="borrow-student-input">Buscar e Selecionar Aluno</label>
+                <div class="autocomplete-wrapper">
+                    <input type="text" id="borrow-student-input" autocomplete="off"
+                        placeholder="Digite o nome do aluno..." required>
+                    <input type="hidden" id="borrow-student-value">
+                    <div id="borrow-student-list" class="autocomplete-list" style="display:none;"></div>
+                </div>
+                <p class="muted" style="margin-top:0.5rem;font-size:0.9rem;">Digite para buscar. Apenas alunos
+                    cadastrados podem emprestar livros.</p>
+            </div>
+        </div>
+        <footer class="modal-footer">
+            <button id="cancel-borrow-btn" class="btn secondary">Cancelar</button>
+            <button id="confirm-borrow-btn" class="btn primary" data-action="confirm-borrow">Emprestar</button>
+        </footer>
+    </div>
+</div>
+
+<!-- Modal: Confirmar Devolução -->
+<div id="return-confirm-modal" class="modal" aria-hidden="true">
+    <div class="modal-content">
+        <header class="modal-header">
+            <h2>Confirmar Devolução</h2>
+            <button id="close-return-confirm-modal" class="close-btn" aria-label="Fechar">×</button>
+        </header>
+        <div class="modal-body">
+            <p id="return-title" class="muted"></p>
+            <p id="return-author" class="muted"></p>
+            <p id="return-isbn" class="muted"></p>
+            <p id="return-student-name" class="muted"></p>
+            <p id="return-borrow-date" class="muted"></p>
+            <p id="return-expected-date" class="muted"></p>
+            <p id="return-fine" class="muted"></p>
+        </div>
+        <footer class="modal-footer">
+            <button id="cancel-return-btn" class="btn secondary">Cancelar</button>
+            <button id="confirm-return-btn" class="btn primary">Confirmar Devolução</button>
+        </footer>
+    </div>
+</div>
+
+<!-- Modal: Devolução Realizada -->
+<div id="return-modal" class="modal">
+    <div class="modal-content">
+        <span id="close-return-modal" class="close-btn">×</span>
+        <h2>Devolução Realizada</h2>
+        <p id="modal-book-title"></p>
+        <p id="modal-return-date"></p>
+        <p id="modal-fine"></p>
+    </div>
+</div>
+
+<!-- Modal: Editar Livro -->
+<div id="edit-book-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" role="dialog" aria-modal="true" aria-labelledby="edit-book-modal-title"
+        style="max-width: 600px; width: 90%;">
+        <header class="modal-header"
+            style="background: linear-gradient(135deg, #4299e1, #3182ce); color: white; padding: 1.2rem 1.5rem; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; align-items: center; margin: -1.5rem -1.5rem 0 -1.5rem;">
+            <h2 id="edit-book-modal-title"
+                style="margin: 0; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.5rem;">✏️</span>
+                <span>Editar Livro</span>
+            </h2>
+            <button class="modal-close" id="edit-book-modal-close" aria-label="Fechar"
+                style="background: rgba(255, 255, 255, 0.2); color: white; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; line-height: 1;">×</button>
+        </header>
+        <div class="modal-body" style="padding: 1.5rem;">
+            <div class="form-group" style="margin-bottom: 1rem;">
+                <label for="search-book-edit"
+                    style="font-size: 0.9rem; font-weight: 600; margin-bottom: 0.5rem; display: block;">🔍 Buscar
+                    Livro:</label>
+                <input type="text" id="search-book-edit" placeholder="Digite titulo, autor ou ISBN..."
+                    style="width: 100%; padding: 0.7rem; border: 2px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
+                <p style="margin: 0.4rem 0 0 0; font-size: 0.8rem; color: #718096;">Digite para buscar o livro que
+                    deseja editar</p>
+            </div>
+
+            <div id="search-results-edit"
+                style="max-height: 200px; overflow-y: auto; margin-bottom: 1rem; border: 1px solid #e2e8f0; border-radius: 6px; display: none;">
+            </div>
+
+            <div id="edit-form-container" style="display: none;">
+                <div style="padding: 1rem; background: #f7fafc; border-radius: 6px; margin-bottom: 1rem;">
+                    <h3 style="margin: 0 0 0.5rem 0; font-size: 0.95rem; color: #2d3748;">Editando: <span
+                            id="editing-book-title" style="color: #4299e1; font-weight: 700;"></span></h3>
+                    <input type="hidden" id="edit-book-id">
+                </div>
+
+                <form id="edit-book-form">
+                    <div class="form-group" style="margin-bottom: 0.8rem;">
+                        <label for="edit-title"
+                            style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; display: block;">Titulo:</label>
+                        <input type="text" id="edit-title" required placeholder="Titulo do livro"
+                            style="width: 100%; padding: 0.6rem; border: 1.5px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 0.8rem;">
+                        <label for="edit-author"
+                            style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; display: block;">Autor:</label>
+                        <input type="text" id="edit-author" required placeholder="Nome do autor"
+                            style="width: 100%; padding: 0.6rem; border: 1.5px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 0.8rem;">
+                        <label for="edit-category"
+                            style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; display: block;">Categoria:</label>
+                        <input type="text" id="edit-category" placeholder="Categoria do livro"
+                            style="width: 100%; padding: 0.6rem; border: 1.5px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 0.8rem;">
+                        <label for="edit-isbn"
+                            style="font-size: 0.85rem; font-weight: 600; margin-bottom: 0.3rem; display: block;">ISBN:</label>
+                        <input type="text" id="edit-isbn" required placeholder="ISBN do livro"
+                            style="width: 100%; padding: 0.6rem; border: 1.5px solid #e2e8f0; border-radius: 6px; font-size: 0.9rem;">
+                    </div>
+
+                    <div style="display: flex; gap: 0.8rem; margin-top: 1.2rem;">
+                        <button type="button" id="cancel-edit-btn"
+                            style="flex: 1; padding: 0.7rem; background: #e2e8f0; color: #4a5568; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Cancelar</button>
+                        <button type="submit"
+                            style="flex: 1; padding: 0.7rem; background: linear-gradient(135deg, #48bb78, #38a169); color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">💾
+                            Salvar Alterações</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal: Excluir Livro -->
+<div id="delete-modal" class="modal" aria-hidden="true">
+    <div class="modal-content" style="max-width: 500px; width: 90%;">
+        <header class="modal-header"
+            style="background: linear-gradient(135deg, #f56565, #e53e3e); color: white; padding: 1.2rem 1.5rem; border-radius: 12px 12px 0 0; display: flex; justify-content: space-between; align-items: center; margin: -1.5rem -1.5rem 0 -1.5rem;">
+            <h2
+                style="margin: 0; font-size: 1.3rem; font-weight: 700; display: flex; align-items: center; gap: 0.5rem;">
+                <span style="font-size: 1.5rem;">🗑️</span>
+                <span>Excluir Livro</span>
+            </h2>
+            <button id="close-delete-modal" class="close-btn" aria-label="Fechar"
+                style="background: rgba(255, 255, 255, 0.2); color: white; border: none; width: 36px; height: 36px; border-radius: 50%; font-size: 1.5rem; cursor: pointer; transition: all 0.3s ease; display: flex; align-items: center; justify-content: center; line-height: 1;">×</button>
+        </header>
+        <div class="modal-body" style="padding: 1.5rem;">
+            <p id="delete-modal-text" style="margin: 0 0 0.8rem 0; font-size: 0.95rem; color: #2d3748;">Tem certeza
+                que deseja excluir este livro? Esta ação não pode ser desfeita.</p>
+            <p id="delete-modal-book" class="muted"></p>
+        </div>
+        <footer class="modal-footer"
+            style="padding: 1rem 1.5rem; background: #f7fafc; border-radius: 0 0 12px 12px; margin: 0 -1.5rem -1.5rem -1.5rem; display: flex; gap: 0.8rem; justify-content: flex-end;">
+            <button id="cancel-delete-btn" class="btn secondary"
+                style="padding: 0.7rem 1.5rem; background: #e2e8f0; color: #4a5568; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Cancelar</button>
+            <button id="confirm-delete-btn" class="btn primary"
+                style="padding: 0.7rem 1.5rem; background: linear-gradient(135deg, #f56565, #e53e3e); color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Excluir</button>
+        </footer>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+<div id="history" class="tab-content">
+    <div class="books-tab-wrapper">
+        <div class="history-main-grid">
+            <aside class="history-sidebar">
+                <button id="open-stats-modal" class="btn-open-stats" title="Ver estatísticas do sistema">
+                    📊 Ver Estatísticas
+                </button>
+
+                <div class="history-filters-card compact-filters">
+                    <button class="filter-toggle" id="filter-toggle" aria-expanded="false" type="button">
+                        <span class="filter-toggle-content">
+                            <span class="filter-icon">🔍</span>
+                            <span class="filter-title">Filtros</span>
+                            <span class="filter-badge" id="active-filters-count"></span>
+                        </span>
+                        <span class="filter-arrow">▼</span>
+                    </button>
+
+                    <div class="filters-content" id="filters-content">
+                        <div class="filter-group compact search-filter">
+                            <label for="search-history">Pesquisar</label>
+                            <input type="text" id="search-history" placeholder="Titulo, autor ou ISBN..."
+                                aria-label="Pesquisar histórico">
+                        </div>
+
+                        <div class="filters-grid">
+                            <div class="filter-group compact">
+                                <label for="filter-type">Tipo</label>
+                                <select id="filter-type" aria-label="Filtrar por tipo">
+                                    <option value="all">Todas</option>
+                                    <option value="added">📚 Adicionados</option>
+                                    <option value="borrowed">📖 Emprestados</option>
+                                    <option value="returned">✅ Devolvidos</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group compact">
+                                <label for="filter-category">Categoria</label>
+                                <select id="filter-category" aria-label="Filtrar por categoria">
+                                    <option value="all">Todas</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group compact">
+                                <label for="sort-by">Ordenar</label>
+                                <select id="sort-by" aria-label="Ordenar por">
+                                    <option value="newest">Recentes</option>
+                                    <option value="oldest">Antigos</option>
+                                    <option value="title">A-Z</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="filter-group compact period-filter">
+                            <div class="date-range-compact">
+                                <input type="date" id="from-date" aria-label="Data início">
+                                <span>→</span>
+                                <input type="date" id="to-date" aria-label="Data fim">
+                            </div>
+                        </div>
+
+                        <button id="clear-filters" class="btn-clear-filters compact" type="button">
+                            <span>🔄</span> Limpar Filtros
+                        </button>
+                    </div>
+                </div>
+
+                <div class="history-export-card">
+                    <h3
+                        style="margin: 0 0 0.8rem 0; font-size: 0.95rem; color: #1a365d; display: flex; align-items: center; gap: 0.5rem;">
+                        <span>💾</span> Exportar
+                    </h3>
+
+                    <div class="filter-group compact">
+                        <label for="export-scope">Escopo</label>
+                        <select id="export-scope" title="Escopo da exportação">
+                            <option value="filtered">Filtrados</option>
+                            <option value="page">Página atual</option>
+                            <option value="all">Tudo</option>
+                        </select>
+                    </div>
+
+                    <div class="export-buttons">
+                        <button id="export-to-docs" class="btn-export btn-export-docs"
+                            title="Exportar para Word">
+                            📄 Exportar Word
+                        </button>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="history-main-content">
+                <div class="history-header">
+                    <div class="history-title-section">
+                        <h2 style="margin: 0; font-size: 1.2rem; color: #1a365d;">📋 Registros</h2>
+                        <div class="section-title" style="margin-left: 1rem;">
+                            Total: <span id="summary-count" class="count-badge">0</span>
+                        </div>
+                    </div>
+                    <button id="load-more" class="btn-load-more" style="display:none;">Carregar mais</button>
+                </div>
+
+                <div id="history-list" class="history-list-modern" aria-live="polite"></div>
+            </main>
+        </div>
+
+        {% include 'components/modals/stats-modal.html' %}
+    </div>
+</div>
