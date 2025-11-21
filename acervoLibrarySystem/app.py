@@ -159,12 +159,20 @@ def init_db():
                 except sqlite3.Error as e:
                     logging.error(f'Erro ao renomear borrowhistory: {e}')
 
-            if 'students' in existing_tables and 'estudantes' not in existing_tables:
+            if 'students' in existing_tables and 'alunos' not in existing_tables:
                 try:
-                    cursor.execute('ALTER TABLE students RENAME TO estudantes')
-                    logging.info('Tabela students renomeada para estudantes')
+                    cursor.execute('ALTER TABLE students RENAME TO alunos')
+                    logging.info('Tabela students renomeada para alunos')
                 except sqlite3.Error as e:
                     logging.error(f'Erro ao renomear students: {e}')
+
+            # Remover tabela estudantes se existir
+            if 'estudantes' in existing_tables:
+                try:
+                    cursor.execute('DROP TABLE IF EXISTS estudantes')
+                    logging.info('Tabela estudantes removida do banco de dados')
+                except sqlite3.Error as e:
+                    logging.error(f'Erro ao remover tabela estudantes: {e}')
 
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS livros (
@@ -210,7 +218,7 @@ def init_db():
                 logging.info('Turmas padrão criadas: Turma 1, Turma 2, Turma 3')
             
             cursor.execute('''
-                CREATE TABLE IF NOT EXISTS estudantes (
+                CREATE TABLE IF NOT EXISTS alunos (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
                     name TEXT NOT NULL,
                     turma TEXT,
@@ -219,11 +227,11 @@ def init_db():
             ''')
             
             try:
-                cursor.execute('PRAGMA table_info("estudantes")')
+                cursor.execute('PRAGMA table_info("alunos")')
                 cols = [row['name'] for row in cursor.fetchall()]
                 if 'turma' not in cols:
-                    cursor.execute('ALTER TABLE estudantes ADD COLUMN turma TEXT')
-                    logging.info('Coluna turma adicionada à tabela estudantes.')
+                    cursor.execute('ALTER TABLE alunos ADD COLUMN turma TEXT')
+                    logging.info('Coluna turma adicionada à tabela alunos.')
             except sqlite3.Error as e:
                 logging.error(f'Erro ao adicionar coluna turma: {str(e)}')
             
@@ -1048,7 +1056,7 @@ def get_statistics():
             cursor.execute('SELECT COUNT(*) as borrowed FROM livros WHERE available = 0')
             borrowed_books = cursor.fetchone()['borrowed']
             
-            cursor.execute('SELECT COUNT(*) as total FROM estudantes')
+            cursor.execute('SELECT COUNT(*) as total FROM alunos')
             total_students = cursor.fetchone()['total']
             
             cursor.execute('SELECT COUNT(*) as total FROM "histórico de empréstimo"')
