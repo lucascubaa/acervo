@@ -1,4 +1,3 @@
-/* Layout Fix - Container height and overflow control */
 .container {
     max-width: 1200px !important;
     height: calc(100vh - 4rem) !important;
@@ -23,7 +22,6 @@
     flex-direction: column !important;
 }
 
-/* Ensure books-tab-wrapper has correct height */
 .books-tab-wrapper {
     height: 100%;
     overflow-y: auto;
@@ -31,7 +29,6 @@
     flex-direction: column;
 }
 
-/* Fix Add Book grid to match other tabs */
 .add-book-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -40,13 +37,11 @@
     align-items: start;
 }
 
-/* Ensure all tab contents maintain the same structure */
 .section-header {
     margin-bottom: 1rem;
     flex-shrink: 0;
 }
 
-/* Action Card Styles */
 .action-card {
     text-align: center;
 }
@@ -68,7 +63,6 @@
     margin-bottom: 2rem;
 }
 
-/* Action Buttons Wrapper */
 .action-buttons-wrapper {
     display: flex;
     flex-direction: column;
@@ -114,7 +108,6 @@
     box-shadow: 0 6px 16px rgba(72, 187, 120, 0.4);
 }
 
-/* Modal Styles */
 #add-book-modal {
     display: none !important;
     position: fixed !important;
@@ -196,7 +189,6 @@
     padding: 1.5rem;
 }
 
-/* Form Styles */
 .form-row {
     margin-bottom: 1.5rem;
 }
@@ -289,7 +281,6 @@
     border-color: #cbd5e0;
 }
 
-/* Animations */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }

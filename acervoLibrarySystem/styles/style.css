@@ -295,9 +295,7 @@ a.back-link:active {
     width: 100%;
     margin-bottom: 1rem;
     height: 44px;
-    /* mesma altura do select */
     padding-left: 42px;
-    /* ajustar ícone interno */
 }
 
 .history-page .section-search {
@@ -507,13 +505,11 @@ button:disabled {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* barra azul mais discreta e com bordas arredondadas */
     background: linear-gradient(180deg, #4aa3e0, #3b8fd1);
     color: #ffffff;
     padding: 0.6rem 1rem;
     border-radius: 8px 8px 0 0;
     margin: -1.5rem -1.5rem 0 -1.5rem;
-    /* estender até as bordas do modal */
 }
 
 .modal-body {
@@ -558,7 +554,6 @@ button:disabled {
     font-size: 0.95rem;
 }
 
-/* Tipografia do modal: pesos e tamanhos para melhor leitura */
 .modal-content h2 {
     color: #fff;
     font-size: 1.25rem;
@@ -578,7 +573,6 @@ button:disabled {
 
 .close-btn {
     position: relative;
-    /* mover para dentro do header */
     top: 0;
     right: 0;
     background: rgba(255, 255, 255, 0.12);
@@ -1154,7 +1148,6 @@ button:disabled {
     }
 }
 
-/* resumo do histórico: header com botão à direita */
 .summary-header {
     display: flex;
     align-items: center;
@@ -1189,7 +1182,6 @@ button:disabled {
     }
 }
 
-/* Autocomplete para busca de alunos */
 .autocomplete-wrapper {
     position: relative;
     width: 100%;
@@ -1241,10 +1233,6 @@ button:disabled {
     font-style: italic;
 }
 
-
-
-
-/* Students Grid - Redesenhado */
 .students-grid-header {
     display: grid;
     grid-template-columns: 2.5fr 1.5fr 1.2fr;
@@ -1376,7 +1364,6 @@ button:disabled {
     transform: translateY(0);
 }
 
-/* Empty state */
 .students-grid p {
     text-align: center;
     color: #718096;
@@ -1387,7 +1374,6 @@ button:disabled {
     border: 2px dashed #cbd5e0;
 }
 
-/* Responsividade para layout de 2 colunas */
 @media (max-width: 1200px) {
     #manage-students>div[style*="grid-template-columns"] {
         grid-template-columns: 1fr !important;
@@ -1436,7 +1422,6 @@ button:disabled {
     }
 }
 
-/* ===== ESTILOS PARA TELA DE HISTÓRICO REDESENHADA ===== */
 .history-main-grid {
     display: grid;
     grid-template-columns: 320px 1fr;
@@ -1444,7 +1429,6 @@ button:disabled {
     margin-top: 0.5rem;
 }
 
-/* Sidebar com filtros */
 .history-sidebar {
     display: flex;
     flex-direction: column;
@@ -1456,7 +1440,6 @@ button:disabled {
     padding-right: 0.3rem;
 }
 
-/* Botão para abrir modal de estatísticas */
 .btn-open-stats {
     width: 100%;
     padding: 1rem;
@@ -1478,7 +1461,6 @@ button:disabled {
     background: linear-gradient(135deg, #764ba2, #667eea);
 }
 
-/* Cards da sidebar */
 .history-stats-card,
 .history-filters-card,
 .history-export-card {
@@ -1489,7 +1471,6 @@ button:disabled {
     border: 1px solid #e2e8f0;
 }
 
-/* Filtros Compactos */
 .compact-filters {
     padding: 0;
     overflow: hidden;
@@ -1639,7 +1620,6 @@ button:disabled {
     background-size: 16px;
 }
 
-/* Filtro de período compacto */
 .period-filter {
     border-top: 1px solid #e2e8f0;
     padding-top: 0.7rem;
@@ -1710,7 +1690,6 @@ button:disabled {
     line-height: 1;
 }
 
-/* Grid de estatísticas */
 .stats-grid {
     display: flex;
     flex-direction: column;
@@ -1770,7 +1749,6 @@ button:disabled {
     color: #1a365d;
 }
 
-/* Grupos de filtros */
 .filter-group {
     margin-bottom: 0.9rem;
 }
@@ -1838,7 +1816,6 @@ button:disabled {
     box-shadow: 0 4px 12px rgba(74, 85, 104, 0.3);
 }
 
-/* Botões de exportação */
 .export-buttons {
     display: flex;
     flex-direction: column;
@@ -1871,7 +1848,6 @@ button:disabled {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Conteúdo principal */
 .history-main-content {
     display: flex;
     flex-direction: column;
@@ -1911,7 +1887,6 @@ button:disabled {
     box-shadow: 0 4px 12px rgba(66, 153, 225, 0.3);
 }
 
-/* Lista de histórico moderna */
 .history-list-modern {
     display: flex;
     flex-direction: column;
@@ -1921,7 +1896,6 @@ button:disabled {
     padding: 0.5rem;
 }
 
-/* Scrollbar customizado para a lista */
 .history-list-modern::-webkit-scrollbar {
     width: 8px;
 }
@@ -1940,7 +1914,6 @@ button:disabled {
     background: #a0aec0;
 }
 
-/* Scrollbar customizado para sidebar */
 .history-sidebar::-webkit-scrollbar {
     width: 6px;
 }
@@ -1959,7 +1932,6 @@ button:disabled {
     background: #a0aec0;
 }
 
-/* Responsividade */
 @media (max-width: 1000px) {
     .history-main-grid {
         grid-template-columns: 1fr;
@@ -2010,7 +1982,6 @@ button:disabled {
     gap: 1.5rem;
 }
 
-/* Linha de Estatísticas */
 .dashboard-stats-row {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -2082,7 +2053,6 @@ button:disabled {
     font-weight: 700;
 }
 
-/* Linha de Conteúdo */
 .dashboard-content-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2150,7 +2120,6 @@ button:disabled {
     background: linear-gradient(135deg, #3182ce, #2c5282);
 }
 
-/* Lista de Atividades */
 .activity-list {
     display: flex;
     flex-direction: column;
@@ -2178,7 +2147,6 @@ button:disabled {
     background: #a0aec0;
 }
 
-/* Lista de Categorias */
 .categories-list {
     display: flex;
     flex-direction: column;
@@ -2215,7 +2183,6 @@ button:disabled {
     font-weight: 700;
 }
 
-/* Linha de Alertas */
 .dashboard-alerts {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2265,7 +2232,6 @@ button:disabled {
     font-size: 1.2rem;
 }
 
-/* Ações Rápidas */
 .quick-actions-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2300,7 +2266,6 @@ button:disabled {
     font-size: 1.8rem;
 }
 
-/* Responsividade do Dashboard */
 @media (max-width: 1024px) {
     .dashboard-content-row {
         grid-template-columns: 1fr;
@@ -2335,7 +2300,6 @@ button:disabled {
     }
 }
 
-/* ===== MODAL DE ESTATÍSTICAS ===== */
 .stats-modal-content {
     max-width: 850px;
     width: 95%;
@@ -2621,7 +2585,6 @@ button:disabled {
     line-height: 1;
 }
 
-/* Rodapé do Modal */
 .stats-modal-footer {
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.05) 0%, rgba(139, 92, 246, 0.05) 100%);
     padding: 1.25rem;
@@ -2629,7 +2592,6 @@ button:disabled {
     border: 1px solid rgba(99, 102, 241, 0.1);
 }
 
-/* Responsivo */
 @media (max-width: 1024px) {
     .stats-modal-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -2699,7 +2661,6 @@ button:disabled {
     }
 }
 
-/* Melhorias adicionais */
 .stats-modal-content::-webkit-scrollbar {
     width: 8px;
 }
@@ -2739,12 +2700,10 @@ button:disabled {
         font-size: 1.25rem;
     }
 
-    /* Responsivo dos filtros compactos */
     .filters-grid {
         grid-template-columns: 1fr;
     }
 
-    /* Responsivo para cards de livros */
     .book-grid-cards {
         grid-template-columns: 1fr;
         gap: 1rem;
@@ -2803,7 +2762,6 @@ button:disabled {
     }
 }
 
-/* ===== MODAL DE EDIÇÃO DE LIVRO ===== */
 #edit-book-modal .modal-close:hover {
     background: rgba(255, 255, 255, 0.35);
     transform: rotate(90deg);
@@ -2813,7 +2771,6 @@ button:disabled {
     transform: rotate(90deg) scale(0.95);
 }
 
-/* Delete Modal Styles */
 #delete-modal .close-btn:hover {
     background: rgba(255, 255, 255, 0.35);
     transform: rotate(90deg);
@@ -2855,7 +2812,6 @@ button:disabled {
     font-size: 1rem !important;
 }
 
-/* Estilo para resultados de busca */
 #search-results-edit {
     background: white;
 }
@@ -2878,7 +2834,6 @@ button:disabled {
     background: #a0aec0;
 }
 
-/* Badge inline ao lado do título */
 .count-badge-inline {
     display: inline-block;
     background: linear-gradient(135deg, #4299e1, #3182ce);
@@ -2898,7 +2853,6 @@ button:disabled {
     box-shadow: 0 4px 12px rgba(66, 153, 225, 0.4);
 }
 
-/* Centralizar status disponível/emprestado */
 .status-available,
 .status-borrowed {
     text-align: center !important;
@@ -2907,7 +2861,6 @@ button:disabled {
     justify-content: center !important;
 }
 
-/* Ajustes responsivos para o novo layout de grid alinhado */
 @media (max-width: 1024px) {
     .book-grid-header {
         grid-template-columns: 1fr;
@@ -2946,7 +2899,6 @@ button:disabled {
     }
 }
 
-/* Botão Ver Histórico Completo */
 .history-button-container {
     text-align: center;
     padding: 60px 20px;
@@ -2996,7 +2948,6 @@ button:disabled {
     box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
     .history-button-container {
         padding: 40px 20px;
@@ -3008,7 +2959,6 @@ button:disabled {
     }
 }
 
-/* Botão de Logout no canto inferior direito */
 .btn-logout-bottom {
     position: fixed;
     bottom: 20px;
@@ -3038,7 +2988,6 @@ button:disabled {
     transform: translateY(0);
 }
 
-/* ===== ESTILOS PARA ABA ADICIONAR LIVRO ===== */
 .add-book-grid {
     display: grid;
     grid-template-columns: 420px 1fr;
@@ -3164,7 +3113,6 @@ button:disabled {
     text-align: center;
 }
 
-/* ===== ESTILOS PARA ABA GERENCIAR ALUNOS ===== */
 .manage-students-container {
     display: flex;
     flex-direction: column;
@@ -3273,12 +3221,10 @@ button:disabled {
     overflow-y: auto;
 }
 
-/* ===== ESTILOS PARA ABAS DISPONÍVEIS E EMPRESTADOS ===== */
 .books-tab-wrapper {
     padding: 0 1.5rem;
 }
 
-/* ===== ESTILOS PARA HISTÓRICO ===== */
 .history-export-title {
     margin: 0 0 0.8rem 0;
     font-size: 0.95rem;
@@ -3325,7 +3271,6 @@ button:disabled {
     font-size: 0.85rem;
 }
 
-/* ===== ESTILOS PARA MODAL EMPRESTAR LIVRO ===== */
 #borrow-student-list {
     display: none;
 }
@@ -3335,7 +3280,6 @@ button:disabled {
     font-size: 0.9rem;
 }
 
-/* ===== ESTILOS PARA MODAL EDITAR LIVRO ===== */
 .edit-book-modal-content {
     max-width: 600px;
     width: 90%;
@@ -3480,7 +3424,6 @@ body {
     padding: 0;
 }
 
-/* Padrão de livros decorativos */
 body::before {
     content: '';
     position: fixed;
@@ -3495,7 +3438,6 @@ body::before {
     z-index: 0;
 }
 
-/* Efeito de ondas */
 body::after {
     content: '';
     position: fixed;
@@ -3509,7 +3451,6 @@ body::after {
     z-index: 0;
 }
 
-/* Círculos decorativos flutuantes */
 @keyframes floatBook {
 
     0%,
@@ -3587,7 +3528,6 @@ body::after {
     overflow-x: hidden;
 }
 
-/* Estilos para o botão Novo Aluno */
 .add-student-btn {
     background: linear-gradient(135deg, #4299e1, #3182ce);
     color: white;

@@ -1,8 +1,6 @@
-// Editar Livro - Modal e Funcionalidades
 (function() {
     'use strict';
 
-    // Elementos do DOM
     const openEditBookModalBtn = document.getElementById('open-edit-book-modal');
     const editBookModal = document.getElementById('edit-book-modal');
     const closeEditBookModalBtn = document.getElementById('edit-book-modal-close');
@@ -17,7 +15,6 @@
     let allBooks = [];
     let currentEditingBook = null;
 
-    // Abrir modal
     if (openEditBookModalBtn) {
         openEditBookModalBtn.addEventListener('click', function() {
             editBookModal.setAttribute('aria-hidden', 'false');
@@ -29,12 +26,10 @@
         });
     }
 
-    // Fechar modal
     if (closeEditBookModalBtn) {
         closeEditBookModalBtn.addEventListener('click', closeModal);
     }
 
-    // Botão cancelar
     if (cancelEditBtn) {
         cancelEditBtn.addEventListener('click', function() {
             editFormContainer.style.display = 'none';
@@ -44,7 +39,6 @@
         });
     }
 
-    // Fechar modal ao clicar fora
     if (editBookModal) {
         editBookModal.addEventListener('click', function(e) {
             if (e.target === editBookModal) {
@@ -61,7 +55,6 @@
         if (editBookForm) editBookForm.reset();
     }
 
-    // Carregar todos os livros
     async function loadAllBooks() {
         try {
             const response = await fetch('/api/books');
@@ -73,7 +66,6 @@
         }
     }
 
-    // Buscar livros
     if (searchBookEditInput) {
         searchBookEditInput.addEventListener('input', function() {
             const searchTerm = this.value.toLowerCase().trim();
@@ -98,7 +90,6 @@
         });
     }
 
-    // Exibir resultados da busca
     function displaySearchResults(books) {
         searchResultsEdit.innerHTML = books.map(book => `
             <div class="search-result-item" data-book-id="${book.id}" style="padding: 0.75rem; border-bottom: 1px solid #e2e8f0; cursor: pointer; transition: background 0.2s;">
@@ -113,7 +104,6 @@
         
         searchResultsEdit.style.display = 'block';
 
-        // Adicionar evento de clique nos resultados
         searchResultsEdit.querySelectorAll('.search-result-item').forEach(item => {
             item.addEventListener('click', function() {
                 const bookId = parseInt(this.dataset.bookId);
@@ -133,11 +123,9 @@
         });
     }
 
-    // Carregar livro para edição
     function loadBookForEditing(book) {
         currentEditingBook = book;
         
-        // Preencher campos do formulário
         document.getElementById('edit-book-id').value = book.id;
         document.getElementById('edit-title').value = book.title;
         document.getElementById('edit-author').value = book.author;
@@ -146,12 +134,10 @@
         
         editingBookTitle.textContent = book.title;
         
-        // Mostrar formulário e esconder busca
         searchResultsEdit.style.display = 'none';
         editFormContainer.style.display = 'block';
     }
 
-    // Submeter formulário de edição
     if (editBookForm) {
         editBookForm.addEventListener('submit', async function(e) {
             e.preventDefault();
@@ -182,7 +168,6 @@
                     showNotification(data.message || 'Livro atualizado com sucesso!', 'success');
                     closeModal();
                     
-                    // Recarregar lista de livros se a função existir
                     if (typeof loadAvailableBooks === 'function') {
                         loadAvailableBooks();
                     }

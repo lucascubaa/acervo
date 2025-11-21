@@ -600,6 +600,5 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Inicializar contagem
     updateActiveFiltersCount();
 });

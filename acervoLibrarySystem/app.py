@@ -67,7 +67,7 @@ def calculate_fine(borrow_date_str):
     try:
         borrow_date = datetime.fromisoformat(borrow_date_str)
         days = (datetime.now() - borrow_date).days
-        fine = max(0, (days - 10) * 0.25)  # R$0.25 por dia após 10 dias
+        fine = max(0, (days - 10) * 0.25)
         return round(fine, 2)
     except:
         return 0.0
@@ -112,7 +112,6 @@ def init_db():
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # Criar tabela de administradores
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS admins (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -122,7 +121,6 @@ def init_db():
                 )
             ''')
             
-            # Criar admin padrão se não existir
             cursor.execute('SELECT COUNT(*) FROM admins')
             if cursor.fetchone()[0] == 0:
                 default_password = 'Biblioteca2025!'
@@ -144,24 +142,23 @@ def init_db():
                 )
             ''')
 
-            # Se existirem tabelas antigas, renomear para os novos nomes em português
             cursor.execute("SELECT name FROM sqlite_master WHERE type='table'")
             existing_tables = [r[0] for r in cursor.fetchall()]
-            # renomear books -> livros
+
             if 'books' in existing_tables and 'livros' not in existing_tables:
                 try:
                     cursor.execute('ALTER TABLE books RENAME TO livros')
                     logging.info('Tabela books renomeada para livros')
                 except sqlite3.Error as e:
                     logging.error(f'Erro ao renomear books->livros: {e}')
-            # renomear borrowhistory -> "histórico de empréstimo"
+
             if 'borrowhistory' in existing_tables and 'histórico de empréstimo' not in existing_tables:
                 try:
                     cursor.execute('ALTER TABLE borrowhistory RENAME TO "histórico de empréstimo"')
                     logging.info('Tabela borrowhistory renomeada para histórico de empréstimo')
                 except sqlite3.Error as e:
                     logging.error(f'Erro ao renomear borrowhistory: {e}')
-            # renomear students -> estudantes
+
             if 'students' in existing_tables and 'estudantes' not in existing_tables:
                 try:
                     cursor.execute('ALTER TABLE students RENAME TO estudantes')
@@ -169,7 +166,6 @@ def init_db():
                 except sqlite3.Error as e:
                     logging.error(f'Erro ao renomear students: {e}')
 
-            # Criar a tabela livros se não existir (estrutura esperada)
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS livros (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -181,7 +177,6 @@ def init_db():
                 )
             ''')
 
-            # Criar a tabela "histórico de empréstimo" se não existir
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS "histórico de empréstimo" (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -196,7 +191,6 @@ def init_db():
                 )
             ''')
 
-            # Criar a tabela turmas se não existir
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS turmas (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -205,7 +199,6 @@ def init_db():
                 )
             ''')
             
-            # Inserir turmas padrão se não existirem
             cursor.execute('SELECT COUNT(*) as count FROM turmas')
             if cursor.fetchone()['count'] == 0:
                 turmas_padrão = [
@@ -216,7 +209,6 @@ def init_db():
                 cursor.executemany('INSERT INTO turmas (name, created_at) VALUES (?, ?)', turmas_padrão)
                 logging.info('Turmas padrão criadas: Turma 1, Turma 2, Turma 3')
             
-            # Criar a tabela estudantes se não existir
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS estudantes (
                     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -226,7 +218,6 @@ def init_db():
                 )
             ''')
             
-            # Adicionar coluna turma se não existir
             try:
                 cursor.execute('PRAGMA table_info("estudantes")')
                 cols = [row['name'] for row in cursor.fetchall()]
@@ -238,8 +229,6 @@ def init_db():
             
             cursor.execute('INSERT OR IGNORE INTO users (id, email) VALUES (?, ?)', 
                            (1, 'generic@example.com'))
-            # (students table removed — kept original schema)
-            # Se a coluna student_name não existir na tabela histórica, adiciona-la
             try:
                 cursor.execute('PRAGMA table_info("histórico de empréstimo")')
                 cols = [row['name'] for row in cursor.fetchall()]
@@ -250,10 +239,8 @@ def init_db():
                     except sqlite3.Error as e:
                         logging.error(f'Erro ao adicionar coluna student_name: {str(e)}')
             except sqlite3.Error:
-                # tabela pode não existir ainda
                 pass
 
-            # garantir que a coluna category exista em livros (banco antigo)
             try:
                 cursor.execute('PRAGMA table_info(livros)')
                 book_cols = [row['name'] for row in cursor.fetchall()]
@@ -274,7 +261,6 @@ def init_db():
 
 init_db()
 
-# Rota de Login
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -306,13 +292,11 @@ def login():
                 return jsonify({'success': False, 'message': 'Erro ao fazer login'}), 500
             return render_template('login.html', error='Erro ao fazer login')
     
-    # Se já estiver logado, redireciona para index
     if 'user_id' in session:
         return redirect(url_for('index'))
     
     return render_template('login.html')
 
-# Rota de Logout
 @app.route('/logout')
 def logout():
     username = session.get('username', 'Desconhecido')
@@ -328,7 +312,6 @@ def index():
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # Buscar estatísticas
             cursor.execute('SELECT COUNT(*) as total FROM livros')
             total_books = cursor.fetchone()['total']
             
@@ -341,7 +324,6 @@ def index():
             cursor.execute('SELECT COUNT(*) as total FROM alunos')
             total_students = cursor.fetchone()['total']
             
-            # Buscar turmas
             cursor.execute('SELECT id, name FROM turmas ORDER BY name')
             turmas = [{'id': row['id'], 'name': row['name']} for row in cursor.fetchall()]
             
@@ -356,12 +338,6 @@ def index():
     except Exception as e:
         logging.error(f'Erro ao carregar página inicial: {str(e)}')
         return render_template('index.html', stats=None, turmas=[])
-
-# Rota de histórico removida - agora está integrada na aba do sistema principal
-# @app.route('/history')
-# @login_required
-# def history():
-#     return render_template('history.html')
 
 @app.route('/docs/<path:filename>')
 @login_required
@@ -410,7 +386,6 @@ def add_book():
             logging.error('Dados JSON inválidos recebidos.')
             return jsonify({'error': 'Dados inválidos ou ausentes'}), 400
         
-        # Sanitizar inputs usando helper
         title = sanitize_input(data.get('title'))
         author = sanitize_input(data.get('author'))
         isbn = sanitize_input(data.get('isbn'))
@@ -418,7 +393,6 @@ def add_book():
         
         logging.info(f'Dados recebidos: title={title}, author={author}, isbn={isbn}, category={category}')
         
-        # Validações usando helpers
         if not all([title, author, isbn]):
             logging.error('Campos obrigatórios ausentes.')
             return jsonify({'error': 'Todos os campos são obrigatórios'}), 400
@@ -429,7 +403,6 @@ def add_book():
         if len(author) < 2:
             return jsonify({'error': 'Autor deve ter pelo menos 2 caracteres'}), 400
         
-        # Validar ISBN usando helper
         if not validate_isbn(isbn):
             logging.error(f'ISBN inválido: {isbn}')
             return jsonify({'error': 'ISBN inválido. Use 10 ou 13 dígitos.'}), 400
@@ -437,7 +410,6 @@ def add_book():
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # Verificar se ISBN já existe
             logging.info(f'Verificando se ISBN {isbn} já existe...')
             cursor.execute('SELECT id, title FROM livros WHERE isbn = ?', (isbn,))
             existing = cursor.fetchone()
@@ -447,7 +419,6 @@ def add_book():
             
             logging.info('ISBN não existe, prosseguindo com INSERT...')
             
-            # Inserir livro - sempre usar a estrutura existente (inglês)
             cursor.execute('''
                 INSERT INTO livros (title, author, isbn, category, available)
                 VALUES (?, ?, ?, ?, ?)
@@ -502,19 +473,16 @@ def update_book():
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # Verificar se o livro existe
             cursor.execute('SELECT id FROM livros WHERE id = ?', (book_id,))
             if not cursor.fetchone():
                 logging.error(f'Livro não encontrado: ID={book_id}')
                 return jsonify({'error': 'Livro não encontrado'}), 404
             
-            # Verificar se ISBN já existe em outro livro
             cursor.execute('SELECT id FROM livros WHERE isbn = ? AND id != ?', (isbn, book_id))
             if cursor.fetchone():
                 logging.error(f'ISBN duplicado ao atualizar: {isbn}')
                 return jsonify({'error': 'ISBN já cadastrado em outro livro'}), 400
             
-            # Atualizar o livro
             cursor.execute('''
                 UPDATE livros 
                 SET title = ?, author = ?, isbn = ?, category = ?
@@ -550,7 +518,6 @@ def update_book_put(book_id):
         if not all([titulo, autor, isbn]):
             return jsonify({'error': 'Título, autor e ISBN são obrigatórios'}), 400
         
-        # Validar ISBN
         clean_isbn = re.sub(r'[-\s]', '', isbn)
         if not re.match(r'^\d{10}(\d{3})?$', clean_isbn):
             return jsonify({'error': 'ISBN inválido. Use 10 ou 13 dígitos.'}), 400
@@ -558,17 +525,14 @@ def update_book_put(book_id):
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # Verificar se o livro existe
             cursor.execute('SELECT id FROM livros WHERE id = ?', (book_id,))
             if not cursor.fetchone():
                 return jsonify({'error': 'Livro não encontrado'}), 404
             
-            # Verificar se ISBN já existe em outro livro
             cursor.execute('SELECT id FROM livros WHERE isbn = ? AND id != ?', (isbn, book_id))
             if cursor.fetchone():
                 return jsonify({'error': 'ISBN já cadastrado em outro livro'}), 400
             
-            # Atualizar o livro
             cursor.execute('''
                 UPDATE livros 
                 SET title = ?, author = ?, isbn = ?, category = ?
@@ -586,8 +550,6 @@ def update_book_put(book_id):
         logging.error(f'Erro inesperado ao atualizar livro: {str(e)}')
         return jsonify({'error': f'Erro ao atualizar livro: {str(e)}'}), 500
 
-
-# endpoints para gerenciar alunos (estudantes)
 @app.route('/api/students', methods=['GET'])
 def get_students():
     try:
@@ -634,7 +596,7 @@ def add_student():
             return jsonify({'error': 'Turma é obrigatória'}), 400
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            # Verificar duplicidade (case-insensitive)
+
             cursor.execute('SELECT id FROM alunos WHERE LOWER(name) = LOWER(?)', (name,))
             if cursor.fetchone():
                 logging.info(f'Tentativa de adicionar aluno duplicado: {name}')
@@ -677,12 +639,10 @@ def update_student():
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # Verificar se o aluno existe
             cursor.execute('SELECT id FROM alunos WHERE id = ?', (student_id,))
             if not cursor.fetchone():
                 return jsonify({'error': 'Aluno não encontrado'}), 404
             
-            # Verificar duplicidade de nome (case-insensitive), excluindo o próprio aluno
             cursor.execute('SELECT id FROM alunos WHERE LOWER(name) = LOWER(?) AND id != ?', (name, student_id))
             if cursor.fetchone():
                 return jsonify({'error': 'Já existe outro aluno com este nome'}), 400
@@ -721,7 +681,6 @@ def delete_student():
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # Verificar se o aluno existe
             cursor.execute('SELECT name FROM alunos WHERE id = ?', (student_id,))
             student = cursor.fetchone()
             if not student:
@@ -731,7 +690,6 @@ def delete_student():
             student_name = student['name']
             logging.info(f'Aluno encontrado: {student_name}')
             
-            # Verificar se o aluno tem livros emprestados (usando student_name pois userId não está sendo usado corretamente)
             cursor.execute('''
                 SELECT COUNT(*) as count 
                 FROM "histórico de empréstimo" 
@@ -747,7 +705,6 @@ def delete_student():
                 logging.warning(f'Tentativa de excluir aluno com {active_loans} empréstimos ativos')
                 return jsonify({'error': error_msg}), 400
             
-            # Excluir o aluno
             cursor.execute('DELETE FROM alunos WHERE id = ?', (student_id,))
             conn.commit()
             
@@ -774,31 +731,26 @@ def borrow_book():
         book_id = data.get('book_id')
         student_name = sanitize_input(data.get('student_name'))
         
-        # Validações no backend
         if not book_id:
             return jsonify({'error': 'ID do livro é obrigatório'}), 400
         
         if not student_name:
             return jsonify({'error': 'Nome do aluno é obrigatório'}), 400
         
-        # Verificar se livro está disponível usando helper
         if not check_book_availability(book_id):
             logging.error(f'Livro {book_id} não disponível')
             return jsonify({'error': 'Livro não disponível ou não encontrado'}), 400
         
-        # Verificar se aluno existe
         with get_db_connection() as conn:
             cursor = conn.cursor()
             cursor.execute('SELECT id FROM alunos WHERE LOWER(name) = LOWER(?)', (student_name,))
             if not cursor.fetchone():
                 return jsonify({'error': 'Aluno não cadastrado no sistema'}), 400
             
-            # Verificar limite de empréstimos (máximo 3 por aluno)
             active_loans = get_student_active_loans(student_name)
             if active_loans >= 3:
                 return jsonify({'error': f'Aluno já possui {active_loans} livros emprestados (limite: 3)'}), 400
             
-            # Registrar empréstimo
             cursor.execute('UPDATE livros SET available = ? WHERE id = ?', (False, book_id))
             cursor.execute('''
                 INSERT INTO "histórico de empréstimo" (bookId, userId, student_name, borrowDate)
@@ -835,7 +787,7 @@ def return_book():
             borrow_date = datetime.fromisoformat(history['borrowDate'])
             return_date = datetime.now()
             days = (return_date - borrow_date).days
-            fine = max(0, (days - 10) * 0.25)  # Multa de R$0.25 por dia após 10 dias
+            fine = max(0, (days - 10) * 0.25)
             cursor.execute('''
                 UPDATE "histórico de empréstimo" SET returnDate = ?, fine = ?
                 WHERE id = ?
@@ -889,7 +841,7 @@ def get_history():
     try:
         with get_db_connection() as conn:
             cursor = conn.cursor()
-            # Livros adicionados (todos os livros com contagem de empréstimos)
+
             cursor.execute('''
                 SELECT b.id, b.title, b.author, b.isbn, b.category, COUNT(bh.id) as borrow_count
                 FROM livros b
@@ -904,7 +856,7 @@ def get_history():
                 'category': row['category'] or '',
                 'borrow_count': row['borrow_count']
             } for row in cursor.fetchall()]
-            # Livros emprestados (borrowhistory com returnDate NULL)
+
             cursor.execute('''
                 SELECT bh.id, bh.bookId, bh.borrowDate, bh.returnDate, bh.fine,
                        bh.student_name, b.title, b.author, b.isbn, b.category
@@ -924,7 +876,7 @@ def get_history():
                 'fine': row['fine'] if row['fine'] is not None else 0.0,
                 'student_name': row['student_name'] or ''
             } for row in cursor.fetchall()]
-            # Livros devolvidos (borrowhistory com returnDate não NULL)
+
             cursor.execute('''
                 SELECT bh.id, bh.bookId, bh.borrowDate, bh.returnDate, bh.fine,
                        bh.student_name, b.title, b.author, b.isbn, b.category
@@ -969,7 +921,6 @@ def export_history_to_docs():
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # Buscar livros emprestados e devolvidos
             cursor.execute('''
                 SELECT bh.id, bh.bookId, bh.borrowDate, bh.returnDate, bh.fine,
                        bh.student_name, b.title, b.author, b.isbn, b.category
@@ -980,18 +931,15 @@ def export_history_to_docs():
             
             items = []
             
-            # Processar empréstimos e devoluções
             for row in borrow_rows:
                 item = dict(row)
                 item['_type'] = 'borrowed' if row['returnDate'] is None else 'returned'
                 item['date'] = item.get('returnDate') or item.get('borrowDate', '')
                 items.append(item)
 
-            # apply filters
             if filter_type in ('borrowed', 'returned'):
                 items = [i for i in items if i['_type'] == filter_type]
-            
-            # date range
+
             def in_range(d):
                 if not d: return False
                 try:
@@ -1007,7 +955,6 @@ def export_history_to_docs():
                 if to_date:
                     try:
                         td = datetime.fromisoformat(to_date)
-                        # include entire day
                         td = td.replace(hour=23, minute=59, second=59, microsecond=999999)
                         if dt > td: return False
                     except Exception:
@@ -1017,25 +964,19 @@ def export_history_to_docs():
             if from_date or to_date:
                 items = [i for i in items if in_range(i.get('date', '') or i.get('borrowDate', '') or i.get('returnDate', ''))]
 
-            # Criar documento Word em memória
             doc = Document()
             
-            # Adicionar título
             heading = doc.add_heading('Historico de Biblioteca', 0)
             heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
             
-            # Adicionar data de geração
             date_para = doc.add_paragraph(f'Gerado em: {datetime.now().strftime("%d/%m/%Y %H:%M:%S")}')
             date_para.alignment = WD_ALIGN_PARAGRAPH.RIGHT
             
-            # Espaço
             doc.add_paragraph()
             
-            # Criar tabela simples
             table = doc.add_table(rows=1, cols=8)
             table.style = 'Light Grid'
             
-            # Cabeçalhos
             hdr_cells = table.rows[0].cells
             headers = ['Tipo', 'Titulo', 'Autor', 'ISBN', 'Categoria', 'Data', 'Aluno', 'Multa']
             for i, header in enumerate(headers):
@@ -1044,7 +985,6 @@ def export_history_to_docs():
                     for run in paragraph.runs:
                         run.font.bold = True
             
-            # Adicionar dados
             for it in items:
                 row_cells = table.add_row().cells
                 
@@ -1072,7 +1012,6 @@ def export_history_to_docs():
                 for i, value in enumerate(row_data):
                     row_cells[i].text = value
             
-            # Salvar em memória
             file_stream = BytesIO()
             doc.save(file_stream)
             file_stream.seek(0)
@@ -1100,7 +1039,6 @@ def get_statistics():
         with get_db_connection() as conn:
             cursor = conn.cursor()
             
-            # Livros
             cursor.execute('SELECT COUNT(*) as total FROM livros')
             total_books = cursor.fetchone()['total']
             
@@ -1110,11 +1048,9 @@ def get_statistics():
             cursor.execute('SELECT COUNT(*) as borrowed FROM livros WHERE available = 0')
             borrowed_books = cursor.fetchone()['borrowed']
             
-            # Alunos
             cursor.execute('SELECT COUNT(*) as total FROM estudantes')
             total_students = cursor.fetchone()['total']
             
-            # Histórico
             cursor.execute('SELECT COUNT(*) as total FROM "histórico de empréstimo"')
             total_loans = cursor.fetchone()['total']
             
@@ -1124,7 +1060,6 @@ def get_statistics():
             cursor.execute('SELECT COUNT(*) as returned FROM "histórico de empréstimo" WHERE returnDate IS NOT NULL')
             returned_loans = cursor.fetchone()['returned']
             
-            # Calcular taxas
             loan_rate = 0
             return_rate = 0
             
@@ -1134,7 +1069,6 @@ def get_statistics():
             if total_loans > 0:
                 return_rate = round((returned_loans / total_loans) * 100, 1)
             
-            # Multas totais
             cursor.execute('SELECT SUM(fine) as total_fines FROM "histórico de empréstimo" WHERE fine IS NOT NULL')
             fines_result = cursor.fetchone()
             total_fines = fines_result['total_fines'] if fines_result['total_fines'] else 0
@@ -1185,7 +1119,6 @@ def validate_data():
         data_type = data.get('type')
         errors = []
         
-        # Validação de livro
         if data_type == 'book':
             title = data.get('title', '').strip()
             author = data.get('author', '').strip()
@@ -1202,7 +1135,6 @@ def validate_data():
                 if not re.match(r'^\d{10}(\d{3})?$', clean_isbn):
                     errors.append('ISBN deve ter 10 ou 13 dígitos')
                     
-                # Verificar duplicidade
                 with get_db_connection() as conn:
                     cursor = conn.cursor()
                     book_id = data.get('id')
@@ -1213,7 +1145,6 @@ def validate_data():
                     if cursor.fetchone():
                         errors.append('ISBN já cadastrado')
         
-        # Validação de aluno
         elif data_type == 'student':
             name = data.get('name', '').strip()
             turma = data.get('turma', '').strip()
@@ -1223,7 +1154,6 @@ def validate_data():
             if not turma:
                 errors.append('Turma é obrigatória')
             
-            # Verificar duplicidade
             with get_db_connection() as conn:
                 cursor = conn.cursor()
                 student_id = data.get('id')
@@ -1242,7 +1172,6 @@ def validate_data():
     except Exception as e:
         logging.error(f'Erro na validação de dados: {str(e)}')
         return jsonify({'valid': False, 'errors': ['Erro ao validar dados']}), 500
-
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

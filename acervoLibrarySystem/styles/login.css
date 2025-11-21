@@ -237,7 +237,6 @@
      background: white;
  }
 
- /* Ícones nos inputs */
  .form-group::before {
      content: '';
      position: absolute;
@@ -330,7 +329,6 @@
      margin: 0;
  }
 
- /* Responsividade */
  @media (max-width: 480px) {
      .login-card {
          padding: 35px 28px;

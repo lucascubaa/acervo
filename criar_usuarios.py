@@ -5,7 +5,6 @@ from datetime import datetime
 conn = sqlite3.connect('library.db')
 cursor = conn.cursor()
 
-# Criar usuários de teste (username, senha)
 usuarios = [
     ('lucas', 'lucas123'),
     ('admin', 'admin123'),
@@ -18,16 +17,13 @@ print('CRIANDO USUÁRIOS ADMINISTRADORES NO SISTEMA')
 print('=' * 60)
 
 for username, password in usuarios:
-    # Verificar se usuário já existe
     cursor.execute('SELECT id FROM admins WHERE username = ?', (username,))
     if cursor.fetchone():
         print(f'⚠️  Usuário "{username}" já existe - pulando...')
         continue
     
-    # Hash da senha
     password_hash = generate_password_hash(password)
-    
-    # Inserir usuário
+
     cursor.execute('''
         INSERT INTO admins (username, password_hash, created_at) 
         VALUES (?, ?, ?)
