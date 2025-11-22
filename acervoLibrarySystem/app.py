@@ -212,10 +212,12 @@ def init_db():
                 turmas_padrão = [
                     ('Turma 1', datetime.now().isoformat()),
                     ('Turma 2', datetime.now().isoformat()),
-                    ('Turma 3', datetime.now().isoformat())
+                    ('Turma 3', datetime.now().isoformat()),
+                    ('Turma 4', datetime.now().isoformat()),
+                    ('Turma 5', datetime.now().isoformat())
                 ]
                 cursor.executemany('INSERT INTO turmas (name, created_at) VALUES (?, ?)', turmas_padrão)
-                logging.info('Turmas padrão criadas: Turma 1, Turma 2, Turma 3')
+                logging.info('Turmas padrão criadas: Turma 1, Turma 2, Turma 3, Turma 4, Turma 5')
             
             cursor.execute('''
                 CREATE TABLE IF NOT EXISTS alunos (
