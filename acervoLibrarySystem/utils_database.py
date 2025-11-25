@@ -120,7 +120,7 @@ def criar_usuarios_padrao():
         ('lucas', 'lucas123'),
         ('admin', 'admin123'),
         ('teste', 'teste123'),
-        ('biblioteca', 'biblioteca123'),
+        ('biblioteca', 'biblioteca2025'),
     ]
     
     print('=' * 60)

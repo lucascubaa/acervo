@@ -948,7 +948,7 @@ def export_history_to_docs():
                 items.append(item)
 
             if filter_type in ('borrowed', 'returned'):
-                items = [i for i in items if i['_type'] == filter_type]
+                items = [i for i in items if i['_type'] == filter_type]  
 
             def in_range(d):
                 if not d: return False
