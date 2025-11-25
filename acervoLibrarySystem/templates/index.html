@@ -6,28 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistema de Biblioteca</title>
     
-    <!-- CSS Styles -->
     <link rel="stylesheet" href="/static/style.css?v=38">
     <link rel="stylesheet" href="/styles/style.css">
     <link rel="stylesheet" href="/styles/layout-fix.css">
 </head>
 
 <body>
-    <!-- Background Elements -->
     <div class="bg-circle"></div>
     <div class="bg-circle"></div>
     <div class="bg-circle"></div>
     
-    <!-- Main Container -->
     <div class="container">
-        <!-- Header -->
         <header class="app-header">
             <div class="app-header-text">
                 <h1>Sistema de Biblioteca</h1>
             </div>
         </header>
         
-        <!-- Navigation Tabs -->
         <div class="tabs">
             <button class="tab-link active" data-tab="add-book">Adicionar Livro</button>
             <button class="tab-link" data-tab="manage-students">Gerenciar Alunos</button>
@@ -44,14 +39,11 @@
         {% include 'components/historico.html' %}
     </div>
 
-    <!-- Notification Container -->
     <div id="notification-container"></div>
 
-    <!-- Modals -->
     {% include 'components/modals/book-modals.html' %}
     {% include 'components/modals/student-modals.html' %}
 
-    <!-- JavaScript Files -->
     <script src="/static/notify.js?v=10"></script>
     <script src="/static/script.js?v=37"></script>
     <script src="/static/add-book-modal.js?v=6"></script>
