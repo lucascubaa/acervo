@@ -705,7 +705,7 @@ def delete_student():
                 FROM "histórico de empréstimo" 
                 WHERE student_name = ? AND returnDate IS NULL
             ''', (student_name,))
-            result = cursor.fetchone()
+            result = cursor.fetchone() 
             active_loans = result['count'] if result else 0
             logging.info(f'Livros emprestados ativos: {active_loans}')
             logging.info(f'Query result: {result}')
