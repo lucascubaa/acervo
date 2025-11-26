@@ -122,7 +122,6 @@ a.back-link:active {
     font-weight: 600;
     color: #2d3748;
     height: 44px;
-    /* altura unificada */
     appearance: none;
     /* remove default arrow em alguns browsers */
 }
