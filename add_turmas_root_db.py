@@ -9,12 +9,10 @@ if not DB_PATH.exists():
     print(f"ERROR: Banco de dados não encontrado em {DB_PATH}")
     raise SystemExit(1)
 
-# Tentar abrir conexão com timeout e configurar PRAGMA busy_timeout
 conn = sqlite3.connect(str(DB_PATH), timeout=30)
 cur = conn.cursor()
 cur.execute('PRAGMA busy_timeout = 30000')
 
-# Verificar estrutura da tabela turmas
 try:
     cur.execute("SELECT id, name FROM turmas ORDER BY id")
     rows = cur.fetchall()
