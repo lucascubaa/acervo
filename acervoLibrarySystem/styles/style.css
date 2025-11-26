@@ -123,7 +123,6 @@ a.back-link:active {
     color: #2d3748;
     height: 44px;
     appearance: none;
-    /* remove default arrow em alguns browsers */
 }
 
 .history-list {

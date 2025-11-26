@@ -919,7 +919,6 @@ def get_history():
         logging.error(f'Erro inesperado ao obter histórico: {str(e)}')
         return jsonify({'error': 'Erro ao obter histórico'}), 500
 
-
 @app.route('/api/history/export_to_docs', methods=['POST'])
 def export_history_to_docs():
     try:
@@ -1040,7 +1039,6 @@ def export_history_to_docs():
         logging.error(f'Erro ao exportar histórico para docs: {str(e)}')
         return jsonify({'error': 'Erro ao exportar histórico'}), 500
 
-
 @app.route('/api/statistics', methods=['GET'])
 @login_required
 def get_statistics():
@@ -1115,7 +1113,6 @@ def get_statistics():
     except Exception as e:
         logging.error(f'Erro inesperado ao calcular estatísticas: {str(e)}')
         return jsonify({'error': 'Erro ao calcular estatísticas'}), 500
-
 
 @app.route('/api/validate_data', methods=['POST'])
 @login_required
